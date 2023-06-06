@@ -3,10 +3,9 @@ import datetime
 import pytz
 import asyncio
 import serial
-import time
 
 # 시리얼 포트와 통신 속도 설정
-ser = serial.Serial('COM6', 9600)  # 시리얼 포트와 통신 속도를 맞게 설정해야 합니다.
+ser = serial.Serial('COM5', 9600)  # 시리얼 포트와 통신 속도를 맞게 설정해야 합니다.
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
@@ -87,6 +86,7 @@ async def on_message(message):
 
         ser.write('i'.encode())
 
+        received_data = None
         while ser.in_waiting > 0:
             received_data = ser.readline().decode().rstrip()
             print("Received data:", received_data)
