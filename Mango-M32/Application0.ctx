@@ -22,8 +22,8 @@
 			
 	</Flags>
 	<Views>
-		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="143" Index="0" focus="1" />
-		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="36" Index="1" />
+		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="163" Index="0" focus="1" />
+		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="3" Index="1" />
 	</Views>
 	<Grep>
 		<GrepIncludeSub>yes</GrepIncludeSub>

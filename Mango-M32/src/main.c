@@ -94,9 +94,9 @@ int main(void)
     toggleMotorDirection(&motorconfig.wheel2);
     toggleMotorDirection(&motorconfig.waterPump);
     
-    setMotorSpeedByIndex(&motorconfig, 1, 500);
-    setMotorSpeedByIndex(&motorconfig, 2, 500);
-    setMotorSpeedByIndex(&motorconfig, 3, 500);
+    setMotorSpeedByIndex(&motorconfig, 1, 1);
+    setMotorSpeedByIndex(&motorconfig, 2, 1);
+    setMotorSpeedByIndex(&motorconfig, 3, 1);
     
     SoilMoisture soilmoisture;
     initSoilMoistureSensor(&soilmoisture, SOIL_MOISTURE_PORT, SOIL_MOISTURE_PIN, SOIL_MOISTURE_ADC, SOIL_MOISTURE_CHANNEL);
@@ -115,11 +115,70 @@ int main(void)
     
     uint16_t sm, c1, c2;
     uint16_t data;
+    uint32_t day_time = 0;
+    bool end_process = false;
     bool sm_active = false;
     bool cds_active = false;
     
     while(1)
     {
+        if(sm_active)
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+        
+            if(sm)
+            {
+                toggleMotorDirection(&motorconfig.waterPump);
+                delay_ms(60);
+                toggleMotorDirection(&motorconfig.waterPump);
+            
+                delay_s(10);
+            }
+            else
+                sm_active = false;
+        }
+        if(cds_active)
+        {
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+            initCDSSensor(&cds2);
+            c2 = readCDSValue(&cds2);
+        
+            uint32_t once_time = 30;
+        
+            if(c1>c2)
+            {
+                toggleMotorDirection(&motorconfig.wheel1);
+                toggleMotorDirection(&motorconfig.wheel2);
+                
+                delay_ms(once_time);
+                
+                toggleMotorDirection(&motorconfig.wheel1);
+                toggleMotorDirection(&motorconfig.wheel2);
+            
+                day_time += once_time;
+            }
+            else
+                cds_active = false;
+        }
+        if(end_process)
+        {
+            uint32_t turn_time;
+            
+            toggleMotorDirection(&motorconfig.wheel1);
+            delay_s(turn_time);
+            
+            toggleMotorDirection(&motorconfig.wheel2);
+            delay_ms(day_time);
+        
+            toggleMotorDirection(&motorconfig.wheel2);
+            delay_s(turn_time);
+        
+            toggleMotorDirection(&motorconfig.wheel1);
+        
+            end_process = false;
+        }   
+    
         data = USART_ReceiveData(USART3);
         if(data == 'a')
         {
@@ -138,6 +197,7 @@ int main(void)
                 printf("none\n");
             if(c1>c2)
                 cds_active = true;
+            delay_ms(10);
         }
         else if(data == 'i')
         {
@@ -148,7 +208,13 @@ int main(void)
             c2 = readCDSValue(&cds2);
         
             printf("%d %d %d\n", sm, c1, c2);
-            delay_ms(100);
+            delay_ms(10);
+        }
+        else if(data == 'e')
+        {
+            end_process = true;
+            printf("okay\n");
+            delay_ms(10);
         }
     }
 }

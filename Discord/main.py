@@ -1,8 +1,8 @@
 import discord
-import datetime
 import pytz
 import asyncio
 import serial
+import datetime
 
 # 시리얼 포트와 통신 속도 설정
 ser = serial.Serial('COM5', 9600)  # 시리얼 포트와 통신 속도를 맞게 설정해야 합니다.
@@ -15,7 +15,7 @@ dev = "마이크로프로세서 프로젝트"
 user_data = None
 data_type = None
 waterHistories = []
-
+active = True
 
 @client.event
 async def on_ready():
@@ -23,30 +23,46 @@ async def on_ready():
     print()
 
     global waterHistories
+    global active
 
-    while True:
-        current_minute = datetime.datetime.now().minute
+    # while active:
+    #     current_minute = datetime.datetime.now().minute
+    #
+    #     received_data = None
+    #     if current_minute % 10 == 0:
+    #         print("10분마다 보드알림")
+    #
+    #         while not(received_data == 'sm' or received_data == 'none'):
+    #             ser.write('a'.encode())
+    #             while ser.in_waiting > 0:
+    #                 received_data = ser.readline().decode().rstrip()
+    #                 ser.write(0)
+    #         print("10분마다 보드알림 전송완료!")
+    #
+    #         if received_data == 'sm':
+    #             waterHistories.append(datetime.datetime.now())
+    #             print("급수내역 업데이트 완료!")
+    #
+    #         print()
+    #
+    #     if datetime.datetime.now().hour >= 20:
+    #         active = False
+    #
+    #         while not received_data == 'okay':
+    #             ser.write('e'.encode())
+    #             while ser.in_waiting > 0:
+    #                 received_data = ser.readline().decode().rstrip()
+    #                 ser.write(0)
+    #
+    #     # 1분마다 체크
+    #     await asyncio.sleep(60)
 
-        received_data = None
-        if current_minute % 10 == 0:
-            print("10분마다 보드알림")
-
-            while not(received_data == 'sm' or received_data == 'none'):
-                ser.write('a'.encode())
-                while ser.in_waiting > 0:
-                    received_data = ser.readline().decode().rstrip()
-                    ser.write(0)
-            print("10분마다 보드알림 전송완료!")
-
-            if received_data == 'sm':
-                waterHistories.append(datetime.datetime.now())
-                print("급수내역 업데이트 완료!")
-
-            print()
+    while not active:
+        if datetime.datetime.now().hour >= 5:
+            active = True
 
         # 1분마다 체크
         await asyncio.sleep(60)
-
 
 @client.event
 async def on_message(message):
@@ -137,4 +153,4 @@ async def on_message(message):
         print("급수내역 데이터 전송완료!\n")
 
 # 봇 실행
-client.run('MTExMDQ3OTY3MDI2NjMwNjY2MA.GuS0oE.ZS8txrY6XMpMJbUBfgj3R0YSAsT1VUMWhXnKow')
+client.run('token')
