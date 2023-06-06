@@ -20,25 +20,29 @@ waterHistories = []
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+    print()
 
     global waterHistories
 
     while True:
         current_minute = datetime.datetime.now().minute
-        print(current_minute)
 
+        received_data = None
         if current_minute % 10 == 0:
-            print("10 minute alert")
+            print("10분마다 보드알림")
 
-            ser.write('a'.encode())
-
-            while ser.in_waiting > 0:
-                received_data = ser.readline().decode().rstrip()
-                print("Received data:", received_data)
-                ser.write(0)
+            while not(received_data == 'sm' or received_data == 'none'):
+                ser.write('a'.encode())
+                while ser.in_waiting > 0:
+                    received_data = ser.readline().decode().rstrip()
+                    ser.write(0)
+            print("10분마다 보드알림 전송완료!")
 
             if received_data == 'sm':
                 waterHistories.append(datetime.datetime.now())
+                print("급수내역 업데이트 완료!")
+
+            print()
 
         # 1분마다 체크
         await asyncio.sleep(60)
@@ -84,13 +88,12 @@ async def on_message(message):
     if message.content == '화분아 센서정보':
         print("센서정보 요청 명령어 입력")
 
-        ser.write('i'.encode())
-
-        received_data = None
-        while ser.in_waiting > 0:
-            received_data = ser.readline().decode().rstrip()
-            print("Received data:", received_data)
-            ser.write(0)
+        received_data = ""
+        while not(len(received_data.split()) == 3 and all(data.isdigit() for data in received_data.split())):
+            ser.write('i'.encode())
+            while ser.in_waiting > 0:
+                received_data = ser.readline().decode().rstrip()
+                ser.write(0)
 
         received_data = received_data.split()
         soilMoisture = int(received_data[0])
@@ -106,17 +109,19 @@ async def on_message(message):
         embed.set_footer(text=dev)
         await message.reply(embed=embed, mention_author=True)
 
-    if message.content == '화분아 수분내역':
-        print("수분내역 요청 명령어 입력")
+        print("센서정보 데이터 전송완료!\n")
+
+    if message.content == '화분아 급수내역':
+        print("급수내역 요청 명령어 입력")
 
         global waterHistories
 
         embed = discord.Embed(description=f'', timestamp=datetime.datetime.now(pytz.timezone('UTC')),
                               colour=0x8ACA5C)
-        embed.set_author(name=f"{message.author.name} 님의 수분내역 요청", icon_url=message.author.avatar)
+        embed.set_author(name=f"{message.author.name} 님의 급수내역 요청", icon_url=message.author.avatar)
 
         if len(waterHistories) == 0:
-            embed.add_field(name=f"내역 없음", value=f">>> 수분을 공급한 내역이 없습니다.", inline=False)
+            embed.add_field(name=f"급수내역 없음", value=f">>> 수분을 공급한 내역이 없습니다.", inline=False)
         else:
             for i, waterHistory in enumerate(waterHistories[-min(5, len(waterHistories)):]):
                 month = waterHistory.month
@@ -129,8 +134,7 @@ async def on_message(message):
         embed.set_footer(text=dev)
         await message.reply(embed=embed, mention_author=True)
 
-        print("수분내역 데이터 전송완료!\n")
-
+        print("급수내역 데이터 전송완료!\n")
 
 # 봇 실행
-client.run('token')
+client.run('MTExMDQ3OTY3MDI2NjMwNjY2MA.GuS0oE.ZS8txrY6XMpMJbUBfgj3R0YSAsT1VUMWhXnKow')
