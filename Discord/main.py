@@ -8,37 +8,6 @@ import time
 # 시리얼 포트와 통신 속도 설정
 ser = serial.Serial('COM6', 9600)  # 시리얼 포트와 통신 속도를 맞게 설정해야 합니다.
 
-
-async def schedule_commands():
-    print("10minute alert")
-
-    while True:
-        current_minute = datetime.datetime.now().minute
-
-        if current_minute % 10 == 0:
-            ser.write('a'.encode())
-
-            received = False
-            while not received:
-                start_time = time.time()
-                while ser.in_waiting == 0:
-                    if time.time() - start_time > 5:
-                        print("No response within 5 seconds.")
-                        break
-
-                if ser.in_waiting > 0:
-                    received_data = ser.readline().decode().rstrip()
-                    received = True
-                    print("Received data:", received_data)
-                    break
-
-            if received_data == 'sm':
-                waterHistories.append(datetime.datetime.now())
-
-        # 1분마다 체크
-        await asyncio.sleep(60)
-
-
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 
@@ -52,6 +21,28 @@ waterHistories = []
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+
+    global waterHistories
+
+    while True:
+        current_minute = datetime.datetime.now().minute
+        print(current_minute)
+
+        if current_minute % 10 == 0:
+            print("10 minute alert")
+
+            ser.write('a'.encode())
+
+            while ser.in_waiting > 0:
+                received_data = ser.readline().decode().rstrip()
+                print("Received data:", received_data)
+                ser.write(0)
+
+            if received_data == 'sm':
+                waterHistories.append(datetime.datetime.now())
+
+        # 1분마다 체크
+        await asyncio.sleep(60)
 
 
 @client.event
@@ -96,34 +87,23 @@ async def on_message(message):
 
         ser.write('i'.encode())
 
-        received = True
         while ser.in_waiting > 0:
             received_data = ser.readline().decode().rstrip()
             print("Received data:", received_data)
             ser.write(0)
 
-        if received:
-            received_data = received_data.split()
-            soilMoisture = int(received_data[0])
-            CDS1 = int(received_data[1])
-            CDS2 = int(received_data[2])
+        received_data = received_data.split()
+        soilMoisture = int(received_data[0])
+        CDS1 = int(received_data[1])
+        CDS2 = int(received_data[2])
 
-            embed = discord.Embed(description=f'', timestamp=datetime.datetime.now(pytz.timezone('UTC')),
-                                  colour=0x8ACA5C)
-            embed.set_author(name=f"{message.author.name} 님의 센서정보 요청", icon_url=message.author.avatar)
-            embed.add_field(name="토양수분센서", value=f">>> {soilMoisture}", inline=False)
-            embed.add_field(name="광센서1", value=f">>> {CDS1}", inline=False)
-            embed.add_field(name="광센서2", value=f">>> {CDS2}", inline=False)
-            embed.set_footer(text=dev)
-
-            print("센서 데이터 전송완료!\n")
-        else:
-            embed = discord.Embed(description=f"센서와 통신할 수 없습니다.",
-                                  timestamp=datetime.datetime.now(pytz.timezone('UTC')), colour=0x8ACA5C)
-            embed.set_author(name=f"{message.author.name} 님의 센서정보 요청", icon_url=message.author.avatar)
-            embed.set_footer(text=dev)
-
-            print("센서 데이터 전송실패...\n")
+        embed = discord.Embed(description=f'', timestamp=datetime.datetime.now(pytz.timezone('UTC')),
+                              colour=0x8ACA5C)
+        embed.set_author(name=f"{message.author.name} 님의 센서정보 요청", icon_url=message.author.avatar)
+        embed.add_field(name="토양수분센서", value=f">>> {soilMoisture}", inline=False)
+        embed.add_field(name="광센서1", value=f">>> {CDS1}", inline=False)
+        embed.add_field(name="광센서2", value=f">>> {CDS2}", inline=False)
+        embed.set_footer(text=dev)
         await message.reply(embed=embed, mention_author=True)
 
     if message.content == '화분아 수분내역':
@@ -135,10 +115,17 @@ async def on_message(message):
                               colour=0x8ACA5C)
         embed.set_author(name=f"{message.author.name} 님의 수분내역 요청", icon_url=message.author.avatar)
 
-        for i, waterHistory in enumerate(waterHistories[-min(5, len(waterHistories)):]):
-            embed.add_field(name=f"내역{i + 1}", value=f">>> {waterHistory}", inline=False)
-            if i == 4:
-                break
+        if len(waterHistories) == 0:
+            embed.add_field(name=f"내역 없음", value=f">>> 수분을 공급한 내역이 없습니다.", inline=False)
+        else:
+            for i, waterHistory in enumerate(waterHistories[-min(5, len(waterHistories)):]):
+                month = waterHistory.month
+                day = waterHistory.day
+                hour = waterHistory.hour
+                minute = waterHistory.minute
+                second = waterHistory.second
+                embed.add_field(name=f"내역{i + 1}", value=f">>> {month}월 {day}일 {hour}시 {minute}분 {second}초", inline=False)
+
         embed.set_footer(text=dev)
         await message.reply(embed=embed, mention_author=True)
 
@@ -146,5 +133,4 @@ async def on_message(message):
 
 
 # 봇 실행
-client.run('MTExMDQ3OTY3MDI2NjMwNjY2MA.GkMawd.gUBI6n3Msgl3bbKP8L1EaIwD4jJZlKeVzZZ8QM')
-# asyncio.run(schedule_commands())
+client.run('token')

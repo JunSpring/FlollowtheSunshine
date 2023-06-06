@@ -1,36 +1,135 @@
 
-C:\ride_project\FlollowtheSunshine\obj\delay.o:     file format elf32-littlearm
-C:\ride_project\FlollowtheSunshine\obj\delay.o
+C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o:     file format elf32-littlearm
+C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
 
-Disassembly of section .text.delay_m:
+Disassembly of section .text.delay_int_count:
 
-00000000 <delay_m>:
-delay_m():
-C:\ride_project\FlollowtheSunshine\src/delay.c:10
-{
-    for(; nTime>0; nTime--);
-}
-void delay_m(void)
-{
-    delay_int_count(806596/*6*/);
-   0:	4b02      	ldr	r3, [pc, #8]	(c <delay_m+0xc>)
-   2:	e000      	b.n	6 <delay_m+0x6>
+00000000 <delay_int_count>:
 delay_int_count():
-C:\ride_project\FlollowtheSunshine\src/delay.c:6
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:5
 #include "stm32f10x.h"
 
 /* for문으로 제작한 딜레이 함수 */
 static void delay_int_count(volatile unsigned int nTime)
 {
+   0:	b082      	sub	sp, #8
+   2:	9001      	str	r0, [sp, #4]
+   4:	e002      	b.n	c <delay_int_count+0xc>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:6
     for(; nTime>0; nTime--);
-   4:	3b01      	subs	r3, #1
-   6:	2b00      	cmp	r3, #0
-   8:	d1fc      	bne.n	4 <delay_m+0x4>
-delay_m():
-C:\ride_project\FlollowtheSunshine\src/delay.c:11
+   6:	9b01      	ldr	r3, [sp, #4]
+   8:	3b01      	subs	r3, #1
+   a:	9301      	str	r3, [sp, #4]
+   c:	9b01      	ldr	r3, [sp, #4]
+   e:	2b00      	cmp	r3, #0
+  10:	d1f9      	bne.n	6 <delay_int_count+0x6>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:7
 }
-void delay_m(void)
+  12:	b002      	add	sp, #8
+  14:	4770      	bx	lr
+  16:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.delay_us:
+
+00000000 <delay_us>:
+delay_us():
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:16
 {
-    delay_int_count(806596/*6*/);
-   a:	4770      	bx	lr
-   c:	000c4ec4 	.word	0x000c4ec4
+    // 시스템 클럭 주파수를 얻어옴 (예: 16MHz)
+    uint32_t freq = SystemCoreClock / 1000000;
+    
+    // 마이크로초 단위 딜레이
+    delay_int_count(us * freq);
+   0:	4b04      	ldr	r3, [pc, #16]	(14 <delay_us+0x14>)
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <delay_us+0x18>)
+   4:	681b      	ldr	r3, [r3, #0]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:11
+    for(; nTime>0; nTime--);
+}
+
+// 마이크로초(us) 단위 딜레이 함수
+void delay_us(uint32_t us)
+{
+   6:	b510      	push	{r4, lr}
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:16
+    // 시스템 클럭 주파수를 얻어옴 (예: 16MHz)
+    uint32_t freq = SystemCoreClock / 1000000;
+    
+    // 마이크로초 단위 딜레이
+    delay_int_count(us * freq);
+   8:	fbb3 f3f2 	udiv	r3, r3, r2
+   c:	4358      	muls	r0, r3
+   e:	f7ff fffe 	bl	0 <delay_us>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:17
+}
+  12:	bd10      	pop	{r4, pc}
+  14:	00000000 	.word	0x00000000
+  18:	000f4240 	.word	0x000f4240
+Disassembly of section .text.delay_ms:
+
+00000000 <delay_ms>:
+delay_ms():
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:26
+{
+    // 시스템 클럭 주파수를 얻어옴 (예: 16MHz)
+    uint32_t freq = SystemCoreClock / 1000;
+    
+    // 밀리초 단위 딜레이
+    delay_int_count(ms * freq);
+   0:	4b05      	ldr	r3, [pc, #20]	(18 <delay_ms+0x18>)
+   2:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
+   6:	681b      	ldr	r3, [r3, #0]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:21
+    delay_int_count(us * freq);
+}
+
+// 밀리초(ms) 단위 딜레이 함수
+void delay_ms(uint32_t ms)
+{
+   8:	b510      	push	{r4, lr}
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:26
+    // 시스템 클럭 주파수를 얻어옴 (예: 16MHz)
+    uint32_t freq = SystemCoreClock / 1000;
+    
+    // 밀리초 단위 딜레이
+    delay_int_count(ms * freq);
+   a:	fbb3 f3f2 	udiv	r3, r3, r2
+   e:	4358      	muls	r0, r3
+  10:	f7ff fffe 	bl	0 <delay_ms>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:27
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	00000000 	.word	0x00000000
+Disassembly of section .text.delay_s:
+
+00000000 <delay_s>:
+delay_s():
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:36
+{
+    // 시스템 클럭 주파수를 얻어옴 (예: 16MHz)
+    uint32_t freq = SystemCoreClock;
+    
+    // 초 단위 딜레이
+    delay_int_count(s * freq);
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <delay_s+0x10>)
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:31
+    delay_int_count(ms * freq);
+}
+
+// 초(s) 단위 딜레이 함수
+void delay_s(uint32_t s)
+{
+   2:	b510      	push	{r4, lr}
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:36
+    // 시스템 클럭 주파수를 얻어옴 (예: 16MHz)
+    uint32_t freq = SystemCoreClock;
+    
+    // 초 단위 딜레이
+    delay_int_count(s * freq);
+   4:	681b      	ldr	r3, [r3, #0]
+   6:	4358      	muls	r0, r3
+   8:	f7ff fffe 	bl	0 <delay_s>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/delay.c:37
+   c:	bd10      	pop	{r4, pc}
+   e:	46c0      	nop			(mov r8, r8)
+  10:	00000000 	.word	0x00000000

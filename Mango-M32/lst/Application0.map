@@ -3,9 +3,9 @@ Archive member included because of file (symbol)
 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
                               (_write)
 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
-                              C:\ride_project\FlollowtheSunshine\obj\main.o (printf)
+                              C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o (printf)
 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
-                              C:\ride_project\FlollowtheSunshine\obj\main.o (puts)
+                              C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o (puts)
 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
                               C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o) (vfiprintf)
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
@@ -33,476 +33,478 @@ Allocating common symbols
 Common symbol       size              file
 
 TIM_TimeBaseStructure_PWM
-                    0xa               C:\ride_project\FlollowtheSunshine\obj\main.o
+                    0xa               C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
 TIM_OCInitStructure_PWM
-                    0x10              C:\ride_project\FlollowtheSunshine\obj\main.o
+                    0x10              C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
 
 Discarded input sections
 
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .text.delay_us
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .text.delay_s  0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
  .text.SystemCoreClockUpdate
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .text.NVIC_PriorityGroupConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .text.NVIC_Init
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .text.NVIC_SetVectorTable
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .text.NVIC_SystemLPConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .text.SysTick_CLKSourceConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_SetLatency
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_HalfCycleAccessCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_PrefetchBufferCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_Unlock
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_UnlockBank1
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_Lock
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_LockBank1
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetUserOptionByte
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetWriteProtectionOptionByte
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetReadOutProtectionStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetPrefetchBufferStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ITConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetFlagStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ClearFlag
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_GetBank1Status
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_WaitForLastOperation
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_UserOptionByteConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ReadOutProtection
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_EnableWriteProtection
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ProgramOptionByteData
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ProgramHalfWord
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ProgramWord
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_EraseOptionBytes
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_EraseAllPages
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_ErasePage
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_WaitForLastBank1Operation
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .text.FLASH_EraseAllBank1Pages
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC4Init
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_BDTRConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_TimeBaseStructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OCStructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ICStructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_BDTRStructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_CtrlPWMOutputs
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ITConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GenerateEvent
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_DMAConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_DMACmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_InternalClockConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ETRConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ETRClockMode2Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ETRClockMode1Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_PrescalerConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_CounterModeConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectInputTrigger
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ITRxExternalClockConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_EncoderInterfaceConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ForcedOC1Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ForcedOC2Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ForcedOC3Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ForcedOC4Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ARRPreloadConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectCOM
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectCCDMA
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_CCPreloadControl
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC2PreloadConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC3PreloadConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC4PreloadConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC1FastConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC2FastConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC3FastConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC4FastConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ClearOC1Ref
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ClearOC2Ref
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ClearOC3Ref
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ClearOC4Ref
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC1PolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC1NPolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC2PolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC2NPolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC3PolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC3NPolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_OC4PolarityConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_CCxCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_CCxNCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectOCxM
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_UpdateDisableConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_UpdateRequestConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectHallSensor
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectOnePulseMode
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectOutputTrigger
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectSlaveMode
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SelectMasterSlaveMode
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetCounter
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetAutoreload
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetCompare1
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetCompare2
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetCompare3
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetCompare4
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetIC1Prescaler
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetIC2Prescaler
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetIC3Prescaler
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetIC4Prescaler
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_SetClockDivision
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetCapture1
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetCapture2
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetCapture3
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetCapture4
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetCounter
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetPrescaler
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetFlagStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ClearFlag
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_GetITStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TI1_Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TI2_Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_TIxExternalClockConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_PWMIConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_ICInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .text.TIM_DeInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_StructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_ReadInputDataBit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_ReadInputData
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_ReadOutputDataBit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_ReadOutputData
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_Write
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_PinLockConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_EventOutputConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_EventOutputCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_PinRemapConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_EXTILineConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_ETH_MediaInterfaceConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_AFIODeInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .text.GPIO_DeInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_StructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_ClockInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_ClockStructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_ITConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_DMACmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_SetAddress
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_WakeUpConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_ReceiverWakeUpCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_LINBreakDetectLengthConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_LINCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_SendBreak
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_SetGuardTime
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_SetPrescaler
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_SmartCardCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_SmartCardNACKCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_HalfDuplexCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_OverSampling8Cmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_OneBitMethodCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_IrDAConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_IrDACmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_ClearFlag
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_GetITStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_ClearITPendingBit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .text.USART_DeInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_StructInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_DMACmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_ITConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_GetSoftwareStartConvStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_DiscModeChannelCountConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_DiscModeCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_ExternalTrigConvCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_GetDualModeConversionValue
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_AutoInjectedConvCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_InjectedDiscModeCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_ExternalTrigInjectedConvConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_ExternalTrigInjectedConvCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_SoftwareStartInjectedConvCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_GetSoftwareStartInjectedConvCmdStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_InjectedChannelConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_InjectedSequencerLengthConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_SetInjectedOffset
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_GetInjectedConversionValue
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_AnalogWatchdogCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_AnalogWatchdogThresholdsConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_AnalogWatchdogSingleChannelConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_TempSensorVrefintCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_ClearFlag
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_GetITStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_ClearITPendingBit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .text.ADC_DeInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_DeInit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_HSEConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_AdjustHSICalibrationValue
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_HSICmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_PLLConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_PLLCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_SYSCLKConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_GetSYSCLKSource
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_HCLKConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_PCLK1Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_PCLK2Config
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_ITConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_USBCLKConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_ADCCLKConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_LSEConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_LSICmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_RTCCLKConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_RTCCLKCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_AHBPeriphClockCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_APB2PeriphResetCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_APB1PeriphResetCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_BackupResetCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_ClockSecuritySystemCmd
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_MCOConfig
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_GetFlagStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_WaitForHSEStartUp
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_ClearFlag
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_GetITStatus
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .text.RCC_ClearITPendingBit
-                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
- .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
- .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+                0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .text          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+ .data          0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+ .bss           0x00000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
  .text          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .data          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .bss           0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
@@ -623,22 +625,22 @@ EXTMEMB3         0x00000000         0x00000000         xr
 
 Linker script and memory map
 
-LOAD C:\ride_project\FlollowtheSunshine\obj\main.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\delay.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\misc.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\usart3.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\motor_control.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
-LOAD C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+LOAD C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 START GROUP
 LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\STM32x_io_putchar_thumb.a
 LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib
@@ -800,7 +802,7 @@ END GROUP
 .isr_vector     0x08000000      0x10c
                 0x08000000                . = ALIGN (0x4)
  *(.isr_vector)
- .isr_vector    0x08000000      0x10c C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
+ .isr_vector    0x08000000      0x10c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
@@ -820,7 +822,7 @@ END GROUP
  *(.flashtext)
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x0800010c     0x1da8
+.text           0x0800010c     0x1d70
                 0x0800010c                . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x20 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
@@ -853,307 +855,310 @@ END GROUP
                 0x08000e64                __aeabi_ldiv0
                 0x08000e64                __aeabi_idiv0
  *(.text.*)
- .text.main     0x08000e68      0x1d4 C:\ride_project\FlollowtheSunshine\obj\main.o
+ .text.main     0x08000e68      0x1a0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
                 0x08000e68                main
- .text.delay_m  0x0800103c       0x10 C:\ride_project\FlollowtheSunshine\obj\delay.o
-                0x0800103c                delay_m
+ .text.delay_int_count
+                0x08001008       0x18 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .text.delay_ms
+                0x08001020       0x1c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+                0x08001020                delay_ms
  .text.NMI_Handler
-                0x0800104c        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x0800104c                NMI_Handler
+                0x0800103c        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x0800103c                NMI_Handler
  .text.HardFault_Handler
-                0x08001050        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001050                HardFault_Handler
+                0x08001040        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001040                HardFault_Handler
  .text.MemManage_Handler
-                0x08001054        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001054                MemManage_Handler
+                0x08001044        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001044                MemManage_Handler
  .text.BusFault_Handler
-                0x08001058        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001058                BusFault_Handler
+                0x08001048        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001048                BusFault_Handler
  .text.UsageFault_Handler
-                0x0800105c        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x0800105c                UsageFault_Handler
+                0x0800104c        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x0800104c                UsageFault_Handler
  .text.DebugMon_Handler
-                0x08001060        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001060                DebugMon_Handler
+                0x08001050        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001050                DebugMon_Handler
  .text.SVC_Handler
-                0x08001064        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001064                SVC_Handler
+                0x08001054        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001054                SVC_Handler
  .text.PendSV_Handler
-                0x08001068        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001068                PendSV_Handler
+                0x08001058        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001058                PendSV_Handler
  .text.SysTick_Handler
-                0x0800106c        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x0800106c                SysTick_Handler
+                0x0800105c        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x0800105c                SysTick_Handler
  .text.TIM3_IRQHandler
-                0x08001070       0x64 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x08001070                TIM3_IRQHandler
+                0x08001060       0x64 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x08001060                TIM3_IRQHandler
  .text.TIM2_IRQHandler
-                0x080010d4       0x54 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x080010d4                TIM2_IRQHandler
+                0x080010c4       0x54 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x080010c4                TIM2_IRQHandler
  .text.SystemInit
-                0x08001128      0x100 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
-                0x08001128                SystemInit
+                0x08001118      0x100 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+                0x08001118                SystemInit
  .text.Reset_Handler
-                0x08001228       0x44 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
-                0x08001228                Reset_Handler
+                0x08001218       0x44 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+                0x08001218                Reset_Handler
  .text.Default_Handler
-                0x0800126c        0x2 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
-                0x0800126c                EXTI2_IRQHandler
-                0x0800126c                TIM1_CC_IRQHandler
-                0x0800126c                PVD_IRQHandler
-                0x0800126c                EXTI3_IRQHandler
-                0x0800126c                EXTI0_IRQHandler
-                0x0800126c                I2C2_EV_IRQHandler
-                0x0800126c                ADC1_2_IRQHandler
-                0x0800126c                SPI1_IRQHandler
-                0x0800126c                TAMPER_IRQHandler
-                0x0800126c                DMA1_Channel4_IRQHandler
-                0x0800126c                USART3_IRQHandler
-                0x0800126c                RTC_IRQHandler
-                0x0800126c                DMA1_Channel7_IRQHandler
-                0x0800126c                CAN1_RX1_IRQHandler
-                0x0800126c                TIM4_IRQHandler
-                0x0800126c                I2C1_EV_IRQHandler
-                0x0800126c                DMA1_Channel6_IRQHandler
-                0x0800126c                RCC_IRQHandler
-                0x0800126c                TIM1_TRG_COM_IRQHandler
-                0x0800126c                DMA1_Channel1_IRQHandler
-                0x0800126c                Default_Handler
-                0x0800126c                EXTI15_10_IRQHandler
-                0x0800126c                EXTI9_5_IRQHandler
-                0x0800126c                SPI2_IRQHandler
-                0x0800126c                DMA1_Channel5_IRQHandler
-                0x0800126c                EXTI4_IRQHandler
-                0x0800126c                USB_LP_CAN1_RX0_IRQHandler
-                0x0800126c                USB_HP_CAN1_TX_IRQHandler
-                0x0800126c                DMA1_Channel3_IRQHandler
-                0x0800126c                TIM1_UP_IRQHandler
-                0x0800126c                WWDG_IRQHandler
-                0x0800126c                TIM1_BRK_IRQHandler
-                0x0800126c                EXTI1_IRQHandler
-                0x0800126c                RTCAlarm_IRQHandler
-                0x0800126c                USART2_IRQHandler
-                0x0800126c                I2C2_ER_IRQHandler
-                0x0800126c                DMA1_Channel2_IRQHandler
-                0x0800126c                CAN1_SCE_IRQHandler
-                0x0800126c                FLASH_IRQHandler
-                0x0800126c                USART1_IRQHandler
-                0x0800126c                I2C1_ER_IRQHandler
-                0x0800126c                USBWakeUp_IRQHandler
- *fill*         0x0800126e        0x2 00
+                0x0800125c        0x2 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+                0x0800125c                EXTI2_IRQHandler
+                0x0800125c                TIM1_CC_IRQHandler
+                0x0800125c                PVD_IRQHandler
+                0x0800125c                EXTI3_IRQHandler
+                0x0800125c                EXTI0_IRQHandler
+                0x0800125c                I2C2_EV_IRQHandler
+                0x0800125c                ADC1_2_IRQHandler
+                0x0800125c                SPI1_IRQHandler
+                0x0800125c                TAMPER_IRQHandler
+                0x0800125c                DMA1_Channel4_IRQHandler
+                0x0800125c                USART3_IRQHandler
+                0x0800125c                RTC_IRQHandler
+                0x0800125c                DMA1_Channel7_IRQHandler
+                0x0800125c                CAN1_RX1_IRQHandler
+                0x0800125c                TIM4_IRQHandler
+                0x0800125c                I2C1_EV_IRQHandler
+                0x0800125c                DMA1_Channel6_IRQHandler
+                0x0800125c                RCC_IRQHandler
+                0x0800125c                TIM1_TRG_COM_IRQHandler
+                0x0800125c                DMA1_Channel1_IRQHandler
+                0x0800125c                Default_Handler
+                0x0800125c                EXTI15_10_IRQHandler
+                0x0800125c                EXTI9_5_IRQHandler
+                0x0800125c                SPI2_IRQHandler
+                0x0800125c                DMA1_Channel5_IRQHandler
+                0x0800125c                EXTI4_IRQHandler
+                0x0800125c                USB_LP_CAN1_RX0_IRQHandler
+                0x0800125c                USB_HP_CAN1_TX_IRQHandler
+                0x0800125c                DMA1_Channel3_IRQHandler
+                0x0800125c                TIM1_UP_IRQHandler
+                0x0800125c                WWDG_IRQHandler
+                0x0800125c                TIM1_BRK_IRQHandler
+                0x0800125c                EXTI1_IRQHandler
+                0x0800125c                RTCAlarm_IRQHandler
+                0x0800125c                USART2_IRQHandler
+                0x0800125c                I2C2_ER_IRQHandler
+                0x0800125c                DMA1_Channel2_IRQHandler
+                0x0800125c                CAN1_SCE_IRQHandler
+                0x0800125c                FLASH_IRQHandler
+                0x0800125c                USART1_IRQHandler
+                0x0800125c                I2C1_ER_IRQHandler
+                0x0800125c                USBWakeUp_IRQHandler
+ *fill*         0x0800125e        0x2 00
  .text.TIM_TimeBaseInit
-                0x08001270       0xa0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x08001270                TIM_TimeBaseInit
+                0x08001260       0xa0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x08001260                TIM_TimeBaseInit
  .text.TIM_OC1Init
-                0x08001310       0xa0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x08001310                TIM_OC1Init
+                0x08001300       0xa0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x08001300                TIM_OC1Init
  .text.TIM_OC2Init
-                0x080013b0       0x9c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x080013b0                TIM_OC2Init
+                0x080013a0       0x9c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x080013a0                TIM_OC2Init
  .text.TIM_OC3Init
-                0x0800144c       0x98 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x0800144c                TIM_OC3Init
- .text.TIM_Cmd  0x080014e4       0x1c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x080014e4                TIM_Cmd
+                0x0800143c       0x98 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x0800143c                TIM_OC3Init
+ .text.TIM_Cmd  0x080014d4       0x1c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x080014d4                TIM_Cmd
  .text.TIM_OC1PreloadConfig
-                0x08001500       0x10 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x08001500                TIM_OC1PreloadConfig
+                0x080014f0       0x10 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x080014f0                TIM_OC1PreloadConfig
  .text.TIM_ClearITPendingBit
-                0x08001510        0x8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                0x08001510                TIM_ClearITPendingBit
+                0x08001500        0x8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                0x08001500                TIM_ClearITPendingBit
  .text.GPIO_Init
-                0x08001518       0xa8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
-                0x08001518                GPIO_Init
+                0x08001508       0xa8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+                0x08001508                GPIO_Init
  .text.GPIO_SetBits
-                0x080015c0        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
-                0x080015c0                GPIO_SetBits
+                0x080015b0        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+                0x080015b0                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x080015c4        0x4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
-                0x080015c4                GPIO_ResetBits
+                0x080015b4        0x4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+                0x080015b4                GPIO_ResetBits
  .text.GPIO_WriteBit
-                0x080015c8        0xc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
-                0x080015c8                GPIO_WriteBit
+                0x080015b8        0xc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+                0x080015b8                GPIO_WriteBit
  .text.USART_Cmd
-                0x080015d4       0x1c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-                0x080015d4                USART_Cmd
+                0x080015c4       0x1c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+                0x080015c4                USART_Cmd
  .text.USART_SendData
-                0x080015f0        0x8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-                0x080015f0                USART_SendData
+                0x080015e0        0x8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+                0x080015e0                USART_SendData
  .text.USART_ReceiveData
-                0x080015f8        0x8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-                0x080015f8                USART_ReceiveData
+                0x080015e8        0x8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+                0x080015e8                USART_ReceiveData
  .text.USART_GetFlagStatus
-                0x08001600        0xc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-                0x08001600                USART_GetFlagStatus
+                0x080015f0        0xc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+                0x080015f0                USART_GetFlagStatus
  .text.USART_Init
-                0x0800160c       0xb4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-                0x0800160c                USART_Init
+                0x080015fc       0xb4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+                0x080015fc                USART_Init
  .text.ADC_Init
-                0x080016c0       0x48 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x080016c0                ADC_Init
- .text.ADC_Cmd  0x08001708       0x14 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x08001708                ADC_Cmd
+                0x080016b0       0x48 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x080016b0                ADC_Init
+ .text.ADC_Cmd  0x080016f8       0x14 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x080016f8                ADC_Cmd
  .text.ADC_ResetCalibration
-                0x0800171c        0xc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x0800171c                ADC_ResetCalibration
+                0x0800170c        0xc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x0800170c                ADC_ResetCalibration
  .text.ADC_GetResetCalibrationStatus
-                0x08001728        0x8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x08001728                ADC_GetResetCalibrationStatus
+                0x08001718        0x8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x08001718                ADC_GetResetCalibrationStatus
  .text.ADC_StartCalibration
-                0x08001730        0xc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x08001730                ADC_StartCalibration
+                0x08001720        0xc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x08001720                ADC_StartCalibration
  .text.ADC_GetCalibrationStatus
-                0x0800173c        0x8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x0800173c                ADC_GetCalibrationStatus
+                0x0800172c        0x8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x0800172c                ADC_GetCalibrationStatus
  .text.ADC_SoftwareStartConvCmd
-                0x08001744       0x14 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x08001744                ADC_SoftwareStartConvCmd
+                0x08001734       0x14 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x08001734                ADC_SoftwareStartConvCmd
  .text.ADC_RegularChannelConfig
-                0x08001758       0x9c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x08001758                ADC_RegularChannelConfig
+                0x08001748       0x9c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x08001748                ADC_RegularChannelConfig
  .text.ADC_GetConversionValue
-                0x080017f4        0x8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x080017f4                ADC_GetConversionValue
+                0x080017e4        0x8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x080017e4                ADC_GetConversionValue
  .text.ADC_GetFlagStatus
-                0x080017fc        0xc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                0x080017fc                ADC_GetFlagStatus
+                0x080017ec        0xc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                0x080017ec                ADC_GetFlagStatus
  .text.RCC_GetClocksFreq
-                0x08001808       0x98 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
-                0x08001808                RCC_GetClocksFreq
+                0x080017f8       0x98 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+                0x080017f8                RCC_GetClocksFreq
  .text.RCC_APB2PeriphClockCmd
-                0x080018a0       0x1c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
-                0x080018a0                RCC_APB2PeriphClockCmd
+                0x08001890       0x1c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+                0x08001890                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x080018bc       0x1c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
-                0x080018bc                RCC_APB1PeriphClockCmd
+                0x080018ac       0x1c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+                0x080018ac                RCC_APB1PeriphClockCmd
  .text.__io_putchar
-                0x080018d8       0x20 C:\ride_project\FlollowtheSunshine\obj\usart3.o
-                0x080018d8                __io_putchar
+                0x080018c8       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+                0x080018c8                __io_putchar
  .text.initUSART3
-                0x080018f8       0x80 C:\ride_project\FlollowtheSunshine\obj\usart3.o
-                0x080018f8                initUSART3
+                0x080018e8       0x80 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+                0x080018e8                initUSART3
  .text.toggleMotorDirection
-                0x08001978       0x20 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
-                0x08001978                toggleMotorDirection
+                0x08001968       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+                0x08001968                toggleMotorDirection
  .text.setMotorSpeedByIndex
-                0x08001998       0x38 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
-                0x08001998                setMotorSpeedByIndex
+                0x08001988       0x38 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+                0x08001988                setMotorSpeedByIndex
  .text.initMotor
-                0x080019d0       0xfc C:\ride_project\FlollowtheSunshine\obj\motor_control.o
-                0x080019d0                initMotor
+                0x080019c0       0xfc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+                0x080019c0                initMotor
  .text.readSoilMoistureValue
-                0x08001acc       0x2c C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
-                0x08001acc                readSoilMoistureValue
+                0x08001abc       0x2c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+                0x08001abc                readSoilMoistureValue
  .text.initSoilMoistureSensor
-                0x08001af8       0xb4 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
-                0x08001af8                initSoilMoistureSensor
+                0x08001ae8       0xb4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+                0x08001ae8                initSoilMoistureSensor
  .text.readCDSValue
-                0x08001bac       0x2c C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
-                0x08001bac                readCDSValue
+                0x08001b9c       0x2c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+                0x08001b9c                readCDSValue
  .text.initCDSSensor
-                0x08001bd8       0xa8 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
-                0x08001bd8                initCDSSensor
- .text._write   0x08001c80        0x4 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
-                0x08001c80                _write
+                0x08001bc8       0xa8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+                0x08001bc8                initCDSSensor
+ .text._write   0x08001c70        0x4 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+                0x08001c70                _write
  *(.rodata)
- .rodata        0x08001c84      0x184 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .rodata        0x08001c74      0x184 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
  *(.rodata*)
  .rodata.str1.1
-                0x08001e08       0x3a C:\ride_project\FlollowtheSunshine\obj\main.o
- *fill*         0x08001e42        0x2 00
+                0x08001df8       0x12 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ *fill*         0x08001e0a        0x2 00
  .rodata.str1.4
-                0x08001e44       0x4b C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+                0x08001e0c       0x4b C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
                                  0x4c (size before relaxing)
- *fill*         0x08001e8f        0x1 00
+ *fill*         0x08001e57        0x1 00
  .rodata.str1.4
-                0x08001e90        0x2 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x08001e58        0x2 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
- *fill*         0x08001e92        0x2 00
+ *fill*         0x08001e5a        0x2 00
  .rodata.str1.4
-                0x08001e94       0x20 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+                0x08001e5c       0x20 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
  *(.glue_7)
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .glue_7        0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
- .glue_7        0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
- .glue_7        0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
- .glue_7        0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
- .glue_7        0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
- .glue_7        0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .glue_7        0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+ .glue_7        0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .glue_7        0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .glue_7        0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .glue_7        0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .glue_7        0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
  *(.glue_7t)
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .glue_7t       0x08001eb4        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
- .glue_7t       0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
- .glue_7t       0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
- .glue_7t       0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
- .glue_7t       0x08001eb4        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
- .glue_7t       0x08001eb4        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
-                0x08001eb4                . = ALIGN (0x4)
-                0x08001eb4                _etext = .
-                0x08001eb4                _sidata = _etext
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .glue_7t       0x08001e7c        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+ .glue_7t       0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .glue_7t       0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .glue_7t       0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .glue_7t       0x08001e7c        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .glue_7t       0x08001e7c        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+                0x08001e7c                . = ALIGN (0x4)
+                0x08001e7c                _etext = .
+                0x08001e7c                _sidata = _etext
 
 .vfp11_veneer   0x20000000        0x0
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .vfp11_veneer  0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
  .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
  .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
@@ -1162,37 +1167,37 @@ END GROUP
 .janus_2cc_veneer
                 0x20000000        0x0
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
  .janus_2cc_veneer
-                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+                0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
  .janus_2cc_veneer
                 0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .janus_2cc_veneer
@@ -1203,22 +1208,22 @@ END GROUP
                 0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
 
 .v4_bx          0x20000000        0x0
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\main.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .v4_bx         0x20000000        0x0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
  .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
  .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
@@ -1235,51 +1240,54 @@ END GROUP
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _e_endflash = .
 
-.data           0x20000000      0x118 load address 0x08001eb4
+.data           0x20000000      0x12c load address 0x08001e7c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
                 0x20000000                _data = .
  *(.data)
- .data          0x20000000       0x14 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .data          0x20000014       0xf4 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x20000014                _impure_ptr
- .data          0x20000108       0x10 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
-                0x20000108                __mb_cur_max
-                0x2000010c                __lc_ctype
+ .data          0x20000000       0x14 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+                0x20000000                SystemCoreClock
+                0x20000004                AHBPrescTable
+ .data          0x20000014       0x14 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .data          0x20000028       0xf4 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20000028                _impure_ptr
+ .data          0x2000011c       0x10 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x2000011c                __mb_cur_max
+                0x20000120                __lc_ctype
  *(.data.*)
  *(.RAMtext)
-                0x20000118                . = ALIGN (0x4)
-                0x20000118                _edata = .
-                0x08001fcc                _eidata = ((_sidata + _edata) - _sdata)
+                0x2000012c                . = ALIGN (0x4)
+                0x2000012c                _edata = .
+                0x08001fa8                _eidata = ((_sidata + _edata) - _sdata)
                 0x08020000                _lastdataromaddress = 0x8020000
                 0x00000000                toobig = (_eidata > _lastdataromaddress)?!!!!!!!!! FLASH IS FULL !!!!!!!!!:0x0
 
-.bss            0x20000118       0x28 load address 0x08001fcc
-                0x20000118                . = ALIGN (0x4)
-                0x20000118                _sbss = .
-                0x20000118                _bss = .
+.bss            0x2000012c       0x28 load address 0x08001fa8
+                0x2000012c                . = ALIGN (0x4)
+                0x2000012c                _sbss = .
+                0x2000012c                _bss = .
  *(.bss)
- .bss           0x20000118        0xc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                0x20000118                count_2
-                0x2000011c                count
-                0x20000120                capture
+ .bss           0x2000012c        0xc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                0x2000012c                count_2
+                0x20000130                count
+                0x20000134                capture
  *(COMMON)
- COMMON         0x20000124       0x1a C:\ride_project\FlollowtheSunshine\obj\main.o
-                0x20000124                TIM_TimeBaseStructure_PWM
-                0x2000012e                TIM_OCInitStructure_PWM
-                0x20000140                . = ALIGN (0x4)
- *fill*         0x2000013e        0x2 00
-                0x20000140                _ebss = .
-                0x20000140                PROVIDE (end, _ebss)
-                0x20000140                PROVIDE (_end, _ebss)
+ COMMON         0x20000138       0x1a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+                0x20000138                TIM_TimeBaseStructure_PWM
+                0x20000142                TIM_OCInitStructure_PWM
+                0x20000154                . = ALIGN (0x4)
+ *fill*         0x20000152        0x2 00
+                0x20000154                _ebss = .
+                0x20000154                PROVIDE (end, _ebss)
+                0x20000154                PROVIDE (_end, _ebss)
 
-._usrstack      0x20000140      0x100 load address 0x08001ff4
-                0x20000140                . = ALIGN (0x4)
-                0x20000140                _susrstack = .
-                0x20000240                . = (. + _Minimum_Stack_Size)
- *fill*         0x20000140      0x100 00
-                0x20000240                . = ALIGN (0x4)
-                0x20000240                _eusrstack = .
+._usrstack      0x20000154      0x100 load address 0x08001fd0
+                0x20000154                . = ALIGN (0x4)
+                0x20000154                _susrstack = .
+                0x20000254                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20000154      0x100 00
+                0x20000254                . = ALIGN (0x4)
+                0x20000254                _eusrstack = .
 
 .b1text
  *(.b1text)
@@ -1305,8 +1313,8 @@ END GROUP
  *(.eb3text)
  *(.eb3rodata)
  *(.eb3rodata*)
-                0x20000240                __exidx_start = .
-                0x20000240                __exidx_end = .
+                0x20000254                __exidx_start = .
+                0x20000254                __exidx_end = .
 
 /DISCARD/
  libc.a(*)
@@ -1333,21 +1341,21 @@ END GROUP
 
 .comment        0x00000000      0x387
  *(.comment)
- .comment       0x00000000       0x2a C:\ride_project\FlollowtheSunshine\obj\main.o
- .comment       0x0000002a       0x2a C:\ride_project\FlollowtheSunshine\obj\delay.o
- .comment       0x00000054       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .comment       0x0000007e       0x2a C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .comment       0x000000a8       0x2a C:\ride_project\FlollowtheSunshine\obj\misc.o
- .comment       0x000000d2       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .comment       0x000000fc       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .comment       0x00000126       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .comment       0x00000150       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .comment       0x0000017a       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .comment       0x000001a4       0x2a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .comment       0x000001ce       0x2a C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .comment       0x000001f8       0x2a C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .comment       0x00000222       0x2a C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .comment       0x0000024c       0x2a C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .comment       0x00000000       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .comment       0x0000002a       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .comment       0x00000054       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .comment       0x0000007e       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .comment       0x000000a8       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .comment       0x000000d2       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .comment       0x000000fc       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .comment       0x00000126       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .comment       0x00000150       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .comment       0x0000017a       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .comment       0x000001a4       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .comment       0x000001ce       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .comment       0x000001f8       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .comment       0x00000222       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .comment       0x0000024c       0x2a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
  .comment       0x00000276       0x2a C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .comment       0x000002a0       0x4d C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
  .comment       0x000002ed       0x4d C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
@@ -1365,194 +1373,195 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x990
+.debug_aranges  0x00000000      0x9a8
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 C:\ride_project\FlollowtheSunshine\obj\main.o
+                0x00000000       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
  .debug_aranges
-                0x00000020       0x20 C:\ride_project\FlollowtheSunshine\obj\delay.o
+                0x00000020       0x38 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
  .debug_aranges
-                0x00000040       0x70 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
+                0x00000058       0x70 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
  .debug_aranges
-                0x000000b0       0x28 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
+                0x000000c8       0x28 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
  .debug_aranges
-                0x000000d8       0x40 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x000000f0       0x40 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .debug_aranges
-                0x00000118       0xf8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000130       0xf8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .debug_aranges
-                0x00000210      0x2e0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000228      0x2e0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .debug_aranges
-                0x000004f0       0xa8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000508       0xa8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .debug_aranges
-                0x00000598      0x100 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x000005b0      0x100 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .debug_aranges
-                0x00000698      0x138 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x000006b0      0x138 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .debug_aranges
-                0x000007d0      0x118 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x000007e8      0x118 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .debug_aranges
-                0x000008e8       0x28 C:\ride_project\FlollowtheSunshine\obj\usart3.o
+                0x00000900       0x28 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
  .debug_aranges
-                0x00000910       0x30 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
+                0x00000928       0x30 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
  .debug_aranges
-                0x00000940       0x28 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
+                0x00000958       0x28 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
  .debug_aranges
-                0x00000968       0x28 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+                0x00000980       0x28 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
 .debug_pubnames
-                0x00000000     0x193f
+                0x00000000     0x1959
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x55 C:\ride_project\FlollowtheSunshine\obj\main.o
+                0x00000000       0x55 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
  .debug_pubnames
-                0x00000055       0x1e C:\ride_project\FlollowtheSunshine\obj\delay.o
+                0x00000055       0x38 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
  .debug_pubnames
-                0x00000073      0x110 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
+                0x0000008d      0x110 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
  .debug_pubnames
-                0x00000183       0x61 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
+                0x0000019d       0x61 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
  .debug_pubnames
-                0x000001e4       0x89 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x000001fe       0x89 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .debug_pubnames
-                0x0000026d      0x2f2 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000287      0x2f2 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .debug_pubnames
-                0x0000055f      0x7b0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000579      0x7b0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .debug_pubnames
-                0x00000d0f      0x19d C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000d29      0x19d C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .debug_pubnames
-                0x00000eac      0x294 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x00000ec6      0x294 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .debug_pubnames
-                0x00001140      0x401 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x0000115a      0x401 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .debug_pubnames
-                0x00001541      0x2c4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x0000155b      0x2c4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .debug_pubnames
-                0x00001805       0x32 C:\ride_project\FlollowtheSunshine\obj\usart3.o
+                0x0000181f       0x32 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
  .debug_pubnames
-                0x00001837       0x8c C:\ride_project\FlollowtheSunshine\obj\motor_control.o
+                0x00001851       0x8c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
  .debug_pubnames
-                0x000018c3       0x47 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
+                0x000018dd       0x47 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
  .debug_pubnames
-                0x0000190a       0x35 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+                0x00001924       0x35 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
-.debug_info     0x00000000     0x769d
+.debug_info     0x00000000     0x774b
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x8f5 C:\ride_project\FlollowtheSunshine\obj\main.o
- .debug_info    0x000008f5       0xcf C:\ride_project\FlollowtheSunshine\obj\delay.o
- .debug_info    0x000009c4      0x481 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .debug_info    0x00000e45      0x462 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .debug_info    0x000012a7      0x507 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .debug_info    0x000017ae      0x7f3 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .debug_info    0x00001fa1     0x1da6 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .debug_info    0x00003d47      0x6cd C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .debug_info    0x00004414      0x9ff C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .debug_info    0x00004e13      0xb92 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .debug_info    0x000059a5      0x888 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .debug_info    0x0000622d      0x43c C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .debug_info    0x00006669      0x6e2 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .debug_info    0x00006d4b      0x4c7 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .debug_info    0x00007212      0x48b C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .debug_info    0x00000000      0x913 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .debug_info    0x00000913      0x15f C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .debug_info    0x00000a72      0x481 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .debug_info    0x00000ef3      0x462 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .debug_info    0x00001355      0x507 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .debug_info    0x0000185c      0x7f3 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .debug_info    0x0000204f     0x1da6 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .debug_info    0x00003df5      0x6cd C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .debug_info    0x000044c2      0x9ff C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .debug_info    0x00004ec1      0xb92 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .debug_info    0x00005a53      0x888 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .debug_info    0x000062db      0x43c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .debug_info    0x00006717      0x6e2 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .debug_info    0x00006df9      0x4c7 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .debug_info    0x000072c0      0x48b C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
-.debug_abbrev   0x00000000     0x1657
+.debug_abbrev   0x00000000     0x167f
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x124 C:\ride_project\FlollowtheSunshine\obj\main.o
- .debug_abbrev  0x00000124       0x98 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .debug_abbrev  0x000001bc       0xbe C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .debug_abbrev  0x0000027a      0x198 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .debug_abbrev  0x00000412      0x15a C:\ride_project\FlollowtheSunshine\obj\misc.o
- .debug_abbrev  0x0000056c      0x1af C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .debug_abbrev  0x0000071b      0x24e C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .debug_abbrev  0x00000969      0x20b C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .debug_abbrev  0x00000b74      0x1ce C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .debug_abbrev  0x00000d42      0x1f4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .debug_abbrev  0x00000f36      0x1f5 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .debug_abbrev  0x0000112b      0x14d C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .debug_abbrev  0x00001278      0x12d C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .debug_abbrev  0x000013a5      0x15a C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .debug_abbrev  0x000014ff      0x158 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .debug_abbrev  0x00000000      0x124 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .debug_abbrev  0x00000124       0xc0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .debug_abbrev  0x000001e4       0xbe C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .debug_abbrev  0x000002a2      0x198 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .debug_abbrev  0x0000043a      0x15a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .debug_abbrev  0x00000594      0x1af C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .debug_abbrev  0x00000743      0x24e C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .debug_abbrev  0x00000991      0x20b C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .debug_abbrev  0x00000b9c      0x1ce C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .debug_abbrev  0x00000d6a      0x1f4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .debug_abbrev  0x00000f5e      0x1f5 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .debug_abbrev  0x00001153      0x14d C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .debug_abbrev  0x000012a0      0x12d C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .debug_abbrev  0x000013cd      0x15a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .debug_abbrev  0x00001527      0x158 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
-.debug_line     0x00000000     0x40a4
+.debug_line     0x00000000     0x4461
  *(.debug_line)
- .debug_line    0x00000000      0x34c C:\ride_project\FlollowtheSunshine\obj\main.o
- .debug_line    0x0000034c       0xe0 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .debug_line    0x0000042c      0x30c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .debug_line    0x00000738      0x2ae C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .debug_line    0x000009e6      0x321 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .debug_line    0x00000d07      0x5c4 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .debug_line    0x000012cb      0xb9b C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .debug_line    0x00001e66      0x497 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .debug_line    0x000022fd      0x5ac C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .debug_line    0x000028a9      0x61a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .debug_line    0x00002ec3      0x578 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .debug_line    0x0000343b      0x2ff C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .debug_line    0x0000373a      0x33d C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .debug_line    0x00003a77      0x326 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .debug_line    0x00003d9d      0x307 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .debug_line    0x00000000      0x37e C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .debug_line    0x0000037e      0x24f C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .debug_line    0x000005cd      0x32a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .debug_line    0x000008f7      0x2cc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .debug_line    0x00000bc3      0x349 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .debug_line    0x00000f0c      0x5ec C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .debug_line    0x000014f8      0xbc3 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .debug_line    0x000020bb      0x4bf C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .debug_line    0x0000257a      0x5d4 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .debug_line    0x00002b4e      0x642 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .debug_line    0x00003190      0x5a0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .debug_line    0x00003730      0x331 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .debug_line    0x00003a61      0x36f C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .debug_line    0x00003dd0      0x358 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .debug_line    0x00004128      0x339 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
-.debug_frame    0x00000000     0x13bc
+.debug_frame    0x00000000     0x140c
  *(.debug_frame)
- .debug_frame   0x00000000       0x30 C:\ride_project\FlollowtheSunshine\obj\main.o
- .debug_frame   0x00000030       0x20 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .debug_frame   0x00000050       0xd0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .debug_frame   0x00000120       0x34 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .debug_frame   0x00000154       0x60 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .debug_frame   0x000001b4      0x254 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .debug_frame   0x00000408      0x664 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .debug_frame   0x00000a6c      0x16c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .debug_frame   0x00000bd8      0x204 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .debug_frame   0x00000ddc      0x280 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .debug_frame   0x0000105c      0x224 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .debug_frame   0x00001280       0x48 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .debug_frame   0x000012c8       0x60 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .debug_frame   0x00001328       0x4c C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .debug_frame   0x00001374       0x48 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .debug_frame   0x00000000       0x34 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .debug_frame   0x00000034       0x6c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .debug_frame   0x000000a0       0xd0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .debug_frame   0x00000170       0x34 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .debug_frame   0x000001a4       0x60 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .debug_frame   0x00000204      0x254 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .debug_frame   0x00000458      0x664 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .debug_frame   0x00000abc      0x16c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .debug_frame   0x00000c28      0x204 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .debug_frame   0x00000e2c      0x280 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .debug_frame   0x000010ac      0x224 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .debug_frame   0x000012d0       0x48 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .debug_frame   0x00001318       0x60 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .debug_frame   0x00001378       0x4c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .debug_frame   0x000013c4       0x48 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
-.debug_str      0x00000000     0x2b68
+.debug_str      0x00000000     0x2c30
  *(.debug_str)
- .debug_str     0x00000000      0x41e C:\ride_project\FlollowtheSunshine\obj\main.o
-                                0x45d (size before relaxing)
- .debug_str     0x0000041e       0x4d C:\ride_project\FlollowtheSunshine\obj\delay.o
-                                 0xea (size before relaxing)
- .debug_str     0x0000046b      0x154 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
-                                0x31e (size before relaxing)
- .debug_str     0x000005bf      0x19b C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
-                                0x262 (size before relaxing)
- .debug_str     0x0000075a      0x21f C:\ride_project\FlollowtheSunshine\obj\misc.o
-                                0x34b (size before relaxing)
- .debug_str     0x00000979      0x458 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
-                                0x577 (size before relaxing)
- .debug_str     0x00000dd1      0xa27 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
-                                0xd85 (size before relaxing)
- .debug_str     0x000017f8      0x39e C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
-                                0x4b4 (size before relaxing)
- .debug_str     0x00001b96      0x4d8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
-                                0x638 (size before relaxing)
- .debug_str     0x0000206e      0x52c C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
-                                0x6a3 (size before relaxing)
- .debug_str     0x0000259a      0x3d0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
-                                0x5ad (size before relaxing)
- .debug_str     0x0000296a       0x6f C:\ride_project\FlollowtheSunshine\obj\usart3.o
-                                0x33d (size before relaxing)
- .debug_str     0x000029d9       0xa5 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
-                                0x528 (size before relaxing)
- .debug_str     0x00002a7e       0x92 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
-                                0x385 (size before relaxing)
- .debug_str     0x00002b10       0x58 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
-                                0x350 (size before relaxing)
+ .debug_str     0x00000000      0x443 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+                                0x482 (size before relaxing)
+ .debug_str     0x00000443       0x7e C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+                                0x124 (size before relaxing)
+ .debug_str     0x000004c1      0x15e C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+                                0x328 (size before relaxing)
+ .debug_str     0x0000061f      0x195 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+                                0x26c (size before relaxing)
+ .debug_str     0x000007b4      0x229 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+                                0x355 (size before relaxing)
+ .debug_str     0x000009dd      0x462 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+                                0x581 (size before relaxing)
+ .debug_str     0x00000e3f      0xa31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+                                0xd8f (size before relaxing)
+ .debug_str     0x00001870      0x3a8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+                                0x4be (size before relaxing)
+ .debug_str     0x00001c18      0x4e2 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+                                0x642 (size before relaxing)
+ .debug_str     0x000020fa      0x536 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+                                0x6ad (size before relaxing)
+ .debug_str     0x00002630      0x3da C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+                                0x5b7 (size before relaxing)
+ .debug_str     0x00002a0a       0x79 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+                                0x347 (size before relaxing)
+ .debug_str     0x00002a83       0xaf C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+                                0x532 (size before relaxing)
+ .debug_str     0x00002b32       0x9c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+                                0x38f (size before relaxing)
+ .debug_str     0x00002bce       0x62 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
+                                0x35a (size before relaxing)
 
-.debug_loc      0x00000000     0x27d9
+.debug_loc      0x00000000     0x28d0
  *(.debug_loc)
- .debug_loc     0x00000000       0x2c C:\ride_project\FlollowtheSunshine\obj\main.o
- .debug_loc     0x0000002c       0x3e C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .debug_loc     0x0000006a       0x6a C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .debug_loc     0x000000d4       0x4f C:\ride_project\FlollowtheSunshine\obj\misc.o
- .debug_loc     0x00000123      0x6a3 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .debug_loc     0x000007c6     0x1006 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .debug_loc     0x000017cc      0x2cc C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .debug_loc     0x00001a98      0x303 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .debug_loc     0x00001d9b      0x42a C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .debug_loc     0x000021c5      0x243 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .debug_loc     0x00002408       0xd5 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .debug_loc     0x000024dd      0x156 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .debug_loc     0x00002633      0x120 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .debug_loc     0x00002753       0x86 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+ .debug_loc     0x00000000       0x2c C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .debug_loc     0x0000002c       0xf7 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .debug_loc     0x00000123       0x3e C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .debug_loc     0x00000161       0x6a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .debug_loc     0x000001cb       0x4f C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .debug_loc     0x0000021a      0x6a3 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .debug_loc     0x000008bd     0x1006 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .debug_loc     0x000018c3      0x2cc C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .debug_loc     0x00001b8f      0x303 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .debug_loc     0x00001e92      0x42a C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .debug_loc     0x000022bc      0x243 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .debug_loc     0x000024ff       0xd5 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .debug_loc     0x000025d4      0x156 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .debug_loc     0x0000272a      0x120 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .debug_loc     0x0000284a       0x86 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1572,59 +1581,59 @@ START GROUP
 LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a
 LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a
 END GROUP
-OUTPUT(C:\ride_project\FlollowtheSunshine\Application0.elf elf32-littlearm)
+OUTPUT(C:\ride_project\FlollowtheSunshine\Mango-M32\Application0.elf elf32-littlearm)
 
-.debug_ranges   0x00000000      0x918
- .debug_ranges  0x00000000       0x18 C:\ride_project\FlollowtheSunshine\obj\main.o
- .debug_ranges  0x00000018       0x18 C:\ride_project\FlollowtheSunshine\obj\delay.o
- .debug_ranges  0x00000030       0x68 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
- .debug_ranges  0x00000098       0x20 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
- .debug_ranges  0x000000b8       0x38 C:\ride_project\FlollowtheSunshine\obj\misc.o
- .debug_ranges  0x000000f0       0xf0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
- .debug_ranges  0x000001e0      0x2d8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
- .debug_ranges  0x000004b8       0xa0 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
- .debug_ranges  0x00000558       0xf8 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
- .debug_ranges  0x00000650      0x130 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
- .debug_ranges  0x00000780      0x110 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
- .debug_ranges  0x00000890       0x20 C:\ride_project\FlollowtheSunshine\obj\usart3.o
- .debug_ranges  0x000008b0       0x28 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
- .debug_ranges  0x000008d8       0x20 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
- .debug_ranges  0x000008f8       0x20 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+.debug_ranges   0x00000000      0x930
+ .debug_ranges  0x00000000       0x18 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
+ .debug_ranges  0x00000018       0x30 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
+ .debug_ranges  0x00000048       0x68 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
+ .debug_ranges  0x000000b0       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
+ .debug_ranges  0x000000d0       0x38 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
+ .debug_ranges  0x00000108       0xf0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
+ .debug_ranges  0x000001f8      0x2d8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
+ .debug_ranges  0x000004d0       0xa0 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
+ .debug_ranges  0x00000570       0xf8 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
+ .debug_ranges  0x00000668      0x130 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
+ .debug_ranges  0x00000798      0x110 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
+ .debug_ranges  0x000008a8       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
+ .debug_ranges  0x000008c8       0x28 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
+ .debug_ranges  0x000008f0       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
+ .debug_ranges  0x00000910       0x20 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
 
 .ARM.attributes
                 0x00000000       0x31
  .ARM.attributes
-                0x00000000       0x31 C:\ride_project\FlollowtheSunshine\obj\main.o
+                0x00000000       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\main.o
  .ARM.attributes
-                0x00000031       0x31 C:\ride_project\FlollowtheSunshine\obj\delay.o
+                0x00000031       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\delay.o
  .ARM.attributes
-                0x00000062       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
+                0x00000062       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_it.o
  .ARM.attributes
-                0x00000093       0x31 C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
+                0x00000093       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\system_stm32f10x.o
  .ARM.attributes
-                0x000000c4       0x21 C:\ride_project\FlollowtheSunshine\obj\startup_stm32f10x_md.o
+                0x000000c4       0x21 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\startup_stm32f10x_md.o
  .ARM.attributes
-                0x000000e5       0x31 C:\ride_project\FlollowtheSunshine\obj\misc.o
+                0x000000e5       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\misc.o
  .ARM.attributes
-                0x00000116       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_flash.o
+                0x00000116       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_flash.o
  .ARM.attributes
-                0x00000147       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_tim.o
+                0x00000147       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_tim.o
  .ARM.attributes
-                0x00000178       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_gpio.o
+                0x00000178       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_gpio.o
  .ARM.attributes
-                0x000001a9       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_usart.o
+                0x000001a9       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_usart.o
  .ARM.attributes
-                0x000001da       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+                0x000001da       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
  .ARM.attributes
-                0x0000020b       0x31 C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+                0x0000020b       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_rcc.o
  .ARM.attributes
-                0x0000023c       0x31 C:\ride_project\FlollowtheSunshine\obj\usart3.o
+                0x0000023c       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\usart3.o
  .ARM.attributes
-                0x0000026d       0x31 C:\ride_project\FlollowtheSunshine\obj\motor_control.o
+                0x0000026d       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\motor_control.o
  .ARM.attributes
-                0x0000029e       0x31 C:\ride_project\FlollowtheSunshine\obj\soil_moisture_sensor.o
+                0x0000029e       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\soil_moisture_sensor.o
  .ARM.attributes
-                0x000002cf       0x31 C:\ride_project\FlollowtheSunshine\obj\cds_sensor.o
+                0x000002cf       0x31 C:\ride_project\FlollowtheSunshine\Mango-M32\obj\cds_sensor.o
  .ARM.attributes
                 0x00000300       0x2e C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
  .ARM.attributes

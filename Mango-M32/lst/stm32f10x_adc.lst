@@ -1,12 +1,12 @@
 
-C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o:     file format elf32-littlearm
-C:\ride_project\FlollowtheSunshine\obj\stm32f10x_adc.o
+C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o:     file format elf32-littlearm
+C:\ride_project\FlollowtheSunshine\Mango-M32\obj\stm32f10x_adc.o
 
 Disassembly of section .text.ADC_Init:
 
 00000000 <ADC_Init>:
 ADC_Init():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:233
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:233
   assert_param(IS_ADC_DATA_ALIGN(ADC_InitStruct->ADC_DataAlign)); 
   assert_param(IS_ADC_REGULAR_LENGTH(ADC_InitStruct->ADC_NbrOfChannel));
 
@@ -14,7 +14,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the ADCx CR1 value */
   tmpreg1 = ADCx->CR1;
    0:	6843      	ldr	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:239
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:239
   /* Clear DUALMOD and SCAN bits */
   tmpreg1 &= CR1_CLEAR_Mask;
   /* Configure ADCx: Dual mode and scan conversion mode */
@@ -26,7 +26,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    8:	f423 7380 	bic.w	r3, r3, #256	; 0x100
    c:	4313      	orrs	r3, r2
    e:	790a      	ldrb	r2, [r1, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:219
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:219
   * @param  ADC_InitStruct: pointer to an ADC_InitTypeDef structure that contains
   *         the configuration information for the specified ADC peripheral.
   * @retval None
@@ -34,7 +34,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct)
 {
   10:	b510      	push	{r4, lr}
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:239
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:239
   /* Clear DUALMOD and SCAN bits */
   tmpreg1 &= CR1_CLEAR_Mask;
   /* Configure ADCx: Dual mode and scan conversion mode */
@@ -42,11 +42,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Set SCAN bit according to ADC_ScanConvMode value */
   tmpreg1 |= (uint32_t)(ADC_InitStruct->ADC_Mode | ((uint32_t)ADC_InitStruct->ADC_ScanConvMode << 8));
   12:	ea43 2302 	orr.w	r3, r3, r2, lsl #8
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:241
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:241
   /* Write to ADCx CR1 */
   ADCx->CR1 = tmpreg1;
   16:	6043      	str	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:252
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:252
   tmpreg1 &= CR2_CLEAR_Mask;
   /* Configure ADCx: external trigger event and continuous conversion mode */
   /* Set ALIGN bit according to ADC_DataAlign value */
@@ -55,7 +55,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   tmpreg1 |= (uint32_t)(ADC_InitStruct->ADC_DataAlign | ADC_InitStruct->ADC_ExternalTrigConv |
   18:	68cb      	ldr	r3, [r1, #12]
   1a:	688a      	ldr	r2, [r1, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:245
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:245
   /* Write to ADCx CR1 */
   ADCx->CR1 = tmpreg1;
 
@@ -63,7 +63,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the ADCx CR2 value */
   tmpreg1 = ADCx->CR2;
   1c:	6884      	ldr	r4, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:252
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:252
   tmpreg1 &= CR2_CLEAR_Mask;
   /* Configure ADCx: external trigger event and continuous conversion mode */
   /* Set ALIGN bit according to ADC_DataAlign value */
@@ -76,12 +76,12 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   26:	431a      	orrs	r2, r3
   28:	794b      	ldrb	r3, [r1, #5]
   2a:	ea42 0243 	orr.w	r2, r2, r3, lsl #1
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:255
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:255
             ((uint32_t)ADC_InitStruct->ADC_ContinuousConvMode << 1));
   /* Write to ADCx CR2 */
   ADCx->CR2 = tmpreg1;
   2e:	6082      	str	r2, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:265
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:265
   /* Clear L bits */
   tmpreg1 &= SQR1_CLEAR_Mask;
   /* Configure ADCx: regular channel sequence length */
@@ -89,7 +89,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   tmpreg2 |= (uint8_t) (ADC_InitStruct->ADC_NbrOfChannel - (uint8_t)1);
   tmpreg1 |= (uint32_t)tmpreg2 << 20;
   30:	7c0b      	ldrb	r3, [r1, #16]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:259
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:259
   /* Write to ADCx CR2 */
   ADCx->CR2 = tmpreg1;
 
@@ -97,7 +97,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the ADCx SQR1 value */
   tmpreg1 = ADCx->SQR1;
   32:	6ac2      	ldr	r2, [r0, #44]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:265
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:265
   /* Clear L bits */
   tmpreg1 &= SQR1_CLEAR_Mask;
   /* Configure ADCx: regular channel sequence length */
@@ -105,7 +105,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   tmpreg2 |= (uint8_t) (ADC_InitStruct->ADC_NbrOfChannel - (uint8_t)1);
   tmpreg1 |= (uint32_t)tmpreg2 << 20;
   34:	3b01      	subs	r3, #1
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:261
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:261
 
   /*---------------------------- ADCx SQR1 Configuration -----------------*/
   /* Get the ADCx SQR1 value */
@@ -113,18 +113,18 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Clear L bits */
   tmpreg1 &= SQR1_CLEAR_Mask;
   36:	f422 0270 	bic.w	r2, r2, #15728640	; 0xf00000
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:265
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:265
   /* Configure ADCx: regular channel sequence length */
   /* Set L bits according to ADC_NbrOfChannel value */
   tmpreg2 |= (uint8_t) (ADC_InitStruct->ADC_NbrOfChannel - (uint8_t)1);
   tmpreg1 |= (uint32_t)tmpreg2 << 20;
   3a:	b2db      	uxtb	r3, r3
   3c:	ea42 5203 	orr.w	r2, r2, r3, lsl #20
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:267
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:267
   /* Write to ADCx SQR1 */
   ADCx->SQR1 = tmpreg1;
   40:	62c2      	str	r2, [r0, #44]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:268
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:268
 }
   42:	bd10      	pop	{r4, pc}
   44:	fff1f7fd 	.word	0xfff1f7fd
@@ -132,7 +132,7 @@ Disassembly of section .text.ADC_StructInit:
 
 00000000 <ADC_StructInit>:
 ADC_StructInit():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:279
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:279
   */
 void ADC_StructInit(ADC_InitTypeDef* ADC_InitStruct)
 {
@@ -141,28 +141,28 @@ void ADC_StructInit(ADC_InitTypeDef* ADC_InitStruct)
   ADC_InitStruct->ADC_Mode = ADC_Mode_Independent;
    0:	2300      	movs	r3, #0
    2:	6003      	str	r3, [r0, #0]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:281
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:281
   /* initialize the ADC_ScanConvMode member */
   ADC_InitStruct->ADC_ScanConvMode = DISABLE;
    4:	7103      	strb	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:283
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:283
   /* Initialize the ADC_ContinuousConvMode member */
   ADC_InitStruct->ADC_ContinuousConvMode = DISABLE;
    6:	7143      	strb	r3, [r0, #5]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:285
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:285
   /* Initialize the ADC_ExternalTrigConv member */
   ADC_InitStruct->ADC_ExternalTrigConv = ADC_ExternalTrigConv_T1_CC1;
    8:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:287
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:287
   /* Initialize the ADC_DataAlign member */
   ADC_InitStruct->ADC_DataAlign = ADC_DataAlign_Right;
    a:	60c3      	str	r3, [r0, #12]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:289
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:289
   /* Initialize the ADC_NbrOfChannel member */
   ADC_InitStruct->ADC_NbrOfChannel = 1;
    c:	3301      	adds	r3, #1
    e:	7403      	strb	r3, [r0, #16]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:290
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:290
 }
   10:	4770      	bx	lr
   12:	46c0      	nop			(mov r8, r8)
@@ -170,7 +170,7 @@ Disassembly of section .text.ADC_Cmd:
 
 00000000 <ADC_Cmd>:
 ADC_Cmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:304
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:304
 void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -178,14 +178,14 @@ void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_Cmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:307
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:307
   {
     /* Set the ADON bit to wake up the ADC from power down mode */
     ADCx->CR2 |= CR2_ADON_Set;
    2:	6883      	ldr	r3, [r0, #8]
    4:	f043 0301 	orr.w	r3, r3, #1	; 0x1
    8:	e002      	b.n	10 <ADC_Cmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:312
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:312
   }
   else
   {
@@ -194,7 +194,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6883      	ldr	r3, [r0, #8]
    c:	f023 0301 	bic.w	r3, r3, #1	; 0x1
   10:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:314
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:314
   }
 }
   12:	4770      	bx	lr
@@ -202,7 +202,7 @@ Disassembly of section .text.ADC_DMACmd:
 
 00000000 <ADC_DMACmd>:
 ADC_DMACmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:329
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:329
 void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -210,14 +210,14 @@ void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_DMACmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:332
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:332
   {
     /* Enable the selected ADC DMA request */
     ADCx->CR2 |= CR2_DMA_Set;
    2:	6883      	ldr	r3, [r0, #8]
    4:	f443 7380 	orr.w	r3, r3, #256	; 0x100
    8:	e002      	b.n	10 <ADC_DMACmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:337
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:337
   }
   else
   {
@@ -226,7 +226,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6883      	ldr	r3, [r0, #8]
    c:	f423 7380 	bic.w	r3, r3, #256	; 0x100
   10:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:339
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:339
   }
 }
   12:	4770      	bx	lr
@@ -234,7 +234,7 @@ Disassembly of section .text.ADC_ITConfig:
 
 00000000 <ADC_ITConfig>:
 ADC_ITConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:361
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:361
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_FUNCTIONAL_STATE(NewState));
@@ -242,17 +242,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the ADC IT index */
   itmask = (uint8_t)ADC_IT;
    0:	b2c9      	uxtb	r1, r1
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:362
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:362
   if (NewState != DISABLE)
    2:	b11a      	cbz	r2, c <ADC_ITConfig+0xc>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:365
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:365
   {
     /* Enable the selected ADC interrupts */
     ADCx->CR1 |= itmask;
    4:	6843      	ldr	r3, [r0, #4]
    6:	ea41 0303 	orr.w	r3, r1, r3
    a:	e002      	b.n	12 <ADC_ITConfig+0x12>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:370
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:370
   }
   else
   {
@@ -261,7 +261,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    c:	6843      	ldr	r3, [r0, #4]
    e:	ea23 0301 	bic.w	r3, r3, r1
   12:	6043      	str	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:372
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:372
   }
 }
   14:	4770      	bx	lr
@@ -270,7 +270,7 @@ Disassembly of section .text.ADC_ResetCalibration:
 
 00000000 <ADC_ResetCalibration>:
 ADC_ResetCalibration():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:384
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:384
 void ADC_ResetCalibration(ADC_TypeDef* ADCx)
 {
   /* Check the parameters */
@@ -280,7 +280,7 @@ void ADC_ResetCalibration(ADC_TypeDef* ADCx)
    0:	6883      	ldr	r3, [r0, #8]
    2:	f043 0308 	orr.w	r3, r3, #8	; 0x8
    6:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:385
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:385
 }
    8:	4770      	bx	lr
    a:	46c0      	nop			(mov r8, r8)
@@ -288,7 +288,7 @@ Disassembly of section .text.ADC_GetResetCalibrationStatus:
 
 00000000 <ADC_GetResetCalibrationStatus>:
 ADC_GetResetCalibrationStatus():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:398
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:398
 {
   FlagStatus bitstatus = RESET;
   /* Check the parameters */
@@ -296,7 +296,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Check the status of RSTCAL bit */
   if ((ADCx->CR2 & CR2_RSTCAL_Set) != (uint32_t)RESET)
    0:	6880      	ldr	r0, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:410
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:410
     /* RSTCAL bit is reset */
     bitstatus = RESET;
   }
@@ -309,7 +309,7 @@ Disassembly of section .text.ADC_StartCalibration:
 
 00000000 <ADC_StartCalibration>:
 ADC_StartCalibration():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:422
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:422
 void ADC_StartCalibration(ADC_TypeDef* ADCx)
 {
   /* Check the parameters */
@@ -319,7 +319,7 @@ void ADC_StartCalibration(ADC_TypeDef* ADCx)
    0:	6883      	ldr	r3, [r0, #8]
    2:	f043 0304 	orr.w	r3, r3, #4	; 0x4
    6:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:423
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:423
 }
    8:	4770      	bx	lr
    a:	46c0      	nop			(mov r8, r8)
@@ -327,7 +327,7 @@ Disassembly of section .text.ADC_GetCalibrationStatus:
 
 00000000 <ADC_GetCalibrationStatus>:
 ADC_GetCalibrationStatus():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:436
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:436
 {
   FlagStatus bitstatus = RESET;
   /* Check the parameters */
@@ -335,7 +335,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Check the status of CAL bit */
   if ((ADCx->CR2 & CR2_CAL_Set) != (uint32_t)RESET)
    0:	6880      	ldr	r0, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:448
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:448
     /* CAL bit is reset: end of calibration */
     bitstatus = RESET;
   }
@@ -348,7 +348,7 @@ Disassembly of section .text.ADC_SoftwareStartConvCmd:
 
 00000000 <ADC_SoftwareStartConvCmd>:
 ADC_SoftwareStartConvCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:462
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:462
 void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -356,7 +356,7 @@ void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_SoftwareStartConvCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:466
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:466
   {
     /* Enable the selected ADC conversion on external event and start the selected
        ADC conversion */
@@ -364,7 +364,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    2:	6883      	ldr	r3, [r0, #8]
    4:	f443 03a0 	orr.w	r3, r3, #5242880	; 0x500000
    8:	e002      	b.n	10 <ADC_SoftwareStartConvCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:472
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:472
   }
   else
   {
@@ -374,7 +374,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6883      	ldr	r3, [r0, #8]
    c:	f423 03a0 	bic.w	r3, r3, #5242880	; 0x500000
   10:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:474
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:474
   }
 }
   12:	4770      	bx	lr
@@ -382,7 +382,7 @@ Disassembly of section .text.ADC_GetSoftwareStartConvStatus:
 
 00000000 <ADC_GetSoftwareStartConvStatus>:
 ADC_GetSoftwareStartConvStatus():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:487
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:487
 {
   FlagStatus bitstatus = RESET;
   /* Check the parameters */
@@ -390,7 +390,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Check the status of SWSTART bit */
   if ((ADCx->CR2 & CR2_SWSTART_Set) != (uint32_t)RESET)
    0:	6880      	ldr	r0, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:499
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:499
     /* SWSTART bit is reset */
     bitstatus = RESET;
   }
@@ -403,7 +403,7 @@ Disassembly of section .text.ADC_DiscModeChannelCountConfig:
 
 00000000 <ADC_DiscModeChannelCountConfig>:
 ADC_DiscModeChannelCountConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:517
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:517
   uint32_t tmpreg2 = 0;
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
@@ -411,14 +411,14 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the old register value */
   tmpreg1 = ADCx->CR1;
    0:	6843      	ldr	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:522
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:522
   /* Clear the old discontinuous mode channel count */
   tmpreg1 &= CR1_DISCNUM_Reset;
   /* Set the discontinuous mode channel count */
   tmpreg2 = Number - 1;
   tmpreg1 |= tmpreg2 << 13;
    2:	3901      	subs	r1, #1
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:519
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:519
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_REGULAR_DISC_NUMBER(Number));
   /* Get the old register value */
@@ -426,23 +426,23 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Clear the old discontinuous mode channel count */
   tmpreg1 &= CR1_DISCNUM_Reset;
    4:	f423 4360 	bic.w	r3, r3, #57344	; 0xe000
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:522
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:522
   /* Set the discontinuous mode channel count */
   tmpreg2 = Number - 1;
   tmpreg1 |= tmpreg2 << 13;
    8:	ea43 3341 	orr.w	r3, r3, r1, lsl #13
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:524
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:524
   /* Store the new register value */
   ADCx->CR1 = tmpreg1;
    c:	6043      	str	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:525
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:525
 }
    e:	4770      	bx	lr
 Disassembly of section .text.ADC_DiscModeCmd:
 
 00000000 <ADC_DiscModeCmd>:
 ADC_DiscModeCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:541
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:541
 void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -450,14 +450,14 @@ void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_DiscModeCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:544
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:544
   {
     /* Enable the selected ADC regular discontinuous mode */
     ADCx->CR1 |= CR1_DISCEN_Set;
    2:	6843      	ldr	r3, [r0, #4]
    4:	f443 6300 	orr.w	r3, r3, #2048	; 0x800
    8:	e002      	b.n	10 <ADC_DiscModeCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:549
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:549
   }
   else
   {
@@ -466,7 +466,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6843      	ldr	r3, [r0, #4]
    c:	f423 6300 	bic.w	r3, r3, #2048	; 0x800
   10:	6043      	str	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:551
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:551
   }
 }
   12:	4770      	bx	lr
@@ -474,7 +474,7 @@ Disassembly of section .text.ADC_RegularChannelConfig:
 
 00000000 <ADC_RegularChannelConfig>:
 ADC_RegularChannelConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:599
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:599
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_CHANNEL(ADC_Channel));
   assert_param(IS_ADC_REGULAR_RANK(Rank));
@@ -482,7 +482,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* if ADC_Channel_10 ... ADC_Channel_17 is selected */
   if (ADC_Channel > ADC_Channel_9)
    0:	2909      	cmp	r1, #9
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:591
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:591
   *     @arg ADC_SampleTime_71Cycles5: Sample time equal to 71.5 cycles	
   *     @arg ADC_SampleTime_239Cycles5: Sample time equal to 239.5 cycles	
   * @retval None
@@ -493,7 +493,7 @@ void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel, uint8_t Ra
    4:	4694      	mov	ip, r2
    6:	460c      	mov	r4, r1
    8:	461d      	mov	r5, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:599
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:599
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_CHANNEL(ADC_Channel));
   assert_param(IS_ADC_REGULAR_RANK(Rank));
@@ -501,7 +501,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* if ADC_Channel_10 ... ADC_Channel_17 is selected */
   if (ADC_Channel > ADC_Channel_9)
    a:	d90c      	bls.n	26 <ADC_RegularChannelConfig+0x26>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:604
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:604
   {
     /* Get the old register value */
     tmpreg1 = ADCx->SMPR1;
@@ -509,11 +509,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SMPR1_SMP_Set << (3 * (ADC_Channel - 10));
    c:	2203      	movs	r2, #3
    e:	4362      	muls	r2, r4
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:606
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:606
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   10:	2307      	movs	r3, #7
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:604
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:604
   if (ADC_Channel > ADC_Channel_9)
   {
     /* Get the old register value */
@@ -521,17 +521,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Calculate the mask to clear */
     tmpreg2 = SMPR1_SMP_Set << (3 * (ADC_Channel - 10));
   12:	3a1e      	subs	r2, #30
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:606
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:606
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   14:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:610
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:610
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3 * (ADC_Channel - 10));
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   16:	fa15 f202 	lsls.w	r2, r5, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:602
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:602
   assert_param(IS_ADC_SAMPLE_TIME(ADC_SampleTime));
   /* if ADC_Channel_10 ... ADC_Channel_17 is selected */
   if (ADC_Channel > ADC_Channel_9)
@@ -539,24 +539,24 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SMPR1;
   1a:	68c1      	ldr	r1, [r0, #12]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:606
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:606
     /* Calculate the mask to clear */
     tmpreg2 = SMPR1_SMP_Set << (3 * (ADC_Channel - 10));
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   1c:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:610
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:610
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3 * (ADC_Channel - 10));
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   20:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:612
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:612
     /* Store the new register value */
     ADCx->SMPR1 = tmpreg1;
   22:	60c1      	str	r1, [r0, #12]
   24:	e00a      	b.n	3c <ADC_RegularChannelConfig+0x3c>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:619
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:619
   else /* ADC_Channel include in ADC_Channel_[0..9] */
   {
     /* Get the old register value */
@@ -565,18 +565,18 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SMPR2_SMP_Set << (3 * ADC_Channel);
   26:	2203      	movs	r2, #3
   28:	4362      	muls	r2, r4
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:621
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:621
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   2a:	2307      	movs	r3, #7
   2c:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:625
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:625
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3 * ADC_Channel);
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   2e:	fa15 f202 	lsls.w	r2, r5, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:617
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:617
     ADCx->SMPR1 = tmpreg1;
   }
   else /* ADC_Channel include in ADC_Channel_[0..9] */
@@ -584,29 +584,29 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SMPR2;
   32:	6901      	ldr	r1, [r0, #16]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:621
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:621
     /* Calculate the mask to clear */
     tmpreg2 = SMPR2_SMP_Set << (3 * ADC_Channel);
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   34:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:625
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:625
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3 * ADC_Channel);
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   38:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:627
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:627
     /* Store the new register value */
     ADCx->SMPR2 = tmpreg1;
   3a:	6101      	str	r1, [r0, #16]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:630
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:630
   }
   /* For Rank 1 to 6 */
   if (Rank < 7)
   3c:	f1bc 0f06 	cmp.w	ip, #6	; 0x6
   40:	d80d      	bhi.n	5e <ADC_RegularChannelConfig+0x5e>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:635
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:635
   {
     /* Get the old register value */
     tmpreg1 = ADCx->SQR3;
@@ -614,11 +614,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SQR3_SQ_Set << (5 * (Rank - 1));
   42:	2205      	movs	r2, #5
   44:	fb02 f20c 	mul.w	r2, r2, ip
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:637
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:637
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   48:	231f      	movs	r3, #31
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:635
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:635
   if (Rank < 7)
   {
     /* Get the old register value */
@@ -626,17 +626,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Calculate the mask to clear */
     tmpreg2 = SQR3_SQ_Set << (5 * (Rank - 1));
   4a:	3a05      	subs	r2, #5
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:637
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:637
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   4c:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:641
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:641
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_Channel << (5 * (Rank - 1));
     /* Set the SQx bits for the selected rank */
     tmpreg1 |= tmpreg2;
   4e:	fa14 f202 	lsls.w	r2, r4, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:633
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:633
   }
   /* For Rank 1 to 6 */
   if (Rank < 7)
@@ -644,30 +644,30 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SQR3;
   52:	6b41      	ldr	r1, [r0, #52]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:637
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:637
     /* Calculate the mask to clear */
     tmpreg2 = SQR3_SQ_Set << (5 * (Rank - 1));
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   54:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:641
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:641
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_Channel << (5 * (Rank - 1));
     /* Set the SQx bits for the selected rank */
     tmpreg1 |= tmpreg2;
   58:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:643
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:643
     /* Store the new register value */
     ADCx->SQR3 = tmpreg1;
   5a:	6341      	str	r1, [r0, #52]
   5c:	e01d      	b.n	9a <ADC_RegularChannelConfig+0x9a>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:646
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:646
   }
   /* For Rank 7 to 12 */
   else if (Rank < 13)
   5e:	f1bc 0f0c 	cmp.w	ip, #12	; 0xc
   62:	d80d      	bhi.n	80 <ADC_RegularChannelConfig+0x80>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:651
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:651
   {
     /* Get the old register value */
     tmpreg1 = ADCx->SQR2;
@@ -675,11 +675,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SQR2_SQ_Set << (5 * (Rank - 7));
   64:	2205      	movs	r2, #5
   66:	fb02 f20c 	mul.w	r2, r2, ip
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:653
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:653
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   6a:	231f      	movs	r3, #31
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:651
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:651
   else if (Rank < 13)
   {
     /* Get the old register value */
@@ -687,17 +687,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Calculate the mask to clear */
     tmpreg2 = SQR2_SQ_Set << (5 * (Rank - 7));
   6c:	3a23      	subs	r2, #35
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:653
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:653
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   6e:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:657
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:657
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_Channel << (5 * (Rank - 7));
     /* Set the SQx bits for the selected rank */
     tmpreg1 |= tmpreg2;
   70:	fa14 f202 	lsls.w	r2, r4, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:649
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:649
   }
   /* For Rank 7 to 12 */
   else if (Rank < 13)
@@ -705,24 +705,24 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SQR2;
   74:	6b01      	ldr	r1, [r0, #48]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:653
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:653
     /* Calculate the mask to clear */
     tmpreg2 = SQR2_SQ_Set << (5 * (Rank - 7));
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   76:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:657
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:657
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_Channel << (5 * (Rank - 7));
     /* Set the SQx bits for the selected rank */
     tmpreg1 |= tmpreg2;
   7a:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:659
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:659
     /* Store the new register value */
     ADCx->SQR2 = tmpreg1;
   7c:	6301      	str	r1, [r0, #48]
   7e:	e00c      	b.n	9a <ADC_RegularChannelConfig+0x9a>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:667
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:667
   else
   {
     /* Get the old register value */
@@ -731,11 +731,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SQR1_SQ_Set << (5 * (Rank - 13));
   80:	2205      	movs	r2, #5
   82:	fb02 f20c 	mul.w	r2, r2, ip
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:669
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:669
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   86:	231f      	movs	r3, #31
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:667
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:667
   else
   {
     /* Get the old register value */
@@ -743,17 +743,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Calculate the mask to clear */
     tmpreg2 = SQR1_SQ_Set << (5 * (Rank - 13));
   88:	3a41      	subs	r2, #65
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:669
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:669
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   8a:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:673
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:673
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_Channel << (5 * (Rank - 13));
     /* Set the SQx bits for the selected rank */
     tmpreg1 |= tmpreg2;
   8c:	fa14 f202 	lsls.w	r2, r4, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:665
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:665
   }
   /* For Rank 13 to 16 */
   else
@@ -761,23 +761,23 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SQR1;
   90:	6ac1      	ldr	r1, [r0, #44]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:669
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:669
     /* Calculate the mask to clear */
     tmpreg2 = SQR1_SQ_Set << (5 * (Rank - 13));
     /* Clear the old SQx bits for the selected rank */
     tmpreg1 &= ~tmpreg2;
   92:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:673
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:673
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_Channel << (5 * (Rank - 13));
     /* Set the SQx bits for the selected rank */
     tmpreg1 |= tmpreg2;
   96:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:675
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:675
     /* Store the new register value */
     ADCx->SQR1 = tmpreg1;
   98:	62c1      	str	r1, [r0, #44]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:677
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:677
   }
 }
   9a:	bd30      	pop	{r4, r5, pc}
@@ -785,7 +785,7 @@ Disassembly of section .text.ADC_ExternalTrigConvCmd:
 
 00000000 <ADC_ExternalTrigConvCmd>:
 ADC_ExternalTrigConvCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:691
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:691
 void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -793,14 +793,14 @@ void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_ExternalTrigConvCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:694
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:694
   {
     /* Enable the selected ADC conversion on external event */
     ADCx->CR2 |= CR2_EXTTRIG_Set;
    2:	6883      	ldr	r3, [r0, #8]
    4:	f443 1380 	orr.w	r3, r3, #1048576	; 0x100000
    8:	e002      	b.n	10 <ADC_ExternalTrigConvCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:699
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:699
   }
   else
   {
@@ -809,7 +809,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6883      	ldr	r3, [r0, #8]
    c:	f423 1380 	bic.w	r3, r3, #1048576	; 0x100000
   10:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:701
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:701
   }
 }
   12:	4770      	bx	lr
@@ -817,7 +817,7 @@ Disassembly of section .text.ADC_GetConversionValue:
 
 00000000 <ADC_GetConversionValue>:
 ADC_GetConversionValue():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:713
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:713
 uint16_t ADC_GetConversionValue(ADC_TypeDef* ADCx)
 {
   /* Check the parameters */
@@ -825,7 +825,7 @@ uint16_t ADC_GetConversionValue(ADC_TypeDef* ADCx)
   /* Return the selected ADC conversion value */
   return (uint16_t) ADCx->DR;
    0:	6cc0      	ldr	r0, [r0, #76]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:714
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:714
 }
    2:	b280      	uxth	r0, r0
    4:	4770      	bx	lr
@@ -834,7 +834,7 @@ Disassembly of section .text.ADC_GetDualModeConversionValue:
 
 00000000 <ADC_GetDualModeConversionValue>:
 ADC_GetDualModeConversionValue():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:723
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:723
   * @retval The Data conversion value.
   */
 uint32_t ADC_GetDualModeConversionValue(void)
@@ -843,7 +843,7 @@ uint32_t ADC_GetDualModeConversionValue(void)
   return (*(__IO uint32_t *) DR_ADDRESS);
    0:	4b01      	ldr	r3, [pc, #4]	(8 <ADC_GetDualModeConversionValue+0x8>)
    2:	6818      	ldr	r0, [r3, #0]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:724
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:724
 }
    4:	4770      	bx	lr
    6:	46c0      	nop			(mov r8, r8)
@@ -852,7 +852,7 @@ Disassembly of section .text.ADC_AutoInjectedConvCmd:
 
 00000000 <ADC_AutoInjectedConvCmd>:
 ADC_AutoInjectedConvCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:739
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:739
 void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -860,14 +860,14 @@ void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_AutoInjectedConvCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:742
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:742
   {
     /* Enable the selected ADC automatic injected group conversion */
     ADCx->CR1 |= CR1_JAUTO_Set;
    2:	6843      	ldr	r3, [r0, #4]
    4:	f443 6380 	orr.w	r3, r3, #1024	; 0x400
    8:	e002      	b.n	10 <ADC_AutoInjectedConvCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:747
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:747
   }
   else
   {
@@ -876,7 +876,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6843      	ldr	r3, [r0, #4]
    c:	f423 6380 	bic.w	r3, r3, #1024	; 0x400
   10:	6043      	str	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:749
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:749
   }
 }
   12:	4770      	bx	lr
@@ -884,7 +884,7 @@ Disassembly of section .text.ADC_InjectedDiscModeCmd:
 
 00000000 <ADC_InjectedDiscModeCmd>:
 ADC_InjectedDiscModeCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:765
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:765
 void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -892,14 +892,14 @@ void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_InjectedDiscModeCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:768
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:768
   {
     /* Enable the selected ADC injected discontinuous mode */
     ADCx->CR1 |= CR1_JDISCEN_Set;
    2:	6843      	ldr	r3, [r0, #4]
    4:	f443 5380 	orr.w	r3, r3, #4096	; 0x1000
    8:	e002      	b.n	10 <ADC_InjectedDiscModeCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:773
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:773
   }
   else
   {
@@ -908,7 +908,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6843      	ldr	r3, [r0, #4]
    c:	f423 5380 	bic.w	r3, r3, #4096	; 0x1000
   10:	6043      	str	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:775
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:775
   }
 }
   12:	4770      	bx	lr
@@ -916,7 +916,7 @@ Disassembly of section .text.ADC_ExternalTrigInjectedConvConfig:
 
 00000000 <ADC_ExternalTrigInjectedConvConfig>:
 ADC_ExternalTrigInjectedConvConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:806
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:806
   uint32_t tmpreg = 0;
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
@@ -924,26 +924,26 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the old register value */
   tmpreg = ADCx->CR2;
    0:	6883      	ldr	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:808
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:808
   /* Clear the old external event selection for injected group */
   tmpreg &= CR2_JEXTSEL_Reset;
    2:	f423 43e0 	bic.w	r3, r3, #28672	; 0x7000
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:810
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:810
   /* Set the external event selection for injected group */
   tmpreg |= ADC_ExternalTrigInjecConv;
    6:	4319      	orrs	r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:812
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:812
   /* Store the new register value */
   ADCx->CR2 = tmpreg;
    8:	6081      	str	r1, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:813
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:813
 }
    a:	4770      	bx	lr
 Disassembly of section .text.ADC_ExternalTrigInjectedConvCmd:
 
 00000000 <ADC_ExternalTrigInjectedConvCmd>:
 ADC_ExternalTrigInjectedConvCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:829
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:829
 void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -951,14 +951,14 @@ void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_ExternalTrigInjectedConvCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:832
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:832
   {
     /* Enable the selected ADC external event selection for injected group */
     ADCx->CR2 |= CR2_JEXTTRIG_Set;
    2:	6883      	ldr	r3, [r0, #8]
    4:	f443 4300 	orr.w	r3, r3, #32768	; 0x8000
    8:	e002      	b.n	10 <ADC_ExternalTrigInjectedConvCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:837
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:837
   }
   else
   {
@@ -967,7 +967,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6883      	ldr	r3, [r0, #8]
    c:	f423 4300 	bic.w	r3, r3, #32768	; 0x8000
   10:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:839
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:839
   }
 }
   12:	4770      	bx	lr
@@ -975,7 +975,7 @@ Disassembly of section .text.ADC_SoftwareStartInjectedConvCmd:
 
 00000000 <ADC_SoftwareStartInjectedConvCmd>:
 ADC_SoftwareStartInjectedConvCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:854
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:854
 void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState)
 {
   /* Check the parameters */
@@ -983,7 +983,7 @@ void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewStat
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
    0:	b119      	cbz	r1, a <ADC_SoftwareStartInjectedConvCmd+0xa>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:858
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:858
   {
     /* Enable the selected ADC conversion for injected group on external event and start the selected
        ADC injected conversion */
@@ -991,7 +991,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    2:	6883      	ldr	r3, [r0, #8]
    4:	f443 1302 	orr.w	r3, r3, #2129920	; 0x208000
    8:	e002      	b.n	10 <ADC_SoftwareStartInjectedConvCmd+0x10>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:864
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:864
   }
   else
   {
@@ -1001,7 +1001,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    a:	6883      	ldr	r3, [r0, #8]
    c:	f423 1302 	bic.w	r3, r3, #2129920	; 0x208000
   10:	6083      	str	r3, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:866
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:866
   }
 }
   12:	4770      	bx	lr
@@ -1009,7 +1009,7 @@ Disassembly of section .text.ADC_GetSoftwareStartInjectedConvCmdStatus:
 
 00000000 <ADC_GetSoftwareStartInjectedConvCmdStatus>:
 ADC_GetSoftwareStartInjectedConvCmdStatus():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:879
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:879
 {
   FlagStatus bitstatus = RESET;
   /* Check the parameters */
@@ -1017,7 +1017,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Check the status of JSWSTART bit */
   if ((ADCx->CR2 & CR2_JSWSTART_Set) != (uint32_t)RESET)
    0:	6880      	ldr	r0, [r0, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:891
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:891
     /* JSWSTART bit is reset */
     bitstatus = RESET;
   }
@@ -1030,7 +1030,7 @@ Disassembly of section .text.ADC_InjectedChannelConfig:
 
 00000000 <ADC_InjectedChannelConfig>:
 ADC_InjectedChannelConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:939
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:939
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_CHANNEL(ADC_Channel));
   assert_param(IS_ADC_INJECTED_RANK(Rank));
@@ -1038,7 +1038,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* if ADC_Channel_10 ... ADC_Channel_17 is selected */
   if (ADC_Channel > ADC_Channel_9)
    0:	2909      	cmp	r1, #9
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:931
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:931
   *     @arg ADC_SampleTime_71Cycles5: Sample time equal to 71.5 cycles	
   *     @arg ADC_SampleTime_239Cycles5: Sample time equal to 239.5 cycles	
   * @retval None
@@ -1049,7 +1049,7 @@ void ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel, uint8_t R
    4:	468c      	mov	ip, r1
    6:	4615      	mov	r5, r2
    8:	461c      	mov	r4, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:939
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:939
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_CHANNEL(ADC_Channel));
   assert_param(IS_ADC_INJECTED_RANK(Rank));
@@ -1057,7 +1057,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* if ADC_Channel_10 ... ADC_Channel_17 is selected */
   if (ADC_Channel > ADC_Channel_9)
    a:	d90d      	bls.n	28 <ADC_InjectedChannelConfig+0x28>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:944
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:944
   {
     /* Get the old register value */
     tmpreg1 = ADCx->SMPR1;
@@ -1065,11 +1065,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SMPR1_SMP_Set << (3*(ADC_Channel - 10));
    c:	2203      	movs	r2, #3
    e:	fb02 f20c 	mul.w	r2, r2, ip
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:946
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:946
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   12:	2307      	movs	r3, #7
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:944
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:944
   if (ADC_Channel > ADC_Channel_9)
   {
     /* Get the old register value */
@@ -1077,17 +1077,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Calculate the mask to clear */
     tmpreg2 = SMPR1_SMP_Set << (3*(ADC_Channel - 10));
   14:	3a1e      	subs	r2, #30
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:946
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:946
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   16:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:950
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:950
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3*(ADC_Channel - 10));
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   18:	fa14 f202 	lsls.w	r2, r4, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:942
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:942
   assert_param(IS_ADC_SAMPLE_TIME(ADC_SampleTime));
   /* if ADC_Channel_10 ... ADC_Channel_17 is selected */
   if (ADC_Channel > ADC_Channel_9)
@@ -1095,24 +1095,24 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SMPR1;
   1c:	68c1      	ldr	r1, [r0, #12]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:946
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:946
     /* Calculate the mask to clear */
     tmpreg2 = SMPR1_SMP_Set << (3*(ADC_Channel - 10));
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   1e:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:950
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:950
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3*(ADC_Channel - 10));
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   22:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:952
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:952
     /* Store the new register value */
     ADCx->SMPR1 = tmpreg1;
   24:	60c1      	str	r1, [r0, #12]
   26:	e00b      	b.n	40 <ADC_InjectedChannelConfig+0x40>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:959
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:959
   else /* ADC_Channel include in ADC_Channel_[0..9] */
   {
     /* Get the old register value */
@@ -1121,18 +1121,18 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     tmpreg2 = SMPR2_SMP_Set << (3 * ADC_Channel);
   28:	2203      	movs	r2, #3
   2a:	fb02 f20c 	mul.w	r2, r2, ip
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:961
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:961
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   2e:	2307      	movs	r3, #7
   30:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:965
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:965
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3 * ADC_Channel);
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   32:	fa14 f202 	lsls.w	r2, r4, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:957
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:957
     ADCx->SMPR1 = tmpreg1;
   }
   else /* ADC_Channel include in ADC_Channel_[0..9] */
@@ -1140,29 +1140,29 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
     /* Get the old register value */
     tmpreg1 = ADCx->SMPR2;
   36:	6901      	ldr	r1, [r0, #16]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:961
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:961
     /* Calculate the mask to clear */
     tmpreg2 = SMPR2_SMP_Set << (3 * ADC_Channel);
     /* Clear the old channel sample time */
     tmpreg1 &= ~tmpreg2;
   38:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:965
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:965
     /* Calculate the mask to set */
     tmpreg2 = (uint32_t)ADC_SampleTime << (3 * ADC_Channel);
     /* Set the new channel sample time */
     tmpreg1 |= tmpreg2;
   3c:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:967
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:967
     /* Store the new register value */
     ADCx->SMPR2 = tmpreg1;
   3e:	6101      	str	r1, [r0, #16]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:971
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:971
   }
   /* Rank configuration */
   /* Get the old register value */
   tmpreg1 = ADCx->JSQR;
   40:	6b81      	ldr	r1, [r0, #56]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:975
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:975
   /* Get JL value: Number = JL+1 */
   tmpreg3 =  (tmpreg1 & JSQR_JL_Set)>> 20;
   /* Calculate the mask to clear: ((Rank-1)+(4-JL-1)) */
@@ -1173,18 +1173,18 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   4a:	3302      	adds	r3, #2
   4c:	b2db      	uxtb	r3, r3
   4e:	435a      	muls	r2, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:977
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:977
   /* Clear the old JSQx bits for the selected rank */
   tmpreg1 &= ~tmpreg2;
   50:	231f      	movs	r3, #31
   52:	4093      	lsls	r3, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:981
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:981
   /* Calculate the mask to set: ((Rank-1)+(4-JL-1)) */
   tmpreg2 = (uint32_t)ADC_Channel << (5 * (uint8_t)((Rank + 3) - (tmpreg3 + 1)));
   /* Set the JSQx bits for the selected rank */
   tmpreg1 |= tmpreg2;
   54:	fa0c f202 	lsl.w	r2, ip, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:977
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:977
   /* Get JL value: Number = JL+1 */
   tmpreg3 =  (tmpreg1 & JSQR_JL_Set)>> 20;
   /* Calculate the mask to clear: ((Rank-1)+(4-JL-1)) */
@@ -1192,17 +1192,17 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Clear the old JSQx bits for the selected rank */
   tmpreg1 &= ~tmpreg2;
   58:	ea21 0103 	bic.w	r1, r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:981
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:981
   /* Calculate the mask to set: ((Rank-1)+(4-JL-1)) */
   tmpreg2 = (uint32_t)ADC_Channel << (5 * (uint8_t)((Rank + 3) - (tmpreg3 + 1)));
   /* Set the JSQx bits for the selected rank */
   tmpreg1 |= tmpreg2;
   5c:	4311      	orrs	r1, r2
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:983
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:983
   /* Store the new register value */
   ADCx->JSQR = tmpreg1;
   5e:	6381      	str	r1, [r0, #56]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:984
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:984
 }
   60:	bd30      	pop	{r4, r5, pc}
   62:	46c0      	nop			(mov r8, r8)
@@ -1210,7 +1210,7 @@ Disassembly of section .text.ADC_InjectedSequencerLengthConfig:
 
 00000000 <ADC_InjectedSequencerLengthConfig>:
 ADC_InjectedSequencerLengthConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1002
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1002
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_INJECTED_LENGTH(Length));
@@ -1218,14 +1218,14 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Get the old register value */
   tmpreg1 = ADCx->JSQR;
    0:	6b83      	ldr	r3, [r0, #56]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1007
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1007
   /* Clear the old injected sequnence lenght JL bits */
   tmpreg1 &= JSQR_JL_Reset;
   /* Set the injected sequnence lenght JL bits */
   tmpreg2 = Length - 1; 
   tmpreg1 |= tmpreg2 << 20;
    2:	3901      	subs	r1, #1
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1004
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1004
   assert_param(IS_ADC_INJECTED_LENGTH(Length));
   
   /* Get the old register value */
@@ -1233,23 +1233,23 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Clear the old injected sequnence lenght JL bits */
   tmpreg1 &= JSQR_JL_Reset;
    4:	f423 1340 	bic.w	r3, r3, #3145728	; 0x300000
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1007
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1007
   /* Set the injected sequnence lenght JL bits */
   tmpreg2 = Length - 1; 
   tmpreg1 |= tmpreg2 << 20;
    8:	ea43 5301 	orr.w	r3, r3, r1, lsl #20
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1009
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1009
   /* Store the new register value */
   ADCx->JSQR = tmpreg1;
    c:	6383      	str	r3, [r0, #56]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1010
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1010
 }
    e:	4770      	bx	lr
 Disassembly of section .text.ADC_SetInjectedOffset:
 
 00000000 <ADC_SetInjectedOffset>:
 ADC_SetInjectedOffset():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1026
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1026
   * @param  Offset: the offset value for the selected ADC injected channel
   *   This parameter must be a 12bit value.
   * @retval None
@@ -1257,11 +1257,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 void ADC_SetInjectedOffset(ADC_TypeDef* ADCx, uint8_t ADC_InjectedChannel, uint16_t Offset)
 {
    0:	b082      	sub	sp, #8
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1027
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1027
   __IO uint32_t tmp = 0;
    2:	2300      	movs	r3, #0
    4:	9301      	str	r3, [sp, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1034
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1034
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_INJECTED_CHANNEL(ADC_InjectedChannel));
@@ -1269,18 +1269,18 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   
   tmp = (uint32_t)ADCx;
    6:	9001      	str	r0, [sp, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1035
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1035
   tmp += ADC_InjectedChannel;
    8:	9b01      	ldr	r3, [sp, #4]
    a:	18c9      	adds	r1, r1, r3
    c:	9101      	str	r1, [sp, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1038
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1038
   
   /* Set the selected injected channel data offset */
   *(__IO uint32_t *) tmp = (uint32_t)Offset;
    e:	9b01      	ldr	r3, [sp, #4]
   10:	601a      	str	r2, [r3, #0]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1039
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1039
 }
   12:	b002      	add	sp, #8
   14:	4770      	bx	lr
@@ -1289,7 +1289,7 @@ Disassembly of section .text.ADC_GetInjectedConversionValue:
 
 00000000 <ADC_GetInjectedConversionValue>:
 ADC_GetInjectedConversionValue():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1053
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1053
   *     @arg ADC_InjectedChannel_3: Injected Channel3 selected
   *     @arg ADC_InjectedChannel_4: Injected Channel4 selected
   * @retval The Data conversion value.
@@ -1297,11 +1297,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 uint16_t ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, uint8_t ADC_InjectedChannel)
 {
    0:	b082      	sub	sp, #8
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1054
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1054
   __IO uint32_t tmp = 0;
    2:	2300      	movs	r3, #0
    4:	9301      	str	r3, [sp, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1060
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1060
   
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
@@ -1309,19 +1309,19 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 
   tmp = (uint32_t)ADCx;
    6:	9001      	str	r0, [sp, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1061
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1061
   tmp += ADC_InjectedChannel + JDR_Offset;
    8:	9b01      	ldr	r3, [sp, #4]
    a:	3328      	adds	r3, #40
    c:	185b      	adds	r3, r3, r1
    e:	9301      	str	r3, [sp, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1064
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1064
   
   /* Returns the selected injected channel conversion data value */
   return (uint16_t) (*(__IO uint32_t*)  tmp);   
   10:	9b01      	ldr	r3, [sp, #4]
   12:	6818      	ldr	r0, [r3, #0]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1065
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1065
 }
   14:	b280      	uxth	r0, r0
   16:	b002      	add	sp, #8
@@ -1331,7 +1331,7 @@ Disassembly of section .text.ADC_AnalogWatchdogCmd:
 
 00000000 <ADC_AnalogWatchdogCmd>:
 ADC_AnalogWatchdogCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1083
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1083
   *     @arg ADC_AnalogWatchdog_AllRegAllInjecEnable: Analog watchdog on all regular and injected channels
   *     @arg ADC_AnalogWatchdog_None: No channel guarded by the analog watchdog
   * @retval None	  
@@ -1339,7 +1339,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 void ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, uint32_t ADC_AnalogWatchdog)
 {
    0:	6843      	ldr	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1091
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1091
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_ANALOG_WATCHDOG(ADC_AnalogWatchdog));
   /* Get the old register value */
@@ -1348,22 +1348,22 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   tmpreg &= CR1_AWDMode_Reset;
    2:	f423 0340 	bic.w	r3, r3, #12582912	; 0xc00000
    6:	f423 7300 	bic.w	r3, r3, #512	; 0x200
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1093
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1093
   /* Set the analog watchdog enable mode */
   tmpreg |= ADC_AnalogWatchdog;
    a:	4319      	orrs	r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1095
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1095
   /* Store the new register value */
   ADCx->CR1 = tmpreg;
    c:	6041      	str	r1, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1096
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1096
 }
    e:	4770      	bx	lr
 Disassembly of section .text.ADC_AnalogWatchdogThresholdsConfig:
 
 00000000 <ADC_AnalogWatchdogThresholdsConfig>:
 ADC_AnalogWatchdogThresholdsConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1115
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1115
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_THRESHOLD(HighThreshold));
@@ -1371,11 +1371,11 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Set the ADCx high threshold */
   ADCx->HTR = HighThreshold;
    0:	6241      	str	r1, [r0, #36]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1117
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1117
   /* Set the ADCx low threshold */
   ADCx->LTR = LowThreshold;
    2:	6282      	str	r2, [r0, #40]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1118
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1118
 }
    4:	4770      	bx	lr
    6:	46c0      	nop			(mov r8, r8)
@@ -1383,7 +1383,7 @@ Disassembly of section .text.ADC_AnalogWatchdogSingleChannelConfig:
 
 00000000 <ADC_AnalogWatchdogSingleChannelConfig>:
 ADC_AnalogWatchdogSingleChannelConfig():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1146
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1146
   *     @arg ADC_Channel_16: ADC Channel16 selected
   *     @arg ADC_Channel_17: ADC Channel17 selected
   * @retval None
@@ -1391,7 +1391,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 void ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel)
 {
    0:	6843      	ldr	r3, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1154
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1154
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_CHANNEL(ADC_Channel));
   /* Get the old register value */
@@ -1399,22 +1399,22 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   /* Clear the Analog watchdog channel select bits */
   tmpreg &= CR1_AWDCH_Reset;
    2:	f023 031f 	bic.w	r3, r3, #31	; 0x1f
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1156
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1156
   /* Set the Analog watchdog channel */
   tmpreg |= ADC_Channel;
    6:	4319      	orrs	r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1158
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1158
   /* Store the new register value */
   ADCx->CR1 = tmpreg;
    8:	6041      	str	r1, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1159
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1159
 }
    a:	4770      	bx	lr
 Disassembly of section .text.ADC_TempSensorVrefintCmd:
 
 00000000 <ADC_TempSensorVrefintCmd>:
 ADC_TempSensorVrefintCmd():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1168
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1168
   * @param  NewState: new state of the temperature sensor.
   *   This parameter can be: ENABLE or DISABLE.
   * @retval None
@@ -1422,7 +1422,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 void ADC_TempSensorVrefintCmd(FunctionalState NewState)
 {
    0:	b120      	cbz	r0, c <ADC_TempSensorVrefintCmd+0xc>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1174
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1174
   /* Check the parameters */
   assert_param(IS_FUNCTIONAL_STATE(NewState));
   if (NewState != DISABLE)
@@ -1433,7 +1433,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    4:	6893      	ldr	r3, [r2, #8]
    6:	f443 0300 	orr.w	r3, r3, #8388608	; 0x800000
    a:	e003      	b.n	14 <ADC_TempSensorVrefintCmd+0x14>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1179
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1179
   }
   else
   {
@@ -1443,7 +1443,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    e:	6893      	ldr	r3, [r2, #8]
   10:	f423 0300 	bic.w	r3, r3, #8388608	; 0x800000
   14:	6093      	str	r3, [r2, #8]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1181
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1181
   }
 }
   16:	4770      	bx	lr
@@ -1452,7 +1452,7 @@ Disassembly of section .text.ADC_GetFlagStatus:
 
 00000000 <ADC_GetFlagStatus>:
 ADC_GetFlagStatus():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1202
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1202
   FlagStatus bitstatus = RESET;
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
@@ -1461,7 +1461,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   if ((ADCx->SR & ADC_FLAG) != (uint8_t)RESET)
    0:	6803      	ldr	r3, [r0, #0]
    2:	4219      	tst	r1, r3
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1214
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1214
     /* ADC_FLAG is reset */
     bitstatus = RESET;
   }
@@ -1476,7 +1476,7 @@ Disassembly of section .text.ADC_ClearFlag:
 
 00000000 <ADC_ClearFlag>:
 ADC_ClearFlag():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1229
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1229
   *     @arg ADC_FLAG_JSTRT: Start of injected group conversion flag
   *     @arg ADC_FLAG_STRT: Start of regular group conversion flag
   * @retval None
@@ -1485,7 +1485,7 @@ void ADC_ClearFlag(ADC_TypeDef* ADCx, uint8_t ADC_FLAG)
 {
    0:	43c9      	mvns	r1, r1
    2:	6001      	str	r1, [r0, #0]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1235
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1235
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   assert_param(IS_ADC_CLEAR_FLAG(ADC_FLAG));
@@ -1498,7 +1498,7 @@ Disassembly of section .text.ADC_GetITStatus:
 
 00000000 <ADC_GetITStatus>:
 ADC_GetITStatus():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1248
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1248
   *     @arg ADC_IT_AWD: Analog watchdog interrupt mask
   *     @arg ADC_IT_JEOC: End of injected conversion interrupt mask
   * @retval The new state of ADC_IT (SET or RESET).
@@ -1506,7 +1506,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
 ITStatus ADC_GetITStatus(ADC_TypeDef* ADCx, uint16_t ADC_IT)
 {
    0:	6842      	ldr	r2, [r0, #4]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1259
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1259
   /* Get the ADC IT index */
   itmask = ADC_IT >> 8;
   /* Get the ADC_IT enable bit status */
@@ -1521,7 +1521,7 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
    e:	bf0c      	ite	eq
   10:	2000      	moveq	r0, #0
   12:	2001      	movne	r0, #1
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1271
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1271
     /* ADC_IT is reset */
     bitstatus = RESET;
   }
@@ -1534,7 +1534,7 @@ Disassembly of section .text.ADC_ClearITPendingBit:
 
 00000000 <ADC_ClearITPendingBit>:
 ADC_ClearITPendingBit():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1284
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1284
   *     @arg ADC_IT_AWD: Analog watchdog interrupt mask
   *     @arg ADC_IT_JEOC: End of injected conversion interrupt mask
   * @retval None
@@ -1543,7 +1543,7 @@ void ADC_ClearITPendingBit(ADC_TypeDef* ADCx, uint16_t ADC_IT)
 {
    0:	ea6f 2111 	mvn.w	r1, r1, lsr #8
    4:	6001      	str	r1, [r0, #0]
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1293
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:1293
   assert_param(IS_ADC_IT(ADC_IT));
   /* Get the ADC IT index */
   itmask = (uint8_t)(ADC_IT >> 8);
@@ -1555,7 +1555,7 @@ Disassembly of section .text.ADC_DeInit:
 
 00000000 <ADC_DeInit>:
 ADC_DeInit():
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:180
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:180
   * @brief  Deinitializes the ADCx peripheral registers to their default reset values.
   * @param  ADCx: where x can be 1, 2 or 3 to select the ADC peripheral.
   * @retval None
@@ -1564,44 +1564,44 @@ void ADC_DeInit(ADC_TypeDef* ADCx)
 {
    0:	4b12      	ldr	r3, [pc, #72]	(4c <ADC_DeInit+0x4c>)
    2:	b510      	push	{r4, lr}
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:184
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:184
   /* Check the parameters */
   assert_param(IS_ADC_ALL_PERIPH(ADCx));
   
   if (ADCx == ADC1)
    4:	4298      	cmp	r0, r3
    6:	d107      	bne.n	18 <ADC_DeInit+0x18>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:187
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:187
   {
     /* Enable ADC1 reset state */
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_ADC1, ENABLE);
    8:	f44f 7000 	mov.w	r0, #512	; 0x200
    c:	2101      	movs	r1, #1
    e:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:189
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:189
     /* Release ADC1 from reset state */
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_ADC1, DISABLE);
   12:	f44f 7000 	mov.w	r0, #512	; 0x200
   16:	e014      	b.n	42 <ADC_DeInit+0x42>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:191
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:191
   }
   else if (ADCx == ADC2)
   18:	4b0d      	ldr	r3, [pc, #52]	(50 <ADC_DeInit+0x50>)
   1a:	4298      	cmp	r0, r3
   1c:	d107      	bne.n	2e <ADC_DeInit+0x2e>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:194
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:194
   {
     /* Enable ADC2 reset state */
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_ADC2, ENABLE);
   1e:	f44f 6080 	mov.w	r0, #1024	; 0x400
   22:	2101      	movs	r1, #1
   24:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:196
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:196
     /* Release ADC2 from reset state */
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_ADC2, DISABLE);
   28:	f44f 6080 	mov.w	r0, #1024	; 0x400
   2c:	e009      	b.n	42 <ADC_DeInit+0x42>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:200
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:200
   }
   else
   {
@@ -1609,20 +1609,20 @@ C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5
   2e:	4b09      	ldr	r3, [pc, #36]	(54 <ADC_DeInit+0x54>)
   30:	4298      	cmp	r0, r3
   32:	d109      	bne.n	48 <ADC_DeInit+0x48>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:203
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:203
     {
       /* Enable ADC3 reset state */
       RCC_APB2PeriphResetCmd(RCC_APB2Periph_ADC3, ENABLE);
   34:	f44f 4000 	mov.w	r0, #32768	; 0x8000
   38:	2101      	movs	r1, #1
   3a:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:205
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:205
       /* Release ADC3 from reset state */
       RCC_APB2PeriphResetCmd(RCC_APB2Periph_ADC3, DISABLE);
   3e:	f44f 4000 	mov.w	r0, #32768	; 0x8000
   42:	2100      	movs	r1, #0
   44:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:208
+C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_adc.c:208
     }
   }
 }

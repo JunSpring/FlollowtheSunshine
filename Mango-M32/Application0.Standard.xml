@@ -1,7 +1,7 @@
 <!-- DWF2XML 2.00.01 - Raisonance Dwarf information extractor -->
 <aoffile Filename="Application0" dwarf="1">
  <modulelist>
-  <module Name="C:\ride_project\FlollowtheSunshine\src\main.c" >
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" >
    <type Family="Base" Name="signed char" ID="37"/>
    <type Family="Base" Name="unsigned char" ID="55"/>
    <type Family="typedef" Name="uint8_t" Line="46" ID="44" toTI="55"/>
@@ -167,1122 +167,1127 @@
    </type>
    <type Family="typedef" Name="CDS" Line="11" ID="2076" toTI="2011"/>
    <type Family="Base" Name="char" ID="2087"/>
-   <function Name="main" TI="126" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="60">
-    <variable Name="usart3" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="64" Addr="0x3400006C" TI="1732"/>
-    <variable Name="motorconfig" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="67" Addr="0x34000008" TI="1918"/>
-    <variable Name="soilmoisture" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="92" Addr="0x3400005C" TI="2000"/>
-    <variable Name="cds1" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="95" Addr="0x3400004C" TI="2076"/>
-    <variable Name="cds2" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="101" Addr="0x3400003C" TI="2076"/>
+   <function Name="main" TI="126" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="61">
+    <variable Name="usart3" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="65" Addr="0x3400006C" TI="1732"/>
+    <variable Name="motorconfig" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="68" Addr="0x34000008" TI="1918"/>
+    <variable Name="soilmoisture" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="101" Addr="0x3400005C" TI="2000"/>
+    <variable Name="cds1" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="104" Addr="0x3400004C" TI="2076"/>
+    <variable Name="cds2" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="110" Addr="0x3400003C" TI="2076"/>
+   <type Family="Base" Name="_Bool" ID="2260"/>
    </function >
-   <variable Name="TIM_TimeBaseStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="8" Addr="0x20000124" TI="1518"/>
-   <variable Name="TIM_OCInitStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\src\main.c" Line="9" Addr="0x2000012E" TI="1650"/>
+   <variable Name="TIM_TimeBaseStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="9" Addr="0x20000138" TI="1518"/>
+   <variable Name="TIM_OCInitStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="10" Addr="0x20000142" TI="1650"/>
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\src\delay.c" >
-   <type Family="Base" Name="signed char" ID="2330"/>
-   <type Family="Base" Name="unsigned char" ID="2337"/>
-   <type Family="Base" Name="short int" ID="2344"/>
-   <type Family="Base" Name="short unsigned int" ID="2351"/>
-   <type Family="Base" Name="long int" ID="2358"/>
-   <type Family="Base" Name="long unsigned int" ID="2365"/>
-   <type Family="Base" Name="long long int" ID="2372"/>
-   <type Family="Base" Name="long long unsigned int" ID="2379"/>
-   <type Family="Base" Name="int" ID="2386"/>
-   <type Family="Base" Name="unsigned int" ID="2393"/>
-   <function Name="delay_m" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\delay.c" Line="9">
-    <parameter Name="nTime" TI="2428" FileName="C:\ride_project\FlollowtheSunshine\src\delay.c" Line="9" Addr="0x3" Param="Yes"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" >
+   <type Family="Base" Name="signed char" ID="2360"/>
+   <type Family="Base" Name="unsigned char" ID="2367"/>
+   <type Family="Base" Name="short int" ID="2374"/>
+   <type Family="Base" Name="short unsigned int" ID="2381"/>
+   <type Family="Base" Name="long int" ID="2388"/>
+   <type Family="Base" Name="long unsigned int" ID="2406"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="2395" toTI="2406"/>
+   <type Family="Base" Name="long long int" ID="2413"/>
+   <type Family="Base" Name="long long unsigned int" ID="2420"/>
+   <type Family="Base" Name="int" ID="2427"/>
+   <type Family="Base" Name="unsigned int" ID="2434"/>
+   <function Name="delay_int_count" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="5">
+    <parameter Name="nTime" TI="2484" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="5" Addr="0x0" Param="Yes"/>
    </function >
-  </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" >
-   <type Family="Base" Name="signed char" ID="2537"/>
-   <type Family="Base" Name="unsigned char" ID="2544"/>
-   <type Family="Base" Name="short int" ID="2551"/>
-   <type Family="Base" Name="short unsigned int" ID="2569"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="2558" toTI="2569"/>
-   <type Family="Base" Name="long int" ID="2576"/>
-   <type Family="Base" Name="long unsigned int" ID="2594"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="2583" toTI="2594"/>
-   <type Family="Base" Name="long long int" ID="2601"/>
-   <type Family="Base" Name="long long unsigned int" ID="2608"/>
-   <type Family="Base" Name="int" ID="2615"/>
-   <type Family="Base" Name="unsigned int" ID="2622"/>
-   <type Family="ComponentList" Line="1003" ID="2642">
-    <Component Name="CRL" TI="2651" Line="1004" Offs="0"/>
-    <Component Name="CRH" TI="2666" Line="1005" Offs="4"/>
-    <Component Name="IDR" TI="2681" Line="1006" Offs="8"/>
-    <Component Name="ODR" TI="2696" Line="1007" Offs="12"/>
-    <Component Name="BSRR" TI="2711" Line="1008" Offs="16"/>
-    <Component Name="BRR" TI="2726" Line="1009" Offs="20"/>
-    <Component Name="LCKR" TI="2741" Line="1010" Offs="24"/>
-   </type>
-   <type Family="ComponentList" Line="1188" ID="2757">
-    <Component Name="CR1" TI="2766" Line="1189" Offs="0"/>
-    <Component Name="RESERVED0" TI="2781" Line="1190" Offs="2"/>
-    <Component Name="CR2" TI="2796" Line="1191" Offs="4"/>
-    <Component Name="RESERVED1" TI="2811" Line="1192" Offs="6"/>
-    <Component Name="SMCR" TI="2826" Line="1193" Offs="8"/>
-    <Component Name="RESERVED2" TI="2841" Line="1194" Offs="10"/>
-    <Component Name="DIER" TI="2856" Line="1195" Offs="12"/>
-    <Component Name="RESERVED3" TI="2871" Line="1196" Offs="14"/>
-    <Component Name="SR" TI="2886" Line="1197" Offs="16"/>
-    <Component Name="RESERVED4" TI="2900" Line="1198" Offs="18"/>
-    <Component Name="EGR" TI="2915" Line="1199" Offs="20"/>
-    <Component Name="RESERVED5" TI="2930" Line="1200" Offs="22"/>
-    <Component Name="CCMR1" TI="2945" Line="1201" Offs="24"/>
-    <Component Name="RESERVED6" TI="2960" Line="1202" Offs="26"/>
-    <Component Name="CCMR2" TI="2975" Line="1203" Offs="28"/>
-    <Component Name="RESERVED7" TI="2990" Line="1204" Offs="30"/>
-    <Component Name="CCER" TI="3005" Line="1205" Offs="32"/>
-    <Component Name="RESERVED8" TI="3020" Line="1206" Offs="34"/>
-    <Component Name="CNT" TI="3035" Line="1207" Offs="36"/>
-    <Component Name="RESERVED9" TI="3050" Line="1208" Offs="38"/>
-    <Component Name="PSC" TI="3065" Line="1209" Offs="40"/>
-    <Component Name="RESERVED10" TI="3080" Line="1210" Offs="42"/>
-    <Component Name="ARR" TI="3095" Line="1211" Offs="44"/>
-    <Component Name="RESERVED11" TI="3110" Line="1212" Offs="46"/>
-    <Component Name="RCR" TI="3125" Line="1213" Offs="48"/>
-    <Component Name="RESERVED12" TI="3140" Line="1214" Offs="50"/>
-    <Component Name="CCR1" TI="3155" Line="1215" Offs="52"/>
-    <Component Name="RESERVED13" TI="3170" Line="1216" Offs="54"/>
-    <Component Name="CCR2" TI="3185" Line="1217" Offs="56"/>
-    <Component Name="RESERVED14" TI="3200" Line="1218" Offs="58"/>
-    <Component Name="CCR3" TI="3215" Line="1219" Offs="60"/>
-    <Component Name="RESERVED15" TI="3230" Line="1220" Offs="62"/>
-    <Component Name="CCR4" TI="3245" Line="1221" Offs="64"/>
-    <Component Name="RESERVED16" TI="3260" Line="1222" Offs="66"/>
-    <Component Name="BDTR" TI="3275" Line="1223" Offs="68"/>
-    <Component Name="RESERVED17" TI="3290" Line="1224" Offs="70"/>
-    <Component Name="DCR" TI="3305" Line="1225" Offs="72"/>
-    <Component Name="RESERVED18" TI="3320" Line="1226" Offs="74"/>
-    <Component Name="DMAR" TI="3335" Line="1227" Offs="76"/>
-    <Component Name="RESERVED19" TI="3350" Line="1228" Offs="78"/>
-   </type>
-   <function Name="NMI_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="58">
-   </function >
-   <function Name="HardFault_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="67">
-   </function >
-   <function Name="MemManage_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="79">
-   </function >
-   <function Name="BusFault_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="91">
-   </function >
-   <function Name="UsageFault_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="103">
-   </function >
-   <function Name="DebugMon_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="115">
-   </function >
-   <function Name="SVC_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="123">
-   </function >
-   <function Name="PendSV_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="131">
-   </function >
-   <function Name="SysTick_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="139">
-   </function >
-   <function Name="TIM3_IRQHandler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="170">
-   </function >
-   <function Name="TIM2_IRQHandler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="152">
-   </function >
-   <variable Name="capture" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="39" Addr="0x20000120" TI="2558"/>
-   <variable Name="count" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="150" Addr="0x2000011C" TI="2615"/>
-   <variable Name="count_2" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="168" Addr="0x20000118" TI="2615"/>
-  </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" >
-   <type Family="Base" Name="signed char" ID="3690"/>
-   <type Family="Base" Name="unsigned char" ID="3708"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="3697" toTI="3708"/>
-   <type Family="Base" Name="short int" ID="3715"/>
-   <type Family="Base" Name="short unsigned int" ID="3722"/>
-   <type Family="Base" Name="long int" ID="3729"/>
-   <type Family="Base" Name="long unsigned int" ID="3747"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="3736" toTI="3747"/>
-   <type Family="Base" Name="long long int" ID="3754"/>
-   <type Family="Base" Name="long long unsigned int" ID="3761"/>
-   <type Family="Base" Name="int" ID="3768"/>
-   <type Family="Base" Name="unsigned int" ID="3775"/>
-   <type Family="ComponentList" Line="156" ID="3790">
-    <Component Name="CPUID" TI="3798" Line="157" Offs="0"/>
-    <Component Name="ICSR" TI="3812" Line="158" Offs="4"/>
-    <Component Name="VTOR" TI="3826" Line="159" Offs="8"/>
-    <Component Name="AIRCR" TI="3840" Line="160" Offs="12"/>
-    <Component Name="SCR" TI="3854" Line="161" Offs="16"/>
-    <Component Name="CCR" TI="3868" Line="162" Offs="20"/>
-   <type Family="array" ID="4070" toTI="3697"/>
-    <Component Name="SHP" TI="3882" Line="163" Offs="24"/>
-    <Component Name="SHCSR" TI="3896" Line="164" Offs="36"/>
-    <Component Name="CFSR" TI="3910" Line="165" Offs="40"/>
-    <Component Name="HFSR" TI="3924" Line="166" Offs="44"/>
-    <Component Name="DFSR" TI="3938" Line="167" Offs="48"/>
-    <Component Name="MMFAR" TI="3952" Line="168" Offs="52"/>
-    <Component Name="BFAR" TI="3966" Line="169" Offs="56"/>
-    <Component Name="AFSR" TI="3980" Line="170" Offs="60"/>
-   <type Family="array" ID="4091" toTI="3736"/>
-    <Component Name="PFR" TI="3994" Line="171" Offs="64"/>
-    <Component Name="DFR" TI="4008" Line="172" Offs="72"/>
-    <Component Name="ADR" TI="4022" Line="173" Offs="76"/>
-   <type Family="array" ID="4117" toTI="3736"/>
-    <Component Name="MMFR" TI="4036" Line="174" Offs="80"/>
-   <type Family="array" ID="4143" toTI="3736"/>
-    <Component Name="ISAR" TI="4050" Line="175" Offs="96"/>
-   </type>
-   <type Family="ComponentList" Line="903" ID="4191">
-    <Component Name="ACR" TI="4200" Line="904" Offs="0"/>
-    <Component Name="KEYR" TI="4215" Line="905" Offs="4"/>
-    <Component Name="OPTKEYR" TI="4230" Line="906" Offs="8"/>
-    <Component Name="SR" TI="4245" Line="907" Offs="12"/>
-    <Component Name="CR" TI="4259" Line="908" Offs="16"/>
-    <Component Name="AR" TI="4273" Line="909" Offs="20"/>
-    <Component Name="RESERVED" TI="4287" Line="910" Offs="24"/>
-    <Component Name="OBR" TI="4302" Line="911" Offs="28"/>
-    <Component Name="WRPR" TI="4317" Line="912" Offs="32"/>
-   </type>
-   <type Family="ComponentList" Line="1078" ID="4333">
-    <Component Name="CR" TI="4342" Line="1079" Offs="0"/>
-    <Component Name="CFGR" TI="4356" Line="1080" Offs="4"/>
-    <Component Name="CIR" TI="4371" Line="1081" Offs="8"/>
-    <Component Name="APB2RSTR" TI="4386" Line="1082" Offs="12"/>
-    <Component Name="APB1RSTR" TI="4401" Line="1083" Offs="16"/>
-    <Component Name="AHBENR" TI="4416" Line="1084" Offs="20"/>
-    <Component Name="APB2ENR" TI="4431" Line="1085" Offs="24"/>
-    <Component Name="APB1ENR" TI="4446" Line="1086" Offs="28"/>
-    <Component Name="BDCR" TI="4461" Line="1087" Offs="32"/>
-    <Component Name="CSR" TI="4476" Line="1088" Offs="36"/>
-   </type>
-   <function Name="SystemInit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="213">
-    <variable Name="StartUpCounter" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="989" Addr="0x3400000C" TI="0"/>
-    <variable Name="HSEStatus" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="989" Addr="0x34000008" TI="0"/>
-   </function >
-   <variable Name="SystemCoreClock" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="162" Addr="0x0" TI="3736"/>
-   <type Family="array" ID="4730" toTI="3697"/>
-   <variable Name="AHBPrescTable" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="167" Addr="0x0" TI="4764"/>
-  </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" >
-   <type Family="Base" Name="signed char" ID="4812"/>
-   <type Family="Base" Name="unsigned char" ID="4830"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="4819" toTI="4830"/>
-   <type Family="Base" Name="short int" ID="4837"/>
-   <type Family="Base" Name="short unsigned int" ID="4844"/>
-   <type Family="Base" Name="long int" ID="4851"/>
-   <type Family="Base" Name="long unsigned int" ID="4869"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="4858" toTI="4869"/>
-   <type Family="Base" Name="long long int" ID="4876"/>
-   <type Family="Base" Name="long long unsigned int" ID="4883"/>
-   <type Family="Base" Name="int" ID="4890"/>
-   <type Family="Base" Name="unsigned int" ID="4897"/>
-   <type Family="ComponentList" Line="133" ID="4904">
-   <type Family="array" ID="5106" toTI="4858"/>
-    <Component Name="ISER" TI="4913" Line="134" Offs="0"/>
-   <type Family="array" ID="5130" toTI="4858"/>
-    <Component Name="RESERVED0" TI="4927" Line="135" Offs="32"/>
-    <Component Name="ICER" TI="4941" Line="136" Offs="128"/>
-    <Component Name="RSERVED1" TI="4956" Line="137" Offs="160"/>
-    <Component Name="ISPR" TI="4971" Line="138" Offs="256"/>
-    <Component Name="RESERVED2" TI="4986" Line="139" Offs="288"/>
-    <Component Name="ICPR" TI="5001" Line="140" Offs="384"/>
-    <Component Name="RESERVED3" TI="5016" Line="141" Offs="416"/>
-    <Component Name="IABR" TI="5031" Line="142" Offs="512"/>
-   <type Family="array" ID="5166" toTI="4858"/>
-    <Component Name="RESERVED4" TI="5046" Line="143" Offs="544"/>
-   <type Family="array" ID="5182" toTI="4819"/>
-    <Component Name="IP" TI="5061" Line="144" Offs="768"/>
-   <type Family="array" ID="5203" toTI="4858"/>
-    <Component Name="RESERVED5" TI="5075" Line="145" Offs="1008"/>
-    <Component Name="STIR" TI="5090" Line="146" Offs="3584"/>
-   </type>
-   <type Family="ComponentList" Line="156" ID="5225">
-    <Component Name="CPUID" TI="5233" Line="157" Offs="0"/>
-    <Component Name="ICSR" TI="5247" Line="158" Offs="4"/>
-    <Component Name="VTOR" TI="5261" Line="159" Offs="8"/>
-    <Component Name="AIRCR" TI="5275" Line="160" Offs="12"/>
-    <Component Name="SCR" TI="5289" Line="161" Offs="16"/>
-    <Component Name="CCR" TI="5303" Line="162" Offs="20"/>
-   <type Family="array" ID="5505" toTI="4819"/>
-    <Component Name="SHP" TI="5317" Line="163" Offs="24"/>
-    <Component Name="SHCSR" TI="5331" Line="164" Offs="36"/>
-    <Component Name="CFSR" TI="5345" Line="165" Offs="40"/>
-    <Component Name="HFSR" TI="5359" Line="166" Offs="44"/>
-    <Component Name="DFSR" TI="5373" Line="167" Offs="48"/>
-    <Component Name="MMFAR" TI="5387" Line="168" Offs="52"/>
-    <Component Name="BFAR" TI="5401" Line="169" Offs="56"/>
-    <Component Name="AFSR" TI="5415" Line="170" Offs="60"/>
-   <type Family="array" ID="5526" toTI="4858"/>
-    <Component Name="PFR" TI="5429" Line="171" Offs="64"/>
-    <Component Name="DFR" TI="5443" Line="172" Offs="72"/>
-    <Component Name="ADR" TI="5457" Line="173" Offs="76"/>
-   <type Family="array" ID="5552" toTI="4858"/>
-    <Component Name="MMFR" TI="5471" Line="174" Offs="80"/>
-   <type Family="array" ID="5578" toTI="4858"/>
-    <Component Name="ISAR" TI="5485" Line="175" Offs="96"/>
-   </type>
-   <type Family="ComponentList" Line="366" ID="5604">
-    <Component Name="CTRL" TI="5613" Line="367" Offs="0"/>
-    <Component Name="LOAD" TI="5628" Line="368" Offs="4"/>
-    <Component Name="VAL" TI="5643" Line="369" Offs="8"/>
-    <Component Name="CALIB" TI="5658" Line="370" Offs="12"/>
-   </type>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="5696" toTI="5674"/>
-   <type Family="ComponentList" Line="51" ID="5708">
-    <Component Name="NVIC_IRQChannel" TI="5716" Line="52" Offs="0"/>
-    <Component Name="NVIC_IRQChannelPreemptionPriority" TI="5730" Line="57" Offs="1"/>
-    <Component Name="NVIC_IRQChannelSubPriority" TI="5744" Line="61" Offs="2"/>
-    <Component Name="NVIC_IRQChannelCmd" TI="5758" Line="65" Offs="3"/>
-   </type>
-   <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="5773" toTI="5708"/>
-   <type Family="Pointer" TI="5897" toTI="5773"/>
-  </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" >
-   <type Family="Base" Name="signed char" ID="6099"/>
-   <type Family="Base" Name="unsigned char" ID="6117"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="6106" toTI="6117"/>
-   <type Family="Base" Name="short int" ID="6124"/>
-   <type Family="Base" Name="short unsigned int" ID="6142"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="6131" toTI="6142"/>
-   <type Family="Base" Name="long int" ID="6149"/>
-   <type Family="Base" Name="long unsigned int" ID="6167"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="6156" toTI="6167"/>
-   <type Family="Base" Name="long long int" ID="6174"/>
-   <type Family="Base" Name="long long unsigned int" ID="6181"/>
-   <type Family="Base" Name="int" ID="6188"/>
-   <type Family="Base" Name="unsigned int" ID="6195"/>
-   <type Family="typedef" Name="FlagStatus" Line="520" ID="6237" toTI="6215"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="6271" toTI="6249"/>
-   <type Family="ComponentList" Line="903" ID="6283">
-    <Component Name="ACR" TI="6292" Line="904" Offs="0"/>
-    <Component Name="KEYR" TI="6307" Line="905" Offs="4"/>
-    <Component Name="OPTKEYR" TI="6322" Line="906" Offs="8"/>
-    <Component Name="SR" TI="6337" Line="907" Offs="12"/>
-    <Component Name="CR" TI="6351" Line="908" Offs="16"/>
-    <Component Name="AR" TI="6365" Line="909" Offs="20"/>
-    <Component Name="RESERVED" TI="6379" Line="910" Offs="24"/>
-    <Component Name="OBR" TI="6394" Line="911" Offs="28"/>
-    <Component Name="WRPR" TI="6409" Line="912" Offs="32"/>
-   </type>
-   <type Family="ComponentList" Line="928" ID="6425">
-    <Component Name="RDP" TI="6434" Line="929" Offs="0"/>
-    <Component Name="USER" TI="6449" Line="930" Offs="2"/>
-    <Component Name="Data0" TI="6464" Line="931" Offs="4"/>
-    <Component Name="Data1" TI="6479" Line="932" Offs="6"/>
-    <Component Name="WRP0" TI="6494" Line="933" Offs="8"/>
-    <Component Name="WRP1" TI="6509" Line="934" Offs="10"/>
-    <Component Name="WRP2" TI="6524" Line="935" Offs="12"/>
-    <Component Name="WRP3" TI="6539" Line="936" Offs="14"/>
-   </type>
-   <type Family="typedef" Name="FLASH_Status" Line="57" ID="6594" toTI="6555"/>
-  </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" >
-   <type Family="Base" Name="signed char" ID="8134"/>
-   <type Family="Base" Name="unsigned char" ID="8152"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="8141" toTI="8152"/>
-   <type Family="Base" Name="short int" ID="8159"/>
-   <type Family="Base" Name="short unsigned int" ID="8177"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="8166" toTI="8177"/>
-   <type Family="Base" Name="long int" ID="8184"/>
-   <type Family="Base" Name="long unsigned int" ID="8202"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="8191" toTI="8202"/>
-   <type Family="Base" Name="long long int" ID="8209"/>
-   <type Family="Base" Name="long long unsigned int" ID="8216"/>
-   <type Family="Base" Name="int" ID="8223"/>
-   <type Family="Base" Name="unsigned int" ID="8230"/>
-   <type Family="typedef" Name="FlagStatus" Line="520" ID="8267" toTI="8245"/>
-   <type Family="typedef" Name="ITStatus" Line="520" ID="8279" toTI="8245"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="8313" toTI="8291"/>
-   <type Family="ComponentList" Line="1188" ID="8325">
-    <Component Name="CR1" TI="8334" Line="1189" Offs="0"/>
-    <Component Name="RESERVED0" TI="8349" Line="1190" Offs="2"/>
-    <Component Name="CR2" TI="8364" Line="1191" Offs="4"/>
-    <Component Name="RESERVED1" TI="8379" Line="1192" Offs="6"/>
-    <Component Name="SMCR" TI="8394" Line="1193" Offs="8"/>
-    <Component Name="RESERVED2" TI="8409" Line="1194" Offs="10"/>
-    <Component Name="DIER" TI="8424" Line="1195" Offs="12"/>
-    <Component Name="RESERVED3" TI="8439" Line="1196" Offs="14"/>
-    <Component Name="SR" TI="8454" Line="1197" Offs="16"/>
-    <Component Name="RESERVED4" TI="8468" Line="1198" Offs="18"/>
-    <Component Name="EGR" TI="8483" Line="1199" Offs="20"/>
-    <Component Name="RESERVED5" TI="8498" Line="1200" Offs="22"/>
-    <Component Name="CCMR1" TI="8513" Line="1201" Offs="24"/>
-    <Component Name="RESERVED6" TI="8528" Line="1202" Offs="26"/>
-    <Component Name="CCMR2" TI="8543" Line="1203" Offs="28"/>
-    <Component Name="RESERVED7" TI="8558" Line="1204" Offs="30"/>
-    <Component Name="CCER" TI="8573" Line="1205" Offs="32"/>
-    <Component Name="RESERVED8" TI="8588" Line="1206" Offs="34"/>
-    <Component Name="CNT" TI="8603" Line="1207" Offs="36"/>
-    <Component Name="RESERVED9" TI="8618" Line="1208" Offs="38"/>
-    <Component Name="PSC" TI="8633" Line="1209" Offs="40"/>
-    <Component Name="RESERVED10" TI="8648" Line="1210" Offs="42"/>
-    <Component Name="ARR" TI="8663" Line="1211" Offs="44"/>
-    <Component Name="RESERVED11" TI="8678" Line="1212" Offs="46"/>
-    <Component Name="RCR" TI="8693" Line="1213" Offs="48"/>
-    <Component Name="RESERVED12" TI="8708" Line="1214" Offs="50"/>
-    <Component Name="CCR1" TI="8723" Line="1215" Offs="52"/>
-    <Component Name="RESERVED13" TI="8738" Line="1216" Offs="54"/>
-    <Component Name="CCR2" TI="8753" Line="1217" Offs="56"/>
-    <Component Name="RESERVED14" TI="8768" Line="1218" Offs="58"/>
-    <Component Name="CCR3" TI="8783" Line="1219" Offs="60"/>
-    <Component Name="RESERVED15" TI="8798" Line="1220" Offs="62"/>
-    <Component Name="CCR4" TI="8813" Line="1221" Offs="64"/>
-    <Component Name="RESERVED16" TI="8828" Line="1222" Offs="66"/>
-    <Component Name="BDTR" TI="8843" Line="1223" Offs="68"/>
-    <Component Name="RESERVED17" TI="8858" Line="1224" Offs="70"/>
-    <Component Name="DCR" TI="8873" Line="1225" Offs="72"/>
-    <Component Name="RESERVED18" TI="8888" Line="1226" Offs="74"/>
-    <Component Name="DMAR" TI="8903" Line="1227" Offs="76"/>
-    <Component Name="RESERVED19" TI="8918" Line="1228" Offs="78"/>
-   </type>
-   <type Family="typedef" Name="TIM_TypeDef" Line="1229" ID="8934" toTI="8325"/>
-   <type Family="ComponentList" Line="52" ID="8946">
-    <Component Name="TIM_Prescaler" TI="8954" Line="53" Offs="0"/>
-    <Component Name="TIM_CounterMode" TI="8968" Line="56" Offs="2"/>
-    <Component Name="TIM_Period" TI="8982" Line="59" Offs="4"/>
-    <Component Name="TIM_ClockDivision" TI="8996" Line="63" Offs="6"/>
-    <Component Name="TIM_RepetitionCounter" TI="9010" Line="66" Offs="8"/>
-   </type>
-   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="9025" toTI="8946"/>
-   <type Family="ComponentList" Line="81" ID="9036">
-    <Component Name="TIM_OCMode" TI="9044" Line="82" Offs="0"/>
-    <Component Name="TIM_OutputState" TI="9058" Line="85" Offs="2"/>
-    <Component Name="TIM_OutputNState" TI="9072" Line="88" Offs="4"/>
-    <Component Name="TIM_Pulse" TI="9086" Line="92" Offs="6"/>
-    <Component Name="TIM_OCPolarity" TI="9100" Line="95" Offs="8"/>
-    <Component Name="TIM_OCNPolarity" TI="9114" Line="98" Offs="10"/>
-    <Component Name="TIM_OCIdleState" TI="9128" Line="102" Offs="12"/>
-    <Component Name="TIM_OCNIdleState" TI="9142" Line="106" Offs="14"/>
-   </type>
-   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="9157" toTI="9036"/>
-   <type Family="ComponentList" Line="116" ID="9168">
-    <Component Name="TIM_Channel" TI="9176" Line="118" Offs="0"/>
-    <Component Name="TIM_ICPolarity" TI="9190" Line="121" Offs="2"/>
-    <Component Name="TIM_ICSelection" TI="9204" Line="124" Offs="4"/>
-    <Component Name="TIM_ICPrescaler" TI="9218" Line="127" Offs="6"/>
-    <Component Name="TIM_ICFilter" TI="9232" Line="130" Offs="8"/>
-   </type>
-   <type Family="typedef" Name="TIM_ICInitTypeDef" Line="132" ID="9247" toTI="9168"/>
-   <type Family="ComponentList" Line="140" ID="9258">
-    <Component Name="TIM_OSSRState" TI="9266" Line="142" Offs="0"/>
-    <Component Name="TIM_OSSIState" TI="9280" Line="145" Offs="2"/>
-    <Component Name="TIM_LOCKLevel" TI="9294" Line="148" Offs="4"/>
-    <Component Name="TIM_DeadTime" TI="9308" Line="151" Offs="6"/>
-    <Component Name="TIM_Break" TI="9322" Line="155" Offs="8"/>
-    <Component Name="TIM_BreakPolarity" TI="9336" Line="158" Offs="10"/>
-    <Component Name="TIM_AutomaticOutput" TI="9350" Line="161" Offs="12"/>
-   </type>
-   <type Family="typedef" Name="TIM_BDTRInitTypeDef" Line="163" ID="9365" toTI="9258"/>
-   <function Name="TIM_TimeBaseInit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227">
-   <type Family="Pointer" TI="9441" toTI="8934"/>
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="9447" toTI="9025"/>
-    <parameter Name="TIM_TimeBaseInitStruct" TI="9447" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpcr1" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="228" Addr="0x2" TI="8166"/>
-   </function >
-   <function Name="TIM_OC1Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280">
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="9558" toTI="9157"/>
-    <parameter Name="TIM_OCInitStruct" TI="9558" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpccmrx" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x6" TI="8166"/>
-    <variable Name="tmpccer" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x1" TI="8166"/>
-    <variable Name="tmpcr2" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x5" TI="8166"/>
-   </function >
-   <function Name="TIM_OC2Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363">
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_OCInitStruct" TI="9558" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpccmrx" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x5" TI="8166"/>
-    <variable Name="tmpccer" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x3" TI="8166"/>
-    <variable Name="tmpcr2" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x4" TI="8166"/>
-   </function >
-   <function Name="TIM_OC3Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="445">
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="445" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_OCInitStruct" TI="9558" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="445" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpccmrx" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="446" Addr="0x5" TI="8166"/>
-    <variable Name="tmpccer" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="446" Addr="0x3" TI="8166"/>
-    <variable Name="tmpcr2" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="446" Addr="0x4" TI="8166"/>
-   </function >
-   <type Family="Pointer" TI="9926" toTI="9365"/>
-   <type Family="Pointer" TI="10049" toTI="9247"/>
-   <function Name="TIM_Cmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807">
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="8313" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_OC1PreloadConfig" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510">
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_OCPreload" TI="8166" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpccmr1" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1511" Addr="0x3" TI="8166"/>
-   </function >
-   <function Name="TIM_ClearITPendingBit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677">
-    <parameter Name="TIMx" TI="9441" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_IT" TI="8166" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x1" Param="Yes"/>
+   <function Name="delay_ms" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="21">
+    <parameter Name="ms" TI="2395" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="21" Addr="0x0" Param="Yes"/>
    </function >
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" >
-   <type Family="Base" Name="signed char" ID="15724"/>
-   <type Family="Base" Name="unsigned char" ID="15742"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="15731" toTI="15742"/>
-   <type Family="Base" Name="short int" ID="15749"/>
-   <type Family="Base" Name="short unsigned int" ID="15767"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="15756" toTI="15767"/>
-   <type Family="Base" Name="long int" ID="15774"/>
-   <type Family="Base" Name="long unsigned int" ID="15792"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="15781" toTI="15792"/>
-   <type Family="Base" Name="long long int" ID="15799"/>
-   <type Family="Base" Name="long long unsigned int" ID="15806"/>
-   <type Family="Base" Name="int" ID="15813"/>
-   <type Family="Base" Name="unsigned int" ID="15820"/>
-   <type Family="array" ID="15835" toTI="15781"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="15873" toTI="15851"/>
-   <type Family="ComponentList" Line="1003" ID="15885">
-    <Component Name="CRL" TI="15894" Line="1004" Offs="0"/>
-    <Component Name="CRH" TI="15909" Line="1005" Offs="4"/>
-    <Component Name="IDR" TI="15924" Line="1006" Offs="8"/>
-    <Component Name="ODR" TI="15939" Line="1007" Offs="12"/>
-    <Component Name="BSRR" TI="15954" Line="1008" Offs="16"/>
-    <Component Name="BRR" TI="15969" Line="1009" Offs="20"/>
-    <Component Name="LCKR" TI="15984" Line="1010" Offs="24"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" >
+   <type Family="Base" Name="signed char" ID="2711"/>
+   <type Family="Base" Name="unsigned char" ID="2718"/>
+   <type Family="Base" Name="short int" ID="2725"/>
+   <type Family="Base" Name="short unsigned int" ID="2743"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="2732" toTI="2743"/>
+   <type Family="Base" Name="long int" ID="2750"/>
+   <type Family="Base" Name="long unsigned int" ID="2768"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="2757" toTI="2768"/>
+   <type Family="Base" Name="long long int" ID="2775"/>
+   <type Family="Base" Name="long long unsigned int" ID="2782"/>
+   <type Family="Base" Name="int" ID="2789"/>
+   <type Family="Base" Name="unsigned int" ID="2796"/>
+   <type Family="ComponentList" Line="1003" ID="2816">
+    <Component Name="CRL" TI="2825" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="2840" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="2855" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="2870" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="2885" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="2900" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="2915" Line="1010" Offs="24"/>
    </type>
-   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="16000" toTI="15885"/>
-   <type Family="ComponentList" Line="1018" ID="16012">
-    <Component Name="EVCR" TI="16021" Line="1019" Offs="0"/>
-    <Component Name="MAPR" TI="16036" Line="1020" Offs="4"/>
-    <Component Name="EXTICR" TI="16051" Line="1021" Offs="8"/>
-    <Component Name="RESERVED0" TI="16066" Line="1022" Offs="24"/>
-    <Component Name="MAPR2" TI="16081" Line="1023" Offs="28"/>
+   <type Family="ComponentList" Line="1188" ID="2931">
+    <Component Name="CR1" TI="2940" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="2955" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="2970" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="2985" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="3000" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="3015" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="3030" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="3045" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="3060" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="3074" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="3089" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="3104" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="3119" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="3134" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="3149" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="3164" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="3179" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="3194" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="3209" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="3224" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="3239" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="3254" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="3269" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="3284" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="3299" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="3314" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="3329" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="3344" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="3359" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="3374" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="3389" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="3404" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="3419" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="3434" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="3449" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="3464" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="3479" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="3494" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="3509" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="3524" Line="1228" Offs="78"/>
    </type>
-   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="16129" toTI="16102"/>
-   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="16198" toTI="16140"/>
-   <type Family="ComponentList" Line="92" ID="16209">
-    <Component Name="GPIO_Pin" TI="16217" Line="93" Offs="0"/>
-    <Component Name="GPIO_Speed" TI="16231" Line="96" Offs="2"/>
-    <Component Name="GPIO_Mode" TI="16245" Line="99" Offs="3"/>
+   <function Name="NMI_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="58">
+   </function >
+   <function Name="HardFault_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="67">
+   </function >
+   <function Name="MemManage_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="79">
+   </function >
+   <function Name="BusFault_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="91">
+   </function >
+   <function Name="UsageFault_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="103">
+   </function >
+   <function Name="DebugMon_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="115">
+   </function >
+   <function Name="SVC_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="123">
+   </function >
+   <function Name="PendSV_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="131">
+   </function >
+   <function Name="SysTick_Handler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="139">
+   </function >
+   <function Name="TIM3_IRQHandler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="170">
+   </function >
+   <function Name="TIM2_IRQHandler" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="152">
+   </function >
+   <variable Name="capture" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="39" Addr="0x20000134" TI="2732"/>
+   <variable Name="count" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="150" Addr="0x20000130" TI="2789"/>
+   <variable Name="count_2" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="168" Addr="0x2000012C" TI="2789"/>
+  </module>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" >
+   <type Family="Base" Name="signed char" ID="3864"/>
+   <type Family="Base" Name="unsigned char" ID="3882"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="3871" toTI="3882"/>
+   <type Family="Base" Name="short int" ID="3889"/>
+   <type Family="Base" Name="short unsigned int" ID="3896"/>
+   <type Family="Base" Name="long int" ID="3903"/>
+   <type Family="Base" Name="long unsigned int" ID="3921"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="3910" toTI="3921"/>
+   <type Family="Base" Name="long long int" ID="3928"/>
+   <type Family="Base" Name="long long unsigned int" ID="3935"/>
+   <type Family="Base" Name="int" ID="3942"/>
+   <type Family="Base" Name="unsigned int" ID="3949"/>
+   <type Family="ComponentList" Line="156" ID="3964">
+    <Component Name="CPUID" TI="3972" Line="157" Offs="0"/>
+    <Component Name="ICSR" TI="3986" Line="158" Offs="4"/>
+    <Component Name="VTOR" TI="4000" Line="159" Offs="8"/>
+    <Component Name="AIRCR" TI="4014" Line="160" Offs="12"/>
+    <Component Name="SCR" TI="4028" Line="161" Offs="16"/>
+    <Component Name="CCR" TI="4042" Line="162" Offs="20"/>
+   <type Family="array" ID="4244" toTI="3871"/>
+    <Component Name="SHP" TI="4056" Line="163" Offs="24"/>
+    <Component Name="SHCSR" TI="4070" Line="164" Offs="36"/>
+    <Component Name="CFSR" TI="4084" Line="165" Offs="40"/>
+    <Component Name="HFSR" TI="4098" Line="166" Offs="44"/>
+    <Component Name="DFSR" TI="4112" Line="167" Offs="48"/>
+    <Component Name="MMFAR" TI="4126" Line="168" Offs="52"/>
+    <Component Name="BFAR" TI="4140" Line="169" Offs="56"/>
+    <Component Name="AFSR" TI="4154" Line="170" Offs="60"/>
+   <type Family="array" ID="4265" toTI="3910"/>
+    <Component Name="PFR" TI="4168" Line="171" Offs="64"/>
+    <Component Name="DFR" TI="4182" Line="172" Offs="72"/>
+    <Component Name="ADR" TI="4196" Line="173" Offs="76"/>
+   <type Family="array" ID="4291" toTI="3910"/>
+    <Component Name="MMFR" TI="4210" Line="174" Offs="80"/>
+   <type Family="array" ID="4317" toTI="3910"/>
+    <Component Name="ISAR" TI="4224" Line="175" Offs="96"/>
    </type>
-   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="16260" toTI="16209"/>
-   <type Family="typedef" Name="BitAction" Line="111" ID="16292" toTI="16271"/>
-   <function Name="GPIO_Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174">
-   <type Family="Pointer" TI="16437" toTI="16000"/>
-    <parameter Name="GPIOx" TI="16437" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="16443" toTI="16260"/>
-    <parameter Name="GPIO_InitStruct" TI="16443" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x1" Param="Yes"/>
-    <variable Name="currentmode" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x7" TI="15781"/>
-    <variable Name="currentpin" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x1" TI="15781"/>
-    <variable Name="pinpos" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0xC" TI="15781"/>
-    <variable Name="pos" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x3" TI="15781"/>
-    <variable Name="tmpreg" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="176" Addr="0x4" TI="15781"/>
+   <type Family="ComponentList" Line="903" ID="4365">
+    <Component Name="ACR" TI="4374" Line="904" Offs="0"/>
+    <Component Name="KEYR" TI="4389" Line="905" Offs="4"/>
+    <Component Name="OPTKEYR" TI="4404" Line="906" Offs="8"/>
+    <Component Name="SR" TI="4419" Line="907" Offs="12"/>
+    <Component Name="CR" TI="4433" Line="908" Offs="16"/>
+    <Component Name="AR" TI="4447" Line="909" Offs="20"/>
+    <Component Name="RESERVED" TI="4461" Line="910" Offs="24"/>
+    <Component Name="OBR" TI="4476" Line="911" Offs="28"/>
+    <Component Name="WRPR" TI="4491" Line="912" Offs="32"/>
+   </type>
+   <type Family="ComponentList" Line="1078" ID="4507">
+    <Component Name="CR" TI="4516" Line="1079" Offs="0"/>
+    <Component Name="CFGR" TI="4530" Line="1080" Offs="4"/>
+    <Component Name="CIR" TI="4545" Line="1081" Offs="8"/>
+    <Component Name="APB2RSTR" TI="4560" Line="1082" Offs="12"/>
+    <Component Name="APB1RSTR" TI="4575" Line="1083" Offs="16"/>
+    <Component Name="AHBENR" TI="4590" Line="1084" Offs="20"/>
+    <Component Name="APB2ENR" TI="4605" Line="1085" Offs="24"/>
+    <Component Name="APB1ENR" TI="4620" Line="1086" Offs="28"/>
+    <Component Name="BDCR" TI="4635" Line="1087" Offs="32"/>
+    <Component Name="CSR" TI="4650" Line="1088" Offs="36"/>
+   </type>
+   <function Name="SystemInit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="213">
+    <variable Name="StartUpCounter" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="989" Addr="0x3400000C" TI="0"/>
+    <variable Name="HSEStatus" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="989" Addr="0x34000008" TI="0"/>
    </function >
-   <function Name="GPIO_SetBits" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359">
-    <parameter Name="GPIOx" TI="16437" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359" Addr="0x0" Param="Yes"/>
-    <parameter Name="GPIO_Pin" TI="15756" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359" Addr="0x1" Param="Yes"/>
+   <variable Name="SystemCoreClock" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="162" Addr="0x20000000" TI="3910"/>
+   <type Family="array" ID="4904" toTI="3871"/>
+   <variable Name="AHBPrescTable" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="167" Addr="0x20000004" TI="4938"/>
+  </module>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" >
+   <type Family="Base" Name="signed char" ID="4986"/>
+   <type Family="Base" Name="unsigned char" ID="5004"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="4993" toTI="5004"/>
+   <type Family="Base" Name="short int" ID="5011"/>
+   <type Family="Base" Name="short unsigned int" ID="5018"/>
+   <type Family="Base" Name="long int" ID="5025"/>
+   <type Family="Base" Name="long unsigned int" ID="5043"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="5032" toTI="5043"/>
+   <type Family="Base" Name="long long int" ID="5050"/>
+   <type Family="Base" Name="long long unsigned int" ID="5057"/>
+   <type Family="Base" Name="int" ID="5064"/>
+   <type Family="Base" Name="unsigned int" ID="5071"/>
+   <type Family="ComponentList" Line="133" ID="5078">
+   <type Family="array" ID="5280" toTI="5032"/>
+    <Component Name="ISER" TI="5087" Line="134" Offs="0"/>
+   <type Family="array" ID="5304" toTI="5032"/>
+    <Component Name="RESERVED0" TI="5101" Line="135" Offs="32"/>
+    <Component Name="ICER" TI="5115" Line="136" Offs="128"/>
+    <Component Name="RSERVED1" TI="5130" Line="137" Offs="160"/>
+    <Component Name="ISPR" TI="5145" Line="138" Offs="256"/>
+    <Component Name="RESERVED2" TI="5160" Line="139" Offs="288"/>
+    <Component Name="ICPR" TI="5175" Line="140" Offs="384"/>
+    <Component Name="RESERVED3" TI="5190" Line="141" Offs="416"/>
+    <Component Name="IABR" TI="5205" Line="142" Offs="512"/>
+   <type Family="array" ID="5340" toTI="5032"/>
+    <Component Name="RESERVED4" TI="5220" Line="143" Offs="544"/>
+   <type Family="array" ID="5356" toTI="4993"/>
+    <Component Name="IP" TI="5235" Line="144" Offs="768"/>
+   <type Family="array" ID="5377" toTI="5032"/>
+    <Component Name="RESERVED5" TI="5249" Line="145" Offs="1008"/>
+    <Component Name="STIR" TI="5264" Line="146" Offs="3584"/>
+   </type>
+   <type Family="ComponentList" Line="156" ID="5399">
+    <Component Name="CPUID" TI="5407" Line="157" Offs="0"/>
+    <Component Name="ICSR" TI="5421" Line="158" Offs="4"/>
+    <Component Name="VTOR" TI="5435" Line="159" Offs="8"/>
+    <Component Name="AIRCR" TI="5449" Line="160" Offs="12"/>
+    <Component Name="SCR" TI="5463" Line="161" Offs="16"/>
+    <Component Name="CCR" TI="5477" Line="162" Offs="20"/>
+   <type Family="array" ID="5679" toTI="4993"/>
+    <Component Name="SHP" TI="5491" Line="163" Offs="24"/>
+    <Component Name="SHCSR" TI="5505" Line="164" Offs="36"/>
+    <Component Name="CFSR" TI="5519" Line="165" Offs="40"/>
+    <Component Name="HFSR" TI="5533" Line="166" Offs="44"/>
+    <Component Name="DFSR" TI="5547" Line="167" Offs="48"/>
+    <Component Name="MMFAR" TI="5561" Line="168" Offs="52"/>
+    <Component Name="BFAR" TI="5575" Line="169" Offs="56"/>
+    <Component Name="AFSR" TI="5589" Line="170" Offs="60"/>
+   <type Family="array" ID="5700" toTI="5032"/>
+    <Component Name="PFR" TI="5603" Line="171" Offs="64"/>
+    <Component Name="DFR" TI="5617" Line="172" Offs="72"/>
+    <Component Name="ADR" TI="5631" Line="173" Offs="76"/>
+   <type Family="array" ID="5726" toTI="5032"/>
+    <Component Name="MMFR" TI="5645" Line="174" Offs="80"/>
+   <type Family="array" ID="5752" toTI="5032"/>
+    <Component Name="ISAR" TI="5659" Line="175" Offs="96"/>
+   </type>
+   <type Family="ComponentList" Line="366" ID="5778">
+    <Component Name="CTRL" TI="5787" Line="367" Offs="0"/>
+    <Component Name="LOAD" TI="5802" Line="368" Offs="4"/>
+    <Component Name="VAL" TI="5817" Line="369" Offs="8"/>
+    <Component Name="CALIB" TI="5832" Line="370" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="5870" toTI="5848"/>
+   <type Family="ComponentList" Line="51" ID="5882">
+    <Component Name="NVIC_IRQChannel" TI="5890" Line="52" Offs="0"/>
+    <Component Name="NVIC_IRQChannelPreemptionPriority" TI="5904" Line="57" Offs="1"/>
+    <Component Name="NVIC_IRQChannelSubPriority" TI="5918" Line="61" Offs="2"/>
+    <Component Name="NVIC_IRQChannelCmd" TI="5932" Line="65" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="5947" toTI="5882"/>
+   <type Family="Pointer" TI="6071" toTI="5947"/>
+  </module>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" >
+   <type Family="Base" Name="signed char" ID="6273"/>
+   <type Family="Base" Name="unsigned char" ID="6291"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="6280" toTI="6291"/>
+   <type Family="Base" Name="short int" ID="6298"/>
+   <type Family="Base" Name="short unsigned int" ID="6316"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="6305" toTI="6316"/>
+   <type Family="Base" Name="long int" ID="6323"/>
+   <type Family="Base" Name="long unsigned int" ID="6341"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="6330" toTI="6341"/>
+   <type Family="Base" Name="long long int" ID="6348"/>
+   <type Family="Base" Name="long long unsigned int" ID="6355"/>
+   <type Family="Base" Name="int" ID="6362"/>
+   <type Family="Base" Name="unsigned int" ID="6369"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="6411" toTI="6389"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="6445" toTI="6423"/>
+   <type Family="ComponentList" Line="903" ID="6457">
+    <Component Name="ACR" TI="6466" Line="904" Offs="0"/>
+    <Component Name="KEYR" TI="6481" Line="905" Offs="4"/>
+    <Component Name="OPTKEYR" TI="6496" Line="906" Offs="8"/>
+    <Component Name="SR" TI="6511" Line="907" Offs="12"/>
+    <Component Name="CR" TI="6525" Line="908" Offs="16"/>
+    <Component Name="AR" TI="6539" Line="909" Offs="20"/>
+    <Component Name="RESERVED" TI="6553" Line="910" Offs="24"/>
+    <Component Name="OBR" TI="6568" Line="911" Offs="28"/>
+    <Component Name="WRPR" TI="6583" Line="912" Offs="32"/>
+   </type>
+   <type Family="ComponentList" Line="928" ID="6599">
+    <Component Name="RDP" TI="6608" Line="929" Offs="0"/>
+    <Component Name="USER" TI="6623" Line="930" Offs="2"/>
+    <Component Name="Data0" TI="6638" Line="931" Offs="4"/>
+    <Component Name="Data1" TI="6653" Line="932" Offs="6"/>
+    <Component Name="WRP0" TI="6668" Line="933" Offs="8"/>
+    <Component Name="WRP1" TI="6683" Line="934" Offs="10"/>
+    <Component Name="WRP2" TI="6698" Line="935" Offs="12"/>
+    <Component Name="WRP3" TI="6713" Line="936" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="FLASH_Status" Line="57" ID="6768" toTI="6729"/>
+  </module>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" >
+   <type Family="Base" Name="signed char" ID="8308"/>
+   <type Family="Base" Name="unsigned char" ID="8326"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="8315" toTI="8326"/>
+   <type Family="Base" Name="short int" ID="8333"/>
+   <type Family="Base" Name="short unsigned int" ID="8351"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="8340" toTI="8351"/>
+   <type Family="Base" Name="long int" ID="8358"/>
+   <type Family="Base" Name="long unsigned int" ID="8376"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="8365" toTI="8376"/>
+   <type Family="Base" Name="long long int" ID="8383"/>
+   <type Family="Base" Name="long long unsigned int" ID="8390"/>
+   <type Family="Base" Name="int" ID="8397"/>
+   <type Family="Base" Name="unsigned int" ID="8404"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="8441" toTI="8419"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="8453" toTI="8419"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="8487" toTI="8465"/>
+   <type Family="ComponentList" Line="1188" ID="8499">
+    <Component Name="CR1" TI="8508" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="8523" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="8538" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="8553" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="8568" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="8583" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="8598" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="8613" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="8628" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="8642" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="8657" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="8672" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="8687" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="8702" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="8717" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="8732" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="8747" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="8762" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="8777" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="8792" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="8807" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="8822" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="8837" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="8852" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="8867" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="8882" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="8897" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="8912" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="8927" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="8942" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="8957" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="8972" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="8987" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="9002" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="9017" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="9032" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="9047" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="9062" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="9077" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="9092" Line="1228" Offs="78"/>
+   </type>
+   <type Family="typedef" Name="TIM_TypeDef" Line="1229" ID="9108" toTI="8499"/>
+   <type Family="ComponentList" Line="52" ID="9120">
+    <Component Name="TIM_Prescaler" TI="9128" Line="53" Offs="0"/>
+    <Component Name="TIM_CounterMode" TI="9142" Line="56" Offs="2"/>
+    <Component Name="TIM_Period" TI="9156" Line="59" Offs="4"/>
+    <Component Name="TIM_ClockDivision" TI="9170" Line="63" Offs="6"/>
+    <Component Name="TIM_RepetitionCounter" TI="9184" Line="66" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="9199" toTI="9120"/>
+   <type Family="ComponentList" Line="81" ID="9210">
+    <Component Name="TIM_OCMode" TI="9218" Line="82" Offs="0"/>
+    <Component Name="TIM_OutputState" TI="9232" Line="85" Offs="2"/>
+    <Component Name="TIM_OutputNState" TI="9246" Line="88" Offs="4"/>
+    <Component Name="TIM_Pulse" TI="9260" Line="92" Offs="6"/>
+    <Component Name="TIM_OCPolarity" TI="9274" Line="95" Offs="8"/>
+    <Component Name="TIM_OCNPolarity" TI="9288" Line="98" Offs="10"/>
+    <Component Name="TIM_OCIdleState" TI="9302" Line="102" Offs="12"/>
+    <Component Name="TIM_OCNIdleState" TI="9316" Line="106" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="9331" toTI="9210"/>
+   <type Family="ComponentList" Line="116" ID="9342">
+    <Component Name="TIM_Channel" TI="9350" Line="118" Offs="0"/>
+    <Component Name="TIM_ICPolarity" TI="9364" Line="121" Offs="2"/>
+    <Component Name="TIM_ICSelection" TI="9378" Line="124" Offs="4"/>
+    <Component Name="TIM_ICPrescaler" TI="9392" Line="127" Offs="6"/>
+    <Component Name="TIM_ICFilter" TI="9406" Line="130" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_ICInitTypeDef" Line="132" ID="9421" toTI="9342"/>
+   <type Family="ComponentList" Line="140" ID="9432">
+    <Component Name="TIM_OSSRState" TI="9440" Line="142" Offs="0"/>
+    <Component Name="TIM_OSSIState" TI="9454" Line="145" Offs="2"/>
+    <Component Name="TIM_LOCKLevel" TI="9468" Line="148" Offs="4"/>
+    <Component Name="TIM_DeadTime" TI="9482" Line="151" Offs="6"/>
+    <Component Name="TIM_Break" TI="9496" Line="155" Offs="8"/>
+    <Component Name="TIM_BreakPolarity" TI="9510" Line="158" Offs="10"/>
+    <Component Name="TIM_AutomaticOutput" TI="9524" Line="161" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="TIM_BDTRInitTypeDef" Line="163" ID="9539" toTI="9432"/>
+   <function Name="TIM_TimeBaseInit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227">
+   <type Family="Pointer" TI="9615" toTI="9108"/>
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="9621" toTI="9199"/>
+    <parameter Name="TIM_TimeBaseInitStruct" TI="9621" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpcr1" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="228" Addr="0x2" TI="8340"/>
    </function >
-   <function Name="GPIO_ResetBits" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375">
-    <parameter Name="GPIOx" TI="16437" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375" Addr="0x0" Param="Yes"/>
-    <parameter Name="GPIO_Pin" TI="15756" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375" Addr="0x1" Param="Yes"/>
+   <function Name="TIM_OC1Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280">
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="9732" toTI="9331"/>
+    <parameter Name="TIM_OCInitStruct" TI="9732" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmrx" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x6" TI="8340"/>
+    <variable Name="tmpccer" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x1" TI="8340"/>
+    <variable Name="tmpcr2" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x5" TI="8340"/>
    </function >
-   <function Name="GPIO_WriteBit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395">
-    <parameter Name="GPIOx" TI="16437" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x0" Param="Yes"/>
-    <parameter Name="GPIO_Pin" TI="15756" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x1" Param="Yes"/>
-    <parameter Name="BitVal" TI="16292" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x2" Param="Yes"/>
+   <function Name="TIM_OC2Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363">
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCInitStruct" TI="9732" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmrx" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x5" TI="8340"/>
+    <variable Name="tmpccer" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x3" TI="8340"/>
+    <variable Name="tmpcr2" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x4" TI="8340"/>
+   </function >
+   <function Name="TIM_OC3Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="445">
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="445" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCInitStruct" TI="9732" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="445" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmrx" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="446" Addr="0x5" TI="8340"/>
+    <variable Name="tmpccer" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="446" Addr="0x3" TI="8340"/>
+    <variable Name="tmpcr2" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="446" Addr="0x4" TI="8340"/>
+   </function >
+   <type Family="Pointer" TI="10100" toTI="9539"/>
+   <type Family="Pointer" TI="10223" toTI="9421"/>
+   <function Name="TIM_Cmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807">
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="8487" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_OC1PreloadConfig" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510">
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCPreload" TI="8340" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmr1" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1511" Addr="0x3" TI="8340"/>
+   </function >
+   <function Name="TIM_ClearITPendingBit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677">
+    <parameter Name="TIMx" TI="9615" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_IT" TI="8340" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x1" Param="Yes"/>
    </function >
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" >
-   <type Family="Base" Name="signed char" ID="17465"/>
-   <type Family="Base" Name="unsigned char" ID="17483"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="17472" toTI="17483"/>
-   <type Family="Base" Name="short int" ID="17490"/>
-   <type Family="Base" Name="short unsigned int" ID="17508"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="17497" toTI="17508"/>
-   <type Family="Base" Name="long int" ID="17515"/>
-   <type Family="Base" Name="long unsigned int" ID="17533"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="17522" toTI="17533"/>
-   <type Family="Base" Name="long long int" ID="17540"/>
-   <type Family="Base" Name="long long unsigned int" ID="17547"/>
-   <type Family="Base" Name="int" ID="17554"/>
-   <type Family="Base" Name="unsigned int" ID="17561"/>
-   <type Family="typedef" Name="FlagStatus" Line="520" ID="17598" toTI="17576"/>
-   <type Family="typedef" Name="ITStatus" Line="520" ID="17610" toTI="17576"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="17644" toTI="17622"/>
-   <type Family="ComponentList" Line="1236" ID="17656">
-    <Component Name="SR" TI="17665" Line="1237" Offs="0"/>
-    <Component Name="RESERVED0" TI="17679" Line="1238" Offs="2"/>
-    <Component Name="DR" TI="17694" Line="1239" Offs="4"/>
-    <Component Name="RESERVED1" TI="17708" Line="1240" Offs="6"/>
-    <Component Name="BRR" TI="17723" Line="1241" Offs="8"/>
-    <Component Name="RESERVED2" TI="17738" Line="1242" Offs="10"/>
-    <Component Name="CR1" TI="17753" Line="1243" Offs="12"/>
-    <Component Name="RESERVED3" TI="17768" Line="1244" Offs="14"/>
-    <Component Name="CR2" TI="17783" Line="1245" Offs="16"/>
-    <Component Name="RESERVED4" TI="17798" Line="1246" Offs="18"/>
-    <Component Name="CR3" TI="17813" Line="1247" Offs="20"/>
-    <Component Name="RESERVED5" TI="17828" Line="1248" Offs="22"/>
-    <Component Name="GTPR" TI="17843" Line="1249" Offs="24"/>
-    <Component Name="RESERVED6" TI="17858" Line="1250" Offs="26"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" >
+   <type Family="Base" Name="signed char" ID="15898"/>
+   <type Family="Base" Name="unsigned char" ID="15916"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="15905" toTI="15916"/>
+   <type Family="Base" Name="short int" ID="15923"/>
+   <type Family="Base" Name="short unsigned int" ID="15941"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="15930" toTI="15941"/>
+   <type Family="Base" Name="long int" ID="15948"/>
+   <type Family="Base" Name="long unsigned int" ID="15966"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="15955" toTI="15966"/>
+   <type Family="Base" Name="long long int" ID="15973"/>
+   <type Family="Base" Name="long long unsigned int" ID="15980"/>
+   <type Family="Base" Name="int" ID="15987"/>
+   <type Family="Base" Name="unsigned int" ID="15994"/>
+   <type Family="array" ID="16009" toTI="15955"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="16047" toTI="16025"/>
+   <type Family="ComponentList" Line="1003" ID="16059">
+    <Component Name="CRL" TI="16068" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="16083" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="16098" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="16113" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="16128" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="16143" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="16158" Line="1010" Offs="24"/>
    </type>
-   <type Family="typedef" Name="USART_TypeDef" Line="1251" ID="17874" toTI="17656"/>
-   <type Family="ComponentList" Line="47" ID="17886">
-    <Component Name="SYSCLK_Frequency" TI="17894" Line="48" Offs="0"/>
-    <Component Name="HCLK_Frequency" TI="17908" Line="49" Offs="4"/>
-    <Component Name="PCLK1_Frequency" TI="17922" Line="50" Offs="8"/>
-    <Component Name="PCLK2_Frequency" TI="17936" Line="51" Offs="12"/>
-    <Component Name="ADCCLK_Frequency" TI="17950" Line="52" Offs="16"/>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="16174" toTI="16059"/>
+   <type Family="ComponentList" Line="1018" ID="16186">
+    <Component Name="EVCR" TI="16195" Line="1019" Offs="0"/>
+    <Component Name="MAPR" TI="16210" Line="1020" Offs="4"/>
+    <Component Name="EXTICR" TI="16225" Line="1021" Offs="8"/>
+    <Component Name="RESERVED0" TI="16240" Line="1022" Offs="24"/>
+    <Component Name="MAPR2" TI="16255" Line="1023" Offs="28"/>
    </type>
-   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="17965" toTI="17886"/>
-   <type Family="ComponentList" Line="51" ID="17976">
-    <Component Name="USART_BaudRate" TI="17984" Line="52" Offs="0"/>
-    <Component Name="USART_WordLength" TI="17998" Line="57" Offs="4"/>
-    <Component Name="USART_StopBits" TI="18012" Line="60" Offs="6"/>
-    <Component Name="USART_Parity" TI="18026" Line="63" Offs="8"/>
-    <Component Name="USART_Mode" TI="18040" Line="70" Offs="10"/>
-    <Component Name="USART_HardwareFlowControl" TI="18054" Line="73" Offs="12"/>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="16303" toTI="16276"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="16372" toTI="16314"/>
+   <type Family="ComponentList" Line="92" ID="16383">
+    <Component Name="GPIO_Pin" TI="16391" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="16405" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="16419" Line="99" Offs="3"/>
    </type>
-   <type Family="typedef" Name="USART_InitTypeDef" Line="76" ID="18069" toTI="17976"/>
-   <type Family="ComponentList" Line="83" ID="18080">
-    <Component Name="USART_Clock" TI="18088" Line="85" Offs="0"/>
-    <Component Name="USART_CPOL" TI="18102" Line="88" Offs="2"/>
-    <Component Name="USART_CPHA" TI="18116" Line="91" Offs="4"/>
-    <Component Name="USART_LastBit" TI="18130" Line="94" Offs="6"/>
-   </type>
-   <type Family="typedef" Name="USART_ClockInitTypeDef" Line="97" ID="18145" toTI="18080"/>
-   <type Family="Pointer" TI="18195" toTI="18069"/>
-   <type Family="Pointer" TI="18272" toTI="17874"/>
-   <type Family="Pointer" TI="18278" toTI="18145"/>
-   <function Name="USART_Cmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352">
-    <parameter Name="USARTx" TI="18272" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="17644" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352" Addr="0x1" Param="Yes"/>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="16434" toTI="16383"/>
+   <type Family="typedef" Name="BitAction" Line="111" ID="16466" toTI="16445"/>
+   <function Name="GPIO_Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174">
+   <type Family="Pointer" TI="16611" toTI="16174"/>
+    <parameter Name="GPIOx" TI="16611" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="16617" toTI="16434"/>
+    <parameter Name="GPIO_InitStruct" TI="16617" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x1" Param="Yes"/>
+    <variable Name="currentmode" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x7" TI="15955"/>
+    <variable Name="currentpin" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x1" TI="15955"/>
+    <variable Name="pinpos" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0xC" TI="15955"/>
+    <variable Name="pos" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x3" TI="15955"/>
+    <variable Name="tmpreg" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="176" Addr="0x4" TI="15955"/>
    </function >
-   <function Name="USART_SendData" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593">
-    <parameter Name="USARTx" TI="18272" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593" Addr="0x0" Param="Yes"/>
-    <parameter Name="Data" TI="17497" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593" Addr="0x1" Param="Yes"/>
+   <function Name="GPIO_SetBits" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359">
+    <parameter Name="GPIOx" TI="16611" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="15930" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="USART_ReceiveData" TI="17497" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="610">
-    <parameter Name="USARTx" TI="18272" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="610" Addr="0x0" Param="Yes"/>
+   <function Name="GPIO_ResetBits" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375">
+    <parameter Name="GPIOx" TI="16611" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="15930" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="USART_GetFlagStatus" TI="17598" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875">
-    <parameter Name="USARTx" TI="18272" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875" Addr="0x0" Param="Yes"/>
-    <parameter Name="USART_FLAG" TI="17497" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="USART_Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177">
-    <parameter Name="USARTx" TI="18272" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177" Addr="0x0" Param="Yes"/>
-    <parameter Name="USART_InitStruct" TI="18195" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpreg" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="178" Addr="0x3" TI="17522"/>
-    <variable Name="apbclock" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="178" Addr="0x0" TI="17522"/>
-    <variable Name="integerdivider" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="179" Addr="0x1" TI="17522"/>
-    <variable Name="fractionaldivider" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="180" Addr="0x1" TI="17522"/>
-    <variable Name="RCC_ClocksStatus" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="182" Addr="0x34000004" TI="17965"/>
+   <function Name="GPIO_WriteBit" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395">
+    <parameter Name="GPIOx" TI="16611" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="15930" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x1" Param="Yes"/>
+    <parameter Name="BitVal" TI="16466" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x2" Param="Yes"/>
    </function >
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" >
-   <type Family="Base" Name="signed char" ID="20024"/>
-   <type Family="Base" Name="unsigned char" ID="20042"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="20031" toTI="20042"/>
-   <type Family="Base" Name="short int" ID="20049"/>
-   <type Family="Base" Name="short unsigned int" ID="20067"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="20056" toTI="20067"/>
-   <type Family="Base" Name="long int" ID="20074"/>
-   <type Family="Base" Name="long unsigned int" ID="20092"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="20081" toTI="20092"/>
-   <type Family="Base" Name="long long int" ID="20099"/>
-   <type Family="Base" Name="long long unsigned int" ID="20106"/>
-   <type Family="Base" Name="int" ID="20113"/>
-   <type Family="Base" Name="unsigned int" ID="20120"/>
-   <type Family="typedef" Name="FlagStatus" Line="520" ID="20157" toTI="20135"/>
-   <type Family="typedef" Name="ITStatus" Line="520" ID="20169" toTI="20135"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="20203" toTI="20181"/>
-   <type Family="ComponentList" Line="544" ID="20215">
-    <Component Name="SR" TI="20224" Line="545" Offs="0"/>
-    <Component Name="CR1" TI="20238" Line="546" Offs="4"/>
-    <Component Name="CR2" TI="20253" Line="547" Offs="8"/>
-    <Component Name="SMPR1" TI="20268" Line="548" Offs="12"/>
-    <Component Name="SMPR2" TI="20283" Line="549" Offs="16"/>
-    <Component Name="JOFR1" TI="20298" Line="550" Offs="20"/>
-    <Component Name="JOFR2" TI="20313" Line="551" Offs="24"/>
-    <Component Name="JOFR3" TI="20328" Line="552" Offs="28"/>
-    <Component Name="JOFR4" TI="20343" Line="553" Offs="32"/>
-    <Component Name="HTR" TI="20358" Line="554" Offs="36"/>
-    <Component Name="LTR" TI="20373" Line="555" Offs="40"/>
-    <Component Name="SQR1" TI="20388" Line="556" Offs="44"/>
-    <Component Name="SQR2" TI="20403" Line="557" Offs="48"/>
-    <Component Name="SQR3" TI="20418" Line="558" Offs="52"/>
-    <Component Name="JSQR" TI="20433" Line="559" Offs="56"/>
-    <Component Name="JDR1" TI="20448" Line="560" Offs="60"/>
-    <Component Name="JDR2" TI="20463" Line="561" Offs="64"/>
-    <Component Name="JDR3" TI="20478" Line="562" Offs="68"/>
-    <Component Name="JDR4" TI="20493" Line="563" Offs="72"/>
-    <Component Name="DR" TI="20508" Line="564" Offs="76"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" >
+   <type Family="Base" Name="signed char" ID="17639"/>
+   <type Family="Base" Name="unsigned char" ID="17657"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="17646" toTI="17657"/>
+   <type Family="Base" Name="short int" ID="17664"/>
+   <type Family="Base" Name="short unsigned int" ID="17682"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="17671" toTI="17682"/>
+   <type Family="Base" Name="long int" ID="17689"/>
+   <type Family="Base" Name="long unsigned int" ID="17707"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="17696" toTI="17707"/>
+   <type Family="Base" Name="long long int" ID="17714"/>
+   <type Family="Base" Name="long long unsigned int" ID="17721"/>
+   <type Family="Base" Name="int" ID="17728"/>
+   <type Family="Base" Name="unsigned int" ID="17735"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="17772" toTI="17750"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="17784" toTI="17750"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="17818" toTI="17796"/>
+   <type Family="ComponentList" Line="1236" ID="17830">
+    <Component Name="SR" TI="17839" Line="1237" Offs="0"/>
+    <Component Name="RESERVED0" TI="17853" Line="1238" Offs="2"/>
+    <Component Name="DR" TI="17868" Line="1239" Offs="4"/>
+    <Component Name="RESERVED1" TI="17882" Line="1240" Offs="6"/>
+    <Component Name="BRR" TI="17897" Line="1241" Offs="8"/>
+    <Component Name="RESERVED2" TI="17912" Line="1242" Offs="10"/>
+    <Component Name="CR1" TI="17927" Line="1243" Offs="12"/>
+    <Component Name="RESERVED3" TI="17942" Line="1244" Offs="14"/>
+    <Component Name="CR2" TI="17957" Line="1245" Offs="16"/>
+    <Component Name="RESERVED4" TI="17972" Line="1246" Offs="18"/>
+    <Component Name="CR3" TI="17987" Line="1247" Offs="20"/>
+    <Component Name="RESERVED5" TI="18002" Line="1248" Offs="22"/>
+    <Component Name="GTPR" TI="18017" Line="1249" Offs="24"/>
+    <Component Name="RESERVED6" TI="18032" Line="1250" Offs="26"/>
    </type>
-   <type Family="typedef" Name="ADC_TypeDef" Line="565" ID="20523" toTI="20215"/>
-   <type Family="ComponentList" Line="51" ID="20535">
-    <Component Name="ADC_Mode" TI="20543" Line="52" Offs="0"/>
-    <Component Name="ADC_ScanConvMode" TI="20557" Line="56" Offs="4"/>
-    <Component Name="ADC_ContinuousConvMode" TI="20571" Line="60" Offs="5"/>
-    <Component Name="ADC_ExternalTrigConv" TI="20585" Line="64" Offs="8"/>
-    <Component Name="ADC_DataAlign" TI="20599" Line="68" Offs="12"/>
-    <Component Name="ADC_NbrOfChannel" TI="20613" Line="71" Offs="16"/>
+   <type Family="typedef" Name="USART_TypeDef" Line="1251" ID="18048" toTI="17830"/>
+   <type Family="ComponentList" Line="47" ID="18060">
+    <Component Name="SYSCLK_Frequency" TI="18068" Line="48" Offs="0"/>
+    <Component Name="HCLK_Frequency" TI="18082" Line="49" Offs="4"/>
+    <Component Name="PCLK1_Frequency" TI="18096" Line="50" Offs="8"/>
+    <Component Name="PCLK2_Frequency" TI="18110" Line="51" Offs="12"/>
+    <Component Name="ADCCLK_Frequency" TI="18124" Line="52" Offs="16"/>
    </type>
-   <type Family="typedef" Name="ADC_InitTypeDef" Line="74" ID="20628" toTI="20535"/>
-   <function Name="ADC_Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="219">
-   <type Family="Pointer" TI="20717" toTI="20523"/>
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="219" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="20723" toTI="20628"/>
-    <parameter Name="ADC_InitStruct" TI="20723" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="219" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpreg1" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="220" Addr="0x3" TI="20081"/>
+   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="18139" toTI="18060"/>
+   <type Family="ComponentList" Line="51" ID="18150">
+    <Component Name="USART_BaudRate" TI="18158" Line="52" Offs="0"/>
+    <Component Name="USART_WordLength" TI="18172" Line="57" Offs="4"/>
+    <Component Name="USART_StopBits" TI="18186" Line="60" Offs="6"/>
+    <Component Name="USART_Parity" TI="18200" Line="63" Offs="8"/>
+    <Component Name="USART_Mode" TI="18214" Line="70" Offs="10"/>
+    <Component Name="USART_HardwareFlowControl" TI="18228" Line="73" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="USART_InitTypeDef" Line="76" ID="18243" toTI="18150"/>
+   <type Family="ComponentList" Line="83" ID="18254">
+    <Component Name="USART_Clock" TI="18262" Line="85" Offs="0"/>
+    <Component Name="USART_CPOL" TI="18276" Line="88" Offs="2"/>
+    <Component Name="USART_CPHA" TI="18290" Line="91" Offs="4"/>
+    <Component Name="USART_LastBit" TI="18304" Line="94" Offs="6"/>
+   </type>
+   <type Family="typedef" Name="USART_ClockInitTypeDef" Line="97" ID="18319" toTI="18254"/>
+   <type Family="Pointer" TI="18369" toTI="18243"/>
+   <type Family="Pointer" TI="18446" toTI="18048"/>
+   <type Family="Pointer" TI="18452" toTI="18319"/>
+   <function Name="USART_Cmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352">
+    <parameter Name="USARTx" TI="18446" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="17818" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="ADC_Cmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="300">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="300" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="20203" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="300" Addr="0x1" Param="Yes"/>
+   <function Name="USART_SendData" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593">
+    <parameter Name="USARTx" TI="18446" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593" Addr="0x0" Param="Yes"/>
+    <parameter Name="Data" TI="17671" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="ADC_ResetCalibration" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="380">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="380" Addr="0x0" Param="Yes"/>
+   <function Name="USART_ReceiveData" TI="17671" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="610">
+    <parameter Name="USARTx" TI="18446" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="610" Addr="0x0" Param="Yes"/>
    </function >
-   <function Name="ADC_GetResetCalibrationStatus" TI="20157" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="393">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="393" Addr="0x0" Param="Yes"/>
+   <function Name="USART_GetFlagStatus" TI="17772" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875">
+    <parameter Name="USARTx" TI="18446" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875" Addr="0x0" Param="Yes"/>
+    <parameter Name="USART_FLAG" TI="17671" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="ADC_StartCalibration" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="418">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="418" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="ADC_GetCalibrationStatus" TI="20157" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="431">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="431" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="ADC_SoftwareStartConvCmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="458">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="458" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="20203" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="458" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="ADC_RegularChannelConfig" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x0" Param="Yes"/>
-    <parameter Name="ADC_Channel" TI="20031" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x1" Param="Yes"/>
-    <parameter Name="Rank" TI="20031" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x2" Param="Yes"/>
-    <parameter Name="ADC_SampleTime" TI="20031" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x3" Param="Yes"/>
-    <variable Name="tmpreg1" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="592" Addr="0x1" TI="20081"/>
-   </function >
-   <function Name="ADC_GetConversionValue" TI="20056" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="709">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="709" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="ADC_GetFlagStatus" TI="20157" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="1196">
-    <parameter Name="ADCx" TI="20717" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="1196" Addr="0x0" Param="Yes"/>
-    <parameter Name="ADC_FLAG" TI="20031" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="1196" Addr="0x1" Param="Yes"/>
+   <function Name="USART_Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177">
+    <parameter Name="USARTx" TI="18446" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177" Addr="0x0" Param="Yes"/>
+    <parameter Name="USART_InitStruct" TI="18369" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="178" Addr="0x3" TI="17696"/>
+    <variable Name="apbclock" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="178" Addr="0x0" TI="17696"/>
+    <variable Name="integerdivider" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="179" Addr="0x1" TI="17696"/>
+    <variable Name="fractionaldivider" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="180" Addr="0x1" TI="17696"/>
+    <variable Name="RCC_ClocksStatus" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="182" Addr="0x34000004" TI="18139"/>
    </function >
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" >
-   <type Family="Base" Name="signed char" ID="22986"/>
-   <type Family="Base" Name="unsigned char" ID="23004"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="22993" toTI="23004"/>
-   <type Family="Base" Name="short int" ID="23011"/>
-   <type Family="Base" Name="short unsigned int" ID="23018"/>
-   <type Family="Base" Name="long int" ID="23025"/>
-   <type Family="Base" Name="long unsigned int" ID="23043"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="23032" toTI="23043"/>
-   <type Family="Base" Name="long long int" ID="23050"/>
-   <type Family="Base" Name="long long unsigned int" ID="23057"/>
-   <type Family="Base" Name="int" ID="23064"/>
-   <type Family="Base" Name="unsigned int" ID="23071"/>
-   <type Family="typedef" Name="FlagStatus" Line="520" ID="23108" toTI="23086"/>
-   <type Family="typedef" Name="ITStatus" Line="520" ID="23120" toTI="23086"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="23154" toTI="23132"/>
-   <type Family="typedef" Name="ErrorStatus" Line="525" ID="23188" toTI="23166"/>
-   <type Family="ComponentList" Line="1078" ID="23200">
-    <Component Name="CR" TI="23209" Line="1079" Offs="0"/>
-    <Component Name="CFGR" TI="23223" Line="1080" Offs="4"/>
-    <Component Name="CIR" TI="23238" Line="1081" Offs="8"/>
-    <Component Name="APB2RSTR" TI="23253" Line="1082" Offs="12"/>
-    <Component Name="APB1RSTR" TI="23268" Line="1083" Offs="16"/>
-    <Component Name="AHBENR" TI="23283" Line="1084" Offs="20"/>
-    <Component Name="APB2ENR" TI="23298" Line="1085" Offs="24"/>
-    <Component Name="APB1ENR" TI="23313" Line="1086" Offs="28"/>
-    <Component Name="BDCR" TI="23328" Line="1087" Offs="32"/>
-    <Component Name="CSR" TI="23343" Line="1088" Offs="36"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" >
+   <type Family="Base" Name="signed char" ID="20198"/>
+   <type Family="Base" Name="unsigned char" ID="20216"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="20205" toTI="20216"/>
+   <type Family="Base" Name="short int" ID="20223"/>
+   <type Family="Base" Name="short unsigned int" ID="20241"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="20230" toTI="20241"/>
+   <type Family="Base" Name="long int" ID="20248"/>
+   <type Family="Base" Name="long unsigned int" ID="20266"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="20255" toTI="20266"/>
+   <type Family="Base" Name="long long int" ID="20273"/>
+   <type Family="Base" Name="long long unsigned int" ID="20280"/>
+   <type Family="Base" Name="int" ID="20287"/>
+   <type Family="Base" Name="unsigned int" ID="20294"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="20331" toTI="20309"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="20343" toTI="20309"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="20377" toTI="20355"/>
+   <type Family="ComponentList" Line="544" ID="20389">
+    <Component Name="SR" TI="20398" Line="545" Offs="0"/>
+    <Component Name="CR1" TI="20412" Line="546" Offs="4"/>
+    <Component Name="CR2" TI="20427" Line="547" Offs="8"/>
+    <Component Name="SMPR1" TI="20442" Line="548" Offs="12"/>
+    <Component Name="SMPR2" TI="20457" Line="549" Offs="16"/>
+    <Component Name="JOFR1" TI="20472" Line="550" Offs="20"/>
+    <Component Name="JOFR2" TI="20487" Line="551" Offs="24"/>
+    <Component Name="JOFR3" TI="20502" Line="552" Offs="28"/>
+    <Component Name="JOFR4" TI="20517" Line="553" Offs="32"/>
+    <Component Name="HTR" TI="20532" Line="554" Offs="36"/>
+    <Component Name="LTR" TI="20547" Line="555" Offs="40"/>
+    <Component Name="SQR1" TI="20562" Line="556" Offs="44"/>
+    <Component Name="SQR2" TI="20577" Line="557" Offs="48"/>
+    <Component Name="SQR3" TI="20592" Line="558" Offs="52"/>
+    <Component Name="JSQR" TI="20607" Line="559" Offs="56"/>
+    <Component Name="JDR1" TI="20622" Line="560" Offs="60"/>
+    <Component Name="JDR2" TI="20637" Line="561" Offs="64"/>
+    <Component Name="JDR3" TI="20652" Line="562" Offs="68"/>
+    <Component Name="JDR4" TI="20667" Line="563" Offs="72"/>
+    <Component Name="DR" TI="20682" Line="564" Offs="76"/>
    </type>
-   <type Family="ComponentList" Line="47" ID="23359">
-    <Component Name="SYSCLK_Frequency" TI="23367" Line="48" Offs="0"/>
-    <Component Name="HCLK_Frequency" TI="23381" Line="49" Offs="4"/>
-    <Component Name="PCLK1_Frequency" TI="23395" Line="50" Offs="8"/>
-    <Component Name="PCLK2_Frequency" TI="23409" Line="51" Offs="12"/>
-    <Component Name="ADCCLK_Frequency" TI="23423" Line="52" Offs="16"/>
+   <type Family="typedef" Name="ADC_TypeDef" Line="565" ID="20697" toTI="20389"/>
+   <type Family="ComponentList" Line="51" ID="20709">
+    <Component Name="ADC_Mode" TI="20717" Line="52" Offs="0"/>
+    <Component Name="ADC_ScanConvMode" TI="20731" Line="56" Offs="4"/>
+    <Component Name="ADC_ContinuousConvMode" TI="20745" Line="60" Offs="5"/>
+    <Component Name="ADC_ExternalTrigConv" TI="20759" Line="64" Offs="8"/>
+    <Component Name="ADC_DataAlign" TI="20773" Line="68" Offs="12"/>
+    <Component Name="ADC_NbrOfChannel" TI="20787" Line="71" Offs="16"/>
    </type>
-   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="23438" toTI="23359"/>
-   <function Name="RCC_GetClocksFreq" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="909">
-   <type Family="Pointer" TI="24363" toTI="23438"/>
-    <parameter Name="RCC_Clocks" TI="24363" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="909" Addr="0x0" Param="Yes"/>
-    <variable Name="tmp" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="910" Addr="0x3" TI="23032"/>
-    <variable Name="pllmull" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="910" Addr="0x1" TI="23032"/>
+   <type Family="typedef" Name="ADC_InitTypeDef" Line="74" ID="20802" toTI="20709"/>
+   <function Name="ADC_Init" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="219">
+   <type Family="Pointer" TI="20891" toTI="20697"/>
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="219" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="20897" toTI="20802"/>
+    <parameter Name="ADC_InitStruct" TI="20897" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="219" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpreg1" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="220" Addr="0x3" TI="20255"/>
    </function >
-   <function Name="RCC_APB2PeriphClockCmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096">
-    <parameter Name="RCC_APB2Periph" TI="23032" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="23154" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x1" Param="Yes"/>
+   <function Name="ADC_Cmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="300">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="300" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="20377" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="300" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="RCC_APB1PeriphClockCmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127">
-    <parameter Name="RCC_APB1Periph" TI="23032" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="23154" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x1" Param="Yes"/>
+   <function Name="ADC_ResetCalibration" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="380">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="380" Addr="0x0" Param="Yes"/>
    </function >
-   <type Family="array" ID="25027" toTI="22993"/>
-   <variable Name="APBAHBPrescTable" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="193" Addr="0x20000000" TI="25060"/>
-   <type Family="array" ID="25070" toTI="22993"/>
-   <variable Name="ADCPrescTable" FileName="C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="194" Addr="0x20000010" TI="25103"/>
-  </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\src\usart3.c" >
-   <type Family="Base" Name="signed char" ID="25170"/>
-   <type Family="Base" Name="unsigned char" ID="25177"/>
-   <type Family="Base" Name="short int" ID="25184"/>
-   <type Family="Base" Name="short unsigned int" ID="25202"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="25191" toTI="25202"/>
-   <type Family="Base" Name="long int" ID="25209"/>
-   <type Family="Base" Name="long unsigned int" ID="25227"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="25216" toTI="25227"/>
-   <type Family="Base" Name="long long int" ID="25234"/>
-   <type Family="Base" Name="long long unsigned int" ID="25241"/>
-   <type Family="Base" Name="int" ID="25248"/>
-   <type Family="Base" Name="unsigned int" ID="25255"/>
-   <type Family="ComponentList" Line="1003" ID="25319">
-    <Component Name="CRL" TI="25328" Line="1004" Offs="0"/>
-    <Component Name="CRH" TI="25343" Line="1005" Offs="4"/>
-    <Component Name="IDR" TI="25358" Line="1006" Offs="8"/>
-    <Component Name="ODR" TI="25373" Line="1007" Offs="12"/>
-    <Component Name="BSRR" TI="25388" Line="1008" Offs="16"/>
-    <Component Name="BRR" TI="25403" Line="1009" Offs="20"/>
-    <Component Name="LCKR" TI="25418" Line="1010" Offs="24"/>
-   </type>
-   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="25434" toTI="25319"/>
-   <type Family="ComponentList" Line="1236" ID="25446">
-    <Component Name="SR" TI="25455" Line="1237" Offs="0"/>
-    <Component Name="RESERVED0" TI="25469" Line="1238" Offs="2"/>
-    <Component Name="DR" TI="25484" Line="1239" Offs="4"/>
-    <Component Name="RESERVED1" TI="25498" Line="1240" Offs="6"/>
-    <Component Name="BRR" TI="25513" Line="1241" Offs="8"/>
-    <Component Name="RESERVED2" TI="25528" Line="1242" Offs="10"/>
-    <Component Name="CR1" TI="25543" Line="1243" Offs="12"/>
-    <Component Name="RESERVED3" TI="25558" Line="1244" Offs="14"/>
-    <Component Name="CR2" TI="25573" Line="1245" Offs="16"/>
-    <Component Name="RESERVED4" TI="25588" Line="1246" Offs="18"/>
-    <Component Name="CR3" TI="25603" Line="1247" Offs="20"/>
-    <Component Name="RESERVED5" TI="25618" Line="1248" Offs="22"/>
-    <Component Name="GTPR" TI="25633" Line="1249" Offs="24"/>
-    <Component Name="RESERVED6" TI="25648" Line="1250" Offs="26"/>
-   </type>
-   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="25691" toTI="25664"/>
-   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="25760" toTI="25702"/>
-   <type Family="ComponentList" Line="92" ID="25771">
-    <Component Name="GPIO_Pin" TI="25779" Line="93" Offs="0"/>
-    <Component Name="GPIO_Speed" TI="25793" Line="96" Offs="2"/>
-    <Component Name="GPIO_Mode" TI="25807" Line="99" Offs="3"/>
-   </type>
-   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="25822" toTI="25771"/>
-   <type Family="ComponentList" Line="51" ID="25833">
-    <Component Name="USART_BaudRate" TI="25841" Line="52" Offs="0"/>
-    <Component Name="USART_WordLength" TI="25855" Line="57" Offs="4"/>
-    <Component Name="USART_StopBits" TI="25869" Line="60" Offs="6"/>
-    <Component Name="USART_Parity" TI="25883" Line="63" Offs="8"/>
-    <Component Name="USART_Mode" TI="25897" Line="70" Offs="10"/>
-    <Component Name="USART_HardwareFlowControl" TI="25911" Line="73" Offs="12"/>
-   </type>
-   <type Family="typedef" Name="USART_InitTypeDef" Line="76" ID="25926" toTI="25833"/>
-   <type Family="ComponentList" Line="6" ID="25937">
-   <type Family="Pointer" TI="26002" toTI="25434"/>
-    <Component Name="port" TI="25945" Line="7" Offs="0"/>
-    <Component Name="txPin" TI="25959" Line="8" Offs="4"/>
-    <Component Name="rxPin" TI="25973" Line="9" Offs="6"/>
-    <Component Name="baudRate" TI="25987" Line="10" Offs="8"/>
-   </type>
-   <type Family="typedef" Name="USART3_config" Line="11" ID="26008" toTI="25937"/>
-   <function Name="__io_putchar" TI="25248" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="40">
-    <parameter Name="ch" TI="25248" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="40" Addr="0x0" Param="Yes"/>
+   <function Name="ADC_GetResetCalibrationStatus" TI="20331" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="393">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="393" Addr="0x0" Param="Yes"/>
    </function >
-   <function Name="initUSART3" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="4">
-   <type Family="Pointer" TI="26191" toTI="26008"/>
-    <parameter Name="config" TI="26191" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="4" Addr="0x0" Param="Yes"/>
-    <parameter Name="port" TI="26002" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="4" Addr="0x1" Param="Yes"/>
-    <parameter Name="txPin" TI="25191" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="4" Addr="0x2" Param="Yes"/>
-    <parameter Name="rxPin" TI="25191" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="4" Addr="0x3" Param="Yes"/>
-    <parameter Name="baudRate" TI="25216" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="4" Addr="0x34000028" Param="Yes"/>
-    <variable Name="GPIO_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="8" Addr="0x34000014" TI="25822"/>
-    <variable Name="USART_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\src\usart3.c" Line="21" Addr="0x34000004" TI="25926"/>
+   <function Name="ADC_StartCalibration" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="418">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="418" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="ADC_GetCalibrationStatus" TI="20331" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="431">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="431" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="ADC_SoftwareStartConvCmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="458">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="458" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="20377" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="458" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="ADC_RegularChannelConfig" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x0" Param="Yes"/>
+    <parameter Name="ADC_Channel" TI="20205" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x1" Param="Yes"/>
+    <parameter Name="Rank" TI="20205" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x2" Param="Yes"/>
+    <parameter Name="ADC_SampleTime" TI="20205" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="591" Addr="0x3" Param="Yes"/>
+    <variable Name="tmpreg1" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="592" Addr="0x1" TI="20255"/>
+   </function >
+   <function Name="ADC_GetConversionValue" TI="20230" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="709">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="709" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="ADC_GetFlagStatus" TI="20331" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="1196">
+    <parameter Name="ADCx" TI="20891" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="1196" Addr="0x0" Param="Yes"/>
+    <parameter Name="ADC_FLAG" TI="20205" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" Line="1196" Addr="0x1" Param="Yes"/>
    </function >
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\src\motor_control.c" >
-   <type Family="Base" Name="signed char" ID="26254"/>
-   <type Family="Base" Name="unsigned char" ID="26272"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="26261" toTI="26272"/>
-   <type Family="Base" Name="short int" ID="26279"/>
-   <type Family="Base" Name="short unsigned int" ID="26297"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="26286" toTI="26297"/>
-   <type Family="Base" Name="long int" ID="26304"/>
-   <type Family="Base" Name="long unsigned int" ID="26322"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="26311" toTI="26322"/>
-   <type Family="Base" Name="long long int" ID="26329"/>
-   <type Family="Base" Name="long long unsigned int" ID="26336"/>
-   <type Family="Base" Name="int" ID="26343"/>
-   <type Family="Base" Name="unsigned int" ID="26350"/>
-   <type Family="ComponentList" Line="1003" ID="26392">
-    <Component Name="CRL" TI="26401" Line="1004" Offs="0"/>
-    <Component Name="CRH" TI="26416" Line="1005" Offs="4"/>
-    <Component Name="IDR" TI="26431" Line="1006" Offs="8"/>
-    <Component Name="ODR" TI="26446" Line="1007" Offs="12"/>
-    <Component Name="BSRR" TI="26461" Line="1008" Offs="16"/>
-    <Component Name="BRR" TI="26476" Line="1009" Offs="20"/>
-    <Component Name="LCKR" TI="26491" Line="1010" Offs="24"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" >
+   <type Family="Base" Name="signed char" ID="23160"/>
+   <type Family="Base" Name="unsigned char" ID="23178"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="23167" toTI="23178"/>
+   <type Family="Base" Name="short int" ID="23185"/>
+   <type Family="Base" Name="short unsigned int" ID="23192"/>
+   <type Family="Base" Name="long int" ID="23199"/>
+   <type Family="Base" Name="long unsigned int" ID="23217"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="23206" toTI="23217"/>
+   <type Family="Base" Name="long long int" ID="23224"/>
+   <type Family="Base" Name="long long unsigned int" ID="23231"/>
+   <type Family="Base" Name="int" ID="23238"/>
+   <type Family="Base" Name="unsigned int" ID="23245"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="23282" toTI="23260"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="23294" toTI="23260"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="23328" toTI="23306"/>
+   <type Family="typedef" Name="ErrorStatus" Line="525" ID="23362" toTI="23340"/>
+   <type Family="ComponentList" Line="1078" ID="23374">
+    <Component Name="CR" TI="23383" Line="1079" Offs="0"/>
+    <Component Name="CFGR" TI="23397" Line="1080" Offs="4"/>
+    <Component Name="CIR" TI="23412" Line="1081" Offs="8"/>
+    <Component Name="APB2RSTR" TI="23427" Line="1082" Offs="12"/>
+    <Component Name="APB1RSTR" TI="23442" Line="1083" Offs="16"/>
+    <Component Name="AHBENR" TI="23457" Line="1084" Offs="20"/>
+    <Component Name="APB2ENR" TI="23472" Line="1085" Offs="24"/>
+    <Component Name="APB1ENR" TI="23487" Line="1086" Offs="28"/>
+    <Component Name="BDCR" TI="23502" Line="1087" Offs="32"/>
+    <Component Name="CSR" TI="23517" Line="1088" Offs="36"/>
    </type>
-   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="26507" toTI="26392"/>
-   <type Family="ComponentList" Line="1188" ID="26519">
-    <Component Name="CR1" TI="26528" Line="1189" Offs="0"/>
-    <Component Name="RESERVED0" TI="26543" Line="1190" Offs="2"/>
-    <Component Name="CR2" TI="26558" Line="1191" Offs="4"/>
-    <Component Name="RESERVED1" TI="26573" Line="1192" Offs="6"/>
-    <Component Name="SMCR" TI="26588" Line="1193" Offs="8"/>
-    <Component Name="RESERVED2" TI="26603" Line="1194" Offs="10"/>
-    <Component Name="DIER" TI="26618" Line="1195" Offs="12"/>
-    <Component Name="RESERVED3" TI="26633" Line="1196" Offs="14"/>
-    <Component Name="SR" TI="26648" Line="1197" Offs="16"/>
-    <Component Name="RESERVED4" TI="26662" Line="1198" Offs="18"/>
-    <Component Name="EGR" TI="26677" Line="1199" Offs="20"/>
-    <Component Name="RESERVED5" TI="26692" Line="1200" Offs="22"/>
-    <Component Name="CCMR1" TI="26707" Line="1201" Offs="24"/>
-    <Component Name="RESERVED6" TI="26722" Line="1202" Offs="26"/>
-    <Component Name="CCMR2" TI="26737" Line="1203" Offs="28"/>
-    <Component Name="RESERVED7" TI="26752" Line="1204" Offs="30"/>
-    <Component Name="CCER" TI="26767" Line="1205" Offs="32"/>
-    <Component Name="RESERVED8" TI="26782" Line="1206" Offs="34"/>
-    <Component Name="CNT" TI="26797" Line="1207" Offs="36"/>
-    <Component Name="RESERVED9" TI="26812" Line="1208" Offs="38"/>
-    <Component Name="PSC" TI="26827" Line="1209" Offs="40"/>
-    <Component Name="RESERVED10" TI="26842" Line="1210" Offs="42"/>
-    <Component Name="ARR" TI="26857" Line="1211" Offs="44"/>
-    <Component Name="RESERVED11" TI="26872" Line="1212" Offs="46"/>
-    <Component Name="RCR" TI="26887" Line="1213" Offs="48"/>
-    <Component Name="RESERVED12" TI="26902" Line="1214" Offs="50"/>
-    <Component Name="CCR1" TI="26917" Line="1215" Offs="52"/>
-    <Component Name="RESERVED13" TI="26932" Line="1216" Offs="54"/>
-    <Component Name="CCR2" TI="26947" Line="1217" Offs="56"/>
-    <Component Name="RESERVED14" TI="26962" Line="1218" Offs="58"/>
-    <Component Name="CCR3" TI="26977" Line="1219" Offs="60"/>
-    <Component Name="RESERVED15" TI="26992" Line="1220" Offs="62"/>
-    <Component Name="CCR4" TI="27007" Line="1221" Offs="64"/>
-    <Component Name="RESERVED16" TI="27022" Line="1222" Offs="66"/>
-    <Component Name="BDTR" TI="27037" Line="1223" Offs="68"/>
-    <Component Name="RESERVED17" TI="27052" Line="1224" Offs="70"/>
-    <Component Name="DCR" TI="27067" Line="1225" Offs="72"/>
-    <Component Name="RESERVED18" TI="27082" Line="1226" Offs="74"/>
-    <Component Name="DMAR" TI="27097" Line="1227" Offs="76"/>
-    <Component Name="RESERVED19" TI="27112" Line="1228" Offs="78"/>
+   <type Family="ComponentList" Line="47" ID="23533">
+    <Component Name="SYSCLK_Frequency" TI="23541" Line="48" Offs="0"/>
+    <Component Name="HCLK_Frequency" TI="23555" Line="49" Offs="4"/>
+    <Component Name="PCLK1_Frequency" TI="23569" Line="50" Offs="8"/>
+    <Component Name="PCLK2_Frequency" TI="23583" Line="51" Offs="12"/>
+    <Component Name="ADCCLK_Frequency" TI="23597" Line="52" Offs="16"/>
    </type>
-   <type Family="typedef" Name="TIM_TypeDef" Line="1229" ID="27128" toTI="26519"/>
-   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="27167" toTI="27140"/>
-   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="27236" toTI="27178"/>
-   <type Family="ComponentList" Line="92" ID="27247">
-    <Component Name="GPIO_Pin" TI="27255" Line="93" Offs="0"/>
-    <Component Name="GPIO_Speed" TI="27269" Line="96" Offs="2"/>
-    <Component Name="GPIO_Mode" TI="27283" Line="99" Offs="3"/>
-   </type>
-   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="27298" toTI="27247"/>
-   <type Family="ComponentList" Line="52" ID="27330">
-    <Component Name="TIM_Prescaler" TI="27338" Line="53" Offs="0"/>
-    <Component Name="TIM_CounterMode" TI="27352" Line="56" Offs="2"/>
-    <Component Name="TIM_Period" TI="27366" Line="59" Offs="4"/>
-    <Component Name="TIM_ClockDivision" TI="27380" Line="63" Offs="6"/>
-    <Component Name="TIM_RepetitionCounter" TI="27394" Line="66" Offs="8"/>
-   </type>
-   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="27409" toTI="27330"/>
-   <type Family="ComponentList" Line="81" ID="27420">
-    <Component Name="TIM_OCMode" TI="27428" Line="82" Offs="0"/>
-    <Component Name="TIM_OutputState" TI="27442" Line="85" Offs="2"/>
-    <Component Name="TIM_OutputNState" TI="27456" Line="88" Offs="4"/>
-    <Component Name="TIM_Pulse" TI="27470" Line="92" Offs="6"/>
-    <Component Name="TIM_OCPolarity" TI="27484" Line="95" Offs="8"/>
-    <Component Name="TIM_OCNPolarity" TI="27498" Line="98" Offs="10"/>
-    <Component Name="TIM_OCIdleState" TI="27512" Line="102" Offs="12"/>
-    <Component Name="TIM_OCNIdleState" TI="27526" Line="106" Offs="14"/>
-   </type>
-   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="27541" toTI="27420"/>
-   <type Family="ComponentList" Line="6" ID="27552">
-    <Component Name="index" TI="27560" Line="7" Offs="0"/>
-    <Component Name="dirPin" TI="27574" Line="8" Offs="2"/>
-   <type Family="Pointer" TI="27645" toTI="26507"/>
-    <Component Name="dirPort" TI="27588" Line="9" Offs="4"/>
-    <Component Name="pwmPort" TI="27602" Line="10" Offs="8"/>
-    <Component Name="pwmPin" TI="27616" Line="11" Offs="12"/>
-    <Component Name="dir" TI="27630" Line="12" Offs="14"/>
-   </type>
-   <type Family="typedef" Name="Motor" Line="13" ID="27651" toTI="27552"/>
-   <type Family="ComponentList" Line="15" ID="27662">
-    <Component Name="wheel1" TI="27670" Line="16" Offs="0"/>
-    <Component Name="wheel2" TI="27684" Line="17" Offs="16"/>
-    <Component Name="waterPump" TI="27698" Line="18" Offs="32"/>
-   <type Family="Pointer" TI="27727" toTI="27128"/>
-    <Component Name="timer" TI="27712" Line="19" Offs="48"/>
-   </type>
-   <type Family="typedef" Name="MotorConfig" Line="20" ID="27733" toTI="27662"/>
-   <function Name="toggleMotorDirection" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="96">
-   <type Family="Pointer" TI="27785" toTI="27651"/>
-    <parameter Name="motor" TI="27785" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="96" Addr="0x0" Param="Yes"/>
+   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="23612" toTI="23533"/>
+   <function Name="RCC_GetClocksFreq" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="909">
+   <type Family="Pointer" TI="24537" toTI="23612"/>
+    <parameter Name="RCC_Clocks" TI="24537" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="909" Addr="0x0" Param="Yes"/>
+    <variable Name="tmp" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="910" Addr="0x3" TI="23206"/>
+    <variable Name="pllmull" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="910" Addr="0x1" TI="23206"/>
    </function >
-   <function Name="setMotorSpeedByIndex" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="75">
-   <type Family="Pointer" TI="27862" toTI="27733"/>
-    <parameter Name="motorConfig" TI="27862" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="75" Addr="0x0" Param="Yes"/>
-    <parameter Name="motorIndex" TI="26261" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="75" Addr="0x1" Param="Yes"/>
-    <parameter Name="speed" TI="26286" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="75" Addr="0x2" Param="Yes"/>
+   <function Name="RCC_APB2PeriphClockCmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096">
+    <parameter Name="RCC_APB2Periph" TI="23206" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="23328" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x1" Param="Yes"/>
    </function >
-   <function Name="initMotor" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="7">
-    <parameter Name="motorConfig" TI="27862" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="7" Addr="0x0" Param="Yes"/>
-    <variable Name="GPIO_InitStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="30" Addr="0x34000004" TI="27298"/>
+   <function Name="RCC_APB1PeriphClockCmd" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127">
+    <parameter Name="RCC_APB1Periph" TI="23206" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="23328" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x1" Param="Yes"/>
    </function >
-   <variable Name="TIM_TimeBaseStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="3" Addr="0x20000124" TI="27409"/>
-   <variable Name="TIM_OCInitStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="4" Addr="0x2000012E" TI="27541"/>
+   <type Family="array" ID="25201" toTI="23167"/>
+   <variable Name="APBAHBPrescTable" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="193" Addr="0x20000014" TI="25234"/>
+   <type Family="array" ID="25244" toTI="23167"/>
+   <variable Name="ADCPrescTable" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="194" Addr="0x20000024" TI="25277"/>
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" >
-   <type Family="Base" Name="signed char" ID="28016"/>
-   <type Family="Base" Name="unsigned char" ID="28034"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="28023" toTI="28034"/>
-   <type Family="Base" Name="short int" ID="28041"/>
-   <type Family="Base" Name="short unsigned int" ID="28059"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="28048" toTI="28059"/>
-   <type Family="Base" Name="long int" ID="28066"/>
-   <type Family="Base" Name="long unsigned int" ID="28084"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="28073" toTI="28084"/>
-   <type Family="Base" Name="long long int" ID="28091"/>
-   <type Family="Base" Name="long long unsigned int" ID="28098"/>
-   <type Family="Base" Name="int" ID="28105"/>
-   <type Family="Base" Name="unsigned int" ID="28112"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="28171" toTI="28149"/>
-   <type Family="ComponentList" Line="544" ID="28183">
-    <Component Name="SR" TI="28192" Line="545" Offs="0"/>
-    <Component Name="CR1" TI="28206" Line="546" Offs="4"/>
-    <Component Name="CR2" TI="28221" Line="547" Offs="8"/>
-    <Component Name="SMPR1" TI="28236" Line="548" Offs="12"/>
-    <Component Name="SMPR2" TI="28251" Line="549" Offs="16"/>
-    <Component Name="JOFR1" TI="28266" Line="550" Offs="20"/>
-    <Component Name="JOFR2" TI="28281" Line="551" Offs="24"/>
-    <Component Name="JOFR3" TI="28296" Line="552" Offs="28"/>
-    <Component Name="JOFR4" TI="28311" Line="553" Offs="32"/>
-    <Component Name="HTR" TI="28326" Line="554" Offs="36"/>
-    <Component Name="LTR" TI="28341" Line="555" Offs="40"/>
-    <Component Name="SQR1" TI="28356" Line="556" Offs="44"/>
-    <Component Name="SQR2" TI="28371" Line="557" Offs="48"/>
-    <Component Name="SQR3" TI="28386" Line="558" Offs="52"/>
-    <Component Name="JSQR" TI="28401" Line="559" Offs="56"/>
-    <Component Name="JDR1" TI="28416" Line="560" Offs="60"/>
-    <Component Name="JDR2" TI="28431" Line="561" Offs="64"/>
-    <Component Name="JDR3" TI="28446" Line="562" Offs="68"/>
-    <Component Name="JDR4" TI="28461" Line="563" Offs="72"/>
-    <Component Name="DR" TI="28476" Line="564" Offs="76"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" >
+   <type Family="Base" Name="signed char" ID="25344"/>
+   <type Family="Base" Name="unsigned char" ID="25351"/>
+   <type Family="Base" Name="short int" ID="25358"/>
+   <type Family="Base" Name="short unsigned int" ID="25376"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="25365" toTI="25376"/>
+   <type Family="Base" Name="long int" ID="25383"/>
+   <type Family="Base" Name="long unsigned int" ID="25401"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="25390" toTI="25401"/>
+   <type Family="Base" Name="long long int" ID="25408"/>
+   <type Family="Base" Name="long long unsigned int" ID="25415"/>
+   <type Family="Base" Name="int" ID="25422"/>
+   <type Family="Base" Name="unsigned int" ID="25429"/>
+   <type Family="ComponentList" Line="1003" ID="25493">
+    <Component Name="CRL" TI="25502" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="25517" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="25532" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="25547" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="25562" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="25577" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="25592" Line="1010" Offs="24"/>
    </type>
-   <type Family="typedef" Name="ADC_TypeDef" Line="565" ID="28491" toTI="28183"/>
-   <type Family="ComponentList" Line="1003" ID="28503">
-    <Component Name="CRL" TI="28512" Line="1004" Offs="0"/>
-    <Component Name="CRH" TI="28527" Line="1005" Offs="4"/>
-    <Component Name="IDR" TI="28542" Line="1006" Offs="8"/>
-    <Component Name="ODR" TI="28557" Line="1007" Offs="12"/>
-    <Component Name="BSRR" TI="28572" Line="1008" Offs="16"/>
-    <Component Name="BRR" TI="28587" Line="1009" Offs="20"/>
-    <Component Name="LCKR" TI="28602" Line="1010" Offs="24"/>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="25608" toTI="25493"/>
+   <type Family="ComponentList" Line="1236" ID="25620">
+    <Component Name="SR" TI="25629" Line="1237" Offs="0"/>
+    <Component Name="RESERVED0" TI="25643" Line="1238" Offs="2"/>
+    <Component Name="DR" TI="25658" Line="1239" Offs="4"/>
+    <Component Name="RESERVED1" TI="25672" Line="1240" Offs="6"/>
+    <Component Name="BRR" TI="25687" Line="1241" Offs="8"/>
+    <Component Name="RESERVED2" TI="25702" Line="1242" Offs="10"/>
+    <Component Name="CR1" TI="25717" Line="1243" Offs="12"/>
+    <Component Name="RESERVED3" TI="25732" Line="1244" Offs="14"/>
+    <Component Name="CR2" TI="25747" Line="1245" Offs="16"/>
+    <Component Name="RESERVED4" TI="25762" Line="1246" Offs="18"/>
+    <Component Name="CR3" TI="25777" Line="1247" Offs="20"/>
+    <Component Name="RESERVED5" TI="25792" Line="1248" Offs="22"/>
+    <Component Name="GTPR" TI="25807" Line="1249" Offs="24"/>
+    <Component Name="RESERVED6" TI="25822" Line="1250" Offs="26"/>
    </type>
-   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="28618" toTI="28503"/>
-   <type Family="ComponentList" Line="51" ID="28630">
-    <Component Name="ADC_Mode" TI="28638" Line="52" Offs="0"/>
-    <Component Name="ADC_ScanConvMode" TI="28652" Line="56" Offs="4"/>
-    <Component Name="ADC_ContinuousConvMode" TI="28666" Line="60" Offs="5"/>
-    <Component Name="ADC_ExternalTrigConv" TI="28680" Line="64" Offs="8"/>
-    <Component Name="ADC_DataAlign" TI="28694" Line="68" Offs="12"/>
-    <Component Name="ADC_NbrOfChannel" TI="28708" Line="71" Offs="16"/>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="25865" toTI="25838"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="25934" toTI="25876"/>
+   <type Family="ComponentList" Line="92" ID="25945">
+    <Component Name="GPIO_Pin" TI="25953" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="25967" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="25981" Line="99" Offs="3"/>
    </type>
-   <type Family="typedef" Name="ADC_InitTypeDef" Line="74" ID="28723" toTI="28630"/>
-   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="28761" toTI="28734"/>
-   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="28830" toTI="28772"/>
-   <type Family="ComponentList" Line="92" ID="28841">
-    <Component Name="GPIO_Pin" TI="28849" Line="93" Offs="0"/>
-    <Component Name="GPIO_Speed" TI="28863" Line="96" Offs="2"/>
-    <Component Name="GPIO_Mode" TI="28877" Line="99" Offs="3"/>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="25996" toTI="25945"/>
+   <type Family="ComponentList" Line="51" ID="26007">
+    <Component Name="USART_BaudRate" TI="26015" Line="52" Offs="0"/>
+    <Component Name="USART_WordLength" TI="26029" Line="57" Offs="4"/>
+    <Component Name="USART_StopBits" TI="26043" Line="60" Offs="6"/>
+    <Component Name="USART_Parity" TI="26057" Line="63" Offs="8"/>
+    <Component Name="USART_Mode" TI="26071" Line="70" Offs="10"/>
+    <Component Name="USART_HardwareFlowControl" TI="26085" Line="73" Offs="12"/>
    </type>
-   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="28892" toTI="28841"/>
-   <type Family="ComponentList" Line="6" ID="28903">
-   <type Family="Pointer" TI="28968" toTI="28618"/>
-    <Component Name="port" TI="28911" Line="7" Offs="0"/>
-    <Component Name="pin" TI="28925" Line="8" Offs="4"/>
-   <type Family="Pointer" TI="28974" toTI="28491"/>
-    <Component Name="adc" TI="28939" Line="9" Offs="8"/>
-    <Component Name="channel" TI="28953" Line="10" Offs="12"/>
+   <type Family="typedef" Name="USART_InitTypeDef" Line="76" ID="26100" toTI="26007"/>
+   <type Family="ComponentList" Line="6" ID="26111">
+   <type Family="Pointer" TI="26176" toTI="25608"/>
+    <Component Name="port" TI="26119" Line="7" Offs="0"/>
+    <Component Name="txPin" TI="26133" Line="8" Offs="4"/>
+    <Component Name="rxPin" TI="26147" Line="9" Offs="6"/>
+    <Component Name="baudRate" TI="26161" Line="10" Offs="8"/>
    </type>
-   <type Family="typedef" Name="SoilMoisture" Line="11" ID="28980" toTI="28903"/>
-   <function Name="readSoilMoistureValue" TI="28048" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="48">
-   <type Family="Pointer" TI="29047" toTI="28980"/>
-    <parameter Name="sensor" TI="29047" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="48" Addr="0x0" Param="Yes"/>
+   <type Family="typedef" Name="USART3_config" Line="11" ID="26182" toTI="26111"/>
+   <function Name="__io_putchar" TI="25422" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="40">
+    <parameter Name="ch" TI="25422" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="40" Addr="0x0" Param="Yes"/>
    </function >
-   <function Name="initSoilMoistureSensor" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="4">
-    <parameter Name="sensor" TI="29047" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="4" Addr="0x0" Param="Yes"/>
-    <parameter Name="port" TI="28968" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="4" Addr="0x1" Param="Yes"/>
-    <parameter Name="pin" TI="28048" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="4" Addr="0x2" Param="Yes"/>
-    <parameter Name="adc" TI="28974" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="4" Addr="0x3" Param="Yes"/>
-    <parameter Name="channel" TI="28023" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="4" Addr="0x34000030" Param="Yes"/>
-    <variable Name="ADC_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="5" Addr="0x34000000" TI="28723"/>
-    <variable Name="GPIO_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\src\soil_moisture_sensor.c" Line="6" Addr="0x34000014" TI="28892"/>
+   <function Name="initUSART3" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="4">
+   <type Family="Pointer" TI="26365" toTI="26182"/>
+    <parameter Name="config" TI="26365" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="4" Addr="0x0" Param="Yes"/>
+    <parameter Name="port" TI="26176" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="4" Addr="0x1" Param="Yes"/>
+    <parameter Name="txPin" TI="25365" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="4" Addr="0x2" Param="Yes"/>
+    <parameter Name="rxPin" TI="25365" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="4" Addr="0x3" Param="Yes"/>
+    <parameter Name="baudRate" TI="25390" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="4" Addr="0x34000028" Param="Yes"/>
+    <variable Name="GPIO_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="8" Addr="0x34000014" TI="25996"/>
+    <variable Name="USART_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="21" Addr="0x34000004" TI="26100"/>
    </function >
   </module>
-  <module Name="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" >
-   <type Family="Base" Name="signed char" ID="29239"/>
-   <type Family="Base" Name="unsigned char" ID="29257"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="29246" toTI="29257"/>
-   <type Family="Base" Name="short int" ID="29264"/>
-   <type Family="Base" Name="short unsigned int" ID="29282"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="29271" toTI="29282"/>
-   <type Family="Base" Name="long int" ID="29289"/>
-   <type Family="Base" Name="long unsigned int" ID="29307"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="29296" toTI="29307"/>
-   <type Family="Base" Name="long long int" ID="29314"/>
-   <type Family="Base" Name="long long unsigned int" ID="29321"/>
-   <type Family="Base" Name="int" ID="29328"/>
-   <type Family="Base" Name="unsigned int" ID="29335"/>
-   <type Family="typedef" Name="FunctionalState" Line="522" ID="29394" toTI="29372"/>
-   <type Family="ComponentList" Line="544" ID="29406">
-    <Component Name="SR" TI="29415" Line="545" Offs="0"/>
-    <Component Name="CR1" TI="29429" Line="546" Offs="4"/>
-    <Component Name="CR2" TI="29444" Line="547" Offs="8"/>
-    <Component Name="SMPR1" TI="29459" Line="548" Offs="12"/>
-    <Component Name="SMPR2" TI="29474" Line="549" Offs="16"/>
-    <Component Name="JOFR1" TI="29489" Line="550" Offs="20"/>
-    <Component Name="JOFR2" TI="29504" Line="551" Offs="24"/>
-    <Component Name="JOFR3" TI="29519" Line="552" Offs="28"/>
-    <Component Name="JOFR4" TI="29534" Line="553" Offs="32"/>
-    <Component Name="HTR" TI="29549" Line="554" Offs="36"/>
-    <Component Name="LTR" TI="29564" Line="555" Offs="40"/>
-    <Component Name="SQR1" TI="29579" Line="556" Offs="44"/>
-    <Component Name="SQR2" TI="29594" Line="557" Offs="48"/>
-    <Component Name="SQR3" TI="29609" Line="558" Offs="52"/>
-    <Component Name="JSQR" TI="29624" Line="559" Offs="56"/>
-    <Component Name="JDR1" TI="29639" Line="560" Offs="60"/>
-    <Component Name="JDR2" TI="29654" Line="561" Offs="64"/>
-    <Component Name="JDR3" TI="29669" Line="562" Offs="68"/>
-    <Component Name="JDR4" TI="29684" Line="563" Offs="72"/>
-    <Component Name="DR" TI="29699" Line="564" Offs="76"/>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" >
+   <type Family="Base" Name="signed char" ID="26428"/>
+   <type Family="Base" Name="unsigned char" ID="26446"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="26435" toTI="26446"/>
+   <type Family="Base" Name="short int" ID="26453"/>
+   <type Family="Base" Name="short unsigned int" ID="26471"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="26460" toTI="26471"/>
+   <type Family="Base" Name="long int" ID="26478"/>
+   <type Family="Base" Name="long unsigned int" ID="26496"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="26485" toTI="26496"/>
+   <type Family="Base" Name="long long int" ID="26503"/>
+   <type Family="Base" Name="long long unsigned int" ID="26510"/>
+   <type Family="Base" Name="int" ID="26517"/>
+   <type Family="Base" Name="unsigned int" ID="26524"/>
+   <type Family="ComponentList" Line="1003" ID="26566">
+    <Component Name="CRL" TI="26575" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="26590" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="26605" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="26620" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="26635" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="26650" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="26665" Line="1010" Offs="24"/>
    </type>
-   <type Family="typedef" Name="ADC_TypeDef" Line="565" ID="29714" toTI="29406"/>
-   <type Family="ComponentList" Line="1003" ID="29726">
-    <Component Name="CRL" TI="29735" Line="1004" Offs="0"/>
-    <Component Name="CRH" TI="29750" Line="1005" Offs="4"/>
-    <Component Name="IDR" TI="29765" Line="1006" Offs="8"/>
-    <Component Name="ODR" TI="29780" Line="1007" Offs="12"/>
-    <Component Name="BSRR" TI="29795" Line="1008" Offs="16"/>
-    <Component Name="BRR" TI="29810" Line="1009" Offs="20"/>
-    <Component Name="LCKR" TI="29825" Line="1010" Offs="24"/>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="26681" toTI="26566"/>
+   <type Family="ComponentList" Line="1188" ID="26693">
+    <Component Name="CR1" TI="26702" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="26717" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="26732" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="26747" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="26762" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="26777" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="26792" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="26807" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="26822" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="26836" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="26851" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="26866" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="26881" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="26896" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="26911" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="26926" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="26941" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="26956" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="26971" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="26986" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="27001" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="27016" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="27031" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="27046" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="27061" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="27076" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="27091" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="27106" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="27121" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="27136" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="27151" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="27166" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="27181" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="27196" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="27211" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="27226" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="27241" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="27256" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="27271" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="27286" Line="1228" Offs="78"/>
    </type>
-   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="29841" toTI="29726"/>
-   <type Family="ComponentList" Line="51" ID="29853">
-    <Component Name="ADC_Mode" TI="29861" Line="52" Offs="0"/>
-    <Component Name="ADC_ScanConvMode" TI="29875" Line="56" Offs="4"/>
-    <Component Name="ADC_ContinuousConvMode" TI="29889" Line="60" Offs="5"/>
-    <Component Name="ADC_ExternalTrigConv" TI="29903" Line="64" Offs="8"/>
-    <Component Name="ADC_DataAlign" TI="29917" Line="68" Offs="12"/>
-    <Component Name="ADC_NbrOfChannel" TI="29931" Line="71" Offs="16"/>
+   <type Family="typedef" Name="TIM_TypeDef" Line="1229" ID="27302" toTI="26693"/>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="27341" toTI="27314"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="27410" toTI="27352"/>
+   <type Family="ComponentList" Line="92" ID="27421">
+    <Component Name="GPIO_Pin" TI="27429" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="27443" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="27457" Line="99" Offs="3"/>
    </type>
-   <type Family="typedef" Name="ADC_InitTypeDef" Line="74" ID="29946" toTI="29853"/>
-   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="29984" toTI="29957"/>
-   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="30053" toTI="29995"/>
-   <type Family="ComponentList" Line="92" ID="30064">
-    <Component Name="GPIO_Pin" TI="30072" Line="93" Offs="0"/>
-    <Component Name="GPIO_Speed" TI="30086" Line="96" Offs="2"/>
-    <Component Name="GPIO_Mode" TI="30100" Line="99" Offs="3"/>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="27472" toTI="27421"/>
+   <type Family="ComponentList" Line="52" ID="27504">
+    <Component Name="TIM_Prescaler" TI="27512" Line="53" Offs="0"/>
+    <Component Name="TIM_CounterMode" TI="27526" Line="56" Offs="2"/>
+    <Component Name="TIM_Period" TI="27540" Line="59" Offs="4"/>
+    <Component Name="TIM_ClockDivision" TI="27554" Line="63" Offs="6"/>
+    <Component Name="TIM_RepetitionCounter" TI="27568" Line="66" Offs="8"/>
    </type>
-   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="30115" toTI="30064"/>
-   <type Family="ComponentList" Line="6" ID="30126">
-   <type Family="Pointer" TI="30191" toTI="29841"/>
-    <Component Name="port" TI="30134" Line="7" Offs="0"/>
-    <Component Name="pin" TI="30148" Line="8" Offs="4"/>
-   <type Family="Pointer" TI="30197" toTI="29714"/>
-    <Component Name="adc" TI="30162" Line="9" Offs="8"/>
-    <Component Name="channel" TI="30176" Line="10" Offs="12"/>
+   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="27583" toTI="27504"/>
+   <type Family="ComponentList" Line="81" ID="27594">
+    <Component Name="TIM_OCMode" TI="27602" Line="82" Offs="0"/>
+    <Component Name="TIM_OutputState" TI="27616" Line="85" Offs="2"/>
+    <Component Name="TIM_OutputNState" TI="27630" Line="88" Offs="4"/>
+    <Component Name="TIM_Pulse" TI="27644" Line="92" Offs="6"/>
+    <Component Name="TIM_OCPolarity" TI="27658" Line="95" Offs="8"/>
+    <Component Name="TIM_OCNPolarity" TI="27672" Line="98" Offs="10"/>
+    <Component Name="TIM_OCIdleState" TI="27686" Line="102" Offs="12"/>
+    <Component Name="TIM_OCNIdleState" TI="27700" Line="106" Offs="14"/>
    </type>
-   <type Family="typedef" Name="CDS" Line="11" ID="30203" toTI="30126"/>
-   <function Name="readCDSValue" TI="29271" FileName="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" Line="43">
-   <type Family="Pointer" TI="30270" toTI="30203"/>
-    <parameter Name="cds" TI="30270" FileName="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" Line="43" Addr="0x0" Param="Yes"/>
+   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="27715" toTI="27594"/>
+   <type Family="ComponentList" Line="6" ID="27726">
+    <Component Name="index" TI="27734" Line="7" Offs="0"/>
+    <Component Name="dirPin" TI="27748" Line="8" Offs="2"/>
+   <type Family="Pointer" TI="27819" toTI="26681"/>
+    <Component Name="dirPort" TI="27762" Line="9" Offs="4"/>
+    <Component Name="pwmPort" TI="27776" Line="10" Offs="8"/>
+    <Component Name="pwmPin" TI="27790" Line="11" Offs="12"/>
+    <Component Name="dir" TI="27804" Line="12" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="Motor" Line="13" ID="27825" toTI="27726"/>
+   <type Family="ComponentList" Line="15" ID="27836">
+    <Component Name="wheel1" TI="27844" Line="16" Offs="0"/>
+    <Component Name="wheel2" TI="27858" Line="17" Offs="16"/>
+    <Component Name="waterPump" TI="27872" Line="18" Offs="32"/>
+   <type Family="Pointer" TI="27901" toTI="27302"/>
+    <Component Name="timer" TI="27886" Line="19" Offs="48"/>
+   </type>
+   <type Family="typedef" Name="MotorConfig" Line="20" ID="27907" toTI="27836"/>
+   <function Name="toggleMotorDirection" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="96">
+   <type Family="Pointer" TI="27959" toTI="27825"/>
+    <parameter Name="motor" TI="27959" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="96" Addr="0x0" Param="Yes"/>
    </function >
-   <function Name="initCDSSensor" TI="0" FileName="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" Line="4">
-    <parameter Name="cds" TI="30270" FileName="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" Line="4" Addr="0x0" Param="Yes"/>
-    <variable Name="ADC_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" Line="5" Addr="0x34000000" TI="29946"/>
-    <variable Name="GPIO_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\src\cds_sensor.c" Line="6" Addr="0x34000014" TI="30115"/>
+   <function Name="setMotorSpeedByIndex" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="75">
+   <type Family="Pointer" TI="28036" toTI="27907"/>
+    <parameter Name="motorConfig" TI="28036" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="75" Addr="0x0" Param="Yes"/>
+    <parameter Name="motorIndex" TI="26435" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="75" Addr="0x1" Param="Yes"/>
+    <parameter Name="speed" TI="26460" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="75" Addr="0x2" Param="Yes"/>
+   </function >
+   <function Name="initMotor" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="7">
+    <parameter Name="motorConfig" TI="28036" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="7" Addr="0x0" Param="Yes"/>
+    <variable Name="GPIO_InitStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="30" Addr="0x34000004" TI="27472"/>
+   </function >
+   <variable Name="TIM_TimeBaseStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="3" Addr="0x20000138" TI="27583"/>
+   <variable Name="TIM_OCInitStructure_PWM" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="4" Addr="0x20000142" TI="27715"/>
+  </module>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" >
+   <type Family="Base" Name="signed char" ID="28190"/>
+   <type Family="Base" Name="unsigned char" ID="28208"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="28197" toTI="28208"/>
+   <type Family="Base" Name="short int" ID="28215"/>
+   <type Family="Base" Name="short unsigned int" ID="28233"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="28222" toTI="28233"/>
+   <type Family="Base" Name="long int" ID="28240"/>
+   <type Family="Base" Name="long unsigned int" ID="28258"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="28247" toTI="28258"/>
+   <type Family="Base" Name="long long int" ID="28265"/>
+   <type Family="Base" Name="long long unsigned int" ID="28272"/>
+   <type Family="Base" Name="int" ID="28279"/>
+   <type Family="Base" Name="unsigned int" ID="28286"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="28345" toTI="28323"/>
+   <type Family="ComponentList" Line="544" ID="28357">
+    <Component Name="SR" TI="28366" Line="545" Offs="0"/>
+    <Component Name="CR1" TI="28380" Line="546" Offs="4"/>
+    <Component Name="CR2" TI="28395" Line="547" Offs="8"/>
+    <Component Name="SMPR1" TI="28410" Line="548" Offs="12"/>
+    <Component Name="SMPR2" TI="28425" Line="549" Offs="16"/>
+    <Component Name="JOFR1" TI="28440" Line="550" Offs="20"/>
+    <Component Name="JOFR2" TI="28455" Line="551" Offs="24"/>
+    <Component Name="JOFR3" TI="28470" Line="552" Offs="28"/>
+    <Component Name="JOFR4" TI="28485" Line="553" Offs="32"/>
+    <Component Name="HTR" TI="28500" Line="554" Offs="36"/>
+    <Component Name="LTR" TI="28515" Line="555" Offs="40"/>
+    <Component Name="SQR1" TI="28530" Line="556" Offs="44"/>
+    <Component Name="SQR2" TI="28545" Line="557" Offs="48"/>
+    <Component Name="SQR3" TI="28560" Line="558" Offs="52"/>
+    <Component Name="JSQR" TI="28575" Line="559" Offs="56"/>
+    <Component Name="JDR1" TI="28590" Line="560" Offs="60"/>
+    <Component Name="JDR2" TI="28605" Line="561" Offs="64"/>
+    <Component Name="JDR3" TI="28620" Line="562" Offs="68"/>
+    <Component Name="JDR4" TI="28635" Line="563" Offs="72"/>
+    <Component Name="DR" TI="28650" Line="564" Offs="76"/>
+   </type>
+   <type Family="typedef" Name="ADC_TypeDef" Line="565" ID="28665" toTI="28357"/>
+   <type Family="ComponentList" Line="1003" ID="28677">
+    <Component Name="CRL" TI="28686" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="28701" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="28716" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="28731" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="28746" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="28761" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="28776" Line="1010" Offs="24"/>
+   </type>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="28792" toTI="28677"/>
+   <type Family="ComponentList" Line="51" ID="28804">
+    <Component Name="ADC_Mode" TI="28812" Line="52" Offs="0"/>
+    <Component Name="ADC_ScanConvMode" TI="28826" Line="56" Offs="4"/>
+    <Component Name="ADC_ContinuousConvMode" TI="28840" Line="60" Offs="5"/>
+    <Component Name="ADC_ExternalTrigConv" TI="28854" Line="64" Offs="8"/>
+    <Component Name="ADC_DataAlign" TI="28868" Line="68" Offs="12"/>
+    <Component Name="ADC_NbrOfChannel" TI="28882" Line="71" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="ADC_InitTypeDef" Line="74" ID="28897" toTI="28804"/>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="28935" toTI="28908"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="29004" toTI="28946"/>
+   <type Family="ComponentList" Line="92" ID="29015">
+    <Component Name="GPIO_Pin" TI="29023" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="29037" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="29051" Line="99" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="29066" toTI="29015"/>
+   <type Family="ComponentList" Line="6" ID="29077">
+   <type Family="Pointer" TI="29142" toTI="28792"/>
+    <Component Name="port" TI="29085" Line="7" Offs="0"/>
+    <Component Name="pin" TI="29099" Line="8" Offs="4"/>
+   <type Family="Pointer" TI="29148" toTI="28665"/>
+    <Component Name="adc" TI="29113" Line="9" Offs="8"/>
+    <Component Name="channel" TI="29127" Line="10" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="SoilMoisture" Line="11" ID="29154" toTI="29077"/>
+   <function Name="readSoilMoistureValue" TI="28222" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="48">
+   <type Family="Pointer" TI="29221" toTI="29154"/>
+    <parameter Name="sensor" TI="29221" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="48" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="initSoilMoistureSensor" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="4">
+    <parameter Name="sensor" TI="29221" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="4" Addr="0x0" Param="Yes"/>
+    <parameter Name="port" TI="29142" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="4" Addr="0x1" Param="Yes"/>
+    <parameter Name="pin" TI="28222" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="4" Addr="0x2" Param="Yes"/>
+    <parameter Name="adc" TI="29148" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="4" Addr="0x3" Param="Yes"/>
+    <parameter Name="channel" TI="28197" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="4" Addr="0x34000030" Param="Yes"/>
+    <variable Name="ADC_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="5" Addr="0x34000000" TI="28897"/>
+    <variable Name="GPIO_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\soil_moisture_sensor.c" Line="6" Addr="0x34000014" TI="29066"/>
+   </function >
+  </module>
+  <module Name="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" >
+   <type Family="Base" Name="signed char" ID="29413"/>
+   <type Family="Base" Name="unsigned char" ID="29431"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="29420" toTI="29431"/>
+   <type Family="Base" Name="short int" ID="29438"/>
+   <type Family="Base" Name="short unsigned int" ID="29456"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="29445" toTI="29456"/>
+   <type Family="Base" Name="long int" ID="29463"/>
+   <type Family="Base" Name="long unsigned int" ID="29481"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="29470" toTI="29481"/>
+   <type Family="Base" Name="long long int" ID="29488"/>
+   <type Family="Base" Name="long long unsigned int" ID="29495"/>
+   <type Family="Base" Name="int" ID="29502"/>
+   <type Family="Base" Name="unsigned int" ID="29509"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="29568" toTI="29546"/>
+   <type Family="ComponentList" Line="544" ID="29580">
+    <Component Name="SR" TI="29589" Line="545" Offs="0"/>
+    <Component Name="CR1" TI="29603" Line="546" Offs="4"/>
+    <Component Name="CR2" TI="29618" Line="547" Offs="8"/>
+    <Component Name="SMPR1" TI="29633" Line="548" Offs="12"/>
+    <Component Name="SMPR2" TI="29648" Line="549" Offs="16"/>
+    <Component Name="JOFR1" TI="29663" Line="550" Offs="20"/>
+    <Component Name="JOFR2" TI="29678" Line="551" Offs="24"/>
+    <Component Name="JOFR3" TI="29693" Line="552" Offs="28"/>
+    <Component Name="JOFR4" TI="29708" Line="553" Offs="32"/>
+    <Component Name="HTR" TI="29723" Line="554" Offs="36"/>
+    <Component Name="LTR" TI="29738" Line="555" Offs="40"/>
+    <Component Name="SQR1" TI="29753" Line="556" Offs="44"/>
+    <Component Name="SQR2" TI="29768" Line="557" Offs="48"/>
+    <Component Name="SQR3" TI="29783" Line="558" Offs="52"/>
+    <Component Name="JSQR" TI="29798" Line="559" Offs="56"/>
+    <Component Name="JDR1" TI="29813" Line="560" Offs="60"/>
+    <Component Name="JDR2" TI="29828" Line="561" Offs="64"/>
+    <Component Name="JDR3" TI="29843" Line="562" Offs="68"/>
+    <Component Name="JDR4" TI="29858" Line="563" Offs="72"/>
+    <Component Name="DR" TI="29873" Line="564" Offs="76"/>
+   </type>
+   <type Family="typedef" Name="ADC_TypeDef" Line="565" ID="29888" toTI="29580"/>
+   <type Family="ComponentList" Line="1003" ID="29900">
+    <Component Name="CRL" TI="29909" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="29924" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="29939" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="29954" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="29969" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="29984" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="29999" Line="1010" Offs="24"/>
+   </type>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="30015" toTI="29900"/>
+   <type Family="ComponentList" Line="51" ID="30027">
+    <Component Name="ADC_Mode" TI="30035" Line="52" Offs="0"/>
+    <Component Name="ADC_ScanConvMode" TI="30049" Line="56" Offs="4"/>
+    <Component Name="ADC_ContinuousConvMode" TI="30063" Line="60" Offs="5"/>
+    <Component Name="ADC_ExternalTrigConv" TI="30077" Line="64" Offs="8"/>
+    <Component Name="ADC_DataAlign" TI="30091" Line="68" Offs="12"/>
+    <Component Name="ADC_NbrOfChannel" TI="30105" Line="71" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="ADC_InitTypeDef" Line="74" ID="30120" toTI="30027"/>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="30158" toTI="30131"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="30227" toTI="30169"/>
+   <type Family="ComponentList" Line="92" ID="30238">
+    <Component Name="GPIO_Pin" TI="30246" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="30260" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="30274" Line="99" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="30289" toTI="30238"/>
+   <type Family="ComponentList" Line="6" ID="30300">
+   <type Family="Pointer" TI="30365" toTI="30015"/>
+    <Component Name="port" TI="30308" Line="7" Offs="0"/>
+    <Component Name="pin" TI="30322" Line="8" Offs="4"/>
+   <type Family="Pointer" TI="30371" toTI="29888"/>
+    <Component Name="adc" TI="30336" Line="9" Offs="8"/>
+    <Component Name="channel" TI="30350" Line="10" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="CDS" Line="11" ID="30377" toTI="30300"/>
+   <function Name="readCDSValue" TI="29445" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" Line="43">
+   <type Family="Pointer" TI="30444" toTI="30377"/>
+    <parameter Name="cds" TI="30444" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" Line="43" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="initCDSSensor" TI="0" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" Line="4">
+    <parameter Name="cds" TI="30444" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" Line="4" Addr="0x0" Param="Yes"/>
+    <variable Name="ADC_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" Line="5" Addr="0x34000000" TI="30120"/>
+    <variable Name="GPIO_InitStructure" FileName="C:\ride_project\FlollowtheSunshine\Mango-M32\src\cds_sensor.c" Line="6" Addr="0x34000014" TI="30289"/>
    </function >
   </module>
  </modulelist>

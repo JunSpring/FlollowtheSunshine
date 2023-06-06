@@ -4,6 +4,7 @@
 #include "soil_moisture_sensor.h"
 #include "cds_sensor.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure_PWM;
 TIM_OCInitTypeDef TIM_OCInitStructure_PWM;
@@ -16,21 +17,21 @@ TIM_OCInitTypeDef TIM_OCInitStructure_PWM;
 
 // Motor
 #define MOTOR_WHEEL1_INDEX          1
-#define MOTOR_WHEEL1_DIR            1
+#define MOTOR_WHEEL1_DIR            0
 #define MOTOR_WHEEL1_DIRPIN         GPIO_Pin_6
 #define MOTOR_WHEEL1_DIRPROT        GPIOB
 #define MOTOR_WHEEL1_PWMPIN         GPIO_Pin_12
 #define MOTOR_WHEEL1_PWMPORT        GPIOB
 
 #define MOTOR_WHEEL2_INDEX          2
-#define MOTOR_WHEEL2_DIR            1
+#define MOTOR_WHEEL2_DIR            0
 #define MOTOR_WHEEL2_DIRPIN         GPIO_Pin_7
 #define MOTOR_WHEEL2_DIRPROT        GPIOB
 #define MOTOR_WHEEL2_PWMPIN         GPIO_Pin_13
 #define MOTOR_WHEEL2_PWMPORT        GPIOB
 
 #define MOTOR_WATERPUMP_INDEX       3
-#define MOTOR_WATERPUMP_DIR         1
+#define MOTOR_WATERPUMP_DIR         0
 #define MOTOR_WATERPUMP_DIRPIN      GPIO_Pin_8
 #define MOTOR_WATERPUMP_DIRPROT     GPIOB
 #define MOTOR_WATERPUMP_PWMPIN      GPIO_Pin_14
@@ -89,6 +90,14 @@ int main(void)
     motorconfig.timer =             MOTOR_TIMER;
     initMotor(&motorconfig);
     
+    toggleMotorDirection(&motorconfig.wheel1);
+    toggleMotorDirection(&motorconfig.wheel2);
+    toggleMotorDirection(&motorconfig.waterPump);
+    
+    setMotorSpeedByIndex(&motorconfig, 1, 500);
+    setMotorSpeedByIndex(&motorconfig, 2, 500);
+    setMotorSpeedByIndex(&motorconfig, 3, 500);
+    
     SoilMoisture soilmoisture;
     initSoilMoistureSensor(&soilmoisture, SOIL_MOISTURE_PORT, SOIL_MOISTURE_PIN, SOIL_MOISTURE_ADC, SOIL_MOISTURE_CHANNEL);
     
@@ -104,53 +113,42 @@ int main(void)
     cds2.adc =      CDS2_ADC;
     cds2.channel =  CDS2_CHANNEL;
     
-    printf("start!\n");
-    
     uint16_t sm, c1, c2;
+    uint16_t data;
+    bool sm_active = false;
+    bool cds_active = false;
     
-    sm = readSoilMoistureValue(&soilmoisture);
-    printf("soilmoisture: %d\n", sm);
-    
-    initCDSSensor(&cds1);
-    c1 = readCDSValue(&cds1);
-    printf("cds1: %d\n", c1);
-    
-    initCDSSensor(&cds2);
-    c2 = readCDSValue(&cds2);
-    printf("cds2: %d\n", c2);
-    
-    toggleMotorDirection(&motorconfig.wheel1);
-    toggleMotorDirection(&motorconfig.wheel2);
-    toggleMotorDirection(&motorconfig.waterPump);
-    
-    uint16_t data =32;
     while(1)
     {
         data = USART_ReceiveData(USART3);
-        switch(data)
+        if(data == 'a')
         {
-        case 'i':
             sm = readSoilMoistureValue(&soilmoisture);
             initCDSSensor(&cds1);
             c1 = readCDSValue(&cds1);
             initCDSSensor(&cds2);
             c2 = readCDSValue(&cds2);
-            printf("%d %d %d\n", sm, c1, c2);
-            delay_m();
-            delay_m();
-            delay_m();
-            delay_m();
-            delay_m();
-            delay_m();
-            break;
-        case 'w':
-            printf("hi");
-            break;
+        
+            if(sm)
+            {
+                printf("sm\n");
+                sm_active = true;
+            }
+            else
+                printf("none\n");
+            if(c1>c2)
+                cds_active = true;
         }
-    
-        setMotorSpeedByIndex(&motorconfig, 1, 500);
-        setMotorSpeedByIndex(&motorconfig, 2, 500);
-        setMotorSpeedByIndex(&motorconfig, 3, 500);
-    
+        else if(data == 'i')
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+            initCDSSensor(&cds2);
+            c2 = readCDSValue(&cds2);
+        
+            printf("%d %d %d\n", sm, c1, c2);
+            delay_ms(100);
+        }
     }
 }
