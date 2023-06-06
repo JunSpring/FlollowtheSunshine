@@ -1,0 +1,385 @@
+
+C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o:     file format elf32-littlearm
+C:\ride_project\FlollowtheSunshine\obj\system_stm32f10x.o
+
+Disassembly of section .text.SystemCoreClockUpdate:
+
+00000000 <SystemCoreClockUpdate>:
+SystemCoreClockUpdate():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:319
+#if defined (STM32F10X_LD_VL) || defined (STM32F10X_MD_VL) || (defined STM32F10X_HD_VL)
+  uint32_t prediv1factor = 0;
+#endif /* STM32F10X_LD_VL or STM32F10X_MD_VL or STM32F10X_HD_VL */
+    
+  /* Get SYSCLK source -------------------------------------------------------*/
+  tmp = RCC->CFGR & RCC_CFGR_SWS;
+   0:	4817      	ldr	r0, [pc, #92]	(60 <SystemCoreClockUpdate+0x60>)
+   2:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:321
+  
+  switch (tmp)
+   4:	f003 030c 	and.w	r3, r3, #12	; 0xc
+   8:	2b04      	cmp	r3, #4
+   a:	d004      	beq.n	16 <SystemCoreClockUpdate+0x16>
+   c:	2b08      	cmp	r3, #8
+   e:	d006      	beq.n	1e <SystemCoreClockUpdate+0x1e>
+  10:	4a14      	ldr	r2, [pc, #80]	(64 <SystemCoreClockUpdate+0x64>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:403
+      }
+#endif /* STM32F10X_CL */ 
+      break;
+
+    default:
+      SystemCoreClock = HSI_VALUE;
+  12:	4b15      	ldr	r3, [pc, #84]	(68 <SystemCoreClockUpdate+0x68>)
+  14:	e017      	b.n	46 <SystemCoreClockUpdate+0x46>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:327
+  {
+    case 0x00:  /* HSI used as system clock */
+      SystemCoreClock = HSI_VALUE;
+      break;
+    case 0x04:  /* HSE used as system clock */
+      SystemCoreClock = HSE_VALUE;
+  16:	4a15      	ldr	r2, [pc, #84]	(6c <SystemCoreClockUpdate+0x6c>)
+  18:	4b12      	ldr	r3, [pc, #72]	(64 <SystemCoreClockUpdate+0x64>)
+  1a:	601a      	str	r2, [r3, #0]
+  1c:	e014      	b.n	48 <SystemCoreClockUpdate+0x48>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:332
+      break;
+    case 0x08:  /* PLL used as system clock */
+
+      /* Get PLL clock source and multiplication factor ----------------------*/
+      pllmull = RCC->CFGR & RCC_CFGR_PLLMULL;
+  1e:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:333
+      pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
+  20:	6842      	ldr	r2, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:336
+      
+#ifndef STM32F10X_CL      
+      pllmull = ( pllmull >> 18) + 2;
+  22:	f3c3 4383 	ubfx	r3, r3, #18, #4
+  26:	1c99      	adds	r1, r3, #2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:338
+      
+      if (pllsource == 0x00)
+  28:	f412 3f80 	tst.w	r2, #65536	; 0x10000
+  2c:	d103      	bne.n	36 <SystemCoreClockUpdate+0x36>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:341
+      {
+        /* HSI oscillator clock divided by 2 selected as PLL clock entry */
+        SystemCoreClock = (HSI_VALUE >> 1) * pllmull;
+  2e:	4b10      	ldr	r3, [pc, #64]	(70 <SystemCoreClockUpdate+0x70>)
+  30:	4a0c      	ldr	r2, [pc, #48]	(64 <SystemCoreClockUpdate+0x64>)
+  32:	434b      	muls	r3, r1
+  34:	e007      	b.n	46 <SystemCoreClockUpdate+0x46>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:351
+       prediv1factor = (RCC->CFGR2 & RCC_CFGR2_PREDIV1) + 1;
+       /* HSE oscillator clock selected as PREDIV1 clock entry */
+       SystemCoreClock = (HSE_VALUE / prediv1factor) * pllmull; 
+ #else
+        /* HSE selected as PLL clock entry */
+        if ((RCC->CFGR & RCC_CFGR_PLLXTPRE) != (uint32_t)RESET)
+  36:	6843      	ldr	r3, [r0, #4]
+  38:	4a0a      	ldr	r2, [pc, #40]	(64 <SystemCoreClockUpdate+0x64>)
+  3a:	f413 3f00 	tst.w	r3, #131072	; 0x20000
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:353
+        {/* HSE oscillator clock divided by 2 */
+          SystemCoreClock = (HSE_VALUE >> 1) * pllmull;
+  3e:	bf14      	ite	ne
+  40:	4b0c      	ldrne	r3, [pc, #48]	(74 <SystemCoreClockUpdate+0x74>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:357
+        }
+        else
+        {
+          SystemCoreClock = HSE_VALUE * pllmull;
+  42:	4b0a      	ldreq	r3, [pc, #40]	(6c <SystemCoreClockUpdate+0x6c>)
+  44:	434b      	muls	r3, r1
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:403
+      }
+#endif /* STM32F10X_CL */ 
+      break;
+
+    default:
+      SystemCoreClock = HSI_VALUE;
+  46:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:409
+      break;
+  }
+  
+  /* Compute HCLK clock frequency ----------------*/
+  /* Get HCLK prescaler */
+  tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];
+  48:	4b05      	ldr	r3, [pc, #20]	(60 <SystemCoreClockUpdate+0x60>)
+  4a:	4a06      	ldr	r2, [pc, #24]	(64 <SystemCoreClockUpdate+0x64>)
+  4c:	685b      	ldr	r3, [r3, #4]
+  4e:	f3c3 1303 	ubfx	r3, r3, #4, #4
+  52:	18d3      	adds	r3, r2, r3
+  54:	7919      	ldrb	r1, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:411
+  /* HCLK clock frequency */
+  SystemCoreClock >>= tmp;  
+  56:	6813      	ldr	r3, [r2, #0]
+  58:	40cb      	lsrs	r3, r1
+  5a:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:412
+}
+  5c:	4770      	bx	lr
+  5e:	46c0      	nop			(mov r8, r8)
+  60:	40021000 	.word	0x40021000
+  64:	00000000 	.word	0x00000000
+  68:	007a1200 	.word	0x007a1200
+  6c:	00b71b00 	.word	0x00b71b00
+  70:	003d0900 	.word	0x003d0900
+  74:	005b8d80 	.word	0x005b8d80
+Disassembly of section .text.SystemInit:
+
+00000000 <SystemInit>:
+SystemInit():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:216
+  */
+void SystemInit (void)
+{
+  /* Reset the RCC clock configuration to the default reset state(for debug purpose) */
+  /* Set HSION bit */
+  RCC->CR |= (uint32_t)0x00000001;
+   0:	4a3b      	ldr	r2, [pc, #236]	(f0 <SystemInit+0xf0>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:213
+  * @note   This function should be used only after reset.
+  * @param  None
+  * @retval None
+  */
+void SystemInit (void)
+{
+   2:	b082      	sub	sp, #8
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:216
+  /* Reset the RCC clock configuration to the default reset state(for debug purpose) */
+  /* Set HSION bit */
+  RCC->CR |= (uint32_t)0x00000001;
+   4:	6813      	ldr	r3, [r2, #0]
+   6:	f043 0301 	orr.w	r3, r3, #1	; 0x1
+   a:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:220
+
+  /* Reset SW, HPRE, PPRE1, PPRE2, ADCPRE and MCO bits */
+#ifndef STM32F10X_CL
+  RCC->CFGR &= (uint32_t)0xF8FF0000;
+   c:	6851      	ldr	r1, [r2, #4]
+   e:	4b39      	ldr	r3, [pc, #228]	(f4 <SystemInit+0xf4>)
+  10:	ea01 0303 	and.w	r3, r1, r3
+  14:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:226
+#else
+  RCC->CFGR &= (uint32_t)0xF0FF0000;
+#endif /* STM32F10X_CL */   
+  
+  /* Reset HSEON, CSSON and PLLON bits */
+  RCC->CR &= (uint32_t)0xFEF6FFFF;
+  16:	6813      	ldr	r3, [r2, #0]
+  18:	f023 7384 	bic.w	r3, r3, #17301504	; 0x1080000
+  1c:	f423 3380 	bic.w	r3, r3, #65536	; 0x10000
+  20:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:229
+
+  /* Reset HSEBYP bit */
+  RCC->CR &= (uint32_t)0xFFFBFFFF;
+  22:	6813      	ldr	r3, [r2, #0]
+  24:	f423 2380 	bic.w	r3, r3, #262144	; 0x40000
+  28:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:232
+
+  /* Reset PLLSRC, PLLXTPRE, PLLMUL and USBPRE/OTGFSPRE bits */
+  RCC->CFGR &= (uint32_t)0xFF80FFFF;
+  2a:	6853      	ldr	r3, [r2, #4]
+  2c:	f423 03fe 	bic.w	r3, r3, #8323072	; 0x7f0000
+  30:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:251
+
+  /* Reset CFGR2 register */
+  RCC->CFGR2 = 0x00000000;      
+#else
+  /* Disable all interrupts and clear pending bits  */
+  RCC->CIR = 0x009F0000;
+  32:	f44f 031f 	mov.w	r3, #10420224	; 0x9f0000
+  36:	6093      	str	r3, [r2, #8]
+SetSysClockTo72():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:989
+  * @param  None
+  * @retval None
+  */
+static void SetSysClockTo72(void)
+{
+  __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+  38:	f5a3 031f 	sub.w	r3, r3, #10420224	; 0x9f0000
+  3c:	9301      	str	r3, [sp, #4]
+  3e:	9300      	str	r3, [sp, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:993
+  
+  /* SYSCLK, HCLK, PCLK2 and PCLK1 configuration ---------------------------*/    
+  /* Enable HSE */    
+  RCC->CR |= ((uint32_t)RCC_CR_HSEON);
+  40:	6813      	ldr	r3, [r2, #0]
+  42:	f443 3380 	orr.w	r3, r3, #65536	; 0x10000
+  46:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:998
+ 
+  /* Wait till HSE is ready and if Time out is reached exit */
+  do
+  {
+    HSEStatus = RCC->CR & RCC_CR_HSERDY;
+  48:	4b29      	ldr	r3, [pc, #164]	(f0 <SystemInit+0xf0>)
+  4a:	681b      	ldr	r3, [r3, #0]
+  4c:	f403 3300 	and.w	r3, r3, #131072	; 0x20000
+  50:	9300      	str	r3, [sp, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:999
+    StartUpCounter++;  
+  52:	9b01      	ldr	r3, [sp, #4]
+  54:	3301      	adds	r3, #1
+  56:	9301      	str	r3, [sp, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1000
+  } while((HSEStatus == 0) && (StartUpCounter != HSE_STARTUP_TIMEOUT));
+  58:	9b00      	ldr	r3, [sp, #0]
+  5a:	b91b      	cbnz	r3, 64 <SystemInit+0x64>
+  5c:	9b01      	ldr	r3, [sp, #4]
+  5e:	f5b3 6fa0 	cmp.w	r3, #1280	; 0x500
+  62:	d1f1      	bne.n	48 <SystemInit+0x48>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1002
+
+  if ((RCC->CR & RCC_CR_HSERDY) != RESET)
+  64:	4b22      	ldr	r3, [pc, #136]	(f0 <SystemInit+0xf0>)
+  66:	681b      	ldr	r3, [r3, #0]
+  68:	f413 3300 	ands.w	r3, r3, #131072	; 0x20000
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1004
+  {
+    HSEStatus = (uint32_t)0x01;
+  6c:	bf18      	it	ne
+  6e:	2301      	movne	r3, #1
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1008
+  }
+  else
+  {
+    HSEStatus = (uint32_t)0x00;
+  70:	9300      	str	r3, [sp, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1011
+  }  
+
+  if (HSEStatus == (uint32_t)0x01)
+  72:	9b00      	ldr	r3, [sp, #0]
+  74:	2b01      	cmp	r3, #1
+  76:	d135      	bne.n	e4 <SystemInit+0xe4>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1014
+  {
+    /* Enable Prefetch Buffer */
+    FLASH->ACR |= FLASH_ACR_PRFTBE;
+  78:	4a1f      	ldr	r2, [pc, #124]	(f8 <SystemInit+0xf8>)
+  7a:	6813      	ldr	r3, [r2, #0]
+  7c:	f043 0310 	orr.w	r3, r3, #16	; 0x10
+  80:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1017
+
+    /* Flash 2 wait state */
+    FLASH->ACR &= (uint32_t)((uint32_t)~FLASH_ACR_LATENCY);
+  82:	6813      	ldr	r3, [r2, #0]
+  84:	f023 0303 	bic.w	r3, r3, #3	; 0x3
+  88:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1018
+    FLASH->ACR |= (uint32_t)FLASH_ACR_LATENCY_2;    
+  8a:	6813      	ldr	r3, [r2, #0]
+  8c:	f043 0302 	orr.w	r3, r3, #2	; 0x2
+  90:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1022
+
+ 
+    /* HCLK = SYSCLK */
+    RCC->CFGR |= (uint32_t)RCC_CFGR_HPRE_DIV1;
+  92:	f5a2 5280 	sub.w	r2, r2, #4096	; 0x1000
+  96:	6853      	ldr	r3, [r2, #4]
+  98:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1025
+      
+    /* PCLK2 = HCLK */
+    RCC->CFGR |= (uint32_t)RCC_CFGR_PPRE2_DIV1;
+  9a:	6853      	ldr	r3, [r2, #4]
+  9c:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1028
+    
+    /* PCLK1 = HCLK */
+    RCC->CFGR |= (uint32_t)RCC_CFGR_PPRE1_DIV2;
+  9e:	6853      	ldr	r3, [r2, #4]
+  a0:	f443 6380 	orr.w	r3, r3, #1024	; 0x400
+  a4:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1054
+    RCC->CFGR &= (uint32_t)~(RCC_CFGR_PLLXTPRE | RCC_CFGR_PLLSRC | RCC_CFGR_PLLMULL);
+    RCC->CFGR |= (uint32_t)(RCC_CFGR_PLLXTPRE_PREDIV1 | RCC_CFGR_PLLSRC_PREDIV1 | 
+                            RCC_CFGR_PLLMULL9); 
+#else    
+    /*  PLL configuration: PLLCLK = HSE * 9 = 72 MHz */
+    RCC->CFGR &= (uint32_t)((uint32_t)~(RCC_CFGR_PLLSRC | RCC_CFGR_PLLXTPRE |
+  a6:	6853      	ldr	r3, [r2, #4]
+  a8:	f423 137c 	bic.w	r3, r3, #4128768	; 0x3f0000
+  ac:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1056
+                                        RCC_CFGR_PLLMULL));
+    RCC->CFGR |= (uint32_t)(RCC_CFGR_PLLSRC_HSE | RCC_CFGR_PLLMULL6);//RCC_CFGR_PLLMULL9);
+  ae:	6853      	ldr	r3, [r2, #4]
+  b0:	f443 1388 	orr.w	r3, r3, #1114112	; 0x110000
+  b4:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1060
+#endif /* STM32F10X_CL */
+
+    /* Enable PLL */
+    RCC->CR |= RCC_CR_PLLON;
+  b6:	6813      	ldr	r3, [r2, #0]
+  b8:	f043 7380 	orr.w	r3, r3, #16777216	; 0x1000000
+  bc:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1063
+
+    /* Wait till PLL is ready */
+    while((RCC->CR & RCC_CR_PLLRDY) == 0)
+  be:	4a0c      	ldr	r2, [pc, #48]	(f0 <SystemInit+0xf0>)
+  c0:	6813      	ldr	r3, [r2, #0]
+  c2:	f013 7f00 	tst.w	r3, #33554432	; 0x2000000
+  c6:	d0fa      	beq.n	be <SystemInit+0xbe>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1068
+    {
+    }
+    
+    /* Select PLL as system clock source */
+    RCC->CFGR &= (uint32_t)((uint32_t)~(RCC_CFGR_SW));
+  c8:	6853      	ldr	r3, [r2, #4]
+  ca:	f023 0303 	bic.w	r3, r3, #3	; 0x3
+  ce:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1069
+    RCC->CFGR |= (uint32_t)RCC_CFGR_SW_PLL;    
+  d0:	6853      	ldr	r3, [r2, #4]
+  d2:	f043 0302 	orr.w	r3, r3, #2	; 0x2
+  d6:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1072
+
+    /* Wait till PLL is used as system clock source */
+    while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS) != (uint32_t)0x08)
+  d8:	4b05      	ldr	r3, [pc, #20]	(f0 <SystemInit+0xf0>)
+  da:	685b      	ldr	r3, [r3, #4]
+  dc:	f003 030c 	and.w	r3, r3, #12	; 0xc
+  e0:	2b08      	cmp	r3, #8
+  e2:	d1f9      	bne.n	d8 <SystemInit+0xd8>
+SystemInit():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:267
+  SetSysClock();
+
+#ifdef VECT_TAB_SRAM
+  SCB->VTOR = SRAM_BASE | VECT_TAB_OFFSET; /* Vector Table Relocation in Internal SRAM. */
+#else
+  SCB->VTOR = FLASH_BASE | VECT_TAB_OFFSET; /* Vector Table Relocation in Internal FLASH. */
+  e4:	4b05      	ldr	r3, [pc, #20]	(fc <SystemInit+0xfc>)
+  e6:	f04f 6200 	mov.w	r2, #134217728	; 0x8000000
+  ea:	609a      	str	r2, [r3, #8]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:269
+#endif 
+}
+  ec:	b002      	add	sp, #8
+  ee:	4770      	bx	lr
+  f0:	40021000 	.word	0x40021000
+  f4:	f8ff0000 	.word	0xf8ff0000
+  f8:	40022000 	.word	0x40022000
+  fc:	e000ed00 	.word	0xe000ed00

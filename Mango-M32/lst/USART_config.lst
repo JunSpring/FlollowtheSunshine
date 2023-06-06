@@ -1,0 +1,209 @@
+
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\obj\USART_config.o:     file format elf32-littlearm
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\obj\USART_config.o
+
+Disassembly of section .text.USART_GetCharacter:
+
+00000000 <USART_GetCharacter>:
+USART_GetCharacter():
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:79
+}
+
+
+// 키보드 입력을 받는 함수.
+uint8_t USART_GetCharacter(USART_TypeDef *  usart_p)
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	4605      	mov	r5, r0
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:83
+    uint8_t data;
+
+    // Loop until the end of transmission 
+    while(USART_GetFlagStatus(usart_p, USART_FLAG_RXNE) == RESET);
+   4:	4628      	mov	r0, r5
+   6:	2120      	movs	r1, #32
+   8:	f7ff fffe 	bl	0 <USART_GetFlagStatus>
+   c:	2800      	cmp	r0, #0
+   e:	d0f9      	beq.n	4 <USART_GetCharacter+0x4>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:86
+
+    // Write a character to the USART 
+    data = USART_ReceiveData(usart_p);
+  10:	4628      	mov	r0, r5
+  12:	f7ff fffe 	bl	0 <USART_ReceiveData>
+  16:	b2c4      	uxtb	r4, r0
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:88
+
+    USART_SendData(usart_p, data);
+  18:	4621      	mov	r1, r4
+  1a:	4628      	mov	r0, r5
+  1c:	f7ff fffe 	bl	0 <USART_SendData>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:89
+    while(USART_GetFlagStatus(usart_p, USART_FLAG_TXE) == RESET);
+  20:	4628      	mov	r0, r5
+  22:	2180      	movs	r1, #128
+  24:	f7ff fffe 	bl	0 <USART_GetFlagStatus>
+  28:	2800      	cmp	r0, #0
+  2a:	d0f9      	beq.n	20 <USART_GetFlagStatus+0x20>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:93
+
+    if( data == '\r' )  return (int)('\n');
+    else                return(data);
+  2c:	2c0d      	cmp	r4, #13
+  2e:	bf14      	ite	ne
+  30:	4620      	movne	r0, r4
+  32:	200a      	moveq	r0, #10
+  34:	bd70      	pop	{r4, r5, r6, pc}
+  36:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.__io_putchar:
+
+00000000 <__io_putchar>:
+__io_putchar():
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:62
+
+*/
+PUTCHAR_PROTOTYPE
+{
+    // Write a character to the USART 
+    if( ch == '\n') {
+   0:	280a      	cmp	r0, #10
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:60
+    while(USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+}
+
+*/
+PUTCHAR_PROTOTYPE
+{
+   2:	b510      	push	{r4, lr}
+   4:	4604      	mov	r4, r0
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:62
+    // Write a character to the USART 
+    if( ch == '\n') {
+   6:	d10c      	bne.n	22 <__io_putchar+0x22>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:63
+        USART_SendData(USART1, '\r');
+   8:	480c      	ldr	r0, [pc, #48]	(3c <__io_putchar+0x3c>)
+   a:	210d      	movs	r1, #13
+   c:	f7ff fffe 	bl	0 <USART_SendData>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:64
+        while(USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+  10:	480a      	ldr	r0, [pc, #40]	(3c <__io_putchar+0x3c>)
+  12:	2180      	movs	r1, #128
+  14:	f7ff fffe 	bl	0 <USART_GetFlagStatus>
+  18:	2800      	cmp	r0, #0
+  1a:	d0f9      	beq.n	10 <__io_putchar+0x10>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:65
+        USART_SendData(USART1, '\n');
+  1c:	4807      	ldr	r0, [pc, #28]	(3c <__io_putchar+0x3c>)
+  1e:	210a      	movs	r1, #10
+  20:	e001      	b.n	26 <__io_putchar+0x26>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:67
+    }else {
+        USART_SendData(USART1, (u8) ch);
+  22:	4806      	ldr	r0, [pc, #24]	(3c <__io_putchar+0x3c>)
+  24:	b2e1      	uxtb	r1, r4
+  26:	f7ff fffe 	bl	0 <USART_SendData>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:71
+    }
+
+    // Loop until the end of transmission 
+    while(USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+  2a:	4804      	ldr	r0, [pc, #16]	(3c <__io_putchar+0x3c>)
+  2c:	2180      	movs	r1, #128
+  2e:	f7ff fffe 	bl	0 <USART_GetFlagStatus>
+  32:	2800      	cmp	r0, #0
+  34:	d0f9      	beq.n	2a <USART_GetFlagStatus+0x2a>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:74
+
+    return ch;
+}
+  36:	4620      	mov	r0, r4
+  38:	bd10      	pop	{r4, pc}
+  3a:	46c0      	nop			(mov r8, r8)
+  3c:	40013800 	.word	0x40013800
+Disassembly of section .text.USART1_Init:
+
+00000000 <USART1_Init>:
+USART1_Init():
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:16
+void USART1_Init(void);
+void SerialPutChar(uint8_t c);
+void Serial_PutString(uint8_t *s);
+*/
+void USART1_Init(void)
+{
+   0:	b51f      	push	{r0, r1, r2, r3, r4, lr}
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:37
+    USART_InitStructure.USART_HardwareFlowControl
+                                         = USART_HardwareFlowControl_None;
+    USART_InitStructure.USART_Mode       = USART_Mode_Rx | USART_Mode_Tx;
+
+    /* Configure the USARTx */ 
+    USART_Init(USART1, &USART_InitStructure);
+   2:	4c0d      	ldr	r4, [pc, #52]	(38 <USART1_Init+0x38>)
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:28
+     - One Stop Bit
+     - No parity
+     - Hardware flow control disabled (RTS and CTS signals)
+     - Receive and transmit enabled
+     */
+    USART_InitStructure.USART_BaudRate   = 115200;
+   4:	f44f 33e1 	mov.w	r3, #115200	; 0x1c200
+   8:	9300      	str	r3, [sp, #0]
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:29
+    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+   a:	f5a3 33e1 	sub.w	r3, r3, #115200	; 0x1c200
+   e:	f8ad 3004 	strh.w	r3, [sp, #4]
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:30
+    USART_InitStructure.USART_StopBits   = USART_StopBits_1;
+  12:	f8ad 3006 	strh.w	r3, [sp, #6]
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:31
+    USART_InitStructure.USART_Parity     = USART_Parity_No ;
+  16:	f8ad 3008 	strh.w	r3, [sp, #8]
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:32
+    USART_InitStructure.USART_HardwareFlowControl
+  1a:	f8ad 300c 	strh.w	r3, [sp, #12]
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:37
+                                         = USART_HardwareFlowControl_None;
+    USART_InitStructure.USART_Mode       = USART_Mode_Rx | USART_Mode_Tx;
+
+    /* Configure the USARTx */ 
+    USART_Init(USART1, &USART_InitStructure);
+  1e:	4620      	mov	r0, r4
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:34
+    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    USART_InitStructure.USART_StopBits   = USART_StopBits_1;
+    USART_InitStructure.USART_Parity     = USART_Parity_No ;
+    USART_InitStructure.USART_HardwareFlowControl
+                                         = USART_HardwareFlowControl_None;
+    USART_InitStructure.USART_Mode       = USART_Mode_Rx | USART_Mode_Tx;
+  20:	f04f 030c 	mov.w	r3, #12	; 0xc
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:37
+
+    /* Configure the USARTx */ 
+    USART_Init(USART1, &USART_InitStructure);
+  24:	4669      	mov	r1, sp
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:34
+    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    USART_InitStructure.USART_StopBits   = USART_StopBits_1;
+    USART_InitStructure.USART_Parity     = USART_Parity_No ;
+    USART_InitStructure.USART_HardwareFlowControl
+                                         = USART_HardwareFlowControl_None;
+    USART_InitStructure.USART_Mode       = USART_Mode_Rx | USART_Mode_Tx;
+  26:	f8ad 300a 	strh.w	r3, [sp, #10]
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:37
+
+    /* Configure the USARTx */ 
+    USART_Init(USART1, &USART_InitStructure);
+  2a:	f7ff fffe 	bl	0 <USART_Init>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:40
+
+    /* Enable the USART1 */
+    USART_Cmd(USART1, ENABLE);
+  2e:	4620      	mov	r0, r4
+  30:	2101      	movs	r1, #1
+  32:	f7ff fffe 	bl	0 <USART_Cmd>
+C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글\src/USART_config.c:41
+}
+  36:	bd1f      	pop	{r0, r1, r2, r3, r4, pc}
+  38:	40013800 	.word	0x40013800

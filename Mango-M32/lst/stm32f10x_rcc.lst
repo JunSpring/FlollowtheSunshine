@@ -1,0 +1,1181 @@
+
+C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o:     file format elf32-littlearm
+C:\ride_project\FlollowtheSunshine\obj\stm32f10x_rcc.o
+
+Disassembly of section .text.RCC_DeInit:
+
+00000000 <RCC_DeInit>:
+RCC_DeInit():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:220
+  * @retval None
+  */
+void RCC_DeInit(void)
+{
+  /* Set HSION bit */
+  RCC->CR |= (uint32_t)0x00000001;
+   0:	4a0d      	ldr	r2, [pc, #52]	(38 <RCC_DeInit+0x38>)
+   2:	6813      	ldr	r3, [r2, #0]
+   4:	f043 0301 	orr.w	r3, r3, #1	; 0x1
+   8:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:224
+
+  /* Reset SW, HPRE, PPRE1, PPRE2, ADCPRE and MCO bits */
+#ifndef STM32F10X_CL
+  RCC->CFGR &= (uint32_t)0xF8FF0000;
+   a:	6851      	ldr	r1, [r2, #4]
+   c:	4b0b      	ldr	r3, [pc, #44]	(3c <RCC_DeInit+0x3c>)
+   e:	ea01 0303 	and.w	r3, r1, r3
+  12:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:230
+#else
+  RCC->CFGR &= (uint32_t)0xF0FF0000;
+#endif /* STM32F10X_CL */   
+  
+  /* Reset HSEON, CSSON and PLLON bits */
+  RCC->CR &= (uint32_t)0xFEF6FFFF;
+  14:	6813      	ldr	r3, [r2, #0]
+  16:	f023 7384 	bic.w	r3, r3, #17301504	; 0x1080000
+  1a:	f423 3380 	bic.w	r3, r3, #65536	; 0x10000
+  1e:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:233
+
+  /* Reset HSEBYP bit */
+  RCC->CR &= (uint32_t)0xFFFBFFFF;
+  20:	6813      	ldr	r3, [r2, #0]
+  22:	f423 2380 	bic.w	r3, r3, #262144	; 0x40000
+  26:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:236
+
+  /* Reset PLLSRC, PLLXTPRE, PLLMUL and USBPRE/OTGFSPRE bits */
+  RCC->CFGR &= (uint32_t)0xFF80FFFF;
+  28:	6853      	ldr	r3, [r2, #4]
+  2a:	f423 03fe 	bic.w	r3, r3, #8323072	; 0x7f0000
+  2e:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:255
+
+  /* Reset CFGR2 register */
+  RCC->CFGR2 = 0x00000000;      
+#else
+  /* Disable all interrupts and clear pending bits  */
+  RCC->CIR = 0x009F0000;
+  30:	f44f 031f 	mov.w	r3, #10420224	; 0x9f0000
+  34:	6093      	str	r3, [r2, #8]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:258
+#endif /* STM32F10X_CL */
+
+}
+  36:	4770      	bx	lr
+  38:	40021000 	.word	0x40021000
+  3c:	f8ff0000 	.word	0xf8ff0000
+Disassembly of section .text.RCC_HSEConfig:
+
+00000000 <RCC_HSEConfig>:
+RCC_HSEConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:276
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_HSE(RCC_HSE));
+  /* Reset HSEON and HSEBYP bits before configuring the HSE ------------------*/
+  /* Reset HSEON bit */
+  RCC->CR &= CR_HSEON_Reset;
+   0:	4a0c      	ldr	r2, [pc, #48]	(34 <RCC_HSEConfig+0x34>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:280
+  /* Reset HSEBYP bit */
+  RCC->CR &= CR_HSEBYP_Reset;
+  /* Configure HSE (RCC_HSE_OFF is already covered by the code section above) */
+  switch(RCC_HSE)
+   2:	f5b0 3f80 	cmp.w	r0, #65536	; 0x10000
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:276
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_HSE(RCC_HSE));
+  /* Reset HSEON and HSEBYP bits before configuring the HSE ------------------*/
+  /* Reset HSEON bit */
+  RCC->CR &= CR_HSEON_Reset;
+   6:	6813      	ldr	r3, [r2, #0]
+   8:	f423 3380 	bic.w	r3, r3, #65536	; 0x10000
+   c:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:278
+  /* Reset HSEBYP bit */
+  RCC->CR &= CR_HSEBYP_Reset;
+   e:	6813      	ldr	r3, [r2, #0]
+  10:	f423 2380 	bic.w	r3, r3, #262144	; 0x40000
+  14:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:280
+  /* Configure HSE (RCC_HSE_OFF is already covered by the code section above) */
+  switch(RCC_HSE)
+  16:	d003      	beq.n	20 <RCC_HSEConfig+0x20>
+  18:	f5b0 2f80 	cmp.w	r0, #262144	; 0x40000
+  1c:	d108      	bne.n	30 <RCC_HSEConfig+0x30>
+  1e:	e003      	b.n	28 <RCC_HSEConfig+0x28>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:284
+  {
+    case RCC_HSE_ON:
+      /* Set HSEON bit */
+      RCC->CR |= CR_HSEON_Set;
+  20:	6813      	ldr	r3, [r2, #0]
+  22:	f443 3380 	orr.w	r3, r3, #65536	; 0x10000
+  26:	e002      	b.n	2e <RCC_HSEConfig+0x2e>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:289
+      break;
+      
+    case RCC_HSE_Bypass:
+      /* Set HSEBYP and HSEON bits */
+      RCC->CR |= CR_HSEBYP_Set | CR_HSEON_Set;
+  28:	6813      	ldr	r3, [r2, #0]
+  2a:	f443 23a0 	orr.w	r3, r3, #327680	; 0x50000
+  2e:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:295
+      break;
+      
+    default:
+      break;
+  }
+}
+  30:	4770      	bx	lr
+  32:	46c0      	nop			(mov r8, r8)
+  34:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_AdjustHSICalibrationValue:
+
+00000000 <RCC_AdjustHSICalibrationValue>:
+RCC_AdjustHSICalibrationValue():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:339
+void RCC_AdjustHSICalibrationValue(uint8_t HSICalibrationValue)
+{
+  uint32_t tmpreg = 0;
+  /* Check the parameters */
+  assert_param(IS_RCC_CALIBRATION_VALUE(HSICalibrationValue));
+  tmpreg = RCC->CR;
+   0:	4a03      	ldr	r2, [pc, #12]	(10 <RCC_AdjustHSICalibrationValue+0x10>)
+   2:	6813      	ldr	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:341
+  /* Clear HSITRIM[4:0] bits */
+  tmpreg &= CR_HSITRIM_Mask;
+   4:	f023 03f8 	bic.w	r3, r3, #248	; 0xf8
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:343
+  /* Set the HSITRIM[4:0] bits according to HSICalibrationValue value */
+  tmpreg |= (uint32_t)HSICalibrationValue << 3;
+   8:	ea43 03c0 	orr.w	r3, r3, r0, lsl #3
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:345
+  /* Store the new value */
+  RCC->CR = tmpreg;
+   c:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:346
+}
+   e:	4770      	bx	lr
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_HSICmd:
+
+00000000 <RCC_HSICmd>:
+RCC_HSICmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:358
+  */
+void RCC_HSICmd(FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  *(__IO uint32_t *) CR_HSION_BB = (uint32_t)NewState;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_HSICmd+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:359
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	42420000 	.word	0x42420000
+Disassembly of section .text.RCC_PLLConfig:
+
+00000000 <RCC_PLLConfig>:
+RCC_PLLConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:386
+
+  /* Check the parameters */
+  assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
+  assert_param(IS_RCC_PLL_MUL(RCC_PLLMul));
+
+  tmpreg = RCC->CFGR;
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <RCC_PLLConfig+0x10>)
+   2:	685a      	ldr	r2, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:390
+  /* Clear PLLSRC, PLLXTPRE and PLLMUL[3:0] bits */
+  tmpreg &= CFGR_PLL_Mask;
+  /* Set the PLL configuration bits */
+  tmpreg |= RCC_PLLSource | RCC_PLLMul;
+   4:	f422 127c 	bic.w	r2, r2, #4128768	; 0x3f0000
+   8:	4310      	orrs	r0, r2
+   a:	4308      	orrs	r0, r1
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:392
+  /* Store the new value */
+  RCC->CFGR = tmpreg;
+   c:	6058      	str	r0, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:393
+}
+   e:	4770      	bx	lr
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_PLLCmd:
+
+00000000 <RCC_PLLCmd>:
+RCC_PLLCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:406
+void RCC_PLLCmd(FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+
+  *(__IO uint32_t *) CR_PLLON_BB = (uint32_t)NewState;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_PLLCmd+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:407
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	42420060 	.word	0x42420060
+Disassembly of section .text.RCC_SYSCLKConfig:
+
+00000000 <RCC_SYSCLKConfig>:
+RCC_SYSCLKConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:569
+void RCC_SYSCLKConfig(uint32_t RCC_SYSCLKSource)
+{
+  uint32_t tmpreg = 0;
+  /* Check the parameters */
+  assert_param(IS_RCC_SYSCLK_SOURCE(RCC_SYSCLKSource));
+  tmpreg = RCC->CFGR;
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <RCC_SYSCLKConfig+0x10>)
+   2:	685a      	ldr	r2, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:571
+  /* Clear SW[1:0] bits */
+  tmpreg &= CFGR_SW_Mask;
+   4:	f022 0203 	bic.w	r2, r2, #3	; 0x3
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:573
+  /* Set SW[1:0] bits according to RCC_SYSCLKSource value */
+  tmpreg |= RCC_SYSCLKSource;
+   8:	4310      	orrs	r0, r2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:575
+  /* Store the new value */
+  RCC->CFGR = tmpreg;
+   a:	6058      	str	r0, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:576
+}
+   c:	4770      	bx	lr
+   e:	46c0      	nop			(mov r8, r8)
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_GetSYSCLKSource:
+
+00000000 <RCC_GetSYSCLKSource>:
+RCC_GetSYSCLKSource():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:589
+  *     - 0x04: HSE used as system clock
+  *     - 0x08: PLL used as system clock
+  */
+uint8_t RCC_GetSYSCLKSource(void)
+{
+  return ((uint8_t)(RCC->CFGR & CFGR_SWS_Mask));
+   0:	4b02      	ldr	r3, [pc, #8]	(c <RCC_GetSYSCLKSource+0xc>)
+   2:	6858      	ldr	r0, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:590
+}
+   4:	f000 000c 	and.w	r0, r0, #12	; 0xc
+   8:	4770      	bx	lr
+   a:	46c0      	nop			(mov r8, r8)
+   c:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_HCLKConfig:
+
+00000000 <RCC_HCLKConfig>:
+RCC_HCLKConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:613
+void RCC_HCLKConfig(uint32_t RCC_SYSCLK)
+{
+  uint32_t tmpreg = 0;
+  /* Check the parameters */
+  assert_param(IS_RCC_HCLK(RCC_SYSCLK));
+  tmpreg = RCC->CFGR;
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <RCC_HCLKConfig+0x10>)
+   2:	685a      	ldr	r2, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:615
+  /* Clear HPRE[3:0] bits */
+  tmpreg &= CFGR_HPRE_Reset_Mask;
+   4:	f022 02f0 	bic.w	r2, r2, #240	; 0xf0
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:617
+  /* Set HPRE[3:0] bits according to RCC_SYSCLK value */
+  tmpreg |= RCC_SYSCLK;
+   8:	4310      	orrs	r0, r2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:619
+  /* Store the new value */
+  RCC->CFGR = tmpreg;
+   a:	6058      	str	r0, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:620
+}
+   c:	4770      	bx	lr
+   e:	46c0      	nop			(mov r8, r8)
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_PCLK1Config:
+
+00000000 <RCC_PCLK1Config>:
+RCC_PCLK1Config():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:639
+void RCC_PCLK1Config(uint32_t RCC_HCLK)
+{
+  uint32_t tmpreg = 0;
+  /* Check the parameters */
+  assert_param(IS_RCC_PCLK(RCC_HCLK));
+  tmpreg = RCC->CFGR;
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <RCC_PCLK1Config+0x10>)
+   2:	685a      	ldr	r2, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:641
+  /* Clear PPRE1[2:0] bits */
+  tmpreg &= CFGR_PPRE1_Reset_Mask;
+   4:	f422 62e0 	bic.w	r2, r2, #1792	; 0x700
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:643
+  /* Set PPRE1[2:0] bits according to RCC_HCLK value */
+  tmpreg |= RCC_HCLK;
+   8:	4310      	orrs	r0, r2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:645
+  /* Store the new value */
+  RCC->CFGR = tmpreg;
+   a:	6058      	str	r0, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:646
+}
+   c:	4770      	bx	lr
+   e:	46c0      	nop			(mov r8, r8)
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_PCLK2Config:
+
+00000000 <RCC_PCLK2Config>:
+RCC_PCLK2Config():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:665
+void RCC_PCLK2Config(uint32_t RCC_HCLK)
+{
+  uint32_t tmpreg = 0;
+  /* Check the parameters */
+  assert_param(IS_RCC_PCLK(RCC_HCLK));
+  tmpreg = RCC->CFGR;
+   0:	4a03      	ldr	r2, [pc, #12]	(10 <RCC_PCLK2Config+0x10>)
+   2:	6853      	ldr	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:667
+  /* Clear PPRE2[2:0] bits */
+  tmpreg &= CFGR_PPRE2_Reset_Mask;
+   4:	f423 5360 	bic.w	r3, r3, #14336	; 0x3800
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:669
+  /* Set PPRE2[2:0] bits according to RCC_HCLK value */
+  tmpreg |= RCC_HCLK << 3;
+   8:	ea43 03c0 	orr.w	r3, r3, r0, lsl #3
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:671
+  /* Store the new value */
+  RCC->CFGR = tmpreg;
+   c:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:672
+}
+   e:	4770      	bx	lr
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_ITConfig:
+
+00000000 <RCC_ITConfig>:
+RCC_ITConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:705
+void RCC_ITConfig(uint8_t RCC_IT, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_IT(RCC_IT));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <RCC_ITConfig+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:708
+  {
+    /* Perform Byte access to RCC_CIR bits to enable the selected interrupts */
+    *(__IO uint8_t *) CIR_BYTE2_ADDRESS |= RCC_IT;
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <RCC_ITConfig+0x18>)
+   4:	7813      	ldrb	r3, [r2, #0]
+   6:	ea40 0303 	orr.w	r3, r0, r3
+   a:	e003      	b.n	14 <RCC_ITConfig+0x14>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:713
+  }
+  else
+  {
+    /* Perform Byte access to RCC_CIR bits to disable the selected interrupts */
+    *(__IO uint8_t *) CIR_BYTE2_ADDRESS &= (uint8_t)~RCC_IT;
+   c:	4a02      	ldr	r2, [pc, #8]	(18 <RCC_ITConfig+0x18>)
+   e:	7813      	ldrb	r3, [r2, #0]
+  10:	ea23 0300 	bic.w	r3, r3, r0
+  14:	7013      	strb	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:715
+  }
+}
+  16:	4770      	bx	lr
+  18:	40021009 	.word	0x40021009
+Disassembly of section .text.RCC_USBCLKConfig:
+
+00000000 <RCC_USBCLKConfig>:
+RCC_USBCLKConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:733
+void RCC_USBCLKConfig(uint32_t RCC_USBCLKSource)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_USBCLK_SOURCE(RCC_USBCLKSource));
+
+  *(__IO uint32_t *) CFGR_USBPRE_BB = RCC_USBCLKSource;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_USBCLKConfig+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:734
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	424200d8 	.word	0x424200d8
+Disassembly of section .text.RCC_ADCCLKConfig:
+
+00000000 <RCC_ADCCLKConfig>:
+RCC_ADCCLKConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:771
+void RCC_ADCCLKConfig(uint32_t RCC_PCLK2)
+{
+  uint32_t tmpreg = 0;
+  /* Check the parameters */
+  assert_param(IS_RCC_ADCCLK(RCC_PCLK2));
+  tmpreg = RCC->CFGR;
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <RCC_ADCCLKConfig+0x10>)
+   2:	685a      	ldr	r2, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:773
+  /* Clear ADCPRE[1:0] bits */
+  tmpreg &= CFGR_ADCPRE_Reset_Mask;
+   4:	f422 4240 	bic.w	r2, r2, #49152	; 0xc000
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:775
+  /* Set ADCPRE[1:0] bits according to RCC_PCLK2 value */
+  tmpreg |= RCC_PCLK2;
+   8:	4310      	orrs	r0, r2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:777
+  /* Store the new value */
+  RCC->CFGR = tmpreg;
+   a:	6058      	str	r0, [r3, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:778
+}
+   c:	4770      	bx	lr
+   e:	46c0      	nop			(mov r8, r8)
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_LSEConfig:
+
+00000000 <RCC_LSEConfig>:
+RCC_LSEConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:835
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_LSE(RCC_LSE));
+  /* Reset LSEON and LSEBYP bits before configuring the LSE ------------------*/
+  /* Reset LSEON bit */
+  *(__IO uint8_t *) BDCR_ADDRESS = RCC_LSE_OFF;
+   0:	4a06      	ldr	r2, [pc, #24]	(1c <RCC_LSEConfig+0x1c>)
+   2:	2300      	movs	r3, #0
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:839
+  /* Reset LSEBYP bit */
+  *(__IO uint8_t *) BDCR_ADDRESS = RCC_LSE_OFF;
+  /* Configure LSE (RCC_LSE_OFF is already covered by the code section above) */
+  switch(RCC_LSE)
+   4:	2801      	cmp	r0, #1
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:835
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_LSE(RCC_LSE));
+  /* Reset LSEON and LSEBYP bits before configuring the LSE ------------------*/
+  /* Reset LSEON bit */
+  *(__IO uint8_t *) BDCR_ADDRESS = RCC_LSE_OFF;
+   6:	7013      	strb	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:837
+  /* Reset LSEBYP bit */
+  *(__IO uint8_t *) BDCR_ADDRESS = RCC_LSE_OFF;
+   8:	7013      	strb	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:839
+  /* Configure LSE (RCC_LSE_OFF is already covered by the code section above) */
+  switch(RCC_LSE)
+   a:	d002      	beq.n	12 <RCC_LSEConfig+0x12>
+   c:	2804      	cmp	r0, #4
+   e:	d104      	bne.n	1a <RCC_LSEConfig+0x1a>
+  10:	e001      	b.n	16 <RCC_LSEConfig+0x16>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:843
+  {
+    case RCC_LSE_ON:
+      /* Set LSEON bit */
+      *(__IO uint8_t *) BDCR_ADDRESS = RCC_LSE_ON;
+  12:	7010      	strb	r0, [r2, #0]
+  14:	e001      	b.n	1a <RCC_LSEConfig+0x1a>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:848
+      break;
+      
+    case RCC_LSE_Bypass:
+      /* Set LSEBYP and LSEON bits */
+      *(__IO uint8_t *) BDCR_ADDRESS = RCC_LSE_Bypass | RCC_LSE_ON;
+  16:	2305      	movs	r3, #5
+  18:	7013      	strb	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:854
+      break;            
+      
+    default:
+      break;      
+  }
+}
+  1a:	4770      	bx	lr
+  1c:	40021020 	.word	0x40021020
+Disassembly of section .text.RCC_LSICmd:
+
+00000000 <RCC_LSICmd>:
+RCC_LSICmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:866
+  */
+void RCC_LSICmd(FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  *(__IO uint32_t *) CSR_LSION_BB = (uint32_t)NewState;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_LSICmd+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:867
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	42420480 	.word	0x42420480
+Disassembly of section .text.RCC_RTCCLKConfig:
+
+00000000 <RCC_RTCCLKConfig>:
+RCC_RTCCLKConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:884
+void RCC_RTCCLKConfig(uint32_t RCC_RTCCLKSource)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_RTCCLK_SOURCE(RCC_RTCCLKSource));
+  /* Select the RTC clock source */
+  RCC->BDCR |= RCC_RTCCLKSource;
+   0:	4b02      	ldr	r3, [pc, #8]	(c <RCC_RTCCLKConfig+0xc>)
+   2:	6a1a      	ldr	r2, [r3, #32]
+   4:	4310      	orrs	r0, r2
+   6:	6218      	str	r0, [r3, #32]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:885
+}
+   8:	4770      	bx	lr
+   a:	46c0      	nop			(mov r8, r8)
+   c:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_RTCCLKCmd:
+
+00000000 <RCC_RTCCLKCmd>:
+RCC_RTCCLKCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:897
+  */
+void RCC_RTCCLKCmd(FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  *(__IO uint32_t *) BDCR_RTCEN_BB = (uint32_t)NewState;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_RTCCLKCmd+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:898
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	4242043c 	.word	0x4242043c
+Disassembly of section .text.RCC_GetClocksFreq:
+
+00000000 <RCC_GetClocksFreq>:
+RCC_GetClocksFreq():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:909
+  * @note   The result of this function could be not correct when using 
+  *         fractional value for HSE crystal.  
+  * @retval None
+  */
+void RCC_GetClocksFreq(RCC_ClocksTypeDef* RCC_Clocks)
+{
+   0:	b510      	push	{r4, lr}
+   2:	4604      	mov	r4, r0
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:921
+#if defined (STM32F10X_LD_VL) || defined (STM32F10X_MD_VL) || defined (STM32F10X_HD_VL)
+  uint32_t prediv1factor = 0;
+#endif
+    
+  /* Get SYSCLK source -------------------------------------------------------*/
+  tmp = RCC->CFGR & CFGR_SWS_Mask;
+   4:	481e      	ldr	r0, [pc, #120]	(80 <RCC_GetClocksFreq+0x80>)
+   6:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:923
+  
+  switch (tmp)
+   8:	f003 030c 	and.w	r3, r3, #12	; 0xc
+   c:	2b04      	cmp	r3, #4
+   e:	d002      	beq.n	16 <RCC_GetClocksFreq+0x16>
+  10:	2b08      	cmp	r3, #8
+  12:	d114      	bne.n	3e <RCC_GetClocksFreq+0x3e>
+  14:	e001      	b.n	1a <RCC_GetClocksFreq+0x1a>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:929
+  {
+    case 0x00:  /* HSI used as system clock */
+      RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+      break;
+    case 0x04:  /* HSE used as system clock */
+      RCC_Clocks->SYSCLK_Frequency = HSE_VALUE;
+  16:	4b1b      	ldr	r3, [pc, #108]	(84 <RCC_GetClocksFreq+0x84>)
+  18:	e012      	b.n	40 <RCC_GetClocksFreq+0x40>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:934
+      break;
+    case 0x08:  /* PLL used as system clock */
+
+      /* Get PLL clock source and multiplication factor ----------------------*/
+      pllmull = RCC->CFGR & CFGR_PLLMull_Mask;
+  1a:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:935
+      pllsource = RCC->CFGR & CFGR_PLLSRC_Mask;
+  1c:	6842      	ldr	r2, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:938
+      
+#ifndef STM32F10X_CL      
+      pllmull = ( pllmull >> 18) + 2;
+  1e:	f3c3 4383 	ubfx	r3, r3, #18, #4
+  22:	1c99      	adds	r1, r3, #2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:940
+      
+      if (pllsource == 0x00)
+  24:	f412 3f80 	tst.w	r2, #65536	; 0x10000
+  28:	d101      	bne.n	2e <RCC_GetClocksFreq+0x2e>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:942
+      {/* HSI oscillator clock divided by 2 selected as PLL clock entry */
+        RCC_Clocks->SYSCLK_Frequency = (HSI_VALUE >> 1) * pllmull;
+  2a:	4b17      	ldr	r3, [pc, #92]	(88 <RCC_GetClocksFreq+0x88>)
+  2c:	e005      	b.n	3a <RCC_GetClocksFreq+0x3a>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:952
+       prediv1factor = (RCC->CFGR2 & CFGR2_PREDIV1) + 1;
+       /* HSE oscillator clock selected as PREDIV1 clock entry */
+       RCC_Clocks->SYSCLK_Frequency = (HSE_VALUE / prediv1factor) * pllmull; 
+ #else
+        /* HSE selected as PLL clock entry */
+        if ((RCC->CFGR & CFGR_PLLXTPRE_Mask) != (uint32_t)RESET)
+  2e:	6843      	ldr	r3, [r0, #4]
+  30:	f413 3f00 	tst.w	r3, #131072	; 0x20000
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:954
+        {/* HSE oscillator clock divided by 2 */
+          RCC_Clocks->SYSCLK_Frequency = (HSE_VALUE >> 1) * pllmull;
+  34:	bf14      	ite	ne
+  36:	4b15      	ldrne	r3, [pc, #84]	(8c <RCC_GetClocksFreq+0x8c>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:958
+        }
+        else
+        {
+          RCC_Clocks->SYSCLK_Frequency = HSE_VALUE * pllmull;
+  38:	4b12      	ldreq	r3, [pc, #72]	(84 <RCC_GetClocksFreq+0x84>)
+  3a:	434b      	muls	r3, r1
+  3c:	e000      	b.n	40 <RCC_GetClocksFreq+0x40>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1002
+      }
+#endif /* STM32F10X_CL */ 
+      break;
+
+    default:
+      RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+  3e:	4b14      	ldr	r3, [pc, #80]	(90 <RCC_GetClocksFreq+0x90>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1008
+      break;
+  }
+
+  /* Compute HCLK, PCLK1, PCLK2 and ADCCLK clocks frequencies ----------------*/
+  /* Get HCLK prescaler */
+  tmp = RCC->CFGR & CFGR_HPRE_Set_Mask;
+  40:	480f      	ldr	r0, [pc, #60]	(80 <RCC_GetClocksFreq+0x80>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1002
+      }
+#endif /* STM32F10X_CL */ 
+      break;
+
+    default:
+      RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+  42:	6023      	str	r3, [r4, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1008
+      break;
+  }
+
+  /* Compute HCLK, PCLK1, PCLK2 and ADCCLK clocks frequencies ----------------*/
+  /* Get HCLK prescaler */
+  tmp = RCC->CFGR & CFGR_HPRE_Set_Mask;
+  44:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1010
+  tmp = tmp >> 4;
+  presc = APBAHBPrescTable[tmp];
+  46:	4913      	ldr	r1, [pc, #76]	(94 <RCC_GetClocksFreq+0x94>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1009
+  }
+
+  /* Compute HCLK, PCLK1, PCLK2 and ADCCLK clocks frequencies ----------------*/
+  /* Get HCLK prescaler */
+  tmp = RCC->CFGR & CFGR_HPRE_Set_Mask;
+  tmp = tmp >> 4;
+  48:	f3c3 1303 	ubfx	r3, r3, #4, #4
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1010
+  presc = APBAHBPrescTable[tmp];
+  4c:	5ccb      	ldrb	r3, [r1, r3]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1012
+  /* HCLK clock frequency */
+  RCC_Clocks->HCLK_Frequency = RCC_Clocks->SYSCLK_Frequency >> presc;
+  4e:	6822      	ldr	r2, [r4, #0]
+  50:	40da      	lsrs	r2, r3
+  52:	6062      	str	r2, [r4, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1014
+  /* Get PCLK1 prescaler */
+  tmp = RCC->CFGR & CFGR_PPRE1_Set_Mask;
+  54:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1015
+  tmp = tmp >> 8;
+  56:	f3c3 2302 	ubfx	r3, r3, #8, #3
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1016
+  presc = APBAHBPrescTable[tmp];
+  5a:	5ccb      	ldrb	r3, [r1, r3]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1018
+  /* PCLK1 clock frequency */
+  RCC_Clocks->PCLK1_Frequency = RCC_Clocks->HCLK_Frequency >> presc;
+  5c:	fa32 f303 	lsrs.w	r3, r2, r3
+  60:	60a3      	str	r3, [r4, #8]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1020
+  /* Get PCLK2 prescaler */
+  tmp = RCC->CFGR & CFGR_PPRE2_Set_Mask;
+  62:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1021
+  tmp = tmp >> 11;
+  64:	f3c3 23c2 	ubfx	r3, r3, #11, #3
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1022
+  presc = APBAHBPrescTable[tmp];
+  68:	5ccb      	ldrb	r3, [r1, r3]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1024
+  /* PCLK2 clock frequency */
+  RCC_Clocks->PCLK2_Frequency = RCC_Clocks->HCLK_Frequency >> presc;
+  6a:	40da      	lsrs	r2, r3
+  6c:	60e2      	str	r2, [r4, #12]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1026
+  /* Get ADCCLK prescaler */
+  tmp = RCC->CFGR & CFGR_ADCPRE_Set_Mask;
+  6e:	6843      	ldr	r3, [r0, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1027
+  tmp = tmp >> 14;
+  70:	f3c3 3381 	ubfx	r3, r3, #14, #2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1028
+  presc = ADCPrescTable[tmp];
+  74:	18c9      	adds	r1, r1, r3
+  76:	7c0b      	ldrb	r3, [r1, #16]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1030
+  /* ADCCLK clock frequency */
+  RCC_Clocks->ADCCLK_Frequency = RCC_Clocks->PCLK2_Frequency / presc;
+  78:	fbb2 f2f3 	udiv	r2, r2, r3
+  7c:	6122      	str	r2, [r4, #16]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1031
+}
+  7e:	bd10      	pop	{r4, pc}
+  80:	40021000 	.word	0x40021000
+  84:	00b71b00 	.word	0x00b71b00
+  88:	003d0900 	.word	0x003d0900
+  8c:	005b8d80 	.word	0x005b8d80
+  90:	007a1200 	.word	0x007a1200
+  94:	00000000 	.word	0x00000000
+Disassembly of section .text.RCC_AHBPeriphClockCmd:
+
+00000000 <RCC_AHBPeriphClockCmd>:
+RCC_AHBPeriphClockCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1070
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_AHB_PERIPH(RCC_AHBPeriph));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <RCC_AHBPeriphClockCmd+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1072
+  {
+    RCC->AHBENR |= RCC_AHBPeriph;
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <RCC_AHBPeriphClockCmd+0x18>)
+   4:	6953      	ldr	r3, [r2, #20]
+   6:	ea40 0303 	orr.w	r3, r0, r3
+   a:	e003      	b.n	14 <RCC_AHBPeriphClockCmd+0x14>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1076
+  }
+  else
+  {
+    RCC->AHBENR &= ~RCC_AHBPeriph;
+   c:	4a02      	ldr	r2, [pc, #8]	(18 <RCC_AHBPeriphClockCmd+0x18>)
+   e:	6953      	ldr	r3, [r2, #20]
+  10:	ea23 0300 	bic.w	r3, r3, r0
+  14:	6153      	str	r3, [r2, #20]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1078
+  }
+}
+  16:	4770      	bx	lr
+  18:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_APB2PeriphClockCmd:
+
+00000000 <RCC_APB2PeriphClockCmd>:
+RCC_APB2PeriphClockCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1100
+void RCC_APB2PeriphClockCmd(uint32_t RCC_APB2Periph, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <RCC_APB2PeriphClockCmd+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1102
+  {
+    RCC->APB2ENR |= RCC_APB2Periph;
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <RCC_APB2PeriphClockCmd+0x18>)
+   4:	6993      	ldr	r3, [r2, #24]
+   6:	ea40 0303 	orr.w	r3, r0, r3
+   a:	e003      	b.n	14 <RCC_APB2PeriphClockCmd+0x14>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1106
+  }
+  else
+  {
+    RCC->APB2ENR &= ~RCC_APB2Periph;
+   c:	4a02      	ldr	r2, [pc, #8]	(18 <RCC_APB2PeriphClockCmd+0x18>)
+   e:	6993      	ldr	r3, [r2, #24]
+  10:	ea23 0300 	bic.w	r3, r3, r0
+  14:	6193      	str	r3, [r2, #24]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1108
+  }
+}
+  16:	4770      	bx	lr
+  18:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_APB1PeriphClockCmd:
+
+00000000 <RCC_APB1PeriphClockCmd>:
+RCC_APB1PeriphClockCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1131
+void RCC_APB1PeriphClockCmd(uint32_t RCC_APB1Periph, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <RCC_APB1PeriphClockCmd+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1133
+  {
+    RCC->APB1ENR |= RCC_APB1Periph;
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <RCC_APB1PeriphClockCmd+0x18>)
+   4:	69d3      	ldr	r3, [r2, #28]
+   6:	ea40 0303 	orr.w	r3, r0, r3
+   a:	e003      	b.n	14 <RCC_APB1PeriphClockCmd+0x14>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1137
+  }
+  else
+  {
+    RCC->APB1ENR &= ~RCC_APB1Periph;
+   c:	4a02      	ldr	r2, [pc, #8]	(18 <RCC_APB1PeriphClockCmd+0x18>)
+   e:	69d3      	ldr	r3, [r2, #28]
+  10:	ea23 0300 	bic.w	r3, r3, r0
+  14:	61d3      	str	r3, [r2, #28]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1139
+  }
+}
+  16:	4770      	bx	lr
+  18:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_APB2PeriphResetCmd:
+
+00000000 <RCC_APB2PeriphResetCmd>:
+RCC_APB2PeriphResetCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1190
+void RCC_APB2PeriphResetCmd(uint32_t RCC_APB2Periph, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <RCC_APB2PeriphResetCmd+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1192
+  {
+    RCC->APB2RSTR |= RCC_APB2Periph;
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <RCC_APB2PeriphResetCmd+0x18>)
+   4:	68d3      	ldr	r3, [r2, #12]
+   6:	ea40 0303 	orr.w	r3, r0, r3
+   a:	e003      	b.n	14 <RCC_APB2PeriphResetCmd+0x14>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1196
+  }
+  else
+  {
+    RCC->APB2RSTR &= ~RCC_APB2Periph;
+   c:	4a02      	ldr	r2, [pc, #8]	(18 <RCC_APB2PeriphResetCmd+0x18>)
+   e:	68d3      	ldr	r3, [r2, #12]
+  10:	ea23 0300 	bic.w	r3, r3, r0
+  14:	60d3      	str	r3, [r2, #12]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1198
+  }
+}
+  16:	4770      	bx	lr
+  18:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_APB1PeriphResetCmd:
+
+00000000 <RCC_APB1PeriphResetCmd>:
+RCC_APB1PeriphResetCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1221
+void RCC_APB1PeriphResetCmd(uint32_t RCC_APB1Periph, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <RCC_APB1PeriphResetCmd+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1223
+  {
+    RCC->APB1RSTR |= RCC_APB1Periph;
+   2:	4a05      	ldr	r2, [pc, #20]	(18 <RCC_APB1PeriphResetCmd+0x18>)
+   4:	6913      	ldr	r3, [r2, #16]
+   6:	ea40 0303 	orr.w	r3, r0, r3
+   a:	e003      	b.n	14 <RCC_APB1PeriphResetCmd+0x14>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1227
+  }
+  else
+  {
+    RCC->APB1RSTR &= ~RCC_APB1Periph;
+   c:	4a02      	ldr	r2, [pc, #8]	(18 <RCC_APB1PeriphResetCmd+0x18>)
+   e:	6913      	ldr	r3, [r2, #16]
+  10:	ea23 0300 	bic.w	r3, r3, r0
+  14:	6113      	str	r3, [r2, #16]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1229
+  }
+}
+  16:	4770      	bx	lr
+  18:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_BackupResetCmd:
+
+00000000 <RCC_BackupResetCmd>:
+RCC_BackupResetCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1241
+  */
+void RCC_BackupResetCmd(FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  *(__IO uint32_t *) BDCR_BDRST_BB = (uint32_t)NewState;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_BackupResetCmd+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1242
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	42420440 	.word	0x42420440
+Disassembly of section .text.RCC_ClockSecuritySystemCmd:
+
+00000000 <RCC_ClockSecuritySystemCmd>:
+RCC_ClockSecuritySystemCmd():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1254
+  */
+void RCC_ClockSecuritySystemCmd(FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  *(__IO uint32_t *) CR_CSSON_BB = (uint32_t)NewState;
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_ClockSecuritySystemCmd+0x8>)
+   2:	6018      	str	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1255
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	4242004c 	.word	0x4242004c
+Disassembly of section .text.RCC_MCOConfig:
+
+00000000 <RCC_MCOConfig>:
+RCC_MCOConfig():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1283
+  *     @arg RCC_MCO_PLLCLK_Div2: PLL clock divided by 2 selected
+  *   
+  * @retval None
+  */
+void RCC_MCOConfig(uint8_t RCC_MCO)
+{
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_MCOConfig+0x8>)
+   2:	7018      	strb	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1289
+  /* Check the parameters */
+  assert_param(IS_RCC_MCO(RCC_MCO));
+
+  /* Perform Byte access to MCO bits to select the MCO source */
+  *(__IO uint8_t *) CFGR_BYTE4_ADDRESS = RCC_MCO;
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	40021007 	.word	0x40021007
+Disassembly of section .text.RCC_GetFlagStatus:
+
+00000000 <RCC_GetFlagStatus>:
+RCC_GetFlagStatus():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1327
+  *     @arg RCC_FLAG_LPWRRST: Low Power reset
+  *   
+  * @retval The new state of RCC_FLAG (SET or RESET).
+  */
+FlagStatus RCC_GetFlagStatus(uint8_t RCC_FLAG)
+{
+   0:	0943      	lsrs	r3, r0, #5
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1336
+  /* Check the parameters */
+  assert_param(IS_RCC_FLAG(RCC_FLAG));
+
+  /* Get the RCC register index */
+  tmp = RCC_FLAG >> 5;
+  if (tmp == 1)               /* The flag to check is in CR register */
+   2:	2b01      	cmp	r3, #1
+   4:	d102      	bne.n	c <RCC_GetFlagStatus+0xc>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1338
+  {
+    statusreg = RCC->CR;
+   6:	4b08      	ldr	r3, [pc, #32]	(28 <RCC_GetFlagStatus+0x28>)
+   8:	681b      	ldr	r3, [r3, #0]
+   a:	e005      	b.n	18 <RCC_GetFlagStatus+0x18>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1340
+  }
+  else if (tmp == 2)          /* The flag to check is in BDCR register */
+   c:	2b02      	cmp	r3, #2
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1342
+  {
+    statusreg = RCC->BDCR;
+   e:	bf0b      	itete	eq
+  10:	4b05      	ldreq	r3, [pc, #20]	(28 <RCC_GetFlagStatus+0x28>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1346
+  }
+  else                       /* The flag to check is in CSR register */
+  {
+    statusreg = RCC->CSR;
+  12:	4b05      	ldrne	r3, [pc, #20]	(28 <RCC_GetFlagStatus+0x28>)
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1342
+  {
+    statusreg = RCC->CR;
+  }
+  else if (tmp == 2)          /* The flag to check is in BDCR register */
+  {
+    statusreg = RCC->BDCR;
+  14:	6a1b      	ldreq	r3, [r3, #32]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1346
+  }
+  else                       /* The flag to check is in CSR register */
+  {
+    statusreg = RCC->CSR;
+  16:	6a5b      	ldrne	r3, [r3, #36]
+  18:	f000 001f 	and.w	r0, r0, #31	; 0x1f
+  1c:	fa33 f000 	lsrs.w	r0, r3, r0
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1362
+    bitstatus = RESET;
+  }
+
+  /* Return the flag status */
+  return bitstatus;
+}
+  20:	f000 0001 	and.w	r0, r0, #1	; 0x1
+  24:	4770      	bx	lr
+  26:	46c0      	nop			(mov r8, r8)
+  28:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_WaitForHSEStartUp:
+
+00000000 <RCC_WaitForHSEStartUp>:
+RCC_WaitForHSEStartUp():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:305
+  * @retval An ErrorStatus enumuration value:
+  * - SUCCESS: HSE oscillator is stable and ready to use
+  * - ERROR: HSE oscillator not yet ready
+  */
+ErrorStatus RCC_WaitForHSEStartUp(void)
+{
+   0:	b507      	push	{r0, r1, r2, lr}
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:306
+  __IO uint32_t StartUpCounter = 0;
+   2:	2300      	movs	r3, #0
+   4:	9301      	str	r3, [sp, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:313
+  FlagStatus HSEStatus = RESET;
+  
+  /* Wait till HSE is ready and if Time out is reached exit */
+  do
+  {
+    HSEStatus = RCC_GetFlagStatus(RCC_FLAG_HSERDY);
+   6:	2031      	movs	r0, #49
+   8:	f7ff fffe 	bl	0 <RCC_WaitForHSEStartUp>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:314
+    StartUpCounter++;  
+   c:	9b01      	ldr	r3, [sp, #4]
+   e:	3301      	adds	r3, #1
+  10:	9301      	str	r3, [sp, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:315
+  } while((StartUpCounter != HSE_STARTUP_TIMEOUT) && (HSEStatus == RESET));
+  12:	9b01      	ldr	r3, [sp, #4]
+  14:	f5b3 6fa0 	cmp.w	r3, #1280	; 0x500
+  18:	d001      	beq.n	1e <RCC_WaitForHSEStartUp+0x1e>
+  1a:	2800      	cmp	r0, #0
+  1c:	d0f3      	beq.n	6 <RCC_WaitForHSEStartUp+0x6>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:317
+  
+  if (RCC_GetFlagStatus(RCC_FLAG_HSERDY) != RESET)
+  1e:	2031      	movs	r0, #49
+  20:	f7ff fffe 	bl	0 <RCC_WaitForHSEStartUp>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:326
+  else
+  {
+    status = ERROR;
+  }  
+  return (status);
+}
+  24:	3800      	subs	r0, #0
+  26:	bf18      	it	ne
+  28:	2001      	movne	r0, #1
+  2a:	bd0e      	pop	{r1, r2, r3, pc}
+Disassembly of section .text.RCC_ClearFlag:
+
+00000000 <RCC_ClearFlag>:
+RCC_ClearFlag():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1374
+  * @retval None
+  */
+void RCC_ClearFlag(void)
+{
+  /* Set RMVF bit to clear the reset flags */
+  RCC->CSR |= CSR_RMVF_Set;
+   0:	4a02      	ldr	r2, [pc, #8]	(c <RCC_ClearFlag+0xc>)
+   2:	6a53      	ldr	r3, [r2, #36]
+   4:	f043 7380 	orr.w	r3, r3, #16777216	; 0x1000000
+   8:	6253      	str	r3, [r2, #36]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1375
+}
+   a:	4770      	bx	lr
+   c:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_GetITStatus:
+
+00000000 <RCC_GetITStatus>:
+RCC_GetITStatus():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1403
+  *     @arg RCC_IT_CSS: Clock Security System interrupt
+  *   
+  * @retval The new state of RCC_IT (SET or RESET).
+  */
+ITStatus RCC_GetITStatus(uint8_t RCC_IT)
+{
+   0:	4b03      	ldr	r3, [pc, #12]	(10 <RCC_GetITStatus+0x10>)
+   2:	689b      	ldr	r3, [r3, #8]
+   4:	4218      	tst	r0, r3
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1420
+    bitstatus = RESET;
+  }
+
+  /* Return the RCC_IT status */
+  return  bitstatus;
+}
+   6:	bf0c      	ite	eq
+   8:	2000      	moveq	r0, #0
+   a:	2001      	movne	r0, #1
+   c:	4770      	bx	lr
+   e:	46c0      	nop			(mov r8, r8)
+  10:	40021000 	.word	0x40021000
+Disassembly of section .text.RCC_ClearITPendingBit:
+
+00000000 <RCC_ClearITPendingBit>:
+RCC_ClearITPendingBit():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1449
+  *   
+  *     @arg RCC_IT_CSS: Clock Security System interrupt
+  * @retval None
+  */
+void RCC_ClearITPendingBit(uint8_t RCC_IT)
+{
+   0:	4b01      	ldr	r3, [pc, #4]	(8 <RCC_ClearITPendingBit+0x8>)
+   2:	7018      	strb	r0, [r3, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_rcc.c:1456
+  assert_param(IS_RCC_CLEAR_IT(RCC_IT));
+
+  /* Perform Byte access to RCC_CIR[23:16] bits to clear the selected interrupt
+     pending bits */
+  *(__IO uint8_t *) CIR_BYTE3_ADDRESS = RCC_IT;
+}
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+   8:	4002100a 	.word	0x4002100a

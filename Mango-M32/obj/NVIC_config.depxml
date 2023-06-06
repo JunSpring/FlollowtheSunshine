@@ -1,0 +1,33 @@
+<DepXml>
+ <Dependencies>
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h" />
+  <Dep File="c:\program files (x86)\raisonance\ride\arm-gcc\bin\..\lib\gcc\arm-none-eabi\4.3.2\..\..\..\..\arm-none-eabi\include\stdint.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_conf.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h" />
+  <Dep File="H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h" />
+ </Dependencies>
+ <InfosString Value="text=32 data=0 bss=0"/>
+</DepXml>

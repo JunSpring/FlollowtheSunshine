@@ -1,0 +1,53 @@
+
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\NVIC_config.o:     file format elf32-littlearm
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\NVIC_config.o
+
+Disassembly of section .text.NVIC_Configuration:
+
+00000000 <NVIC_Configuration>:
+NVIC_Configuration():
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:9
+    해당 명령어는 stm32f10x_nvic.c, stm32f10x_nvic.h가 아닌
+             misc.c, misc.h에 나타나 있다.
+*/
+
+void NVIC_Configuration(void)
+{
+   0:	b507      	push	{r0, r1, r2, lr}
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:13
+  NVIC_InitTypeDef NVIC_InitStructure;
+
+  /* Enable the TIM2 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM4_IRQn;
+   2:	231e      	movs	r3, #30
+   4:	f88d 3004 	strb.w	r3, [sp, #4]
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:14
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+   8:	2300      	movs	r3, #0
+   a:	f88d 3005 	strb.w	r3, [sp, #5]
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:15
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+   e:	f88d 3006 	strb.w	r3, [sp, #6]
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:18
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+
+  NVIC_Init(&NVIC_InitStructure);
+  12:	a801      	add	r0, sp, #4
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:16
+
+  /* Enable the TIM2 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM4_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  14:	3301      	adds	r3, #1
+  16:	f88d 3007 	strb.w	r3, [sp, #7]
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:18
+
+  NVIC_Init(&NVIC_InitStructure);
+  1a:	f7ff fffe 	bl	0 <NVIC_Init>
+H:\2022마프\마프 6주차\Project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/NVIC_config.c:22
+
+
+
+  1e:	bd0e      	pop	{r1, r2, r3, pc}

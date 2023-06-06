@@ -1,0 +1,36 @@
+
+C:\ride_project\FlollowtheSunshine\obj\delay.o:     file format elf32-littlearm
+C:\ride_project\FlollowtheSunshine\obj\delay.o
+
+Disassembly of section .text.delay_m:
+
+00000000 <delay_m>:
+delay_m():
+C:\ride_project\FlollowtheSunshine\src/delay.c:10
+{
+    for(; nTime>0; nTime--);
+}
+void delay_m(void)
+{
+    delay_int_count(806596/*6*/);
+   0:	4b02      	ldr	r3, [pc, #8]	(c <delay_m+0xc>)
+   2:	e000      	b.n	6 <delay_m+0x6>
+delay_int_count():
+C:\ride_project\FlollowtheSunshine\src/delay.c:6
+#include "stm32f10x.h"
+
+/* for문으로 제작한 딜레이 함수 */
+static void delay_int_count(volatile unsigned int nTime)
+{
+    for(; nTime>0; nTime--);
+   4:	3b01      	subs	r3, #1
+   6:	2b00      	cmp	r3, #0
+   8:	d1fc      	bne.n	4 <delay_m+0x4>
+delay_m():
+C:\ride_project\FlollowtheSunshine\src/delay.c:11
+}
+void delay_m(void)
+{
+    delay_int_count(806596/*6*/);
+   a:	4770      	bx	lr
+   c:	000c4ec4 	.word	0x000c4ec4

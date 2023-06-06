@@ -1,0 +1,39 @@
+
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\RCC_config.o:     file format elf32-littlearm
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\RCC_config.o
+
+Disassembly of section .text.RCC_Configuration:
+
+00000000 <RCC_Configuration>:
+RCC_Configuration():
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/RCC_config.c:7
+/*
+    RCC 설정에 관련된 코드들을 함수화하여 나타낸 c파일
+*/
+
+void RCC_Configuration(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/RCC_config.c:9
+    // TIM4 clock enable 
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+   2:	2004      	movs	r0, #4
+   4:	2101      	movs	r1, #1
+   6:	f7ff fffe 	bl	0 <RCC_APB1PeriphClockCmd>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/RCC_config.c:12
+
+    // GPIOB ENABLE
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+   a:	2008      	movs	r0, #8
+   c:	2101      	movs	r1, #1
+   e:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/RCC_config.c:15
+
+    /* Enable AFIO clock */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+  12:	2001      	movs	r0, #1
+  14:	4601      	mov	r1, r0
+  16:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/RCC_config.c:17
+
+  1a:	bd10      	pop	{r4, pc}

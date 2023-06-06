@@ -1,0 +1,107 @@
+
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\GPIO_config.o:     file format elf32-littlearm
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\GPIO_config.o
+
+Disassembly of section .text.GPIO_Configuration:
+
+00000000 <GPIO_Configuration>:
+GPIO_Configuration():
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:6
+#include "stm32f10x.h"
+/*
+    GPIO 설정에 관련된 코드들을 함수화하여 나타낸 c파일
+*/
+void GPIO_Configuration(void)
+{
+   0:	b573      	push	{r0, r1, r4, r5, r6, lr}
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:18
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_8|GPIO_Pin_9;   // PB6, PB7 -> motor PWM/ TIM4는 GPIO 6,7,8,9 번 핀을 이용하기 때문에 8,9 번에도 인가
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;      // AFIO설정(펄스 생성은 따로 만드는게 아니고 기본 타이머를 이용해서 만드는 것이기 때문에 AFIO로 설정)
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);         // B포트설정
+   2:	4c0f      	ldr	r4, [pc, #60]	(40 <GPIO_Configuration+0x40>)
+   4:	ad01      	add	r5, sp, #4
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:15
+    // PWM //   // PWM //   // PWM //   // PWM //
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_8|GPIO_Pin_9;   // PB6, PB7 -> motor PWM/ TIM4는 GPIO 6,7,8,9 번 핀을 이용하기 때문에 8,9 번에도 인가
+   6:	f44f 7370 	mov.w	r3, #960	; 0x3c0
+   a:	f8ad 3004 	strh.w	r3, [sp, #4]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:17
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;      // AFIO설정(펄스 생성은 따로 만드는게 아니고 기본 타이머를 이용해서 만드는 것이기 때문에 AFIO로 설정)
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+   e:	2603      	movs	r6, #3
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:16
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_8|GPIO_Pin_9;   // PB6, PB7 -> motor PWM/ TIM4는 GPIO 6,7,8,9 번 핀을 이용하기 때문에 8,9 번에도 인가
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;      // AFIO설정(펄스 생성은 따로 만드는게 아니고 기본 타이머를 이용해서 만드는 것이기 때문에 AFIO로 설정)
+  10:	2318      	movs	r3, #24
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:18
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);         // B포트설정
+  12:	4620      	mov	r0, r4
+  14:	4629      	mov	r1, r5
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:16
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_8|GPIO_Pin_9;   // PB6, PB7 -> motor PWM/ TIM4는 GPIO 6,7,8,9 번 핀을 이용하기 때문에 8,9 번에도 인가
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;      // AFIO설정(펄스 생성은 따로 만드는게 아니고 기본 타이머를 이용해서 만드는 것이기 때문에 AFIO로 설정)
+  16:	f88d 3007 	strb.w	r3, [sp, #7]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:17
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+  1a:	f88d 6006 	strb.w	r6, [sp, #6]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:18
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);         // B포트설정
+  1e:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:21
+
+    // enable 10,11, direction 12,13
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14; // PB12, PB13 -> motor direction
+  22:	f44f 43e0 	mov.w	r3, #28672	; 0x7000
+  26:	f8ad 3004 	strh.w	r3, [sp, #4]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:24
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_Out_PP;               //GPIO 사용
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);
+  2a:	4620      	mov	r0, r4
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:22
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);         // B포트설정
+
+    // enable 10,11, direction 12,13
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14; // PB12, PB13 -> motor direction
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_Out_PP;               //GPIO 사용
+  2c:	2310      	movs	r3, #16
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:24
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);
+  2e:	4629      	mov	r1, r5
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:22
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);         // B포트설정
+
+    // enable 10,11, direction 12,13
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14; // PB12, PB13 -> motor direction
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_Out_PP;               //GPIO 사용
+  30:	f88d 3007 	strb.w	r3, [sp, #7]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:23
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+  34:	f88d 6006 	strb.w	r6, [sp, #6]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:24
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);
+  38:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/GPIO_config.c:26
+    
+  3c:	bd7c      	pop	{r2, r3, r4, r5, r6, pc}
+  3e:	46c0      	nop			(mov r8, r8)
+  40:	40010c00 	.word	0x40010c00

@@ -1,0 +1,177 @@
+
+<Debug>
+	<Flags>
+		<Report>
+			<Def Header="FlagReport" NbCol="9" >
+				<Col Type="PT_BOOL" Header="Check" sizeCache="18" AutoSize="0" Edit="1" Sortable="1" Icon="C:\Program Files (x86)\Raisonance\Ride\Config\Resources\check.bmp" />
+				<Col Type="PT_STRING" Header="Kind" sizeCache="DDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" />
+				<Col Type="PT_STRING" Header="KindID" sizeCache="DD" AutoSize="1" Edit="0" Sortable="1" Visible="0" />
+				<Col Type="PT_STRING" Header="Space" sizeCache="DDDDDD" AutoSize="1" Edit="0" Sortable="1" />
+				<Col Type="PT_STRING" Header="SpaceID" sizeCache="DD" AutoSize="0" Edit="0" Sortable="0" Visible="0" />
+				<Col Type="PT_STRING" Header="Line" sizeCache="DDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" Visible="1" />
+				<Col Type="PT_STRING" Header="File" sizeCache="DDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" Visible="1" />
+				<Col Type="PT_STRING" Header="Path" sizeCache="DDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+				<Col Type="PT_STRING" Header="Condition" sizeCache="DDDDDDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="0" />
+				<Col Type="PT_STRING" Header="Condexpr" sizeCache="DD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+				<Col Type="PT_STRING" Header="Condcount" sizeCache="DD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+							
+			</Def>
+			<Rows/>
+					
+		</Report>
+			
+	</Flags>
+	<Views>
+		<View File="C:\ride_project\FlollowtheSunshine\inc\motor_control.h" Line="0" Index="0" />
+		<View File="C:\ride_project\FlollowtheSunshine\src\motor_control.c" Line="92" Index="1" focus="1" />
+	</Views>
+	<Grep>
+		<GrepIncludeSub>yes</GrepIncludeSub>
+		<GrepMatchCase>no</GrepMatchCase>
+		<GrepMatchWhole>no</GrepMatchWhole>
+		<GrepRegExp>no</GrepRegExp>
+		<GrepReplaceMode>no</GrepReplaceMode>
+		<GrepFileTypes>
+			<GrepFileTypesValue>*.c;*.h</GrepFileTypesValue>
+			<GrepFileType>*.c;*.h</GrepFileType>
+		</GrepFileTypes>
+		<GrepFindWhat>
+			<GrepFindWhatValue>TIM_OC2Init</GrepFindWhatValue>
+			<GrepFindStr>108000000</GrepFindStr>
+			<GrepFindStr>108mhz</GrepFindStr>
+			<GrepFindStr>72</GrepFindStr>
+			<GrepFindStr>bit_set</GrepFindStr>
+			<GrepFindStr>delay_m</GrepFindStr>
+			<GrepFindStr>EXT_CLOCK_SOURCE_12M</GrepFindStr>
+			<GrepFindStr>FLASH_Latency_2</GrepFindStr>
+			<GrepFindStr>g_pfnVectors</GrepFindStr>
+			<GrepFindStr>GPIO_Init</GrepFindStr>
+			<GrepFindStr>GPIO_Mode_Out_PP</GrepFindStr>
+			<GrepFindStr>GPIO_Pin_4</GrepFindStr>
+			<GrepFindStr>gpio_set</GrepFindStr>
+			<GrepFindStr>hclk</GrepFindStr>
+			<GrepFindStr>HSEStatus = RCC->CR & RCC_CR_HSERDY</GrepFindStr>
+			<GrepFindStr>RCC_APB1Periph_TIM2</GrepFindStr>
+			<GrepFindStr>RCC_APB1PeriphClockCmd</GrepFindStr>
+			<GrepFindStr>RCC_APB2Periph_AFIO</GrepFindStr>
+			<GrepFindStr>RCC_APB2PeriphClockCmd</GrepFindStr>
+			<GrepFindStr>RCC_CFGR_PPRE1_DIV2</GrepFindStr>
+			<GrepFindStr>RCC_ClocksTypeDef</GrepFindStr>
+			<GrepFindStr>RCC_Configuration</GrepFindStr>
+			<GrepFindStr>RCC_CR_HSEON</GrepFindStr>
+			<GrepFindStr>RCC_GetClocksFreq</GrepFindStr>
+			<GrepFindStr>RCC_HCLK_Div16</GrepFindStr>
+			<GrepFindStr>RCC_HCLK_Div4</GrepFindStr>
+			<GrepFindStr>RCC_PCLK1Config</GrepFindStr>
+			<GrepFindStr>rcc_pllmul_</GrepFindStr>
+			<GrepFindStr>reset</GrepFindStr>
+			<GrepFindStr>setreset</GrepFindStr>
+			<GrepFindStr>setsysclockto72</GrepFindStr>
+			<GrepFindStr>stm32f10x_map</GrepFindStr>
+			<GrepFindStr>STM32F10X_MD</GrepFindStr>
+			<GrepFindStr>TIM_CKD_DIV1</GrepFindStr>
+			<GrepFindStr>TIM_IT_Update</GrepFindStr>
+			<GrepFindStr>TIM_OC2Init</GrepFindStr>
+			<GrepFindStr>TIM_OCMode</GrepFindStr>
+			<GrepFindStr>TIM_TimeBaseInit</GrepFindStr>
+		</GrepFindWhat>
+		<GrepFindWhere>
+			<GrepFindWhereValue>C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글</GrepFindWhereValue>
+			<GrepPathStr>Application Files</GrepPathStr>
+			<GrepPathStr>Application Path</GrepPathStr>
+			<GrepPathStr>C:\cortex_m3</GrepPathStr>
+			<GrepPathStr>C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Interrupt)내부KEY를이용한내부LED제어</GrepPathStr>
+			<GrepPathStr>C:\Users\CHP\Desktop\마프_박창현\수업PPT\5주차\Project\(Timer)Timer를이용하여1초간격으로내부LED토글</GrepPathStr>
+		</GrepFindWhere>
+		<GrepReplaceWhat>
+			<GrepReplaceWhatValue/>
+		</GrepReplaceWhat>
+	</Grep>
+	<FindStrings>
+		<Find>CCMR</Find>
+		<Find>CCMR1이</Find>
+		<Find>CCR1_Val</Find>
+		<Find>gpio_initstructure</Find>
+		<Find>rcc_cfgr_pllmull9</Find>
+		<Find>#define hse_value</Find>
+		<Find>#ㅇㄷ랴ㅜㄷ ㅗㄴㄷ_ㅍ미ㅕㄷ</Find>
+		<Find>flash</Find>
+		<Find>HSE</Find>
+		<Find>ENABLE HSE</Find>
+		<Find>SystemCoreClockUpdate</Find>
+		<Find>SystemInit</Find>
+		<Find>init</Find>
+		<Find>mhz</Find>
+		<Find>SetSysClock</Find>
+		<Find>SetSysClock(void)</Find>
+		<Find>STM32F10X_MD</Find>
+		<Find>SYSCLK_FREQ_72MHz</Find>
+		<Find>#define</Find>
+		<Find>md</Find>
+		<Find> RCC->CR &slash;= ((uint32_t)RCC_CR_HSEON);</Find>
+		<Find>SetSysClockTo</Find>
+		<Find>TIM_CounterMode_Up</Find>
+		<Find>72</Find>
+		<Find>TIM</Find>
+		<Find>TIM2</Find>
+		<Find>TIM1</Find>
+		<Find>rcc_cfgr_ppre2_div</Find>
+		<Find>SetSysClockTo72</Find>
+		<Find>RCC_CR_HSEON</Find>
+		<Find>TIM_PrescalerConfig</Find>
+		<Find>gpio_set</Find>
+		<Find>reset</Find>
+		<Find>TIM_OCInitStructure</Find>
+		<Find>TIM_TimeBaseStructure</Find>
+		<Find>repetition</Find>
+		<Find>PrescalerValue</Find>
+		<Find>EXITx_IRQHandler()</Find>
+		<Find>EXTI_Trigger_Rising_Falling</Find>
+		<Find>EXTI_Mode_Interrupt</Find>
+		<Find>NVIC_PriorityGroup_0</Find>
+		<Find>GPIO_TypeDef</Find>
+		<Find>GPIOB</Find>
+		<Find>^=</Find>
+		<Find>odr</Find>
+		<Find>NVIC_InitTypeDef</Find>
+		<Find>EXTI_InitTypeDef</Find>
+		<Find>NVIC_SetPriority</Find>
+		<Find>EXTI_Line1</Find>
+		<Find>EXTI_Line0</Find>
+		<Find>IRQH</Find>
+		<Find>eval</Find>
+		<Find>led1</Find>
+		<Find>stm32_eval.h</Find>
+		<Find>SysTick_Handler</Find>
+		<Find>irqt</Find>
+		<Find>irq</Find>
+		<Find>GPIO_Pin_0</Find>
+		<Find>GPIO_Mode_IN_FLOATING</Find>
+		<Find>GPIO_Mode_IPU</Find>
+		<Find>if(GPIO_ReadInputDataBit</Find>
+		<Find>if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == (uint8_t)Bit_SET)</Find>
+		<Find>GPIO_ResetBit</Find>
+		<Find>Bit_Set</Find>
+		<Find>GPIO_ReadInputDataBit</Find>
+		<Find>idr</Find>
+		<Find>mode_gpio</Find>
+		<Find>GPIO_Mode</Find>
+		<Find>bit_reset</Find>
+		<Find>delay</Find>
+		<Find>GPIO_Init(</Find>
+		<Find>GPIO_Init</Find>
+		<Find>RCC_ClocksTypeDef</Find>
+		<Find>configuration</Find>
+		<Find>rcc</Find>
+		<Find>RCC_Configuration</Find>
+		<Find>BOARD_DEF_MANGO_M32</Find>
+		<Find>assert_failed</Find>
+		<Find>#define APB2PERIPH_BASE</Find>
+		<Find>APB2PERIPH_BASE</Find>
+		<Find>GPIOA_BASE</Find>
+		<Find>gpioa </Find>
+		<Find>gpioa</Find>
+		<Find>TIM2_IRQHandler</Find>
+	</FindStrings>
+	<ReplaceStrings/>
+</Debug>

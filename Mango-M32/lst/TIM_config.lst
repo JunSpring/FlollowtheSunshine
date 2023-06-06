@@ -1,0 +1,132 @@
+
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\TIM_config.o:     file format elf32-littlearm
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\obj\TIM_config.o
+
+Disassembly of section .text.TIM_Configuration:
+
+00000000 <TIM_Configuration>:
+TIM_Configuration():
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:16
+void TIM_Configuration(void)
+{   
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 1000으로 나누면 7200Hz가 된다.
+    // 여기서 Prescaler가 72이면 1KHz가 된다. 보톰 서브모터 50 ~ 1KHZ 정도의 주파수 필요
+    TIM_TimeBaseStructure_PWM.TIM_Period = 999;     
+   0:	4911      	ldr	r1, [pc, #68]	(48 <TIM_Configuration+0x48>)
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:12
+
+TIM_TimeBaseInitTypeDef     TIM_TimeBaseStructure_PWM;
+TIM_OCInitTypeDef           TIM_OCInitStructure_PWM;
+
+void TIM_Configuration(void)
+{   
+   2:	b570      	push	{r4, r5, r6, lr}
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:16
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 1000으로 나누면 7200Hz가 된다.
+    // 여기서 Prescaler가 72이면 1KHz가 된다. 보톰 서브모터 50 ~ 1KHZ 정도의 주파수 필요
+    TIM_TimeBaseStructure_PWM.TIM_Period = 999;     
+   4:	f240 33e7 	movw	r3, #999	; 0x3e7
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:21
+    TIM_TimeBaseStructure_PWM.TIM_Prescaler = 71;   
+    TIM_TimeBaseStructure_PWM.TIM_ClockDivision = 0;
+    TIM_TimeBaseStructure_PWM.TIM_CounterMode = TIM_CounterMode_Up;
+
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+   8:	4d10      	ldr	r5, [pc, #64]	(4c <TIM_Configuration+0x4c>)
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:18
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 1000으로 나누면 7200Hz가 된다.
+    // 여기서 Prescaler가 72이면 1KHz가 된다. 보톰 서브모터 50 ~ 1KHZ 정도의 주파수 필요
+    TIM_TimeBaseStructure_PWM.TIM_Period = 999;     
+    TIM_TimeBaseStructure_PWM.TIM_Prescaler = 71;   
+    TIM_TimeBaseStructure_PWM.TIM_ClockDivision = 0;
+   a:	2400      	movs	r4, #0
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:16
+void TIM_Configuration(void)
+{   
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 1000으로 나누면 7200Hz가 된다.
+    // 여기서 Prescaler가 72이면 1KHz가 된다. 보톰 서브모터 50 ~ 1KHZ 정도의 주파수 필요
+    TIM_TimeBaseStructure_PWM.TIM_Period = 999;     
+   c:	808b      	strh	r3, [r1, #4]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:17
+    TIM_TimeBaseStructure_PWM.TIM_Prescaler = 71;   
+   e:	f04f 0347 	mov.w	r3, #71	; 0x47
+  12:	800b      	strh	r3, [r1, #0]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:18
+    TIM_TimeBaseStructure_PWM.TIM_ClockDivision = 0;
+  14:	80cc      	strh	r4, [r1, #6]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:19
+    TIM_TimeBaseStructure_PWM.TIM_CounterMode = TIM_CounterMode_Up;
+  16:	804c      	strh	r4, [r1, #2]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:21
+
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+  18:	4628      	mov	r0, r5
+  1a:	f7ff fffe 	bl	0 <TIM_TimeBaseInit>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:24
+
+    // PWM1 Mode configuration: Channel1 
+    TIM_OCInitStructure_PWM.TIM_OCMode = TIM_OCMode_PWM1;   //CCMR레지스터(Capture/compare mode register)
+  1e:	490c      	ldr	r1, [pc, #48]	(50 <TIM_Configuration+0x50>)
+  20:	f04f 0360 	mov.w	r3, #96	; 0x60
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:29
+                                                            //TIMx_CCRM1, TIMx_CCRM2 두 종류가 있다.
+                                                            //CCMR1이 채널1,2(CH1,CH2. 즉 OC1Init, OC2Init)담당. CCMR2가 채널3,4(CH3,CH4. 즉 OC3Init, OC4Init)담당이다.
+                                                            //또한 OC는 Output Channel, IC는 Input Channel의 뜻으로, TIM_OCMode는 기본적으로 Output.
+
+    TIM_OCInitStructure_PWM.TIM_OutputState = TIM_OutputState_Enable;   //CCER레지스터(Capture/compare enable register)
+  24:	2601      	movs	r6, #1
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:24
+    TIM_TimeBaseStructure_PWM.TIM_CounterMode = TIM_CounterMode_Up;
+
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+
+    // PWM1 Mode configuration: Channel1 
+    TIM_OCInitStructure_PWM.TIM_OCMode = TIM_OCMode_PWM1;   //CCMR레지스터(Capture/compare mode register)
+  26:	800b      	strh	r3, [r1, #0]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:29
+                                                            //TIMx_CCRM1, TIMx_CCRM2 두 종류가 있다.
+                                                            //CCMR1이 채널1,2(CH1,CH2. 즉 OC1Init, OC2Init)담당. CCMR2가 채널3,4(CH3,CH4. 즉 OC3Init, OC4Init)담당이다.
+                                                            //또한 OC는 Output Channel, IC는 Input Channel의 뜻으로, TIM_OCMode는 기본적으로 Output.
+
+    TIM_OCInitStructure_PWM.TIM_OutputState = TIM_OutputState_Enable;   //CCER레지스터(Capture/compare enable register)
+  28:	804e      	strh	r6, [r1, #2]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:32
+                                                                        //말 그대로 output을 enable해줌.
+
+    TIM_OCInitStructure_PWM.TIM_Pulse = 0;//CCR1_Val;      //CCR은 캡쳐/비교 레지스터 모터의 속도 제어
+  2a:	80cc      	strh	r4, [r1, #6]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:36
+                                                            //Channel마다 다르게 설정한 CCRx_Val을 저장.(CCR저장)
+                                                            //저장되는 값은 TIMx_CCRx에 저장.
+
+    TIM_OCInitStructure_PWM.TIM_OCPolarity = TIM_OCPolarity_High;   //CCER레지스터(Captuer/compare enable register) 셋팅
+  2c:	810c      	strh	r4, [r1, #8]
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:37
+    TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);                 //TIM4를 위에 설정한 OC1과 연결
+  2e:	4628      	mov	r0, r5
+  30:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:38
+    TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);
+  34:	4628      	mov	r0, r5
+  36:	2108      	movs	r1, #8
+  38:	f7ff fffe 	bl	0 <TIM_OC1PreloadConfig>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:52
+    TIM_OCInitStructure_PWM.TIM_Pulse = 0;//CCR2_Val;
+    TIM_OC3Init(TIM4, &TIM_OCInitStructure_PWM);
+    TIM_OC3PreloadConfig(TIM4, TIM_OCPreload_Enable);
+    */
+    // TIM4 enable counter 
+    TIM_Cmd(TIM4, ENABLE);
+  3c:	4628      	mov	r0, r5
+  3e:	4631      	mov	r1, r6
+  40:	f7ff fffe 	bl	0 <TIM_Cmd>
+C:\ride_project\(PWM)모터속도를6단계에거쳐상승시키는코드\src/TIM_config.c:53
+  44:	bd70      	pop	{r4, r5, r6, pc}
+  46:	46c0      	nop			(mov r8, r8)
+  48:	00000000 	.word	0x00000000
+  4c:	40000800 	.word	0x40000800
+  50:	00000000 	.word	0x00000000

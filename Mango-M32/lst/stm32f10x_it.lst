@@ -1,0 +1,267 @@
+
+C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o:     file format elf32-littlearm
+C:\ride_project\FlollowtheSunshine\obj\stm32f10x_it.o
+
+Disassembly of section .text.NMI_Handler:
+
+00000000 <NMI_Handler>:
+NMI_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:59
+  * @param  None
+  * @retval None
+  */
+void NMI_Handler(void)
+{
+}
+   0:	4770      	bx	lr
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.HardFault_Handler:
+
+00000000 <HardFault_Handler>:
+HardFault_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:67
+  * @brief  This function handles Hard Fault exception.
+  * @param  None
+  * @retval None
+  */
+void HardFault_Handler(void)
+{
+   0:	e7fe      	b.n	0 <HardFault_Handler>
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.MemManage_Handler:
+
+00000000 <MemManage_Handler>:
+MemManage_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:79
+  * @brief  This function handles Memory Manage exception.
+  * @param  None
+  * @retval None
+  */
+void MemManage_Handler(void)
+{
+   0:	e7fe      	b.n	0 <MemManage_Handler>
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.BusFault_Handler:
+
+00000000 <BusFault_Handler>:
+BusFault_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:91
+  * @brief  This function handles Bus Fault exception.
+  * @param  None
+  * @retval None
+  */
+void BusFault_Handler(void)
+{
+   0:	e7fe      	b.n	0 <BusFault_Handler>
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.UsageFault_Handler:
+
+00000000 <UsageFault_Handler>:
+UsageFault_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:103
+  * @brief  This function handles Usage Fault exception.
+  * @param  None
+  * @retval None
+  */
+void UsageFault_Handler(void)
+{
+   0:	e7fe      	b.n	0 <UsageFault_Handler>
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.DebugMon_Handler:
+
+00000000 <DebugMon_Handler>:
+DebugMon_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:115
+  * @brief  This function handles Debug Monitor exception.
+  * @param  None
+  * @retval None
+  */
+void DebugMon_Handler(void)
+{}
+   0:	4770      	bx	lr
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SVC_Handler:
+
+00000000 <SVC_Handler>:
+SVC_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:123
+  * @brief  This function handles SVCall exception.
+  * @param  None
+  * @retval None
+  */
+void SVC_Handler(void)
+{}
+   0:	4770      	bx	lr
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.PendSV_Handler:
+
+00000000 <PendSV_Handler>:
+PendSV_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:131
+  * @brief  This function handles PendSV_Handler exception.
+  * @param  None
+  * @retval None
+  */
+void PendSV_Handler(void)
+{}
+   0:	4770      	bx	lr
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SysTick_Handler:
+
+00000000 <SysTick_Handler>:
+SysTick_Handler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:139
+  * @brief  This function handles SysTick Handler.
+  * @param  None
+  * @retval None
+  */
+void SysTick_Handler(void)
+{}
+   0:	4770      	bx	lr
+   2:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.TIM3_IRQHandler:
+
+00000000 <TIM3_IRQHandler>:
+TIM3_IRQHandler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:173
+int count_2 = 0;
+void TIM3_IRQHandler(void)
+{
+    //if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)//TIM_IT_Update) != RESET)
+    //    {
+            TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
+   0:	2101      	movs	r1, #1
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:170
+     //   }
+}
+
+int count_2 = 0;
+void TIM3_IRQHandler(void)
+{
+   2:	b510      	push	{r4, lr}
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:173
+    //if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)//TIM_IT_Update) != RESET)
+    //    {
+            TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
+   4:	4813      	ldr	r0, [pc, #76]	(54 <TIM3_IRQHandler+0x54>)
+   6:	f7ff fffe 	bl	0 <TIM_ClearITPendingBit>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:174
+            count_2++;
+   a:	4a13      	ldr	r2, [pc, #76]	(58 <TIM3_IRQHandler+0x58>)
+   c:	6813      	ldr	r3, [r2, #0]
+   e:	3301      	adds	r3, #1
+  10:	6013      	str	r3, [r2, #0]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:175
+            if(count_2%2 == 1)
+  12:	4a12      	ldr	r2, [pc, #72]	(5c <TIM3_IRQHandler+0x5c>)
+  14:	ea03 0202 	and.w	r2, r3, r2
+  18:	2a00      	cmp	r2, #0
+  1a:	da05      	bge.n	28 <TIM3_IRQHandler+0x28>
+  1c:	3a01      	subs	r2, #1
+  1e:	ea6f 72c2 	mvn.w	r2, r2, lsl #31
+  22:	ea6f 72d2 	mvn.w	r2, r2, lsr #31
+  26:	3201      	adds	r2, #1
+  28:	2a01      	cmp	r2, #1
+  2a:	d109      	bne.n	40 <TIM3_IRQHandler+0x40>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:177
+                {
+                    GPIO_SetBits(GPIOB, GPIO_Pin_5);
+  2c:	2120      	movs	r1, #32
+  2e:	480c      	ldr	r0, [pc, #48]	(60 <TIM3_IRQHandler+0x60>)
+  30:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:178
+                    GPIO_SetBits(GPIOB, GPIO_Pin_8);
+  34:	480a      	ldr	r0, [pc, #40]	(60 <TIM3_IRQHandler+0x60>)
+  36:	f44f 7180 	mov.w	r1, #256	; 0x100
+  3a:	f7ff fffe 	bl	0 <GPIO_SetBits>
+  3e:	e008      	b.n	52 <TIM3_IRQHandler+0x52>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:182
+                }
+            else
+                {
+                    GPIO_ResetBits(GPIOB, GPIO_Pin_5);
+  40:	4807      	ldr	r0, [pc, #28]	(60 <TIM3_IRQHandler+0x60>)
+  42:	2120      	movs	r1, #32
+  44:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:183
+                    GPIO_ResetBits(GPIOB, GPIO_Pin_8);
+  48:	4805      	ldr	r0, [pc, #20]	(60 <TIM3_IRQHandler+0x60>)
+  4a:	f44f 7180 	mov.w	r1, #256	; 0x100
+  4e:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:186
+                }
+     //   }
+}
+  52:	bd10      	pop	{r4, pc}
+  54:	40000400 	.word	0x40000400
+  58:	00000000 	.word	0x00000000
+  5c:	80000001 	.word	0x80000001
+  60:	40010c00 	.word	0x40010c00
+Disassembly of section .text.TIM2_IRQHandler:
+
+00000000 <TIM2_IRQHandler>:
+TIM2_IRQHandler():
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:155
+int count = 0;
+void TIM2_IRQHandler(void)
+{
+    //if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)//TIM_IT_Update) != RESET)
+    //    {
+            TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+   0:	2101      	movs	r1, #1
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:152
+  * @param  None
+  * @retval None
+  */
+int count = 0;
+void TIM2_IRQHandler(void)
+{
+   2:	b510      	push	{r4, lr}
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:155
+    //if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)//TIM_IT_Update) != RESET)
+    //    {
+            TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+   4:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
+   8:	f7ff fffe 	bl	0 <TIM_ClearITPendingBit>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:156
+            count++;
+   c:	4a0e      	ldr	r2, [pc, #56]	(48 <TIM2_IRQHandler+0x48>)
+   e:	6853      	ldr	r3, [r2, #4]
+  10:	3301      	adds	r3, #1
+  12:	6053      	str	r3, [r2, #4]
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:157
+            if(count%2 == 1)
+  14:	4a0d      	ldr	r2, [pc, #52]	(4c <TIM2_IRQHandler+0x4c>)
+  16:	ea03 0202 	and.w	r2, r3, r2
+  1a:	2a00      	cmp	r2, #0
+  1c:	da05      	bge.n	2a <TIM2_IRQHandler+0x2a>
+  1e:	3a01      	subs	r2, #1
+  20:	ea6f 72c2 	mvn.w	r2, r2, lsl #31
+  24:	ea6f 72d2 	mvn.w	r2, r2, lsr #31
+  28:	3201      	adds	r2, #1
+  2a:	2a01      	cmp	r2, #1
+  2c:	d105      	bne.n	3a <TIM2_IRQHandler+0x3a>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:159
+                {
+                    GPIO_SetBits(GPIOB, GPIO_Pin_9);
+  2e:	4808      	ldr	r0, [pc, #32]	(50 <TIM2_IRQHandler+0x50>)
+  30:	f44f 7100 	mov.w	r1, #512	; 0x200
+  34:	f7ff fffe 	bl	0 <GPIO_SetBits>
+  38:	e004      	b.n	44 <TIM2_IRQHandler+0x44>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:163
+                }
+            else
+                {
+                    GPIO_ResetBits(GPIOB, GPIO_Pin_9);
+  3a:	4805      	ldr	r0, [pc, #20]	(50 <TIM2_IRQHandler+0x50>)
+  3c:	f44f 7100 	mov.w	r1, #512	; 0x200
+  40:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\ride_project\FlollowtheSunshine\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase/stm32f10x_it.c:166
+                }
+     //   }
+}
+  44:	bd10      	pop	{r4, pc}
+  46:	46c0      	nop			(mov r8, r8)
+  48:	00000000 	.word	0x00000000
+  4c:	80000001 	.word	0x80000001
+  50:	40010c00 	.word	0x40010c00
