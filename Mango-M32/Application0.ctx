@@ -22,8 +22,10 @@
 			
 	</Flags>
 	<Views>
-		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="163" Index="0" focus="1" />
-		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="3" Index="1" />
+		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\main.c" Line="195" Index="0" focus="1" />
+		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\delay.c" Line="22" Index="1" />
+		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\usart3.c" Line="41" Index="2" />
+		<View File="C:\ride_project\FlollowtheSunshine\Mango-M32\src\motor_control.c" Line="22" Index="3" />
 	</Views>
 	<Grep>
 		<GrepIncludeSub>yes</GrepIncludeSub>
@@ -88,6 +90,8 @@
 		</GrepReplaceWhat>
 	</Grep>
 	<FindStrings>
+		<Find>break</Find>
+		<Find>cds_active</Find>
 		<Find>CCMR</Find>
 		<Find>CCMR1ÀÌ</Find>
 		<Find>CCR1_Val</Find>

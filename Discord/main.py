@@ -25,37 +25,38 @@ async def on_ready():
     global waterHistories
     global active
 
-    # while active:
-    #     current_minute = datetime.datetime.now().minute
-    #
-    #     received_data = None
-    #     if current_minute % 10 == 0:
-    #         print("10분마다 보드알림")
-    #
-    #         while not(received_data == 'sm' or received_data == 'none'):
-    #             ser.write('a'.encode())
-    #             while ser.in_waiting > 0:
-    #                 received_data = ser.readline().decode().rstrip()
-    #                 ser.write(0)
-    #         print("10분마다 보드알림 전송완료!")
-    #
-    #         if received_data == 'sm':
-    #             waterHistories.append(datetime.datetime.now())
-    #             print("급수내역 업데이트 완료!")
-    #
-    #         print()
-    #
-    #     if datetime.datetime.now().hour >= 20:
-    #         active = False
-    #
-    #         while not received_data == 'okay':
-    #             ser.write('e'.encode())
-    #             while ser.in_waiting > 0:
-    #                 received_data = ser.readline().decode().rstrip()
-    #                 ser.write(0)
-    #
-    #     # 1분마다 체크
-    #     await asyncio.sleep(60)
+    while active:
+        current_minute = datetime.datetime.now().minute
+
+        received_data = None
+        # if current_minute % 10 == 0:
+        print("10분마다 보드알림")
+
+        while not(received_data == 'sm' or received_data == 'none' or received_data == 'cds'):
+            ser.write('a'.encode())
+            while ser.in_waiting > 0:
+                received_data = ser.readline().decode().rstrip()
+                print(received_data)
+                ser.write(0)
+        print("10분마다 보드알림 전송완료!")
+
+        if received_data == 'sm':
+            waterHistories.append(datetime.datetime.now())
+            print("급수내역 업데이트 완료!")
+
+            print()
+
+        # if datetime.datetime.now().hour >= 20:
+        #     active = False
+        #
+        #     while not received_data == 'okay':
+        #         ser.write('e'.encode())
+        #         while ser.in_waiting > 0:
+        #             received_data = ser.readline().decode().rstrip()
+        #             ser.write(0)
+
+        # 1분마다 체크
+        await asyncio.sleep(60)
 
     while not active:
         if datetime.datetime.now().hour >= 5:
@@ -79,10 +80,9 @@ async def on_message(message):
         embed = discord.Embed(
             description=f'>>> **명령어 모음집**', timestamp=datetime.datetime.now(pytz.timezone('UTC')), colour=0x8ACA5C)
         embed.add_field(name="화분아 도움말", value=f"``화분이의 명령어를 알려줍니다.``", inline=False)
-        embed.add_field(name="화분아 설정 이동거리(m)", value=f"``화분이 이동할 거리를 설정합니다.``",
-                        inline=False)
-        embed.add_field(name="화분아 알림", value=f"``화분의 정보 및 기록을 알려줍니다.``", inline=False)
-        embed.add_field(name="화분아 정보", value=f"``화분이의 정보들을 알려 줍니다.``", inline=False)
+        embed.add_field(name="화분아 정보", value=f"``화분이의 정보들을 알려줍니다.``", inline=False)
+        embed.add_field(name="화분아 센서정보", value=f"``화분이가 작동하는 센서정보들을 알려줍니다.``", inline=False)
+        embed.add_field(name="화분아 급수내역", value=f"``화분이가 물을 준 시간들을 알려줍니다.``", inline=False)
         embed.set_author(name=f"{message.author.name} 님의 도움말", icon_url=message.author.avatar)
         embed.set_footer(text=dev)
         await message.reply(embed=embed, mention_author=True)

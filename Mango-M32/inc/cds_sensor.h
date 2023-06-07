@@ -14,3 +14,5 @@ void initCDSSensor(CDS* cds);
 uint16_t readCDSValue(CDS* cds);
 
 #endif  // CDS_SENSOR_H
+
+

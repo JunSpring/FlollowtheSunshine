@@ -13,3 +13,5 @@ typedef struct {
 void initUSART3(USART3_config* config, GPIO_TypeDef* port, uint16_t txPin, uint16_t rxPin, uint32_t baudRate);
 
 #endif  // USART3_H
+
+

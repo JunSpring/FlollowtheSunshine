@@ -13,14 +13,14 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:61
 
 int main(void)
 {
-   0:	e92d 4370 	stmdb	sp!, {r4, r5, r6, r8, r9, lr}
+   0:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:66
     //RCC 초기화
     SystemInit();
     
     USART3_config usart3;
     initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
-   4:	4c39      	ldr	r4, [pc, #228]	(ec <main+0xec>)
+   4:	4c99      	ldr	r4, [pc, #612]	(26c <main+0x26c>)
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:61
 #define CDS2_PORT                   GPIOC
 #define CDS2_ADC                    ADC2
@@ -28,7 +28,7 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:61
 
 int main(void)
 {
-   6:	b096      	sub	sp, #88
+   6:	b09f      	sub	sp, #124
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:63
     //RCC 초기화
     SystemInit();
@@ -39,9 +39,9 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:66
     initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
    c:	f44f 5316 	mov.w	r3, #9600	; 0x2580
   10:	4621      	mov	r1, r4
-  12:	9300      	str	r3, [sp, #0]
-  14:	a813      	add	r0, sp, #76
-  16:	f44f 6280 	mov.w	r2, #1024	; 0x400
+  12:	f44f 6280 	mov.w	r2, #1024	; 0x400
+  16:	9300      	str	r3, [sp, #0]
+  18:	a81b      	add	r0, sp, #108
   1a:	f5a3 53ec 	sub.w	r3, r3, #7552	; 0x1d80
   1e:	f7ff fffe 	bl	0 <initUSART3>
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:71
@@ -50,65 +50,38 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:71
     motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
     motorconfig.wheel1.dir =        MOTOR_WHEEL1_DIR;
     motorconfig.wheel1.dirPin =     MOTOR_WHEEL1_DIRPIN;
-  22:	f04f 0240 	mov.w	r2, #64	; 0x40
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:70
-    USART3_config usart3;
-    initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
-    
-    MotorConfig motorconfig;
-    motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
-    motorconfig.wheel1.dir =        MOTOR_WHEEL1_DIR;
-  26:	2300      	movs	r3, #0
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:71
-    motorconfig.wheel1.dirPin =     MOTOR_WHEEL1_DIRPIN;
-  28:	f8ad 200a 	strh.w	r2, [sp, #10]
+  22:	f04f 0340 	mov.w	r3, #64	; 0x40
+  26:	f8ad 300a 	strh.w	r3, [sp, #10]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:73
     motorconfig.wheel1.dirPort =    MOTOR_WHEEL1_DIRPROT;
     motorconfig.wheel1.pwmPin =     MOTOR_WHEEL1_PWMPIN;
-  2c:	f44f 5280 	mov.w	r2, #4096	; 0x1000
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:70
-    USART3_config usart3;
-    initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
-    
-    MotorConfig motorconfig;
-    motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
-    motorconfig.wheel1.dir =        MOTOR_WHEEL1_DIR;
-  30:	f88d 3016 	strb.w	r3, [sp, #22]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:73
-    motorconfig.wheel1.dirPin =     MOTOR_WHEEL1_DIRPIN;
-    motorconfig.wheel1.dirPort =    MOTOR_WHEEL1_DIRPROT;
-    motorconfig.wheel1.pwmPin =     MOTOR_WHEEL1_PWMPIN;
-  34:	f8ad 2014 	strh.w	r2, [sp, #20]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:77
-    motorconfig.wheel1.pwmPort =    MOTOR_WHEEL1_PWMPORT;
-    
-    motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
-    motorconfig.wheel2.dir =        MOTOR_WHEEL2_DIR;
-  38:	f88d 3026 	strb.w	r3, [sp, #38]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:84
-    motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
-    motorconfig.wheel2.pwmPin =     MOTOR_WHEEL2_PWMPIN;
-    motorconfig.wheel2.pwmPort =    MOTOR_WHEEL2_PWMPORT;
-    
-    motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
-    motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
-  3c:	f88d 3036 	strb.w	r3, [sp, #54]
+  2a:	f44f 5380 	mov.w	r3, #4096	; 0x1000
+  2e:	f8ad 3014 	strh.w	r3, [sp, #20]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:78
-    motorconfig.wheel1.pwmPin =     MOTOR_WHEEL1_PWMPIN;
     motorconfig.wheel1.pwmPort =    MOTOR_WHEEL1_PWMPORT;
     
     motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
     motorconfig.wheel2.dir =        MOTOR_WHEEL2_DIR;
     motorconfig.wheel2.dirPin =     MOTOR_WHEEL2_DIRPIN;
-  40:	f04f 0280 	mov.w	r2, #128	; 0x80
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:85
+  32:	f04f 0380 	mov.w	r3, #128	; 0x80
+  36:	f8ad 301a 	strh.w	r3, [sp, #26]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:80
+    motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
     motorconfig.wheel2.pwmPin =     MOTOR_WHEEL2_PWMPIN;
+  3a:	f44f 5300 	mov.w	r3, #8192	; 0x2000
+  3e:	f8ad 3024 	strh.w	r3, [sp, #36]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:85
     motorconfig.wheel2.pwmPort =    MOTOR_WHEEL2_PWMPORT;
     
     motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
     motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
     motorconfig.waterPump.dirPin =  MOTOR_WATERPUMP_DIRPIN;
-  44:	f44f 7380 	mov.w	r3, #256	; 0x100
+  42:	f44f 7380 	mov.w	r3, #256	; 0x100
+  46:	f8ad 302a 	strh.w	r3, [sp, #42]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:87
+    motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
+    motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
+  4a:	f44f 4380 	mov.w	r3, #16384	; 0x4000
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:72
     
     MotorConfig motorconfig;
@@ -116,63 +89,50 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:72
     motorconfig.wheel1.dir =        MOTOR_WHEEL1_DIR;
     motorconfig.wheel1.dirPin =     MOTOR_WHEEL1_DIRPIN;
     motorconfig.wheel1.dirPort =    MOTOR_WHEEL1_DIRPROT;
-  48:	9403      	str	r4, [sp, #12]
+  4e:	9403      	str	r4, [sp, #12]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:74
     motorconfig.wheel1.pwmPin =     MOTOR_WHEEL1_PWMPIN;
     motorconfig.wheel1.pwmPort =    MOTOR_WHEEL1_PWMPORT;
-  4a:	9404      	str	r4, [sp, #16]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:78
+  50:	9404      	str	r4, [sp, #16]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:79
     
     motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
     motorconfig.wheel2.dir =        MOTOR_WHEEL2_DIR;
     motorconfig.wheel2.dirPin =     MOTOR_WHEEL2_DIRPIN;
-  4c:	f8ad 201a 	strh.w	r2, [sp, #26]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:79
     motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
-  50:	9407      	str	r4, [sp, #28]
+  52:	9407      	str	r4, [sp, #28]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:81
     motorconfig.wheel2.pwmPin =     MOTOR_WHEEL2_PWMPIN;
     motorconfig.wheel2.pwmPort =    MOTOR_WHEEL2_PWMPORT;
-  52:	9408      	str	r4, [sp, #32]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:85
-    
-    motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
-    motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
-    motorconfig.waterPump.dirPin =  MOTOR_WATERPUMP_DIRPIN;
-  54:	f8ad 302a 	strh.w	r3, [sp, #42]
+  54:	9408      	str	r4, [sp, #32]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:86
-    motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
-  58:	940b      	str	r4, [sp, #44]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:90
-    motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
-    motorconfig.waterPump.pwmPort = MOTOR_WATERPUMP_PWMPORT;
     
-    motorconfig.timer =             MOTOR_TIMER;
-  5a:	4b25      	ldr	r3, [pc, #148]	(f0 <main+0xf0>)
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:88
     motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
     motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
     motorconfig.waterPump.dirPin =  MOTOR_WATERPUMP_DIRPIN;
     motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
+  56:	940b      	str	r4, [sp, #44]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:87
     motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
+  58:	f8ad 3034 	strh.w	r3, [sp, #52]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:88
     motorconfig.waterPump.pwmPort = MOTOR_WATERPUMP_PWMPORT;
   5c:	940c      	str	r4, [sp, #48]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:80
-    
-    motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
-    motorconfig.wheel2.dir =        MOTOR_WHEEL2_DIR;
-    motorconfig.wheel2.dirPin =     MOTOR_WHEEL2_DIRPIN;
-    motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
-    motorconfig.wheel2.pwmPin =     MOTOR_WHEEL2_PWMPIN;
-  5e:	f44f 5200 	mov.w	r2, #8192	; 0x2000
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:91
-    motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
-    motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
-    motorconfig.waterPump.pwmPort = MOTOR_WATERPUMP_PWMPORT;
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:90
     
     motorconfig.timer =             MOTOR_TIMER;
+  5e:	4b84      	ldr	r3, [pc, #528]	(270 <main+0x270>)
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:91
     initMotor(&motorconfig);
-  62:	ac02      	add	r4, sp, #8
+  60:	ac02      	add	r4, sp, #8
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:70
+    USART3_config usart3;
+    initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
+    
+    MotorConfig motorconfig;
+    motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
+    motorconfig.wheel1.dir =        MOTOR_WHEEL1_DIR;
+  62:	2600      	movs	r6, #0
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:69
     
     USART3_config usart3;
@@ -180,7 +140,7 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:69
     
     MotorConfig motorconfig;
     motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
-  64:	2601      	movs	r6, #1
+  64:	2501      	movs	r5, #1
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:76
     motorconfig.wheel1.dirPin =     MOTOR_WHEEL1_DIRPIN;
     motorconfig.wheel1.dirPort =    MOTOR_WHEEL1_DIRPROT;
@@ -189,29 +149,22 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:76
     
     motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
   66:	f04f 0902 	mov.w	r9, #2	; 0x2
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:80
-    motorconfig.wheel2.dir =        MOTOR_WHEEL2_DIR;
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:83
     motorconfig.wheel2.dirPin =     MOTOR_WHEEL2_DIRPIN;
     motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
     motorconfig.wheel2.pwmPin =     MOTOR_WHEEL2_PWMPIN;
-  6a:	f8ad 2024 	strh.w	r2, [sp, #36]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:83
     motorconfig.wheel2.pwmPort =    MOTOR_WHEEL2_PWMPORT;
     
     motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
-  6e:	f04f 0803 	mov.w	r8, #3	; 0x3
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:87
-    motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
-    motorconfig.waterPump.dirPin =  MOTOR_WATERPUMP_DIRPIN;
+  6a:	f04f 0803 	mov.w	r8, #3	; 0x3
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:91
     motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
     motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
-  72:	f44f 4280 	mov.w	r2, #16384	; 0x4000
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:91
     motorconfig.waterPump.pwmPort = MOTOR_WATERPUMP_PWMPORT;
     
     motorconfig.timer =             MOTOR_TIMER;
     initMotor(&motorconfig);
-  76:	4620      	mov	r0, r4
+  6e:	4620      	mov	r0, r4
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:90
     motorconfig.waterPump.dirPin =  MOTOR_WATERPUMP_DIRPIN;
     motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
@@ -219,23 +172,7 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:90
     motorconfig.waterPump.pwmPort = MOTOR_WATERPUMP_PWMPORT;
     
     motorconfig.timer =             MOTOR_TIMER;
-  78:	930e      	str	r3, [sp, #56]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:87
-    
-    motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
-    motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
-    motorconfig.waterPump.dirPin =  MOTOR_WATERPUMP_DIRPIN;
-    motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
-    motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
-  7a:	f8ad 2034 	strh.w	r2, [sp, #52]
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:69
-    
-    USART3_config usart3;
-    initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
-    
-    MotorConfig motorconfig;
-    motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
-  7e:	f88d 6008 	strb.w	r6, [sp, #8]
+  70:	930e      	str	r3, [sp, #56]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:76
     motorconfig.wheel1.dirPin =     MOTOR_WHEEL1_DIRPIN;
     motorconfig.wheel1.dirPort =    MOTOR_WHEEL1_DIRPROT;
@@ -243,7 +180,7 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:76
     motorconfig.wheel1.pwmPort =    MOTOR_WHEEL1_PWMPORT;
     
     motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
-  82:	f88d 9018 	strb.w	r9, [sp, #24]
+  72:	f88d 9018 	strb.w	r9, [sp, #24]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:83
     motorconfig.wheel2.dirPin =     MOTOR_WHEEL2_DIRPIN;
     motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
@@ -251,7 +188,34 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:83
     motorconfig.wheel2.pwmPort =    MOTOR_WHEEL2_PWMPORT;
     
     motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
-  86:	f88d 8028 	strb.w	r8, [sp, #40]
+  76:	f88d 8028 	strb.w	r8, [sp, #40]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:69
+    
+    USART3_config usart3;
+    initUSART3(&usart3, GPIOB, GPIO_Pin_10, GPIO_Pin_11, 9600);
+    
+    MotorConfig motorconfig;
+    motorconfig.wheel1.index =      MOTOR_WHEEL1_INDEX;
+  7a:	f88d 5008 	strb.w	r5, [sp, #8]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:70
+    motorconfig.wheel1.dir =        MOTOR_WHEEL1_DIR;
+  7e:	f88d 6016 	strb.w	r6, [sp, #22]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:77
+    motorconfig.wheel1.dirPort =    MOTOR_WHEEL1_DIRPROT;
+    motorconfig.wheel1.pwmPin =     MOTOR_WHEEL1_PWMPIN;
+    motorconfig.wheel1.pwmPort =    MOTOR_WHEEL1_PWMPORT;
+    
+    motorconfig.wheel2.index =      MOTOR_WHEEL2_INDEX;
+    motorconfig.wheel2.dir =        MOTOR_WHEEL2_DIR;
+  82:	f88d 6026 	strb.w	r6, [sp, #38]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:84
+    motorconfig.wheel2.dirPort =    MOTOR_WHEEL2_DIRPROT;
+    motorconfig.wheel2.pwmPin =     MOTOR_WHEEL2_PWMPIN;
+    motorconfig.wheel2.pwmPort =    MOTOR_WHEEL2_PWMPORT;
+    
+    motorconfig.waterPump.index =   MOTOR_WATERPUMP_INDEX;
+    motorconfig.waterPump.dir =     MOTOR_WATERPUMP_DIR;  
+  86:	f88d 6036 	strb.w	r6, [sp, #54]
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:91
     motorconfig.waterPump.dirPort = MOTOR_WATERPUMP_DIRPROT;
     motorconfig.waterPump.pwmPin =  MOTOR_WATERPUMP_PWMPIN;
@@ -265,74 +229,492 @@ C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:93
     toggleMotorDirection(&motorconfig.wheel1);
   8e:	4620      	mov	r0, r4
   90:	f7ff fffe 	bl	0 <toggleMotorDirection>
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:95
-    toggleMotorDirection(&motorconfig.wheel2);
-    toggleMotorDirection(&motorconfig.waterPump);
-  94:	f104 0520 	add.w	r5, r4, #32	; 0x20
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:94
-    
-    motorconfig.timer =             MOTOR_TIMER;
-    initMotor(&motorconfig);
-    
-    toggleMotorDirection(&motorconfig.wheel1);
     toggleMotorDirection(&motorconfig.wheel2);
-  98:	f104 0010 	add.w	r0, r4, #16	; 0x10
-  9c:	f7ff fffe 	bl	0 <toggleMotorDirection>
+  94:	f104 0010 	add.w	r0, r4, #16	; 0x10
+  98:	f7ff fffe 	bl	0 <toggleMotorDirection>
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:95
     toggleMotorDirection(&motorconfig.waterPump);
-  a0:	4628      	mov	r0, r5
-  a2:	f7ff fffe 	bl	0 <toggleMotorDirection>
+  9c:	f104 0020 	add.w	r0, r4, #32	; 0x20
+  a0:	f7ff fffe 	bl	0 <toggleMotorDirection>
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:97
     
-    setMotorSpeedByIndex(&motorconfig, 1, 1);
-  a6:	4620      	mov	r0, r4
-  a8:	4631      	mov	r1, r6
-  aa:	4632      	mov	r2, r6
-  ac:	f7ff fffe 	bl	0 <setMotorSpeedByIndex>
+    setMotorSpeedByIndex(&motorconfig, 1, 5);
+  a4:	4620      	mov	r0, r4
+  a6:	4629      	mov	r1, r5
+  a8:	2205      	movs	r2, #5
+  aa:	f7ff fffe 	bl	0 <setMotorSpeedByIndex>
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:98
     setMotorSpeedByIndex(&motorconfig, 2, 1);
+  ae:	4649      	mov	r1, r9
   b0:	4620      	mov	r0, r4
-  b2:	4649      	mov	r1, r9
-  b4:	4632      	mov	r2, r6
-  b6:	f7ff fffe 	bl	0 <setMotorSpeedByIndex>
+  b2:	462a      	mov	r2, r5
+  b4:	f7ff fffe 	bl	0 <setMotorSpeedByIndex>
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:99
     setMotorSpeedByIndex(&motorconfig, 3, 1);
+  b8:	4641      	mov	r1, r8
   ba:	4620      	mov	r0, r4
-  bc:	4641      	mov	r1, r8
-  be:	4632      	mov	r2, r6
-  c0:	f7ff fffe 	bl	0 <setMotorSpeedByIndex>
+  bc:	462a      	mov	r2, r5
+  be:	f7ff fffe 	bl	0 <setMotorSpeedByIndex>
 C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:102
     
     SoilMoisture soilmoisture;
     initSoilMoistureSensor(&soilmoisture, SOIL_MOISTURE_PORT, SOIL_MOISTURE_PIN, SOIL_MOISTURE_ADC, SOIL_MOISTURE_CHANNEL);
-  c4:	2304      	movs	r3, #4
-  c6:	490b      	ldr	r1, [pc, #44]	(f4 <main+0xf4>)
+  c2:	2304      	movs	r3, #4
+  c4:	9300      	str	r3, [sp, #0]
+  c6:	496b      	ldr	r1, [pc, #428]	(274 <main+0x274>)
   c8:	2210      	movs	r2, #16
-  ca:	9300      	str	r3, [sp, #0]
-  cc:	a80f      	add	r0, sp, #60
-  ce:	4b0a      	ldr	r3, [pc, #40]	(f8 <main+0xf8>)
-  d0:	f7ff fffe 	bl	0 <initSoilMoistureSensor>
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:224
+  ca:	4b6b      	ldr	r3, [pc, #428]	(278 <main+0x278>)
+  cc:	a817      	add	r0, sp, #92
+  ce:	f7ff fffe 	bl	0 <initSoilMoistureSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:106
+    
+    CDS cds1;
+    cds1.port =     CDS1_PORT;
+    cds1.pin =      CDS1_PIN;
+  d2:	f04f 0310 	mov.w	r3, #16	; 0x10
+  d6:	f8ad 3050 	strh.w	r3, [sp, #80]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:108
+    cds1.adc =      CDS1_ADC;
+    cds1.channel =  CDS1_CHANNEL;
+  da:	230e      	movs	r3, #14
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:105
+    
+    SoilMoisture soilmoisture;
+    initSoilMoistureSensor(&soilmoisture, SOIL_MOISTURE_PORT, SOIL_MOISTURE_PIN, SOIL_MOISTURE_ADC, SOIL_MOISTURE_CHANNEL);
+    
+    CDS cds1;
+    cds1.port =     CDS1_PORT;
+  dc:	4967      	ldr	r1, [pc, #412]	(27c <main+0x27c>)
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:107
+    cds1.pin =      CDS1_PIN;
+    cds1.adc =      CDS1_ADC;
+  de:	4a68      	ldr	r2, [pc, #416]	(280 <main+0x280>)
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:108
+    cds1.channel =  CDS1_CHANNEL;
+  e0:	f88d 3058 	strb.w	r3, [sp, #88]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:112
+    
+    CDS cds2;
+    cds2.port =     CDS2_PORT;
+    cds2.pin =      CDS2_PIN;
+  e4:	f04f 0320 	mov.w	r3, #32	; 0x20
+  e8:	f8ad 3040 	strh.w	r3, [sp, #64]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:114
+    cds2.adc =      CDS2_ADC;
+    cds2.channel =  CDS2_CHANNEL;
+  ec:	230f      	movs	r3, #15
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:105
+    
+    SoilMoisture soilmoisture;
+    initSoilMoistureSensor(&soilmoisture, SOIL_MOISTURE_PORT, SOIL_MOISTURE_PIN, SOIL_MOISTURE_ADC, SOIL_MOISTURE_CHANNEL);
+    
+    CDS cds1;
+    cds1.port =     CDS1_PORT;
+  ee:	9113      	str	r1, [sp, #76]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:107
+    cds1.pin =      CDS1_PIN;
+    cds1.adc =      CDS1_ADC;
+  f0:	9215      	str	r2, [sp, #84]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:111
+    cds1.channel =  CDS1_CHANNEL;
+    
+    CDS cds2;
+    cds2.port =     CDS2_PORT;
+  f2:	910f      	str	r1, [sp, #60]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:113
+    cds2.pin =      CDS2_PIN;
+    cds2.adc =      CDS2_ADC;
+  f4:	9211      	str	r2, [sp, #68]
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:114
+    cds2.channel =  CDS2_CHANNEL;
+  f6:	f88d 3048 	strb.w	r3, [sp, #72]
+  fa:	46b0      	mov	r8, r6
+  fc:	4637      	mov	r7, r6
+  fe:	46b1      	mov	r9, r6
+ 100:	e000      	b.n	104 <main+0x104>
+ 102:	2600      	movs	r6, #0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:125
+    bool sm_active = false;
+    bool cds_active = false;
+    
+    while(1)
+    {
+        if(sm_active)
+ 104:	b1b7      	cbz	r7, 134 <main+0x134>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:127
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+ 106:	a817      	add	r0, sp, #92
+ 108:	f7ff fffe 	bl	0 <readSoilMoistureValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:129
+        
+            if(sm > 3500)
+ 10c:	f640 53ac 	movw	r3, #3500	; 0xdac
+ 110:	4298      	cmp	r0, r3
+ 112:	d801      	bhi.n	118 <main+0x118>
+ 114:	2700      	movs	r7, #0
+ 116:	e039      	b.n	18c <main+0x18c>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:131
+            {
+                toggleMotorDirection(&motorconfig.waterPump);
+ 118:	ac0a      	add	r4, sp, #40
+ 11a:	4620      	mov	r0, r4
+ 11c:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:132
+                delay_ms(60);
+ 120:	203c      	movs	r0, #60
+ 122:	f7ff fffe 	bl	0 <delay_ms>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:133
+                toggleMotorDirection(&motorconfig.waterPump);
+ 126:	4620      	mov	r0, r4
+ 128:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:135
+            
+                delay_s(1);
+ 12c:	2001      	movs	r0, #1
+ 12e:	f7ff fffe 	bl	0 <delay_s>
+ 132:	e02b      	b.n	18c <main+0x18c>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:140
+            }
+            else
+                sm_active = false;
+        }
+        else if(cds_active)
+ 134:	f1b9 0f00 	cmp.w	r9, #0	; 0x0
+ 138:	d028      	beq.n	18c <main+0x18c>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:142
+        {
+            initCDSSensor(&cds1);
+ 13a:	ac13      	add	r4, sp, #76
+ 13c:	4620      	mov	r0, r4
+ 13e:	f7ff fffe 	bl	0 <initCDSSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:143
+            c1 = readCDSValue(&cds1);
+ 142:	4620      	mov	r0, r4
+ 144:	f7ff fffe 	bl	0 <readCDSValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:144
+            initCDSSensor(&cds2);
+ 148:	ac0f      	add	r4, sp, #60
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:143
+                sm_active = false;
+        }
+        else if(cds_active)
+        {
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+ 14a:	4605      	mov	r5, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:144
+            initCDSSensor(&cds2);
+ 14c:	4620      	mov	r0, r4
+ 14e:	f7ff fffe 	bl	0 <initCDSSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:145
+            c2 = readCDSValue(&cds2);
+ 152:	4620      	mov	r0, r4
+ 154:	f7ff fffe 	bl	0 <readCDSValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:149
+        
+            uint32_t once_time = 30;
+        
+            if(c2-c1 > 500)
+ 158:	1b40      	subs	r0, r0, r5
+ 15a:	f5b0 7ffa 	cmp.w	r0, #500	; 0x1f4
+ 15e:	dc01      	bgt.n	164 <main+0x164>
+ 160:	46b9      	mov	r9, r7
+ 162:	e013      	b.n	18c <main+0x18c>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:151
+            {
+                toggleMotorDirection(&motorconfig.wheel1);
+ 164:	ac02      	add	r4, sp, #8
+ 166:	4620      	mov	r0, r4
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:152
+                toggleMotorDirection(&motorconfig.wheel2);
+ 168:	f104 0510 	add.w	r5, r4, #16	; 0x10
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:151
+        
+            uint32_t once_time = 30;
+        
+            if(c2-c1 > 500)
+            {
+                toggleMotorDirection(&motorconfig.wheel1);
+ 16c:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:152
+                toggleMotorDirection(&motorconfig.wheel2);
+ 170:	4628      	mov	r0, r5
+ 172:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:154
+                
+                delay_ms(once_time);
+ 176:	201e      	movs	r0, #30
+ 178:	f7ff fffe 	bl	0 <delay_ms>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:156
+                
+                toggleMotorDirection(&motorconfig.wheel1);
+ 17c:	4620      	mov	r0, r4
+ 17e:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:157
+                toggleMotorDirection(&motorconfig.wheel2);
+ 182:	4628      	mov	r0, r5
+ 184:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:159
+            
+                day_time += once_time;
+ 188:	f108 081e 	add.w	r8, r8, #30	; 0x1e
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:164
+            }
+            else
+                cds_active = false;
+        }
+        if(end_process)
+ 18c:	b1c6      	cbz	r6, 1c0 <main+0x1c0>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:168
+        {
+            uint32_t turn_time;
+            
+            toggleMotorDirection(&motorconfig.wheel1);
+ 18e:	ac02      	add	r4, sp, #8
+ 190:	4620      	mov	r0, r4
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:169
+            delay_s(turn_time);
+ 192:	2600      	movs	r6, #0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:168
+        }
+        if(end_process)
+        {
+            uint32_t turn_time;
+            
+            toggleMotorDirection(&motorconfig.wheel1);
+ 194:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:171
+            delay_s(turn_time);
+            
+            toggleMotorDirection(&motorconfig.wheel2);
+ 198:	f104 0510 	add.w	r5, r4, #16	; 0x10
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:169
+        if(end_process)
+        {
+            uint32_t turn_time;
+            
+            toggleMotorDirection(&motorconfig.wheel1);
+            delay_s(turn_time);
+ 19c:	4630      	mov	r0, r6
+ 19e:	f7ff fffe 	bl	0 <delay_s>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:171
+            
+            toggleMotorDirection(&motorconfig.wheel2);
+ 1a2:	4628      	mov	r0, r5
+ 1a4:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:172
+            delay_ms(day_time);
+ 1a8:	4640      	mov	r0, r8
+ 1aa:	f7ff fffe 	bl	0 <delay_ms>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:174
+        
+            toggleMotorDirection(&motorconfig.wheel2);
+ 1ae:	4628      	mov	r0, r5
+ 1b0:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:175
+            delay_s(turn_time);
+ 1b4:	4630      	mov	r0, r6
+ 1b6:	f7ff fffe 	bl	0 <delay_s>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:177
+        
+            toggleMotorDirection(&motorconfig.wheel1);
+ 1ba:	4620      	mov	r0, r4
+ 1bc:	f7ff fffe 	bl	0 <toggleMotorDirection>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:182
+        
+            end_process = false;
+        }   
+    
+        data = USART_ReceiveData(USART3);
+ 1c0:	4830      	ldr	r0, [pc, #192]	(c4 <USART_ReceiveData+0xc4>)
+ 1c2:	f7ff fffe 	bl	0 <USART_ReceiveData>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:183
+        if(data == 'a')
+ 1c6:	2861      	cmp	r0, #97
+ 1c8:	d125      	bne.n	216 <main+0x216>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:185
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+ 1ca:	a817      	add	r0, sp, #92
+ 1cc:	f7ff fffe 	bl	0 <readSoilMoistureValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:186
+            initCDSSensor(&cds1);
+ 1d0:	ac13      	add	r4, sp, #76
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:185
+        }   
+    
+        data = USART_ReceiveData(USART3);
+        if(data == 'a')
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+ 1d2:	4605      	mov	r5, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:186
+            initCDSSensor(&cds1);
+ 1d4:	4620      	mov	r0, r4
+ 1d6:	f7ff fffe 	bl	0 <initCDSSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:187
+            c1 = readCDSValue(&cds1);
+ 1da:	4620      	mov	r0, r4
+ 1dc:	f7ff fffe 	bl	0 <readCDSValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:188
+            initCDSSensor(&cds2);
+ 1e0:	ac0f      	add	r4, sp, #60
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:187
+        data = USART_ReceiveData(USART3);
+        if(data == 'a')
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+ 1e2:	4606      	mov	r6, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:188
+            initCDSSensor(&cds2);
+ 1e4:	4620      	mov	r0, r4
+ 1e6:	f7ff fffe 	bl	0 <initCDSSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:189
+            c2 = readCDSValue(&cds2);
+ 1ea:	4620      	mov	r0, r4
+ 1ec:	f7ff fffe 	bl	0 <readCDSValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:191
+        
+            if(sm > 3500)
+ 1f0:	f640 53ac 	movw	r3, #3500	; 0xdac
+ 1f4:	429d      	cmp	r5, r3
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:189
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+            initCDSSensor(&cds2);
+            c2 = readCDSValue(&cds2);
+ 1f6:	4604      	mov	r4, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:191
+        
+            if(sm > 3500)
+ 1f8:	d903      	bls.n	202 <main+0x202>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:193
+            {
+                printf("sm\n");
+ 1fa:	4823      	ldr	r0, [pc, #140]	(288 <main+0x288>)
+ 1fc:	f7ff fffe 	bl	0 <puts>
+ 200:	2701      	movs	r7, #1
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:197
+                sm_active = true;
+            }
+        
+            if(c2-c1 > 500)
+ 202:	1ba3      	subs	r3, r4, r6
+ 204:	f5b3 7ffa 	cmp.w	r3, #500	; 0x1f4
+ 208:	dd20      	ble.n	24c <main+0x24c>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:199
+            {
+                printf("cds\n");
+ 20a:	4820      	ldr	r0, [pc, #128]	(28c <main+0x28c>)
+ 20c:	f7ff fffe 	bl	0 <puts>
+ 210:	f04f 0901 	mov.w	r9, #1	; 0x1
+ 214:	e01a      	b.n	24c <main+0x24c>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:204
+                cds_active = true;
+            }
             delay_ms(10);
         }
-    }
-    */
-    
-    toggleMotorDirection(&motorconfig.waterPump);
-  d4:	4628      	mov	r0, r5
-  d6:	f7ff fffe 	bl	0 <toggleMotorDirection>
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:225
-    delay_ms(60);
-  da:	203c      	movs	r0, #60
-  dc:	f7ff fffe 	bl	0 <delay_ms>
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:226
-    toggleMotorDirection(&motorconfig.waterPump);
-  e0:	4628      	mov	r0, r5
-  e2:	f7ff fffe 	bl	0 <toggleMotorDirection>
-C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:227
-  e6:	b016      	add	sp, #88
-  e8:	e8bd 8370 	ldmia.w	sp!, {r4, r5, r6, r8, r9, pc}
-  ec:	40010c00 	.word	0x40010c00
-  f0:	40000800 	.word	0x40000800
-  f4:	40010800 	.word	0x40010800
-  f8:	40012400 	.word	0x40012400
+        else if(data == 'i')
+ 216:	2869      	cmp	r0, #105
+ 218:	d11c      	bne.n	254 <main+0x254>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:206
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+ 21a:	a817      	add	r0, sp, #92
+ 21c:	f7ff fffe 	bl	0 <readSoilMoistureValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:207
+            initCDSSensor(&cds1);
+ 220:	ac13      	add	r4, sp, #76
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:206
+            }
+            delay_ms(10);
+        }
+        else if(data == 'i')
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+ 222:	4606      	mov	r6, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:207
+            initCDSSensor(&cds1);
+ 224:	4620      	mov	r0, r4
+ 226:	f7ff fffe 	bl	0 <initCDSSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:208
+            c1 = readCDSValue(&cds1);
+ 22a:	4620      	mov	r0, r4
+ 22c:	f7ff fffe 	bl	0 <readCDSValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:209
+            initCDSSensor(&cds2);
+ 230:	ac0f      	add	r4, sp, #60
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:208
+        }
+        else if(data == 'i')
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+ 232:	4605      	mov	r5, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:209
+            initCDSSensor(&cds2);
+ 234:	4620      	mov	r0, r4
+ 236:	f7ff fffe 	bl	0 <initCDSSensor>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:210
+            c2 = readCDSValue(&cds2);
+ 23a:	4620      	mov	r0, r4
+ 23c:	f7ff fffe 	bl	0 <readCDSValue>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:212
+        
+            printf("%d %d %d\n", sm, c1, c2);
+ 240:	4631      	mov	r1, r6
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:210
+        {
+            sm = readSoilMoistureValue(&soilmoisture);
+            initCDSSensor(&cds1);
+            c1 = readCDSValue(&cds1);
+            initCDSSensor(&cds2);
+            c2 = readCDSValue(&cds2);
+ 242:	4603      	mov	r3, r0
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:212
+        
+            printf("%d %d %d\n", sm, c1, c2);
+ 244:	462a      	mov	r2, r5
+ 246:	4812      	ldr	r0, [pc, #72]	(290 <main+0x290>)
+ 248:	f7ff fffe 	bl	0 <printf>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:213
+            delay_ms(10);
+ 24c:	200a      	movs	r0, #10
+ 24e:	f7ff fffe 	bl	0 <delay_ms>
+ 252:	e756      	b.n	102 <main+0x102>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:215
+        }
+        else if(data == 'e')
+ 254:	2865      	cmp	r0, #101
+ 256:	f47f af54 	bne.w	102 <main+0x102>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:218
+        {
+            end_process = true;
+            printf("okay\n");
+ 25a:	480e      	ldr	r0, [pc, #56]	(3c <puts+0x3c>)
+ 25c:	f7ff fffe 	bl	0 <puts>
+C:\ride_project\FlollowtheSunshine\Mango-M32\src/main.c:219
+            delay_ms(10);
+ 260:	200a      	movs	r0, #10
+ 262:	f7ff fffe 	bl	0 <delay_ms>
+ 266:	2601      	movs	r6, #1
+ 268:	e74c      	b.n	104 <main+0x104>
+ 26a:	46c0      	nop			(mov r8, r8)
+ 26c:	40010c00 	.word	0x40010c00
+ 270:	40000800 	.word	0x40000800
+ 274:	40010800 	.word	0x40010800
+ 278:	40012400 	.word	0x40012400
+ 27c:	40011000 	.word	0x40011000
+ 280:	40012800 	.word	0x40012800
+ 284:	40004800 	.word	0x40004800
+ 288:	00000000 	.word	0x00000000
+ 28c:	00000003 	.word	0x00000003
+ 290:	00000007 	.word	0x00000007
+ 294:	00000011 	.word	0x00000011

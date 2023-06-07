@@ -24,3 +24,5 @@ void setMotorSpeedByIndex(MotorConfig* motorConfig, uint8_t motorIndex, uint16_t
 void toggleMotorDirection(Motor* motor);
 
 #endif  // MOTOR_CONTROL_H
+
+

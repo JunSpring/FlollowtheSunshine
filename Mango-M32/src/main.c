@@ -94,7 +94,7 @@ int main(void)
     toggleMotorDirection(&motorconfig.wheel2);
     toggleMotorDirection(&motorconfig.waterPump);
     
-    setMotorSpeedByIndex(&motorconfig, 1, 1);
+    setMotorSpeedByIndex(&motorconfig, 1, 5);
     setMotorSpeedByIndex(&motorconfig, 2, 1);
     setMotorSpeedByIndex(&motorconfig, 3, 1);
     
@@ -126,18 +126,18 @@ int main(void)
         {
             sm = readSoilMoistureValue(&soilmoisture);
         
-            if(sm)
+            if(sm > 3500)
             {
                 toggleMotorDirection(&motorconfig.waterPump);
                 delay_ms(60);
                 toggleMotorDirection(&motorconfig.waterPump);
             
-                delay_s(10);
+                delay_s(1);
             }
             else
                 sm_active = false;
         }
-        if(cds_active)
+        else if(cds_active)
         {
             initCDSSensor(&cds1);
             c1 = readCDSValue(&cds1);
@@ -146,7 +146,7 @@ int main(void)
         
             uint32_t once_time = 30;
         
-            if(c1>c2)
+            if(c2-c1 > 500)
             {
                 toggleMotorDirection(&motorconfig.wheel1);
                 toggleMotorDirection(&motorconfig.wheel2);
@@ -188,15 +188,17 @@ int main(void)
             initCDSSensor(&cds2);
             c2 = readCDSValue(&cds2);
         
-            if(sm)
+            if(sm > 3500)
             {
                 printf("sm\n");
                 sm_active = true;
             }
-            else
-                printf("none\n");
-            if(c1>c2)
+        
+            if(c2-c1 > 500)
+            {
+                printf("cds\n");
                 cds_active = true;
+            }
             delay_ms(10);
         }
         else if(data == 'i')

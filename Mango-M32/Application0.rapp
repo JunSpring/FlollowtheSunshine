@@ -1,18 +1,18 @@
 
 <ApplicationBuild Header="Application0" Extern=".\Application0.rapp" Path=".\Application0.rapp" AsyncBuild="" OutputFile=".\Application0.elf" sate="96" >
 	<Group Header="source" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
-		<NodeC Path=".\src\main.c" Header="main.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\main.o" sate="0" />
 		<NodeC Path=".\src\delay.c" Header="delay.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\delay.o" sate="0" />
+		<NodeC Path=".\src\main.c" Header="main.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\main.o" sate="0" />
 		<Group Header="Example" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 			<NodeC Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Header="stm32f10x_it.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\stm32f10x_it.o" sate="0" />
 			<Group Header="Header" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 				<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\EXTI\EXTI_Config\stm32f10x_conf.h" Header="stm32f10x_conf.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
 				<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.h" Header="stm32f10x_it.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
-																																																															
+																																																																						
 			</Group>
-																																													
+																																																		
 		</Group>
-																																				
+																																							
 	</Group>
 	<Group Header="CMSIS" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 		<NodeC Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Header="system_stm32f10x.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\system_stm32f10x.o" sate="0" />
@@ -20,9 +20,9 @@
 		<Group Header="Header" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 			<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h" Header="stm32f10x.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
 			<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h" Header="system_stm32f10x.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
-																																													
+																																																		
 		</Group>
-																																				
+																																							
 	</Group>
 	<Group Header="STM32F10x_StdPeriph_Driver" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 		<NodeC Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Header="misc.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\misc.o" sate="0" />
@@ -40,80 +40,82 @@
 			<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h" Header="stm32f10x_tim.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
 			<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h" Header="stm32f10x_flash.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
 			<NodeH Path=".\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h" Header="stm32f10x_adc.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
-																																													
+																																																		
 		</Group>
-																																				
+																																							
 	</Group>
 	<Options>
 		<Config Header="Standard" >
 			<Set Header="ApplicationBuild" >
 				<Section Header="General" >
 					<Property Header="TargetFamily" Value="ARM" />
-																																																																																																																												
+																																																																																																																																					
 				</Section>
 				<Section Header="Directories" >
 					<Property Header="IncDir" Value="$(ApplicationDir)\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase;$(ApplicationDir)\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;$(ApplicationDir)\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport;$(ApplicationDir)\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc;$(ApplicationDir)\inc" Removable="1" />
 					<Property Header="OutDir" Value="$(ApplicationDir)\obj" Removable="1" />
 					<Property Header="ListDir" Value="$(ApplicationDir)\lst" Removable="1" />
 					<Property Header="LinkerOutputDir" Value="Application Directory" Removable="1" />
-																																																													
+																																																																						
 				</Section>
-																																															
+																																																						
 			</Set>
 			<Set Header="Target" >
 				<Section Header="ProcessorARM" >
 					<Property Header="Processor" Value="STM32F103RBT6" />
-																																																																																																																												
+																																																																																																																																					
 				</Section>
 				<Section Header="ToolSetARM" >
 					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" Removable="1" />
-																																																																																																																												
+																																																																																																																																					
 				</Section>
-																																																																																																
+																																																																																																							
 			</Set>
 			<Set Header="GCC" >
 				<Section Header="OPTIMIZE" >
 					<Property Header="Optimize" Value="-Os" Removable="1" />
 					<Property Header="FUNCSECTIONS" Value="-ffunction-sections" Removable="1" />
-																																																																																																																			
+																																																																																																																												
 				</Section>
 				<Section Header="Defines" >
 					<Property Header="Defines" Value="BOARD_DEF_MANGO_M32;USE_STDPERIPH_DRIVER" Removable="1" />
-																																																																																																																			
+																																																																																																																												
 				</Section>
-																																																																																									
+																																																																																																
 			</Set>
 			<Set Header="LD" >
 				<Section Header="Startup" >
 					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
 					<Property Header="File" Value="" Removable="1" />
-																																																																																																																			
+																																																																																																																												
 				</Section>
 				<Section Header="Scripts" >
 					<Property Header="File" Value="" Removable="1" />
 					<Property Header="StarterKitLimit" Value="No" Removable="1" />
-																																																																																																																			
+																																																																																																																												
 				</Section>
 				<Section Header="LIB" >
 					<Property Header="STM32LIB" Value="0" Removable="1" />
-																																																																																																																			
+																																																																																																																												
 				</Section>
-																																																																																									
+																																																																																																
 			</Set>
-																														
+																																			
 		</Config>
-																		
+																					
 	</Options>
 	<Group Header="selfmade" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 		<NodeC Path=".\src\usart3.c" Header="usart3.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\usart3.o" sate="0" />
-		<NodeC Path=".\src\motor_control.c" Header="motor_control.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\motor_control.o" sate="0" />
+		<NodeC Path=".\src\motor_control.c" Header="motor_control.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\motor_control.o" sate="2" />
 		<NodeC Path=".\src\soil_moisture_sensor.c" Header="soil_moisture_sensor.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\soil_moisture_sensor.o" sate="0" />
 		<NodeC Path=".\src\cds_sensor.c" Header="cds_sensor.c" Marker="-1" AsyncBuild="" OutputFile=".\obj\cds_sensor.o" sate="0" />
 		<Group Header="Header" Marker="-1" AsyncBuild="" OutputFile="" sate="96" >
 			<NodeH Path=".\inc\usart3.h" Header="usart3.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
-			<NodeH Path=".\inc\motor_control.h" Header="motor_control.h" Marker="-1" AsyncBuild="" OutputFile="" sate="2" />
+			<NodeH Path=".\inc\motor_control.h" Header="motor_control.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
 			<NodeH Path=".\inc\soil_moisture_sensor.h" Header="soil_moisture_sensor.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
 			<NodeH Path=".\inc\cds_sensor.h" Header="cds_sensor.h" Marker="-1" AsyncBuild="" OutputFile="" sate="0" />
+					
 		</Group>
+			
 	</Group>
 </ApplicationBuild>

@@ -14,3 +14,5 @@ void initSoilMoistureSensor(SoilMoisture* sensor, GPIO_TypeDef* port, uint16_t p
 uint16_t readSoilMoistureValue(SoilMoisture* sensor);
 
 #endif  // SOIL_MOISTURE_SENSOR_H
+
+
